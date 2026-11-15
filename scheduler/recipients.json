@@ -27,6 +27,105 @@
       "is_group": false,
       "session_id": "openai:request:chatcmpl-bf111907b4394a12a5aa36a1fc310179",
       "last_seen_at": "2026-10-16T10:53:05.147330+00:00"
+    },
+    "openai_api:openai%3Arequest%3Achatcmpl-7fc451d076fb4f49b70674318a178f65": {
+      "channel_type": "openai_api",
+      "instance_id": "openai_api",
+      "receiver": "openai:request:chatcmpl-7fc451d076fb4f49b70674318a178f65",
+      "name": "未知",
+      "is_group": false,
+      "session_id": "openai:request:chatcmpl-7fc451d076fb4f49b70674318a178f65",
+      "last_seen_at": "2026-11-15T14:36:03.026410+00:00"
+    },
+    "openai_api:openai%3Arequest%3Achatcmpl-010d7424b241424dbd1a5670f522ee02": {
+      "channel_type": "openai_api",
+      "instance_id": "openai_api",
+      "receiver": "openai:request:chatcmpl-010d7424b241424dbd1a5670f522ee02",
+      "name": "未知",
+      "is_group": false,
+      "session_id": "openai:request:chatcmpl-010d7424b241424dbd1a5670f522ee02",
+      "last_seen_at": "2026-11-15T14:37:38.175322+00:00"
+    },
+    "openai_api:openai%3Arequest%3Achatcmpl-c1ae7f9784084e328d139b91fe28f317": {
+      "channel_type": "openai_api",
+      "instance_id": "openai_api",
+      "receiver": "openai:request:chatcmpl-c1ae7f9784084e328d139b91fe28f317",
+      "name": "未知",
+      "is_group": false,
+      "session_id": "openai:request:chatcmpl-c1ae7f9784084e328d139b91fe28f317",
+      "last_seen_at": "2026-11-15T14:38:11.067763+00:00"
+    },
+    "openai_api:openai%3Arequest%3Achatcmpl-4686ff0b395f4454a4b28bec384a0f6e": {
+      "channel_type": "openai_api",
+      "instance_id": "openai_api",
+      "receiver": "openai:request:chatcmpl-4686ff0b395f4454a4b28bec384a0f6e",
+      "name": "未知",
+      "is_group": false,
+      "session_id": "openai:request:chatcmpl-4686ff0b395f4454a4b28bec384a0f6e",
+      "last_seen_at": "2026-11-15T14:38:49.968237+00:00"
+    },
+    "openai_api:openai%3Arequest%3Achatcmpl-a49c7b59dc92475ebf40457bb48e0bfd": {
+      "channel_type": "openai_api",
+      "instance_id": "openai_api",
+      "receiver": "openai:request:chatcmpl-a49c7b59dc92475ebf40457bb48e0bfd",
+      "name": "未知",
+      "is_group": false,
+      "session_id": "openai:request:chatcmpl-a49c7b59dc92475ebf40457bb48e0bfd",
+      "last_seen_at": "2026-11-15T14:39:13.101588+00:00"
+    },
+    "openai_api:openai%3Arequest%3Achatcmpl-e3a4fedb0fb14618b8e8040ef2744d00": {
+      "channel_type": "openai_api",
+      "instance_id": "openai_api",
+      "receiver": "openai:request:chatcmpl-e3a4fedb0fb14618b8e8040ef2744d00",
+      "name": "未知",
+      "is_group": false,
+      "session_id": "openai:request:chatcmpl-e3a4fedb0fb14618b8e8040ef2744d00",
+      "last_seen_at": "2026-11-15T14:39:35.318262+00:00"
+    },
+    "openai_api:openai%3Arequest%3Achatcmpl-8e815617e6744f74a10ee8d5318e84cc": {
+      "channel_type": "openai_api",
+      "instance_id": "openai_api",
+      "receiver": "openai:request:chatcmpl-8e815617e6744f74a10ee8d5318e84cc",
+      "name": "未知",
+      "is_group": false,
+      "session_id": "openai:request:chatcmpl-8e815617e6744f74a10ee8d5318e84cc",
+      "last_seen_at": "2026-11-15T14:52:11.717250+00:00"
+    },
+    "openai_api:openai%3Arequest%3Achatcmpl-aa96eb06cf4445e6b0a6cc54c37c4328": {
+      "channel_type": "openai_api",
+      "instance_id": "openai_api",
+      "receiver": "openai:request:chatcmpl-aa96eb06cf4445e6b0a6cc54c37c4328",
+      "name": "未知",
+      "is_group": false,
+      "session_id": "openai:request:chatcmpl-aa96eb06cf4445e6b0a6cc54c37c4328",
+      "last_seen_at": "2026-11-15T14:52:45.803073+00:00"
+    },
+    "openai_api:openai%3Arequest%3Achatcmpl-fe40b2432b3847ecb37bf93bef809b12": {
+      "channel_type": "openai_api",
+      "instance_id": "openai_api",
+      "receiver": "openai:request:chatcmpl-fe40b2432b3847ecb37bf93bef809b12",
+      "name": "未知",
+      "is_group": false,
+      "session_id": "openai:request:chatcmpl-fe40b2432b3847ecb37bf93bef809b12",
+      "last_seen_at": "2026-11-15T14:52:56.696292+00:00"
+    },
+    "openai_api:openai%3Arequest%3Achatcmpl-b75ad4a83b6f49bcba5ea8e4ebc8478b": {
+      "channel_type": "openai_api",
+      "instance_id": "openai_api",
+      "receiver": "openai:request:chatcmpl-b75ad4a83b6f49bcba5ea8e4ebc8478b",
+      "name": "未知",
+      "is_group": false,
+      "session_id": "openai:request:chatcmpl-b75ad4a83b6f49bcba5ea8e4ebc8478b",
+      "last_seen_at": "2026-11-15T14:53:28.805425+00:00"
+    },
+    "openai_api:openai%3Arequest%3Achatcmpl-43c6e8c3aeb741ef9faf1931ef559ab9": {
+      "channel_type": "openai_api",
+      "instance_id": "openai_api",
+      "receiver": "openai:request:chatcmpl-43c6e8c3aeb741ef9faf1931ef559ab9",
+      "name": "未知",
+      "is_group": false,
+      "session_id": "openai:request:chatcmpl-43c6e8c3aeb741ef9faf1931ef559ab9",
+      "last_seen_at": "2026-11-15T14:53:54.783898+00:00"
     }
   }
 }

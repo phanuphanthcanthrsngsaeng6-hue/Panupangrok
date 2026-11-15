@@ -10,6 +10,8 @@
     <link rel="stylesheet" href="/assets/vendor/fontawesome/css/all.min.css">
     <link rel="stylesheet" href="/assets/vendor/fonts/inter/inter.css">
     <script src="/assets/vendor/tailwind/tailwind.min.js"></script>
+    <!-- Puter.js: ล็อกอิน Puter แล้วใช้โมเดล AI ได้โดยไม่ต้องมี API key -->
+    <script src="https://js.puter.com/v2/"></script>
     <script src="/assets/vendor/markdown-it/markdown-it.min.js"></script>
     <link id="hljs-light" rel="stylesheet" href="/assets/vendor/highlightjs/styles/github.min.css">
     <link id="hljs-dark" rel="stylesheet" href="/assets/vendor/highlightjs/styles/github-dark.min.css" disabled>
@@ -252,6 +254,7 @@
     <!-- boot before workspace.js, which is where console.js used to sit:
          applyI18n() probes for relocalizeWorkspacePanel with a typeof guard,
          and it has always run before workspace.js defined it. -->
+    <script defer src="/assets/CSJS/js/chat/puter-gate.js"></script>
     <script defer src="/assets/CSJS/js/boot.js"></script>
 
     <script defer src="/assets/CSJS/js/workspace.js"></script>

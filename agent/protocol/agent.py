@@ -431,18 +431,16 @@ class Agent:
     def _get_output_reserve_tokens(self) -> int:
         """
         Tokens to hold back from the input budget so history is compacted before
-        the prompt fills the whole window (compaction fires at ~80% of it).
+        the prompt fills the whole window (compaction starts at ~90% of it).
 
-        This is a compaction threshold, NOT the request's max_tokens: it is a
-        fixed 20% of the window, giving an 80% input budget (in line with Claude
-        Code / Cursor / Cline). It deliberately does NOT use the model's static
-        max output tokens — coupling the two would drag the compaction line all
-        over the place (e.g. DeepSeek V4's 384K cap would compact at ~62%, not
-        80%). The actual completion cap sent to the provider is handled
-        separately by the bot (see each bot's max_tokens default).
+        This is a compaction threshold, NOT the request's max_tokens: it reserves
+        10% of the window, leaving a 90% input budget. It deliberately does NOT
+        use the model's static max output tokens — coupling the two would make
+        the compaction line vary unpredictably across model families. The actual
+        completion cap sent to the provider is handled separately by the bot.
         """
         window = self._get_model_context_window()
-        return int(window * 0.2)
+        return int(window * 0.1)
 
     def _get_context_reserve_tokens(self) -> int:
         """

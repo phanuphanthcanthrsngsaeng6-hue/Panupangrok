@@ -23,6 +23,8 @@ from agent.tools.agent_delegate.agent_delegate import AgentDelegateTool
 
 # Import sub agent tools
 from agent.tools.subagent.subagent import SubagentTool
+from agent.tools.codex.codex_tool import CodexTool
+from agent.tools.manus.manus_tool import ManusTool
 
 # Import tools with optional dependencies
 _PIP_PACKAGES = {
@@ -158,6 +160,8 @@ __all__ = [
     'MemoryGetTool',
     'EvolutionUndoTool',
     'SubagentTool',
+    'CodexTool',
+    'ManusTool',
     'AgentDelegateTool',
     'EnvConfig',
     'SchedulerTool',

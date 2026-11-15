@@ -264,6 +264,26 @@ def _session_expire_seconds():
     return int(conf().get("web_session_expire_days", 30)) * 86400
 
 
+def _identity_exists(identity):
+    """True when a named console user still exists in the user store."""
+    try:
+        from channel.web.core import user_store
+        return user_store.user_exists(identity)
+    except Exception:
+        return False
+
+
+def current_identity():
+    """Return the identity behind this request: a username or 'root'."""
+    for tok in (web.cookies().get("cow_auth_token", ""), _get_bearer_token(), _get_query_token()):
+        if not tok or "." not in tok:
+            continue
+        parts = tok.split(".")
+        if len(parts) == 3 and _verify_auth_token(tok):
+            return parts[0]
+    return "root"
+
+
 def _verify_auth_token(token):
     """Verify a signed token is valid and not expired.
 
@@ -272,7 +292,18 @@ def _verify_auth_token(token):
     """
     if not token or "." not in token:
         return False
-    ts_hex, sig = token.split(".", 1)
+    parts = token.split(".")
+    # Shapes: <ts>.<sig> (root) or <identity>.<ts>.<sig> (named user).
+    if len(parts) == 3:
+        identity, ts_hex, sig = parts
+        payload = f"{identity}.{ts_hex}"
+        if identity != "root" and not _identity_exists(identity):
+            return False
+    elif len(parts) == 2:
+        ts_hex, sig = parts
+        payload = ts_hex
+    else:
+        return False
     try:
         ts = int(ts_hex, 16)
     except ValueError:
@@ -281,7 +312,7 @@ def _verify_auth_token(token):
         return False
     expected = hmac.new(
         _get_web_password().encode(),
-        ts_hex.encode(),
+        payload.encode(),
         hashlib.sha256,
     ).hexdigest()
     return constant_time_equals(sig, expected)

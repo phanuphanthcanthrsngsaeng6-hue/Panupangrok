@@ -18,6 +18,7 @@ from channel.web.api.artifacts import (  # noqa: F401
     ArtifactRenameHandler, ArtifactsHandler,
 )
 from channel.web.api.auth import (  # noqa: F401
+    AuthRegisterHandler, AuthUsersHandler,
     AuthCheckHandler, AuthLoginHandler, AuthLogoutHandler, McpOAuthCallbackHandler,
 )
 from channel.web.api.waitlist import (  # noqa: F401
@@ -96,6 +97,8 @@ URLS = (
     '/api/waitlist/status', 'WaitlistStatusHandler',
     '/api/waitlist/admin', 'WaitlistAdminHandler',
     '/auth/login', 'AuthLoginHandler',
+    '/auth/register', 'AuthRegisterHandler',
+    '/auth/users', 'AuthUsersHandler',
     '/auth/check', 'AuthCheckHandler',
     '/auth/logout', 'AuthLogoutHandler',
     '/message', 'MessageHandler',

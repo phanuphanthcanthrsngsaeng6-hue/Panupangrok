@@ -1,0 +1,615 @@
+{
+  "seed": 20261114,
+  "tested": 76,
+  "results": [
+    {
+      "model": "qwen3.7-max:free",
+      "http": 500,
+      "ok": false,
+      "text": "",
+      "elapsed": 0.13,
+      "error": "Model not found: qwen3.7-max:free"
+    },
+    {
+      "model": "qwen3.7-max/free",
+      "http": 500,
+      "ok": false,
+      "text": "",
+      "elapsed": 0.11,
+      "error": "Model not found: qwen3.7-max/free"
+    },
+    {
+      "model": "muse-spark-1.1:free",
+      "http": 500,
+      "ok": false,
+      "text": "",
+      "elapsed": 0.14,
+      "error": "Model not found: muse-spark-1.1:free"
+    },
+    {
+      "model": "muse-spark-1.1/free",
+      "http": 500,
+      "ok": false,
+      "text": "",
+      "elapsed": 0.12,
+      "error": "Model not found: muse-spark-1.1/free"
+    },
+    {
+      "model": "gpt-5.6-sol-pro:free",
+      "http": 500,
+      "ok": false,
+      "text": "",
+      "elapsed": 0.14,
+      "error": "Model not found: gpt-5.6-sol-pro:free"
+    },
+    {
+      "model": "gpt-5.6-sol-pro/free",
+      "http": 500,
+      "ok": false,
+      "text": "",
+      "elapsed": 0.13,
+      "error": "Model not found: gpt-5.6-sol-pro/free"
+    },
+    {
+      "model": "reka-flash-3:free",
+      "http": 500,
+      "ok": false,
+      "text": "",
+      "elapsed": 0.11,
+      "error": "Model not found: reka-flash-3:free"
+    },
+    {
+      "model": "reka-flash-3/free",
+      "http": 500,
+      "ok": false,
+      "text": "",
+      "elapsed": 0.12,
+      "error": "Model not found: reka-flash-3/free"
+    },
+    {
+      "model": "magnum-v4-72b:free",
+      "http": 500,
+      "ok": false,
+      "text": "",
+      "elapsed": 0.1,
+      "error": "Model not found: magnum-v4-72b:free"
+    },
+    {
+      "model": "magnum-v4-72b/free",
+      "http": 500,
+      "ok": false,
+      "text": "",
+      "elapsed": 0.12,
+      "error": "Model not found: magnum-v4-72b/free"
+    },
+    {
+      "model": "weaver:free",
+      "http": 500,
+      "ok": false,
+      "text": "",
+      "elapsed": 0.15,
+      "error": "Model not found: weaver:free"
+    },
+    {
+      "model": "weaver/free",
+      "http": 500,
+      "ok": false,
+      "text": "",
+      "elapsed": 0.1,
+      "error": "Model not found: weaver/free"
+    },
+    {
+      "model": "gemma-4-31b-it:free",
+      "http": 500,
+      "ok": false,
+      "text": "",
+      "elapsed": 13.18,
+      "error": "Too many requests."
+    },
+    {
+      "model": "gemma-4-31b-it/free",
+      "http": 500,
+      "ok": false,
+      "text": "",
+      "elapsed": 0.11,
+      "error": "Model not found: gemma-4-31b-it/free"
+    },
+    {
+      "model": "gemma-2-27b-it:free",
+      "http": 500,
+      "ok": false,
+      "text": "",
+      "elapsed": 0.11,
+      "error": "Model not found: gemma-2-27b-it:free"
+    },
+    {
+      "model": "gemma-2-27b-it/free",
+      "http": 500,
+      "ok": false,
+      "text": "",
+      "elapsed": 0.14,
+      "error": "Model not found: gemma-2-27b-it/free"
+    },
+    {
+      "model": "qwen-max:free",
+      "http": 500,
+      "ok": false,
+      "text": "",
+      "elapsed": 0.13,
+      "error": "Model not found: qwen-max:free"
+    },
+    {
+      "model": "qwen-max/free",
+      "http": 500,
+      "ok": false,
+      "text": "",
+      "elapsed": 10.37,
+      "error": "Model not found: qwen-max/free"
+    },
+    {
+      "model": "glm-5.3-flash-abliterated:free",
+      "http": 500,
+      "ok": false,
+      "text": "",
+      "elapsed": 0.1,
+      "error": "Model not found: glm-5.3-flash-abliterated:free"
+    },
+    {
+      "model": "glm-5.3-flash-abliterated/free",
+      "http": 500,
+      "ok": false,
+      "text": "",
+      "elapsed": 0.11,
+      "error": "Model not found: glm-5.3-flash-abliterated/free"
+    },
+    {
+      "model": "lfm-2.5-24b-a2b:free",
+      "http": 500,
+      "ok": false,
+      "text": "",
+      "elapsed": 0.09,
+      "error": "Model not found: lfm-2.5-24b-a2b:free"
+    },
+    {
+      "model": "lfm-2.5-24b-a2b/free",
+      "http": 500,
+      "ok": false,
+      "text": "",
+      "elapsed": 0.09,
+      "error": "Model not found: lfm-2.5-24b-a2b/free"
+    },
+    {
+      "model": "glm-5-turbo:free",
+      "http": 500,
+      "ok": false,
+      "text": "",
+      "elapsed": 0.07,
+      "error": "Model not found: glm-5-turbo:free"
+    },
+    {
+      "model": "glm-5-turbo/free",
+      "http": 500,
+      "ok": false,
+      "text": "",
+      "elapsed": 0.07,
+      "error": "Model not found: glm-5-turbo/free"
+    },
+    {
+      "model": "claude-sonnet-4.6:free",
+      "http": 500,
+      "ok": false,
+      "text": "",
+      "elapsed": 0.09,
+      "error": "Model not found: claude-sonnet-4.6:free"
+    },
+    {
+      "model": "claude-sonnet-4.6/free",
+      "http": 500,
+      "ok": false,
+      "text": "",
+      "elapsed": 0.08,
+      "error": "Model not found: claude-sonnet-4.6/free"
+    },
+    {
+      "model": "qwen-mt-lite:free",
+      "http": 500,
+      "ok": false,
+      "text": "",
+      "elapsed": 0.08,
+      "error": "Model not found: qwen-mt-lite:free"
+    },
+    {
+      "model": "qwen-mt-lite/free",
+      "http": 500,
+      "ok": false,
+      "text": "",
+      "elapsed": 0.07,
+      "error": "Model not found: qwen-mt-lite/free"
+    },
+    {
+      "model": "glm-4.5x:free",
+      "http": 500,
+      "ok": false,
+      "text": "",
+      "elapsed": 0.08,
+      "error": "Model not found: glm-4.5x:free"
+    },
+    {
+      "model": "glm-4.5x/free",
+      "http": 500,
+      "ok": false,
+      "text": "",
+      "elapsed": 0.08,
+      "error": "Model not found: glm-4.5x/free"
+    },
+    {
+      "model": "llama-3.3-70b-instruct-turbo:free",
+      "http": 500,
+      "ok": false,
+      "text": "",
+      "elapsed": 10.29,
+      "error": "Model not found: llama-3.3-70b-instruct-turbo:free"
+    },
+    {
+      "model": "llama-3.3-70b-instruct-turbo/free",
+      "http": 500,
+      "ok": false,
+      "text": "",
+      "elapsed": 10.3,
+      "error": "Model not found: llama-3.3-70b-instruct-turbo/free"
+    },
+    {
+      "model": "gpt-3.5-turbo-instruct:free",
+      "http": 500,
+      "ok": false,
+      "text": "",
+      "elapsed": 10.31,
+      "error": "Model not found: gpt-3.5-turbo-instruct:free"
+    },
+    {
+      "model": "gpt-3.5-turbo-instruct/free",
+      "http": 500,
+      "ok": false,
+      "text": "",
+      "elapsed": 10.28,
+      "error": "Model not found: gpt-3.5-turbo-instruct/free"
+    },
+    {
+      "model": "beam-1.0-501b-a23b:free",
+      "http": 500,
+      "ok": false,
+      "text": "",
+      "elapsed": 0.08,
+      "error": "Model not found: beam-1.0-501b-a23b:free"
+    },
+    {
+      "model": "beam-1.0-501b-a23b/free",
+      "http": 500,
+      "ok": false,
+      "text": "",
+      "elapsed": 0.07,
+      "error": "Model not found: beam-1.0-501b-a23b/free"
+    },
+    {
+      "model": "ministral/free",
+      "http": 500,
+      "ok": false,
+      "text": "",
+      "elapsed": 0.08,
+      "error": "Model not found: ministral/free"
+    },
+    {
+      "model": "zai-org/free",
+      "http": 500,
+      "ok": false,
+      "text": "",
+      "elapsed": 0.08,
+      "error": "Model not found: zai-org/free"
+    },
+    {
+      "model": "inference-net/free",
+      "http": 500,
+      "ok": false,
+      "text": "",
+      "elapsed": 0.09,
+      "error": "Model not found: inference-net/free"
+    },
+    {
+      "model": "gryphe/free",
+      "http": 500,
+      "ok": false,
+      "text": "",
+      "elapsed": 0.08,
+      "error": "Model not found: gryphe/free"
+    },
+    {
+      "model": "heabsy/free",
+      "http": 500,
+      "ok": false,
+      "text": "",
+      "elapsed": 0.08,
+      "error": "Model not found: heabsy/free"
+    },
+    {
+      "model": "nvidia/free",
+      "http": 500,
+      "ok": false,
+      "text": "",
+      "elapsed": 0.07,
+      "error": "Model not found: nvidia/free"
+    },
+    {
+      "model": "dola/free",
+      "http": 500,
+      "ok": false,
+      "text": "",
+      "elapsed": 0.08,
+      "error": "Model not found: dola/free"
+    },
+    {
+      "model": "writer/free",
+      "http": 500,
+      "ok": false,
+      "text": "",
+      "elapsed": 0.08,
+      "error": "Model not found: writer/free"
+    },
+    {
+      "model": "rednote-hilab/free",
+      "http": 500,
+      "ok": false,
+      "text": "",
+      "elapsed": 0.11,
+      "error": "Model not found: rednote-hilab/free"
+    },
+    {
+      "model": "scaledown/free",
+      "http": 500,
+      "ok": false,
+      "text": "",
+      "elapsed": 0.08,
+      "error": "Model not found: scaledown/free"
+    },
+    {
+      "model": "grok/free",
+      "http": 500,
+      "ok": false,
+      "text": "",
+      "elapsed": 0.1,
+      "error": "Model not found: grok/free"
+    },
+    {
+      "model": "microsoft/free",
+      "http": 500,
+      "ok": false,
+      "text": "",
+      "elapsed": 0.07,
+      "error": "Model not found: microsoft/free"
+    },
+    {
+      "model": "glm/free",
+      "http": 500,
+      "ok": false,
+      "text": "",
+      "elapsed": 0.08,
+      "error": "Model not found: glm/free"
+    },
+    {
+      "model": "openrouter/free",
+      "http": 200,
+      "ok": false,
+      "text": "",
+      "elapsed": 1.79,
+      "error": null
+    },
+    {
+      "model": "openrouter:nemotron-3.5-content-safety:free",
+      "http": 500,
+      "ok": false,
+      "text": "",
+      "elapsed": 0.08,
+      "error": "Model not found: openrouter:nemotron-3.5-content-safety:free"
+    },
+    {
+      "model": "infron:nemotron-3.5-content-safety:free",
+      "http": 500,
+      "ok": false,
+      "text": "",
+      "elapsed": 0.13,
+      "error": "Model not found: infron:nemotron-3.5-content-safety:free"
+    },
+    {
+      "model": "openrouter:gemini-3.7-flash:free",
+      "http": 500,
+      "ok": false,
+      "text": "",
+      "elapsed": 0.07,
+      "error": "Model not found: openrouter:gemini-3.7-flash:free"
+    },
+    {
+      "model": "infron:gemini-3.7-flash:free",
+      "http": 500,
+      "ok": false,
+      "text": "",
+      "elapsed": 0.08,
+      "error": "Model not found: infron:gemini-3.7-flash:free"
+    },
+    {
+      "model": "openrouter:deepseek-v4-pro:flex:free",
+      "http": 500,
+      "ok": false,
+      "text": "",
+      "elapsed": 10.27,
+      "error": "Model not found: openrouter:deepseek-v4-pro:flex:free"
+    },
+    {
+      "model": "infron:deepseek-v4-pro:flex:free",
+      "http": 500,
+      "ok": false,
+      "text": "",
+      "elapsed": 0.07,
+      "error": "Model not found: infron:deepseek-v4-pro:flex:free"
+    },
+    {
+      "model": "openrouter:o3-mini-high:free",
+      "http": 500,
+      "ok": false,
+      "text": "",
+      "elapsed": 0.08,
+      "error": "Model not found: openrouter:o3-mini-high:free"
+    },
+    {
+      "model": "infron:o3-mini-high:free",
+      "http": 500,
+      "ok": false,
+      "text": "",
+      "elapsed": 0.09,
+      "error": "Model not found: infron:o3-mini-high:free"
+    },
+    {
+      "model": "openrouter:qwen3.5-0.8b:free",
+      "http": 500,
+      "ok": false,
+      "text": "",
+      "elapsed": 10.28,
+      "error": "Model not found: openrouter:qwen3.5-0.8b:free"
+    },
+    {
+      "model": "infron:qwen3.5-0.8b:free",
+      "http": 500,
+      "ok": false,
+      "text": "",
+      "elapsed": 10.36,
+      "error": "Model not found: infron:qwen3.5-0.8b:free"
+    },
+    {
+      "model": "openrouter:deepseek-v3.1:free",
+      "http": 500,
+      "ok": false,
+      "text": "",
+      "elapsed": 10.34,
+      "error": "Model not found: openrouter:deepseek-v3.1:free"
+    },
+    {
+      "model": "infron:deepseek-v3.1:free",
+      "http": 500,
+      "ok": false,
+      "text": "",
+      "elapsed": 8.27,
+      "error": "Model not found: infron:deepseek-v3.1:free"
+    },
+    {
+      "model": "openrouter:gpt-5.2-2025-12-11:free",
+      "http": 500,
+      "ok": false,
+      "text": "",
+      "elapsed": 8.21,
+      "error": "Model not found: openrouter:gpt-5.2-2025-12-11:free"
+    },
+    {
+      "model": "infron:gpt-5.2-2025-12-11:free",
+      "http": 500,
+      "ok": false,
+      "text": "",
+      "elapsed": 0.07,
+      "error": "Model not found: infron:gpt-5.2-2025-12-11:free"
+    },
+    {
+      "model": "openrouter:glm-4.5v:free",
+      "http": 500,
+      "ok": false,
+      "text": "",
+      "elapsed": 0.07,
+      "error": "Model not found: openrouter:glm-4.5v:free"
+    },
+    {
+      "model": "infron:glm-4.5v:free",
+      "http": 500,
+      "ok": false,
+      "text": "",
+      "elapsed": 0.07,
+      "error": "Model not found: infron:glm-4.5v:free"
+    },
+    {
+      "model": "openrouter:nova-pro-v1:free",
+      "http": 500,
+      "ok": false,
+      "text": "",
+      "elapsed": 0.07,
+      "error": "Model not found: openrouter:nova-pro-v1:free"
+    },
+    {
+      "model": "infron:nova-pro-v1:free",
+      "http": 500,
+      "ok": false,
+      "text": "",
+      "elapsed": 0.08,
+      "error": "Model not found: infron:nova-pro-v1:free"
+    },
+    {
+      "model": "openrouter:palmyra-x5:free",
+      "http": 500,
+      "ok": false,
+      "text": "",
+      "elapsed": 0.08,
+      "error": "Model not found: openrouter:palmyra-x5:free"
+    },
+    {
+      "model": "infron:palmyra-x5:free",
+      "http": 500,
+      "ok": false,
+      "text": "",
+      "elapsed": 0.08,
+      "error": "Model not found: infron:palmyra-x5:free"
+    },
+    {
+      "model": "free",
+      "http": 200,
+      "ok": false,
+      "text": "",
+      "elapsed": 1.18,
+      "error": null
+    },
+    {
+      "model": "qwen/free",
+      "http": 500,
+      "ok": false,
+      "text": "",
+      "elapsed": 0.08,
+      "error": "Model not found: qwen/free"
+    },
+    {
+      "model": "deepseek/free",
+      "http": 500,
+      "ok": false,
+      "text": "",
+      "elapsed": 0.08,
+      "error": "Model not found: deepseek/free"
+    },
+    {
+      "model": "gemini/free",
+      "http": 500,
+      "ok": false,
+      "text": "",
+      "elapsed": 0.08,
+      "error": "Model not found: gemini/free"
+    },
+    {
+      "model": "llama/free",
+      "http": 500,
+      "ok": false,
+      "text": "",
+      "elapsed": 0.07,
+      "error": "Model not found: llama/free"
+    },
+    {
+      "model": "mistral/free",
+      "http": 500,
+      "ok": false,
+      "text": "",
+      "elapsed": 0.09,
+      "error": "Model not found: mistral/free"
+    }
+  ],
+  "passed": []
+}

@@ -65,7 +65,7 @@ requestAnimationFrame(() => {
     BoltStyleChat.mount('#bolt-chat-root', {
       onSend: (text, model) => {
         console.log('📤 BoltChat ส่ง:', text, '| Model:', model.name);
-        const chatInput = document.getElementById('chatInput');
+        const chatInput = document.getElementById('chat-input');
         if (chatInput) {
           chatInput.value = text;
           chatInput.dispatchEvent(new Event('input', { bubbles: true }));

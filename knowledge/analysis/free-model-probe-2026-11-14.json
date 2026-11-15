@@ -1,0 +1,25 @@
+{
+  "endpoint": "http://127.0.0.1:8741/v1/chat/completions",
+  "probe": "ตอบคำว่า OK เท่านั้น",
+  "tested_count": 37,
+  "initial_pass_count": 2,
+  "retry": {
+    "infron:qwen/qwen3.8-27b:free": [
+      {"http": 200, "text": "OK", "ok": true},
+      {"http": 200, "text": "OK", "ok": true}
+    ],
+    "openrouter:google/gemma-4-31b-it:free": [
+      {"http": 200, "text": "OK", "ok": true},
+      {"http": 500, "text": "", "ok": false}
+    ],
+    "free": [
+      {"http": 200, "text": "", "ok": false},
+      {"http": 200, "text": "", "ok": false}
+    ]
+  },
+  "filtered_final": {
+    "stable": ["infron:qwen/qwen3.8-27b:free"],
+    "intermittent": ["openrouter:google/gemma-4-31b-it:free"],
+    "not_usable_in_this_probe": ["free"]
+  }
+}

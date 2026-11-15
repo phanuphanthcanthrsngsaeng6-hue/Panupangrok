@@ -1,0 +1,19 @@
+{
+  "name": "@nova/manus-api",
+  "version": "1.0.0",
+  "description": "Manus Bridge - expose the Manus agent (api.manus.ai/v2) as an OpenAI-compatible API server",
+  "type": "module",
+  "main": "src/server.js",
+  "bin": {
+    "manus-api": "./src/cli.js"
+  },
+  "scripts": {
+    "start": "node src/server.js",
+    "status": "node src/cli.js status",
+    "stop": "node src/cli.js stop"
+  },
+  "keywords": ["manus", "openai", "api", "bridge", "agent", "llm"],
+  "engines": { "node": ">=18.0.0" },
+  "license": "MIT",
+  "private": true
+}

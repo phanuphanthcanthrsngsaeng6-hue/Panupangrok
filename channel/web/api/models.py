@@ -891,12 +891,24 @@ class ModelsHandler:
             m = model.strip().lower()
             if not m:
                 return ""
+            # When Codex CLI is the configured provider, every chat model routes
+            # to the local `codex exec` (+ its ChatGPT login) rather than to any
+            # HTTP endpoint — otherwise the gpt-* prefix rule below would send
+            # these names to the openai api_base (the Puter proxy).
+            try:
+                from config import conf as _conf
+                if str(_conf().get("bot_type") or "").strip() == "codex":
+                    return "codex"
+            except Exception:
+                pass
             # Exact matches first (models whose name isn't a clean prefix).
             exact = {
                 "wenxin": "qianfan",
                 "wenxin-4": "qianfan",
                 "abab6.5": "minimax",
                 "abab6.5-chat": "minimax",
+                "codex-auto-review": "codex",
+                "gpt-reserve": "codex",
             }
             if m in exact:
                 return exact[m]

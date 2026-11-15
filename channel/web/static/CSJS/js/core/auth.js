@@ -50,69 +50,124 @@ function showLoginScreen() {
 
     const subtitle = document.getElementById('login-subtitle');
     const loginBtn = document.getElementById('login-btn');
-    if (currentLang === 'en') {
-        subtitle.textContent = 'Enter password to access the console';
-        loginBtn.textContent = 'Login';
-    } else if (currentLang === 'zh-Hant') {
-        subtitle.textContent = 'กรุณาใส่รหัสผ่านเพื่อเข้าสู่ระบบ';
-        loginBtn.textContent = 'เข้าสู่ระบบ';
-    } else {
-        subtitle.textContent = 'กรุณาใส่รหัสผ่านเพื่อเข้าสู่ระบบ';
-        loginBtn.textContent = 'เข้าสู่ระบบ';
+    const switchBtn = document.getElementById('login-switch-mode');
+    const userWrap = document.getElementById('login-username-wrap');
+    const confirmWrap = document.getElementById('login-confirm-wrap');
+    const errEl = document.getElementById('login-error');
+    const pwdInput = document.getElementById('login-password');
+    const userInput = document.getElementById('login-username');
+    const confirmInput = document.getElementById('login-confirm');
+    const form = document.getElementById('login-form');
+
+    let mode = 'login';   // 'login' | 'register'
+
+    function renderMode() {
+        errEl.classList.add('hidden');
+        if (mode === 'login') {
+            subtitle.textContent = currentLang === 'en' ? 'Sign in to the console' : 'กรุณาเข้าสู่ระบบ';
+            loginBtn.textContent = currentLang === 'en' ? 'Sign in' : 'เข้าสู่ระบบ';
+            switchBtn.textContent = currentLang === 'en' ? 'Create a new account' : 'สมัครผู้ใช้ใหม่';
+            confirmWrap.classList.add('hidden');
+            userWrap.classList.remove('hidden');
+            userInput.placeholder = currentLang === 'en' ? 'Username (blank = root)' : 'ชื่อผู้ใช้ (เว้นว่าง = root)';
+        } else {
+            subtitle.textContent = currentLang === 'en' ? 'Create a new account' : 'สมัครผู้ใช้ใหม่';
+            loginBtn.textContent = currentLang === 'en' ? 'Create account' : 'สมัครสมาชิก';
+            switchBtn.textContent = currentLang === 'en' ? 'Back to sign in' : 'กลับไปเข้าสู่ระบบ';
+            confirmWrap.classList.remove('hidden');
+            userWrap.classList.remove('hidden');
+            userInput.placeholder = currentLang === 'en' ? 'Username (1-32 chars)' : 'ชื่อผู้ใช้ (1-32 ตัว)';
+        }
     }
 
-    const form = document.getElementById('login-form');
-    const pwdInput = document.getElementById('login-password');
+    switchBtn.onclick = () => {
+        mode = mode === 'login' ? 'register' : 'login';
+        renderMode();
+        (mode === 'register' ? userInput : pwdInput).focus();
+    };
+
+    renderMode();
+    pwdInput.value = '';
+    userInput.value = '';
+    confirmInput.value = '';
     pwdInput.focus();
 
     form.onsubmit = function(e) {
         e.preventDefault();
+        const username = (userInput.value || '').trim();
         const pwd = pwdInput.value;
         if (!pwd) return;
-        const btn = document.getElementById('login-btn');
-        const errEl = document.getElementById('login-error');
-        btn.disabled = true;
         errEl.classList.add('hidden');
 
+        if (mode === 'register') {
+            if (!username) { showErr('กรุณาใส่ชื่อผู้ใช้', 'Enter a username'); return; }
+            if (pwd.length < 4) { showErr('รหัสผ่านต้องอย่างน้อย 4 ตัว', 'Password must be at least 4 characters'); return; }
+            if (pwd !== confirmInput.value) { showErr('รหัสผ่านไม่ตรงกัน', 'Passwords do not match'); return; }
+            loginBtn.disabled = true;
+            fetch('/auth/register', {
+                method: 'POST',
+                headers: {'Content-Type': 'application/json'},
+                body: JSON.stringify({username, password: pwd})
+            }).then(r => r.json()).then(data => {
+                loginBtn.disabled = false;
+                if (data.status === 'success') {
+                    mode = 'login';
+                    renderMode();
+                    pwdInput.value = '';
+                    confirmInput.value = '';
+                    userInput.value = data.username || username;
+                    errEl.classList.add('hidden');
+                    pwdInput.focus();
+                    // แจ้งผลด้วย toast สั้นๆ
+                    if (window.showToast) showToast('สมัครสำเร็จ — เข้าสู่ระบบได้เลย');
+                } else {
+                    errEl.textContent = data.message || 'สมัครไม่สำเร็จ';
+                    errEl.classList.remove('hidden');
+                }
+            }).catch(() => {
+                loginBtn.disabled = false;
+                errEl.textContent = 'เน็ตผิดพลาด กรุณาลองใหม่';
+                errEl.classList.remove('hidden');
+            });
+            return false;
+        }
+
+        // ---- login ----
+        loginBtn.disabled = true;
         fetch('/auth/login', {
             method: 'POST',
             headers: {'Content-Type': 'application/json'},
-            body: JSON.stringify({password: pwd})
+            body: JSON.stringify({username: username, password: pwd})
         }).then(r => r.json()).then(data => {
+            loginBtn.disabled = false;
             if (data.status === 'success') {
                 overlay.classList.add('hidden');
                 document.getElementById('app').classList.remove('hidden');
                 const logoutBtn = document.getElementById('logout-btn-header');
                 if (logoutBtn) logoutBtn.classList.remove('hidden');
-                // Now that the auth cookie is set, release the parked pollers.
+                window.__identity = data.identity || 'root';
                 openAuthGate();
                 initApp();
             } else {
-                if (currentLang === 'zh-Hant') {
-                    errEl.textContent = 'รหัสผ่านผิด';
-                } else if (currentLang === 'zh') {
-                    errEl.textContent = 'รหัสผ่านผิด';
-                } else {
-                    errEl.textContent = 'Wrong password';
-                }
+                errEl.textContent = currentLang === 'en'
+                    ? (data.message || 'Wrong credentials')
+                    : (data.message || 'ชื่อผู้ใช้หรือรหัสผ่านไม่ถูกต้อง');
                 errEl.classList.remove('hidden');
                 pwdInput.value = '';
                 pwdInput.focus();
             }
-            btn.disabled = false;
         }).catch(() => {
-            if (currentLang === 'zh-Hant') {
-                errEl.textContent = 'เน็ตผิดพลาด กรุณาลองใหม่';
-            } else if (currentLang === 'zh') {
-                errEl.textContent = 'เน็ตผิดพลาด กรุณาลองใหม่';
-            } else {
-                errEl.textContent = 'Network error, please retry';
-            }
+            loginBtn.disabled = false;
+            errEl.textContent = 'เน็ตผิดพลาด กรุณาลองใหม่';
             errEl.classList.remove('hidden');
-            btn.disabled = false;
         });
         return false;
     };
+
+    function showErr(th, en) {
+        errEl.textContent = currentLang === 'en' ? en : th;
+        errEl.classList.remove('hidden');
+    }
 }
 
 function handleLogout() {

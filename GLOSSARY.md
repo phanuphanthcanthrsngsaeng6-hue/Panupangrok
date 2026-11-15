@@ -300,3 +300,9 @@
 ---
 
 > **Next steps**: เมื่อมีคำใหม่ หรือขอบเขตเปลี่ยน (เช่น platform contract v2, marketplace) → อัปเดตไฟล์นี้ทันที พร้อม commit message อธิบาย *why* เปลี่ยน
+
+## 📝 Change Log Addendum
+
+| Date | Change | Author |
+|------|--------|--------|
+| 2026-11-14 | ผูก Subagent ให้ใช้ `openai/free` ด้วย model override แยก state จาก Parent; เพิ่มค่าใน `config.json`; ตรวจ syntax และ isolation ผ่านแล้ว แต่ยังรอ end-to-end runtime test | Puter codex XAI |

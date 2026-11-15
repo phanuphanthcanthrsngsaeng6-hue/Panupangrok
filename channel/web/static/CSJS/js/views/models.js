@@ -1613,7 +1613,7 @@ function rebuildCapabilityModelDropdown(def, providerId, selectedModel, scope) {
         // TTS voice catalog may be scoped per engine model (aggregating
         // gateways). Rebuild the voice picker whenever the model changes.
         if (def.id === 'tts') {
-            const provDd = document.getElementById('cap-tts-provider');
+            const provDd = root.querySelector('#cap-tts-provider');
             const provId = provDd ? getDropdownValue(provDd) : '';
             rebuildCapabilityVoiceDropdown(provId, '', null, value);
         }

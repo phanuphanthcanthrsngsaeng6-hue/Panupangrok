@@ -1,0 +1,23 @@
+{
+  "endpoint": "http://127.0.0.1:8741/v1",
+  "gateway_model_count": 945,
+  "provider_groups": {
+    "unprefixed": 182,
+    "kimi": 1,
+    "zhipu": 2,
+    "infron": 369,
+    "openrouter": 365,
+    "togetherai": 26
+  },
+  "namespace_provider_count": 5,
+  "default_group_count": 1,
+  "results": [
+    {"group":"unprefixed","model":"qwen-flash","http":200,"ok":true,"text":"OK"},
+    {"group":"kimi","model":"kimi/kimi-k3","http":500,"ok":false,"error":"AI provider unavailable"},
+    {"group":"zhipu","model":"zhipu/glm-5.3","http":200,"ok":false,"text":""},
+    {"group":"infron","model":"infron:qwen/qwen3.8-27b:free","http":200,"ok":true,"text":"OK"},
+    {"group":"openrouter","model":"openrouter:google/gemma-4-31b-it:free","http":200,"ok":true,"text":"OK"},
+    {"group":"togetherai","model":"togetherai:deepseek-ai/deepseek-v4.1-flash","http":200,"ok":false,"text":""}
+  ],
+  "message_pass_groups": ["unprefixed","infron","openrouter"]
+}

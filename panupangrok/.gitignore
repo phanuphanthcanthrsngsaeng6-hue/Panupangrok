@@ -1,0 +1,15 @@
+config/config.json
+config/config.json.*
+.env
+.env.*
+secrets*.json
+*.log
+*.pid
+*.db
+*.db-*
+.runtime/
+__pycache__/
+*.pyc
+.venv/
+user_datas.pkl
+session_prefs.json

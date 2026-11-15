@@ -1,0 +1,161 @@
+<!doctype html>
+<html lang="th">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Puter Login Test — PanupanGrok</title>
+<script src="https://js.puter.com/v2/"></script>
+<style>
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; min-height: 100dvh; display: flex; align-items: center; justify-content: center;
+    font-family: -apple-system, "Segoe UI", Roboto, sans-serif;
+    background: #0A0A0A; color: #E5E5E5; padding: 20px;
+  }
+  .card {
+    width: 100%; max-width: 560px; background: #111; border: 1px solid rgba(255,255,255,.1);
+    border-radius: 16px; padding: 32px;
+  }
+  h1 { margin: 0 0 6px; font-size: 22px; }
+  .sub { color: #888; font-size: 13px; margin-bottom: 24px; }
+  button {
+    width: 100%; padding: 13px; border-radius: 10px; border: 0; cursor: pointer;
+    font-size: 15px; font-weight: 600; transition: .15s;
+  }
+  #signin { background: #00B4D8; color: #001018; }
+  #signin:hover { background: #0096B5; }
+  #signout { background: transparent; color: #EF4444; border: 1px solid #EF4444; margin-top: 10px; }
+  .row { display: flex; gap: 8px; margin-top: 12px; }
+  .row select, .row input {
+    flex: 1; padding: 11px; border-radius: 10px; background: #1A1A1A;
+    border: 1px solid rgba(255,255,255,.12); color: #E5E5E5; font-size: 14px;
+  }
+  .row button { width: auto; padding: 11px 18px; background: #7B61FF; color: #fff; }
+  #status {
+    margin-top: 18px; padding: 12px; border-radius: 10px; font-size: 13px;
+    background: #1A1A1A; border: 1px solid rgba(255,255,255,.08);
+    white-space: pre-wrap; word-break: break-word; max-height: 260px; overflow: auto;
+    font-family: ui-monospace, monospace;
+  }
+  .ok { color: #22C55E; } .err { color: #EF4444; } .warn { color: #F59E0B; }
+  #out {
+    margin-top: 12px; padding: 14px; border-radius: 10px; font-size: 14px; line-height: 1.6;
+    background: #0F1F1A; border: 1px solid rgba(34,197,94,.3); display: none;
+  }
+  .hint { font-size: 12px; color: #666; margin-top: 14px; }
+</style>
+</head>
+<body>
+<div class="card">
+  <h1>🔐 Puter Login Test</h1>
+  <div class="sub">ล็อกอิน Puter แล้วใช้โมเดลได้ทันที — ไม่ต้องมี API key</div>
+
+  <button id="signin">Sign in with Puter</button>
+  <button id="signout" style="display:none">Sign out</button>
+
+  <div class="row" id="chatRow" style="display:none">
+    <select id="model">
+      <option value="gpt-5.4-nano">gpt-5.4-nano</option>
+      <option value="gpt-5.4-mini">gpt-5.4-mini</option>
+      <option value="gemini-2.5-flash-lite">gemini-2.5-flash-lite</option>
+      <option value="qwen-flash">qwen-flash</option>
+      <option value="deepseek-v4.1-flash-1017">deepseek-v4.1-flash-1017</option>
+      <option value="claude-sonnet-4">claude-sonnet-4</option>
+    </select>
+    <input id="prompt" value="ตอบคำว่า OK เท่านั้น" />
+    <button id="ask">ถาม</button>
+  </div>
+
+  <div id="status">พร้อมทดสอบ — กด "Sign in with Puter"</div>
+  <div id="out"></div>
+
+  <div class="hint">
+    ทดสอบ: (1) ล็อกอิน popup ขึ้นไหม (2) ได้ token ไหม (3) โมเดลตอบไหม — ไม่มีการกรอก key ใดๆ
+  </div>
+</div>
+
+<script>
+const $ = id => document.getElementById(id);
+const log = (msg, cls = '') => {
+  const el = $('status');
+  const time = new Date().toLocaleTimeString('th-TH');
+  el.innerHTML += `\n<span class="${cls}">[${time}] ${msg}</span>`;
+  el.scrollTop = el.scrollHeight;
+};
+const reset = msg => { $('status').innerHTML = `<span class="warn">${msg}</span>`; };
+
+// ---------- 0. ตรวจว่า puter SDK โหลดไหม ----------
+if (typeof puter === 'undefined') {
+  reset('❌ puter SDK โหลดไม่สำเร็จ — ตรวจเน็ต/CSP');
+} else {
+  reset('✅ puter SDK พร้อมใช้งาน (v2)');
+}
+
+// ---------- 1. Sign in ----------
+$('signin').onclick = async () => {
+  reset('กำลังเปิด popup ล็อกอิน...');
+  try {
+    const signedIn = await puter.auth.signIn();
+    log('signIn() → ' + JSON.stringify(signedIn), 'ok');
+
+    // ตรวจ token
+    let token = null;
+    try {
+      token = await puter.auth.getToken();
+      log('ได้ token: ' + (token ? token.slice(0, 24) + '...' : '(ว่าง)'), token ? 'ok' : 'err');
+    } catch (e) {
+      log('getToken() error: ' + e.message, 'err');
+    }
+
+    // ข้อมูลผู้ใช้
+    try {
+      const me = await puter.auth.getUser();
+      log('ผู้ใช้: ' + (me && (me.username || me.email) || JSON.stringify(me)), 'ok');
+    } catch (e) {
+      log('getUser() error: ' + e.message, 'warn');
+    }
+
+    $('signin').style.display = 'none';
+    $('signout').style.display = 'block';
+    $('chatRow').style.display = 'flex';
+    log('✅ ล็อกอินสำเร็จ — พร้อมถามโมเดล', 'ok');
+  } catch (e) {
+    log('❌ signIn error: ' + (e && (e.message || e.error || JSON.stringify(e))), 'err');
+  }
+};
+
+// ---------- 2. Sign out ----------
+$('signout').onclick = async () => {
+  try { await puter.auth.signOut(); } catch (e) {}
+  $('signin').style.display = 'block';
+  $('signout').style.display = 'none';
+  $('chatRow').style.display = 'none';
+  $('out').style.display = 'none';
+  reset('ออกจากระบบแล้ว');
+};
+
+// ---------- 3. ถามโมเดล (ไม่มี key) ----------
+$('ask').onclick = async () => {
+  const model = $('model').value;
+  const prompt = $('prompt').value;
+  log(`ถาม ${model} ...`);
+  const t0 = performance.now();
+  try {
+    const resp = await puter.ai.chat(prompt, { model });
+    const ms = Math.round(performance.now() - t0);
+    const text = typeof resp === 'string' ? resp
+      : (resp && resp.message && resp.message.content)
+      || (resp && resp.text)
+      || JSON.stringify(resp);
+    $('out').style.display = 'block';
+    $('out').textContent = text;
+    log(`✅ ${model} ตอบใน ${ms}ms`, 'ok');
+    $('out').insertAdjacentHTML('beforeend',
+      `<div class="hint">model=${model} · ${ms}ms · ไม่ใช้ API key</div>`);
+  } catch (e) {
+    log('❌ ai.chat error: ' + (e && (e.message || JSON.stringify(e))), 'err');
+  }
+};
+</script>
+</body>
+</html>

@@ -28,6 +28,9 @@ available_setting = {
     # openai api protocol: "auto" (Responses only for models that require it), "chat" (/chat/completions) or "responses" (/responses)
     "open_ai_api_type": "auto",
     "claude_api_base": "https://api.anthropic.com/v1",  # claude api base
+    # Manus Account API credentials, also accepted from MANUS_API_KEY.
+    "manus_api_key": "",
+    "manus_api_base": "https://api.manus.ai",
     # Prompt cache TTL for the system prompt + tools in agent mode: "1h" or "5m".
     # Use "5m" if the endpoint rejects the 1h TTL; the conversation always uses 5m.
     "claude_cache_ttl": "1h",

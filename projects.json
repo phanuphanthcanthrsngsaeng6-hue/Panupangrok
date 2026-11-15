@@ -7,13 +7,31 @@
     "agent-umukch::session_234d2e93-4154-4680-99f1-4702d415952d": {
       "path": "/data/data/com.termux/files/home/projects/NovaAgent-Brandable/cowbase/projects/Panupan01",
       "ts": 1792176105.6277227
+    },
+    "puter-codex-xai::session_e5be3506-e1d5-47d6-b32f-9a532bc2b7e4": {
+      "path": "/data/data/com.termux/files/home/NovaAgent-Brandable",
+      "ts": 1794672547.3897874
+    },
+    "default::session_76c0e18c-172d-41b3-8f45-35a9d1388b2f": {
+      "path": "/data/data/com.termux/files/home",
+      "ts": 1794757950.4222784
     }
   },
   "recents": [
     {
+      "path": "/data/data/com.termux/files/home",
+      "name": "home",
+      "ts": 1794757950.422304
+    },
+    {
+      "path": "/data/data/com.termux/files/home/NovaAgent-Terminal",
+      "name": "NovaAgent-Terminal",
+      "ts": 1794752159.9778554
+    },
+    {
       "path": "/data/data/com.termux/files/home/NovaAgent-Brandable",
       "name": "NovaAgent-Brandable",
-      "ts": 1792233092.1433644
+      "ts": 1794672547.3898191
     },
     {
       "path": "/data/data/com.termux/files/home/projects/NovaAgent-Brandable/cowbase/projects/Panupan01",

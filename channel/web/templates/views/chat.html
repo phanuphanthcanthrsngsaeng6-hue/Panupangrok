@@ -93,6 +93,12 @@
                     <!-- Chat Input -->
                     <div class="flex-shrink-0 border-t border-slate-200 dark:border-white/10 bg-white dark:bg-[#1A1A1A] px-4 py-3">
                         <div class="max-w-3xl mx-auto">
+                            <!-- Puter status: อยู่ในหน้า (ไม่ลอย) แสดงเมื่อยังไม่เชื่อมต่อ Puter -->
+                            <div id="puter-gate" class="puter-gate hidden">
+                                <span class="puter-gate-icon"><i class="fas fa-plug"></i></span>
+                                <span id="puter-gate-msg" class="puter-gate-msg">เชื่อมต่อ Puter เพื่อใช้โมเดล AI (ไม่ต้องมี API key)</span>
+                                <button id="puter-gate-btn" class="puter-gate-btn" type="button">ล็อกอิน Puter</button>
+                            </div>
                             <!-- Composer card: text on top, session controls along the bottom -->
                             <div id="composer-card" class="composer-card">
                                 <!-- Attachment preview: scrolls horizontally above the text -->

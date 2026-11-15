@@ -151,10 +151,22 @@ PROVIDER_MODELS = OrderedDict([
     ("manus", {
         "label": "Manus",
         "api_key_field": "manus_api_key",
-        "api_base_key": "manus_api_base",
-        "api_base_default": "https://api.manus.ai",
-        "api_base_placeholder": "https://api.manus.ai",
+        "api_base_key": "manus_bridge_api_base",
+        "api_base_default": "http://127.0.0.1:8742/v1",
+        "api_base_placeholder": "http://127.0.0.1:8742/v1",
+        # Served by the local manus-api bridge (OpenAI-compatible). Requests are
+        # proxied to api.manus.ai/v2 as agent tasks.
         "models": [const.MANUS_2_0_LITE, const.MANUS_2_0],
+    }),
+    # Local Codex CLI (shells out to `codex exec`); no HTTP endpoint, no API key
+    # — authentication comes from the machine's own ChatGPT login.
+    ("codex", {
+        "label": {"zh": "Codex CLI", "en": "Codex CLI"},
+        "api_key_field": "",
+        "api_base_key": "",
+        "api_base_default": "",
+        "api_base_placeholder": "local CLI (ChatGPT login)",
+        "models": ["gpt-6-luna", "gpt-6-astra", "gpt-6.1-sol", "gpt-6.1-terra", "gpt-6-sol", "gpt-5.6-luna", "gpt-5.6-terra", "gpt-5.6-sol", "gpt-5.5"],
     }),
 ])
 

@@ -1,0 +1,163 @@
+{
+  "catalog_free_ids": [
+    "infron:qwen/qwen3.8-27b:free",
+    "openrouter:baidu/ernie-5.5-flash-preview:free",
+    "openrouter:cohere/north-mini-code:free",
+    "openrouter:google/gemma-4-26b-a4b-it:free",
+    "openrouter:google/gemma-4-31b-it:free",
+    "openrouter:inclusionai/ling-3.2-flash:free",
+    "openrouter:liquid/lfm-3-1.7b:free",
+    "openrouter:nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free",
+    "openrouter:nvidia/nemotron-3-ultra-550b-a55b:free",
+    "openrouter:nvidia/nemotron-3.5-lightning:free",
+    "openrouter:nvidia/nemotron-3.5-super-vl:free",
+    "openrouter:openrouter/free",
+    "openrouter:particle-ai/particle-1:free",
+    "openrouter:recursive/flint-v1.0:free",
+    "openrouter:thinkingmachines/inkling-2-small:free"
+  ],
+  "results": [
+    {
+      "model": "infron:qwen/qwen3.8-27b:free",
+      "http": 200,
+      "text": "OK",
+      "ok": true,
+      "retries": [
+        {
+          "model": "infron:qwen/qwen3.8-27b:free",
+          "http": 200,
+          "text": "OK",
+          "ok": true
+        },
+        {
+          "model": "infron:qwen/qwen3.8-27b:free",
+          "http": 200,
+          "text": "OK",
+          "ok": true
+        }
+      ],
+      "stable": true
+    },
+    {
+      "model": "openrouter:google/gemma-4-26b-a4b-it:free",
+      "http": 200,
+      "text": "OK",
+      "ok": true,
+      "retries": [
+        {
+          "model": "openrouter:google/gemma-4-26b-a4b-it:free",
+          "http": 200,
+          "text": "OK",
+          "ok": true
+        },
+        {
+          "model": "openrouter:google/gemma-4-26b-a4b-it:free",
+          "http": 500,
+          "text": "",
+          "ok": false
+        }
+      ],
+      "stable": false
+    },
+    {
+      "model": "openrouter:liquid/lfm-3-1.7b:free",
+      "http": 200,
+      "text": "",
+      "ok": false
+    },
+    {
+      "model": "openrouter:nvidia/nemotron-3.5-lightning:free",
+      "http": 200,
+      "text": "",
+      "ok": false
+    },
+    {
+      "model": "openrouter:particle-ai/particle-1:free",
+      "http": 200,
+      "text": "",
+      "ok": false
+    },
+    {
+      "model": "openrouter:baidu/ernie-5.5-flash-preview:free",
+      "http": 200,
+      "text": "",
+      "ok": false
+    },
+    {
+      "model": "openrouter:google/gemma-4-31b-it:free",
+      "http": 200,
+      "text": "OK",
+      "ok": true,
+      "retries": [
+        {
+          "model": "openrouter:google/gemma-4-31b-it:free",
+          "http": 500,
+          "text": "",
+          "ok": false
+        },
+        {
+          "model": "openrouter:google/gemma-4-31b-it:free",
+          "http": 500,
+          "text": "",
+          "ok": false
+        }
+      ],
+      "stable": false
+    },
+    {
+      "model": "openrouter:nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free",
+      "http": 200,
+      "text": "",
+      "ok": false
+    },
+    {
+      "model": "openrouter:nvidia/nemotron-3.5-super-vl:free",
+      "http": 200,
+      "text": "",
+      "ok": false
+    },
+    {
+      "model": "openrouter:recursive/flint-v1.0:free",
+      "http": 200,
+      "text": "",
+      "ok": false
+    },
+    {
+      "model": "openrouter:cohere/north-mini-code:free",
+      "http": 200,
+      "text": "",
+      "ok": false
+    },
+    {
+      "model": "openrouter:inclusionai/ling-3.2-flash:free",
+      "http": 200,
+      "text": "",
+      "ok": false
+    },
+    {
+      "model": "openrouter:nvidia/nemotron-3-ultra-550b-a55b:free",
+      "http": 200,
+      "text": "",
+      "ok": false
+    },
+    {
+      "model": "openrouter:openrouter/free",
+      "http": 200,
+      "text": "",
+      "ok": false
+    },
+    {
+      "model": "openrouter:thinkingmachines/inkling-2-small:free",
+      "http": 500,
+      "text": "",
+      "ok": false
+    }
+  ],
+  "stable": [
+    "infron:qwen/qwen3.8-27b:free"
+  ],
+  "intermittent": [
+    "openrouter:google/gemma-4-26b-a4b-it:free",
+    "openrouter:google/gemma-4-31b-it:free"
+  ]
+}

@@ -1,0 +1,45 @@
+{
+  "results": [
+    {
+      "model": "openrouter:baidu/ernie-5.5-flash-preview:free",
+      "http": 200,
+      "ok": false,
+      "text": "",
+      "elapsed": 1.15,
+      "error": null
+    },
+    {
+      "model": "openrouter:inclusionai/ling-3.2-flash:free",
+      "http": 200,
+      "ok": false,
+      "text": "",
+      "elapsed": 1.84,
+      "error": null
+    },
+    {
+      "model": "openrouter:liquid/lfm-3-1.7b:free",
+      "http": 200,
+      "ok": false,
+      "text": "",
+      "elapsed": 1.12,
+      "error": null
+    },
+    {
+      "model": "openrouter:particle-ai/particle-1:free",
+      "http": 200,
+      "ok": false,
+      "text": "",
+      "elapsed": 0.92,
+      "error": null
+    },
+    {
+      "model": "openrouter:thinkingmachines/inkling-2-small:free",
+      "http": 500,
+      "ok": false,
+      "text": "",
+      "elapsed": 0.13,
+      "error": "AI provider authentication failed"
+    }
+  ],
+  "passed": []
+}

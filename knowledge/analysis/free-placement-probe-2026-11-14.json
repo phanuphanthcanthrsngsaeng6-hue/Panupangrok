@@ -1,0 +1,1769 @@
+{
+  "catalog_total": 945,
+  "generated": 220,
+  "results": [
+    {
+      "model": "cohere/command-r-plus-08-2024-free",
+      "http": 500,
+      "ok": false,
+      "text": "",
+      "elapsed": 0.14,
+      "error": "Model not found: cohere/command-r-plus-08-2024-free"
+    },
+    {
+      "model": "free-reflection/beam-1.0-501b-a23b",
+      "http": 500,
+      "ok": false,
+      "text": "",
+      "elapsed": 0.15,
+      "error": "Model not found: free-reflection/beam-1.0-501b-a23b"
+    },
+    {
+      "model": "openrouter:~anthropic/claude-haiku-latest:free",
+      "http": 500,
+      "ok": false,
+      "text": "",
+      "elapsed": 0.15,
+      "error": "Model not found: openrouter:~anthropic/claude-haiku-latest:free"
+    },
+    {
+      "model": "qwen-plus-character/free",
+      "http": 500,
+      "ok": false,
+      "text": "",
+      "elapsed": 0.13,
+      "error": "Model not found: qwen-plus-character/free"
+    },
+    {
+      "model": "free:openai/gpt-6-luna:priority",
+      "http": 500,
+      "ok": false,
+      "text": "",
+      "elapsed": 0.13,
+      "error": "Model not found: free:openai/gpt-6-luna:priority"
+    },
+    {
+      "model": "openrouter:free:x-ai/grok-4.7",
+      "http": 500,
+      "ok": false,
+      "text": "",
+      "elapsed": 0.14,
+      "error": "Model not found: openrouter:free:x-ai/grok-4.7"
+    },
+    {
+      "model": "free:google/gemma-4-26b-a4b-it",
+      "http": 500,
+      "ok": false,
+      "text": "",
+      "elapsed": 0.15,
+      "error": "Model not found: free:google/gemma-4-26b-a4b-it"
+    },
+    {
+      "model": "qwen3.6-plus-free",
+      "http": 500,
+      "ok": false,
+      "text": "",
+      "elapsed": 0.16,
+      "error": "Model not found: qwen3.6-plus-free"
+    },
+    {
+      "model": "free/qwen/qwen3.8-27b-cybersecurity",
+      "http": 500,
+      "ok": false,
+      "text": "",
+      "elapsed": 0.1,
+      "error": "Model not found: free/qwen/qwen3.8-27b-cybersecurity"
+    },
+    {
+      "model": "openrouter:free:openai/gpt-6-luna-pro",
+      "http": 500,
+      "ok": false,
+      "text": "",
+      "elapsed": 0.11,
+      "error": "Model not found: openrouter:free:openai/gpt-6-luna-pro"
+    },
+    {
+      "model": "infron:anthropic/claude-sonnet-5.5/free",
+      "http": 500,
+      "ok": false,
+      "text": "",
+      "elapsed": 0.14,
+      "error": "Model not found: infron:anthropic/claude-sonnet-5.5/free"
+    },
+    {
+      "model": "openrouter:free:google/gemma-4-26b-a4b-it",
+      "http": 500,
+      "ok": false,
+      "text": "",
+      "elapsed": 0.1,
+      "error": "Model not found: openrouter:free:google/gemma-4-26b-a4b-it"
+    },
+    {
+      "model": "infron:free/xiaomi/mimo-v2.5-pro",
+      "http": 500,
+      "ok": false,
+      "text": "",
+      "elapsed": 0.13,
+      "error": "Model not found: infron:free/xiaomi/mimo-v2.5-pro"
+    },
+    {
+      "model": "zai-org/glm-5.2/free",
+      "http": 500,
+      "ok": false,
+      "text": "",
+      "elapsed": 0.15,
+      "error": "Model not found: zai-org/glm-5.2/free"
+    },
+    {
+      "model": "infron:free:google/supergemma4-26b-uncensored",
+      "http": 500,
+      "ok": false,
+      "text": "",
+      "elapsed": 0.12,
+      "error": "Model not found: infron:free:google/supergemma4-26b-uncensored"
+    },
+    {
+      "model": "openrouter:mistralai/ministral-3b-2512/free",
+      "http": 500,
+      "ok": false,
+      "text": "",
+      "elapsed": 0.11,
+      "error": "Model not found: openrouter:mistralai/ministral-3b-2512/free"
+    },
+    {
+      "model": "free/mistralai/mistral-large",
+      "http": 500,
+      "ok": false,
+      "text": "",
+      "elapsed": 0.09,
+      "error": "Model not found: free/mistralai/mistral-large"
+    },
+    {
+      "model": "openai/gpt-6-luna-pro-free",
+      "http": 500,
+      "ok": false,
+      "text": "",
+      "elapsed": 0.08,
+      "error": "Model not found: openai/gpt-6-luna-pro-free"
+    },
+    {
+      "model": "qwen/free",
+      "http": 500,
+      "ok": false,
+      "text": "",
+      "elapsed": 0.09,
+      "error": "Model not found: qwen/free"
+    },
+    {
+      "model": "free-seed-2-0-code-preview-260328",
+      "http": 500,
+      "ok": false,
+      "text": "",
+      "elapsed": 0.15,
+      "error": "Model not found: free-seed-2-0-code-preview-260328"
+    },
+    {
+      "model": "infron:free/nvidia/nemotron-nano-9b-v2",
+      "http": 500,
+      "ok": false,
+      "text": "",
+      "elapsed": 0.1,
+      "error": "Model not found: infron:free/nvidia/nemotron-nano-9b-v2"
+    },
+    {
+      "model": "free/google/gemini-3-flash-preview",
+      "http": 500,
+      "ok": false,
+      "text": "",
+      "elapsed": 0.14,
+      "error": "Model not found: free/google/gemini-3-flash-preview"
+    },
+    {
+      "model": "infron/free/deepseek/deepseek-ocr",
+      "http": 500,
+      "ok": false,
+      "text": "",
+      "elapsed": 0.1,
+      "error": "Model not found: infron/free/deepseek/deepseek-ocr"
+    },
+    {
+      "model": "openrouter/free/deepseek/deepseek-r1-0528",
+      "http": 500,
+      "ok": false,
+      "text": "",
+      "elapsed": 0.11,
+      "error": "Model not found: openrouter/free/deepseek/deepseek-r1-0528"
+    },
+    {
+      "model": "openrouter:free/bytedance-seed/seed-2.0-mini",
+      "http": 500,
+      "ok": false,
+      "text": "",
+      "elapsed": 0.12,
+      "error": "Model not found: openrouter:free/bytedance-seed/seed-2.0-mini"
+    },
+    {
+      "model": "openrouter:free:~anthropic/claude-haiku-latest",
+      "http": 500,
+      "ok": false,
+      "text": "",
+      "elapsed": 0.13,
+      "error": "Model not found: openrouter:free:~anthropic/claude-haiku-latest"
+    },
+    {
+      "model": "infron:free:tencent/hy4",
+      "http": 500,
+      "ok": false,
+      "text": "",
+      "elapsed": 0.11,
+      "error": "Model not found: infron:free:tencent/hy4"
+    },
+    {
+      "model": "free-qwen3.8-2.4t-a95b",
+      "http": 500,
+      "ok": false,
+      "text": "",
+      "elapsed": 0.11,
+      "error": "Model not found: free-qwen3.8-2.4t-a95b"
+    },
+    {
+      "model": "free:inclusionai/ling-3.0-flash-vl",
+      "http": 500,
+      "ok": false,
+      "text": "",
+      "elapsed": 0.08,
+      "error": "Model not found: free:inclusionai/ling-3.0-flash-vl"
+    },
+    {
+      "model": "deepseek-v4-pro-ga-260813-free",
+      "http": 500,
+      "ok": false,
+      "text": "",
+      "elapsed": 10.48,
+      "error": "Model not found: deepseek-v4-pro-ga-260813-free"
+    },
+    {
+      "model": "free-qwen-plus-2025-01-25",
+      "http": 500,
+      "ok": false,
+      "text": "",
+      "elapsed": 0.1,
+      "error": "Model not found: free-qwen-plus-2025-01-25"
+    },
+    {
+      "model": "qwen3.5-122b-a10b:free",
+      "http": 500,
+      "ok": false,
+      "text": "",
+      "elapsed": 10.47,
+      "error": "Model not found: qwen3.5-122b-a10b:free"
+    },
+    {
+      "model": "openrouter/anthracite-org/magnum-v4-72b/free",
+      "http": 500,
+      "ok": false,
+      "text": "",
+      "elapsed": 10.44,
+      "error": "Model not found: openrouter/anthracite-org/magnum-v4-72b/free"
+    },
+    {
+      "model": "free:anthropic/claude-haiku-5.5",
+      "http": 500,
+      "ok": false,
+      "text": "",
+      "elapsed": 10.47,
+      "error": "Model not found: free:anthropic/claude-haiku-5.5"
+    },
+    {
+      "model": "google/gemini-3.6-flash-free",
+      "http": 500,
+      "ok": false,
+      "text": "",
+      "elapsed": 10.43,
+      "error": "Model not found: google/gemini-3.6-flash-free"
+    },
+    {
+      "model": "openai/gpt-6-luna-pro/free",
+      "http": 500,
+      "ok": false,
+      "text": "",
+      "elapsed": 10.37,
+      "error": "Model not found: openai/gpt-6-luna-pro/free"
+    },
+    {
+      "model": "openrouter:openai/gpt-4o-mini-2024-07-18:free",
+      "http": 500,
+      "ok": false,
+      "text": "",
+      "elapsed": 10.42,
+      "error": "Model not found: openrouter:openai/gpt-4o-mini-2024-07-18:free"
+    },
+    {
+      "model": "openrouter:free:nex-agi/nex-n2.6",
+      "http": 500,
+      "ok": false,
+      "text": "",
+      "elapsed": 10.38,
+      "error": "Model not found: openrouter:free:nex-agi/nex-n2.6"
+    },
+    {
+      "model": "anthropic/claude-opus-5-fast/free",
+      "http": 500,
+      "ok": false,
+      "text": "",
+      "elapsed": 0.09,
+      "error": "Model not found: anthropic/claude-opus-5-fast/free"
+    },
+    {
+      "model": "free/deepseek-v4.1-flash-1017",
+      "http": 500,
+      "ok": false,
+      "text": "",
+      "elapsed": 0.11,
+      "error": "Model not found: free/deepseek-v4.1-flash-1017"
+    },
+    {
+      "model": "infron:deepseek/deepseek-r1-0528:free",
+      "http": 500,
+      "ok": false,
+      "text": "",
+      "elapsed": 0.13,
+      "error": "Model not found: infron:deepseek/deepseek-r1-0528:free"
+    },
+    {
+      "model": "infron:xiaomi/mimo-v2.5-pro:free",
+      "http": 500,
+      "ok": false,
+      "text": "",
+      "elapsed": 0.1,
+      "error": "Model not found: infron:xiaomi/mimo-v2.5-pro:free"
+    },
+    {
+      "model": "free/anthracite-org/magnum-v4-72b",
+      "http": 500,
+      "ok": false,
+      "text": "",
+      "elapsed": 0.12,
+      "error": "Model not found: free/anthracite-org/magnum-v4-72b"
+    },
+    {
+      "model": "infron:free:google/gemini-3-flash-preview:flex",
+      "http": 500,
+      "ok": false,
+      "text": "",
+      "elapsed": 0.14,
+      "error": "Model not found: infron:free:google/gemini-3-flash-preview:flex"
+    },
+    {
+      "model": "infron/qwen/qwen3.5-27b:flex/free",
+      "http": 500,
+      "ok": false,
+      "text": "",
+      "elapsed": 0.11,
+      "error": "Model not found: infron/qwen/qwen3.5-27b:flex/free"
+    },
+    {
+      "model": "infron:free/anthropic/claude-sonnet-5.5",
+      "http": 500,
+      "ok": false,
+      "text": "",
+      "elapsed": 0.11,
+      "error": "Model not found: infron:free/anthropic/claude-sonnet-5.5"
+    },
+    {
+      "model": "infron/free/qwen/qwen3.5-flash",
+      "http": 500,
+      "ok": false,
+      "text": "",
+      "elapsed": 0.12,
+      "error": "Model not found: infron/free/qwen/qwen3.5-flash"
+    },
+    {
+      "model": "infron:moonshotai/kimi-k3.1-pro/free",
+      "http": 500,
+      "ok": false,
+      "text": "",
+      "elapsed": 0.09,
+      "error": "Model not found: infron:moonshotai/kimi-k3.1-pro/free"
+    },
+    {
+      "model": "infron:bytedance/seed-2.0-mini/free",
+      "http": 500,
+      "ok": false,
+      "text": "",
+      "elapsed": 0.09,
+      "error": "Model not found: infron:bytedance/seed-2.0-mini/free"
+    },
+    {
+      "model": "google/gemini-3-flash-preview:flex:free",
+      "http": 500,
+      "ok": false,
+      "text": "",
+      "elapsed": 0.09,
+      "error": "Model not found: google/gemini-3-flash-preview:flex:free"
+    },
+    {
+      "model": "z-ai/glm-5.3-flash:free",
+      "http": 500,
+      "ok": false,
+      "text": "",
+      "elapsed": 0.11,
+      "error": "Model not found: z-ai/glm-5.3-flash:free"
+    },
+    {
+      "model": "openrouter:thedrummer/cydonia-24b-v4.1/free",
+      "http": 500,
+      "ok": false,
+      "text": "",
+      "elapsed": 0.11,
+      "error": "Model not found: openrouter:thedrummer/cydonia-24b-v4.1/free"
+    },
+    {
+      "model": "free:qwen/qwen3.8-27b-cybersecurity",
+      "http": 500,
+      "ok": false,
+      "text": "",
+      "elapsed": 0.11,
+      "error": "Model not found: free:qwen/qwen3.8-27b-cybersecurity"
+    },
+    {
+      "model": "infron/stepfun/step-5-preview/free",
+      "http": 500,
+      "ok": false,
+      "text": "",
+      "elapsed": 0.11,
+      "error": "Model not found: infron/stepfun/step-5-preview/free"
+    },
+    {
+      "model": "moonshotai/kimi-k3.1-pro/free",
+      "http": 500,
+      "ok": false,
+      "text": "",
+      "elapsed": 0.11,
+      "error": "Model not found: moonshotai/kimi-k3.1-pro/free"
+    },
+    {
+      "model": "free-zai-org/glm-5.2",
+      "http": 500,
+      "ok": false,
+      "text": "",
+      "elapsed": 0.1,
+      "error": "Model not found: free-zai-org/glm-5.2"
+    },
+    {
+      "model": "free-deepseek/deepseek-r1-0528",
+      "http": 500,
+      "ok": false,
+      "text": "",
+      "elapsed": 0.1,
+      "error": "Model not found: free-deepseek/deepseek-r1-0528"
+    },
+    {
+      "model": "free:infron",
+      "http": 500,
+      "ok": false,
+      "text": "",
+      "elapsed": 0.09,
+      "error": "Model not found: free:infron"
+    },
+    {
+      "model": "free/google/gemma-3-4b-it",
+      "http": 500,
+      "ok": false,
+      "text": "",
+      "elapsed": 0.11,
+      "error": "Model not found: free/google/gemma-3-4b-it"
+    },
+    {
+      "model": "free:google/gemini-3.1-flash-lite:priority",
+      "http": 500,
+      "ok": false,
+      "text": "",
+      "elapsed": 0.1,
+      "error": "Model not found: free:google/gemini-3.1-flash-lite:priority"
+    },
+    {
+      "model": "free:mistralai/mistral-small-24b-instruct-2501",
+      "http": 500,
+      "ok": false,
+      "text": "",
+      "elapsed": 10.4,
+      "error": "Model not found: free:mistralai/mistral-small-24b-instruct-2501"
+    },
+    {
+      "model": "infron/google/gemini-2.5-pro-preview-06-05/free",
+      "http": 500,
+      "ok": false,
+      "text": "",
+      "elapsed": 10.45,
+      "error": "Model not found: infron/google/gemini-2.5-pro-preview-06-05/free"
+    },
+    {
+      "model": "free:bytedance/seed-2.0-lite",
+      "http": 500,
+      "ok": false,
+      "text": "",
+      "elapsed": 10.46,
+      "error": "Model not found: free:bytedance/seed-2.0-lite"
+    },
+    {
+      "model": "free/zai-org/glm-5.2",
+      "http": 500,
+      "ok": false,
+      "text": "",
+      "elapsed": 10.47,
+      "error": "Model not found: free/zai-org/glm-5.2"
+    },
+    {
+      "model": "infron:free/moonshotai/kimi-k3.1-pro",
+      "http": 500,
+      "ok": false,
+      "text": "",
+      "elapsed": 10.45,
+      "error": "Model not found: infron:free/moonshotai/kimi-k3.1-pro"
+    },
+    {
+      "model": "free:qwen3-vl-plus",
+      "http": 500,
+      "ok": false,
+      "text": "",
+      "elapsed": 10.42,
+      "error": "Model not found: free:qwen3-vl-plus"
+    },
+    {
+      "model": "openrouter:free/qwen/qwen3.7-flash",
+      "http": 500,
+      "ok": false,
+      "text": "",
+      "elapsed": 10.37,
+      "error": "Model not found: openrouter:free/qwen/qwen3.7-flash"
+    },
+    {
+      "model": "free:anthropic/claude-opus-5-fast",
+      "http": 500,
+      "ok": false,
+      "text": "",
+      "elapsed": 10.43,
+      "error": "Model not found: free:anthropic/claude-opus-5-fast"
+    },
+    {
+      "model": "free:sao10k/l3.1-70b-euryale-v2.2",
+      "http": 500,
+      "ok": false,
+      "text": "",
+      "elapsed": 0.11,
+      "error": "Model not found: free:sao10k/l3.1-70b-euryale-v2.2"
+    },
+    {
+      "model": "free:inclusionai/ling-3.0-flash",
+      "http": 500,
+      "ok": false,
+      "text": "",
+      "elapsed": 0.1,
+      "error": "Model not found: free:inclusionai/ling-3.0-flash"
+    },
+    {
+      "model": "infron/free/morph/morph-v3-fast",
+      "http": 500,
+      "ok": false,
+      "text": "",
+      "elapsed": 0.1,
+      "error": "Model not found: infron/free/morph/morph-v3-fast"
+    },
+    {
+      "model": "~moonshotai/kimi-latest/free",
+      "http": 500,
+      "ok": false,
+      "text": "",
+      "elapsed": 0.11,
+      "error": "Model not found: ~moonshotai/kimi-latest/free"
+    },
+    {
+      "model": "free:amazon/nova-pro-v1",
+      "http": 500,
+      "ok": false,
+      "text": "",
+      "elapsed": 0.12,
+      "error": "Model not found: free:amazon/nova-pro-v1"
+    },
+    {
+      "model": "infron:anthropic/claude-opus-5/free",
+      "http": 500,
+      "ok": false,
+      "text": "",
+      "elapsed": 0.1,
+      "error": "Model not found: infron:anthropic/claude-opus-5/free"
+    },
+    {
+      "model": "deepseek-v4-pro-ga-260813:free",
+      "http": 500,
+      "ok": false,
+      "text": "",
+      "elapsed": 0.12,
+      "error": "Model not found: deepseek-v4-pro-ga-260813:free"
+    },
+    {
+      "model": "infron:free/qwen/qwen3.8-27b-cybersecurity",
+      "http": 500,
+      "ok": false,
+      "text": "",
+      "elapsed": 0.1,
+      "error": "Model not found: infron:free/qwen/qwen3.8-27b-cybersecurity"
+    },
+    {
+      "model": "free:~openai/gpt-astra-latest",
+      "http": 500,
+      "ok": false,
+      "text": "",
+      "elapsed": 0.1,
+      "error": "Model not found: free:~openai/gpt-astra-latest"
+    },
+    {
+      "model": "google/gemma-3-4b-it:free",
+      "http": 500,
+      "ok": false,
+      "text": "",
+      "elapsed": 0.1,
+      "error": "Model not found: google/gemma-3-4b-it:free"
+    },
+    {
+      "model": "free/nvidia/nemotron-nano-9b-v2",
+      "http": 500,
+      "ok": false,
+      "text": "",
+      "elapsed": 0.09,
+      "error": "Model not found: free/nvidia/nemotron-nano-9b-v2"
+    },
+    {
+      "model": "openrouter/nvidia/nemotron-3.5-super-vl/free",
+      "http": 500,
+      "ok": false,
+      "text": "",
+      "elapsed": 0.1,
+      "error": "Model not found: openrouter/nvidia/nemotron-3.5-super-vl/free"
+    },
+    {
+      "model": "openrouter:mistralai/mistral-medium-3:free",
+      "http": 500,
+      "ok": false,
+      "text": "",
+      "elapsed": 0.11,
+      "error": "Model not found: openrouter:mistralai/mistral-medium-3:free"
+    },
+    {
+      "model": "infron:free/z-ai/glm-4.5-flash",
+      "http": 500,
+      "ok": false,
+      "text": "",
+      "elapsed": 0.13,
+      "error": "Model not found: infron:free/z-ai/glm-4.5-flash"
+    },
+    {
+      "model": "free:deepseek/deepseek-r1-0528",
+      "http": 500,
+      "ok": false,
+      "text": "",
+      "elapsed": 0.13,
+      "error": "Model not found: free:deepseek/deepseek-r1-0528"
+    },
+    {
+      "model": "infron:google/gemini-3.6-flash:free",
+      "http": 500,
+      "ok": false,
+      "text": "",
+      "elapsed": 0.13,
+      "error": "Model not found: infron:google/gemini-3.6-flash:free"
+    },
+    {
+      "model": "mistral-small-2603-free",
+      "http": 500,
+      "ok": false,
+      "text": "",
+      "elapsed": 0.12,
+      "error": "Model not found: mistral-small-2603-free"
+    },
+    {
+      "model": "xiaomi/mimo-v2.6-flash/free",
+      "http": 500,
+      "ok": false,
+      "text": "",
+      "elapsed": 0.11,
+      "error": "Model not found: xiaomi/mimo-v2.6-flash/free"
+    },
+    {
+      "model": "anthracite-org/magnum-v4-72b:free",
+      "http": 500,
+      "ok": false,
+      "text": "",
+      "elapsed": 0.13,
+      "error": "Model not found: anthracite-org/magnum-v4-72b:free"
+    },
+    {
+      "model": "openrouter:free:tencent/hy4",
+      "http": 500,
+      "ok": false,
+      "text": "",
+      "elapsed": 0.12,
+      "error": "Model not found: openrouter:free:tencent/hy4"
+    },
+    {
+      "model": "infron/anthropic/claude-sonnet-5.5/free",
+      "http": 500,
+      "ok": false,
+      "text": "",
+      "elapsed": 0.09,
+      "error": "Model not found: infron/anthropic/claude-sonnet-5.5/free"
+    },
+    {
+      "model": "openrouter/undi95/remm-slerp-l2-13b/free",
+      "http": 500,
+      "ok": false,
+      "text": "",
+      "elapsed": 10.39,
+      "error": "Model not found: openrouter/undi95/remm-slerp-l2-13b/free"
+    },
+    {
+      "model": "openrouter:free:anthropic/claude-sonnet-4.5",
+      "http": 500,
+      "ok": false,
+      "text": "",
+      "elapsed": 0.1,
+      "error": "Model not found: openrouter:free:anthropic/claude-sonnet-4.5"
+    },
+    {
+      "model": "anthracite-org/magnum-v4-72b/free",
+      "http": 500,
+      "ok": false,
+      "text": "",
+      "elapsed": 10.35,
+      "error": "Model not found: anthracite-org/magnum-v4-72b/free"
+    },
+    {
+      "model": "free/meta/muse-ember",
+      "http": 500,
+      "ok": false,
+      "text": "",
+      "elapsed": 10.35,
+      "error": "Model not found: free/meta/muse-ember"
+    },
+    {
+      "model": "infron:qwen/qwen3.5-9b:free",
+      "http": 500,
+      "ok": false,
+      "text": "",
+      "elapsed": 10.36,
+      "error": "Model not found: infron:qwen/qwen3.5-9b:free"
+    },
+    {
+      "model": "infron:z-ai/glm-5.3-uncensored:priority:free",
+      "http": 500,
+      "ok": false,
+      "text": "",
+      "elapsed": 10.37,
+      "error": "Model not found: infron:z-ai/glm-5.3-uncensored:priority:free"
+    },
+    {
+      "model": "infron/free/bytedance/seed-2.0-lite",
+      "http": 500,
+      "ok": false,
+      "text": "",
+      "elapsed": 10.35,
+      "error": "Model not found: infron/free/bytedance/seed-2.0-lite"
+    },
+    {
+      "model": "xingchen-agi/xing4.0-29b-a4b/free",
+      "http": 500,
+      "ok": false,
+      "text": "",
+      "elapsed": 10.35,
+      "error": "Model not found: xingchen-agi/xing4.0-29b-a4b/free"
+    },
+    {
+      "model": "infron:free:minimax/minimax-m3",
+      "http": 500,
+      "ok": false,
+      "text": "",
+      "elapsed": 10.37,
+      "error": "Model not found: infron:free:minimax/minimax-m3"
+    },
+    {
+      "model": "free:morph/morph-v3-fast",
+      "http": 500,
+      "ok": false,
+      "text": "",
+      "elapsed": 0.1,
+      "error": "Model not found: free:morph/morph-v3-fast"
+    },
+    {
+      "model": "infron:deepseek/deepseek-v4-flash-0731/free",
+      "http": 500,
+      "ok": false,
+      "text": "",
+      "elapsed": 0.13,
+      "error": "Model not found: infron:deepseek/deepseek-v4-flash-0731/free"
+    },
+    {
+      "model": "infron/free/nvidia/nemotron-nano-9b-v2",
+      "http": 500,
+      "ok": false,
+      "text": "",
+      "elapsed": 0.13,
+      "error": "Model not found: infron/free/nvidia/nemotron-nano-9b-v2"
+    },
+    {
+      "model": "openrouter:mistralai/mistral-saba:free",
+      "http": 500,
+      "ok": false,
+      "text": "",
+      "elapsed": 0.15,
+      "error": "Model not found: openrouter:mistralai/mistral-saba:free"
+    },
+    {
+      "model": "openrouter/free/meta/muse-ember",
+      "http": 500,
+      "ok": false,
+      "text": "",
+      "elapsed": 0.15,
+      "error": "Model not found: openrouter/free/meta/muse-ember"
+    },
+    {
+      "model": "infron:free/deepseek/deepseek-r1",
+      "http": 500,
+      "ok": false,
+      "text": "",
+      "elapsed": 0.16,
+      "error": "Model not found: infron:free/deepseek/deepseek-r1"
+    },
+    {
+      "model": "openrouter:free:relace/relace-search",
+      "http": 500,
+      "ok": false,
+      "text": "",
+      "elapsed": 0.14,
+      "error": "Model not found: openrouter:free:relace/relace-search"
+    },
+    {
+      "model": "infron:free/qwen/qwen3.6-flash:flex",
+      "http": 500,
+      "ok": false,
+      "text": "",
+      "elapsed": 0.11,
+      "error": "Model not found: infron:free/qwen/qwen3.6-flash:flex"
+    },
+    {
+      "model": "openrouter:mistralai/mistral-small-24b-instruct-2501:free",
+      "http": 500,
+      "ok": false,
+      "text": "",
+      "elapsed": 0.1,
+      "error": "Model not found: openrouter:mistralai/mistral-small-24b-instruct-2501:free"
+    },
+    {
+      "model": "anthropic/claude-sonnet-4.5/free",
+      "http": 500,
+      "ok": false,
+      "text": "",
+      "elapsed": 0.1,
+      "error": "Model not found: anthropic/claude-sonnet-4.5/free"
+    },
+    {
+      "model": "free-qwen-plus-character",
+      "http": 500,
+      "ok": false,
+      "text": "",
+      "elapsed": 0.09,
+      "error": "Model not found: free-qwen-plus-character"
+    },
+    {
+      "model": "google/gemma-4-26b-a4b-it/free",
+      "http": 500,
+      "ok": false,
+      "text": "",
+      "elapsed": 0.09,
+      "error": "Model not found: google/gemma-4-26b-a4b-it/free"
+    },
+    {
+      "model": "reflection/beam-1.0-501b-a23b/free",
+      "http": 500,
+      "ok": false,
+      "text": "",
+      "elapsed": 0.13,
+      "error": "Model not found: reflection/beam-1.0-501b-a23b/free"
+    },
+    {
+      "model": "openrouter/google/gemini-3.7-flash/free",
+      "http": 500,
+      "ok": false,
+      "text": "",
+      "elapsed": 0.14,
+      "error": "Model not found: openrouter/google/gemini-3.7-flash/free"
+    },
+    {
+      "model": "free-mistralai/ministral-3b-2512",
+      "http": 500,
+      "ok": false,
+      "text": "",
+      "elapsed": 0.18,
+      "error": "Model not found: free-mistralai/ministral-3b-2512"
+    },
+    {
+      "model": "openrouter:free/deepseek/deepseek-r1-0528",
+      "http": 500,
+      "ok": false,
+      "text": "",
+      "elapsed": 0.11,
+      "error": "Model not found: openrouter:free/deepseek/deepseek-r1-0528"
+    },
+    {
+      "model": "free-ministral-8b-2512",
+      "http": 500,
+      "ok": false,
+      "text": "",
+      "elapsed": 0.12,
+      "error": "Model not found: free-ministral-8b-2512"
+    },
+    {
+      "model": "qwen/qwen3.6-plus/free",
+      "http": 500,
+      "ok": false,
+      "text": "",
+      "elapsed": 0.13,
+      "error": "Model not found: qwen/qwen3.6-plus/free"
+    },
+    {
+      "model": "qwen/qwen3.8-flash:free",
+      "http": 500,
+      "ok": false,
+      "text": "",
+      "elapsed": 0.15,
+      "error": "Model not found: qwen/qwen3.8-flash:free"
+    },
+    {
+      "model": "free-deepseek/deepseek-r1",
+      "http": 500,
+      "ok": false,
+      "text": "",
+      "elapsed": 0.11,
+      "error": "Model not found: free-deepseek/deepseek-r1"
+    },
+    {
+      "model": "infron:qwen/qwen3.8-27b-cybersecurity:free",
+      "http": 500,
+      "ok": false,
+      "text": "",
+      "elapsed": 0.1,
+      "error": "Model not found: infron:qwen/qwen3.8-27b-cybersecurity:free"
+    },
+    {
+      "model": "togetherai:reflection/beam-1.0-501b-a23b:free",
+      "http": null,
+      "ok": false,
+      "text": "",
+      "elapsed": 12.03,
+      "error": "HTTPConnectionPool(host='127.0.0.1', port=8741): Read timed out. (read timeout=12)"
+    },
+    {
+      "model": "free/google/gemini-3-flash-preview:flex",
+      "http": 500,
+      "ok": false,
+      "text": "",
+      "elapsed": 0.09,
+      "error": "Model not found: free/google/gemini-3-flash-preview:flex"
+    },
+    {
+      "model": "minimax/minimax-m2.1:free",
+      "http": 500,
+      "ok": false,
+      "text": "",
+      "elapsed": 10.38,
+      "error": "Model not found: minimax/minimax-m2.1:free"
+    },
+    {
+      "model": "infron:liquid/lfm-2.5-24b-a2b:free",
+      "http": 500,
+      "ok": false,
+      "text": "",
+      "elapsed": 10.35,
+      "error": "Model not found: infron:liquid/lfm-2.5-24b-a2b:free"
+    },
+    {
+      "model": "deepseek/free",
+      "http": 500,
+      "ok": false,
+      "text": "",
+      "elapsed": 10.36,
+      "error": "Model not found: deepseek/free"
+    },
+    {
+      "model": "openrouter/free/cohere/command-r-plus-08-2024",
+      "http": 500,
+      "ok": false,
+      "text": "",
+      "elapsed": 10.36,
+      "error": "Model not found: openrouter/free/cohere/command-r-plus-08-2024"
+    },
+    {
+      "model": "infron:openai/gpt-5-chat/free",
+      "http": 500,
+      "ok": false,
+      "text": "",
+      "elapsed": 10.35,
+      "error": "Model not found: infron:openai/gpt-5-chat/free"
+    },
+    {
+      "model": "free:minimax/minimax-m3",
+      "http": 500,
+      "ok": false,
+      "text": "",
+      "elapsed": 10.35,
+      "error": "Model not found: free:minimax/minimax-m3"
+    },
+    {
+      "model": "free/openai/gpt-4o-mini",
+      "http": 500,
+      "ok": false,
+      "text": "",
+      "elapsed": 10.35,
+      "error": "Model not found: free/openai/gpt-4o-mini"
+    },
+    {
+      "model": "nex-agi/nex-n2.6:free",
+      "http": 500,
+      "ok": false,
+      "text": "",
+      "elapsed": 0.13,
+      "error": "Model not found: nex-agi/nex-n2.6:free"
+    },
+    {
+      "model": "infron/free/amazon/nova-pro-v1",
+      "http": 500,
+      "ok": false,
+      "text": "",
+      "elapsed": 0.13,
+      "error": "Model not found: infron/free/amazon/nova-pro-v1"
+    },
+    {
+      "model": "minimax/minimax-m2.7-free",
+      "http": 500,
+      "ok": false,
+      "text": "",
+      "elapsed": 0.13,
+      "error": "Model not found: minimax/minimax-m2.7-free"
+    },
+    {
+      "model": "openrouter:google/gemini-3.7-flash:free",
+      "http": 500,
+      "ok": false,
+      "text": "",
+      "elapsed": 0.14,
+      "error": "Model not found: openrouter:google/gemini-3.7-flash:free"
+    },
+    {
+      "model": "mistralai/mistral-large/free",
+      "http": 500,
+      "ok": false,
+      "text": "",
+      "elapsed": 0.12,
+      "error": "Model not found: mistralai/mistral-large/free"
+    },
+    {
+      "model": "qwen/qwen3.5-9b/free",
+      "http": 500,
+      "ok": false,
+      "text": "",
+      "elapsed": 0.13,
+      "error": "Model not found: qwen/qwen3.5-9b/free"
+    },
+    {
+      "model": "deepseek/deepseek-r1-free",
+      "http": 500,
+      "ok": false,
+      "text": "",
+      "elapsed": 0.13,
+      "error": "Model not found: deepseek/deepseek-r1-free"
+    },
+    {
+      "model": "infron:free:anthropic/claude-sonnet-5.5",
+      "http": 500,
+      "ok": false,
+      "text": "",
+      "elapsed": 0.1,
+      "error": "Model not found: infron:free:anthropic/claude-sonnet-5.5"
+    },
+    {
+      "model": "qwen/qwen3.6-flash:flex-free",
+      "http": 500,
+      "ok": false,
+      "text": "",
+      "elapsed": 0.11,
+      "error": "Model not found: qwen/qwen3.6-flash:flex-free"
+    },
+    {
+      "model": "free-relace/relace-search",
+      "http": 500,
+      "ok": false,
+      "text": "",
+      "elapsed": 0.13,
+      "error": "Model not found: free-relace/relace-search"
+    },
+    {
+      "model": "openai/gpt-4o-mini-2024-07-18-free",
+      "http": 500,
+      "ok": false,
+      "text": "",
+      "elapsed": 0.11,
+      "error": "Model not found: openai/gpt-4o-mini-2024-07-18-free"
+    },
+    {
+      "model": "infron/free/xiaomi/mimo-v2.6-pro",
+      "http": 500,
+      "ok": false,
+      "text": "",
+      "elapsed": 0.11,
+      "error": "Model not found: infron/free/xiaomi/mimo-v2.6-pro"
+    },
+    {
+      "model": "free-anthropic/claude-opus-5-fast",
+      "http": 500,
+      "ok": false,
+      "text": "",
+      "elapsed": 0.13,
+      "error": "Model not found: free-anthropic/claude-opus-5-fast"
+    },
+    {
+      "model": "free-stepfun/step-5-preview",
+      "http": 500,
+      "ok": false,
+      "text": "",
+      "elapsed": 0.11,
+      "error": "Model not found: free-stepfun/step-5-preview"
+    },
+    {
+      "model": "infron:free/google/gemini-3.1-flash-lite",
+      "http": 500,
+      "ok": false,
+      "text": "",
+      "elapsed": 0.08,
+      "error": "Model not found: infron:free/google/gemini-3.1-flash-lite"
+    },
+    {
+      "model": "free/minimax/minimax-m3",
+      "http": 500,
+      "ok": false,
+      "text": "",
+      "elapsed": 0.08,
+      "error": "Model not found: free/minimax/minimax-m3"
+    },
+    {
+      "model": "cohere/command-r-plus-08-2024/free",
+      "http": 500,
+      "ok": false,
+      "text": "",
+      "elapsed": 0.1,
+      "error": "Model not found: cohere/command-r-plus-08-2024/free"
+    },
+    {
+      "model": "qwen/qwen3.6-flash:flex:free",
+      "http": 500,
+      "ok": false,
+      "text": "",
+      "elapsed": 0.1,
+      "error": "Model not found: qwen/qwen3.6-flash:flex:free"
+    },
+    {
+      "model": "openrouter:deepseek/deepseek-r1-0528:free",
+      "http": 500,
+      "ok": false,
+      "text": "",
+      "elapsed": 0.1,
+      "error": "Model not found: openrouter:deepseek/deepseek-r1-0528:free"
+    },
+    {
+      "model": "deepseek/deepseek-v4-flash-free",
+      "http": 500,
+      "ok": false,
+      "text": "",
+      "elapsed": 0.11,
+      "error": "Model not found: deepseek/deepseek-v4-flash-free"
+    },
+    {
+      "model": "infron:z-ai/glm-4.7-flash/free",
+      "http": 500,
+      "ok": false,
+      "text": "",
+      "elapsed": 0.11,
+      "error": "Model not found: infron:z-ai/glm-4.7-flash/free"
+    },
+    {
+      "model": "free/mistralai/ministral-3b-2512",
+      "http": 500,
+      "ok": false,
+      "text": "",
+      "elapsed": 0.11,
+      "error": "Model not found: free/mistralai/ministral-3b-2512"
+    },
+    {
+      "model": "infron:free:google/gemma-3-12b-it",
+      "http": 500,
+      "ok": false,
+      "text": "",
+      "elapsed": 10.36,
+      "error": "Model not found: infron:free:google/gemma-3-12b-it"
+    },
+    {
+      "model": "tencent/hy3-preview:free",
+      "http": 500,
+      "ok": false,
+      "text": "",
+      "elapsed": 10.31,
+      "error": "Model not found: tencent/hy3-preview:free"
+    },
+    {
+      "model": "google/gemma-4-26b-a4b-it:free",
+      "http": 200,
+      "ok": true,
+      "text": "OK",
+      "elapsed": 11.35,
+      "error": null
+    },
+    {
+      "model": "infron:free:openai/o1",
+      "http": 500,
+      "ok": false,
+      "text": "",
+      "elapsed": 10.33,
+      "error": "Model not found: infron:free:openai/o1"
+    },
+    {
+      "model": "free/openrouter/fusion",
+      "http": 500,
+      "ok": false,
+      "text": "",
+      "elapsed": 10.32,
+      "error": "Model not found: free/openrouter/fusion"
+    },
+    {
+      "model": "reflection/beam-1.0-501b-a23b-free",
+      "http": 500,
+      "ok": false,
+      "text": "",
+      "elapsed": 10.31,
+      "error": "Model not found: reflection/beam-1.0-501b-a23b-free"
+    },
+    {
+      "model": "anthropic/claude-haiku-5.5/free",
+      "http": 500,
+      "ok": false,
+      "text": "",
+      "elapsed": 10.35,
+      "error": "Model not found: anthropic/claude-haiku-5.5/free"
+    },
+    {
+      "model": "openrouter:qwen/qwen3.8-flash/free",
+      "http": null,
+      "ok": false,
+      "text": "",
+      "elapsed": 12.02,
+      "error": "HTTPConnectionPool(host='127.0.0.1', port=8741): Read timed out. (read timeout=12)"
+    },
+    {
+      "model": "openrouter:aion-labs/aion-rp-llama-3.1-8b/free",
+      "http": 500,
+      "ok": false,
+      "text": "",
+      "elapsed": 0.08,
+      "error": "Model not found: openrouter:aion-labs/aion-rp-llama-3.1-8b/free"
+    },
+    {
+      "model": "infron/inclusionai/ling-3.0-flash/free",
+      "http": 500,
+      "ok": false,
+      "text": "",
+      "elapsed": 0.09,
+      "error": "Model not found: infron/inclusionai/ling-3.0-flash/free"
+    },
+    {
+      "model": "infron/bytedance/seed-2.0-lite/free",
+      "http": 500,
+      "ok": false,
+      "text": "",
+      "elapsed": 0.08,
+      "error": "Model not found: infron/bytedance/seed-2.0-lite/free"
+    },
+    {
+      "model": "sao10k/l3.1-70b-euryale-v2.2-free",
+      "http": 500,
+      "ok": false,
+      "text": "",
+      "elapsed": 0.1,
+      "error": "Model not found: sao10k/l3.1-70b-euryale-v2.2-free"
+    },
+    {
+      "model": "infron:free:liquid/lfm-2.5-24b-a2b",
+      "http": 500,
+      "ok": false,
+      "text": "",
+      "elapsed": 0.09,
+      "error": "Model not found: infron:free:liquid/lfm-2.5-24b-a2b"
+    },
+    {
+      "model": "infron/free/minimax/minimax-m2.1",
+      "http": 500,
+      "ok": false,
+      "text": "",
+      "elapsed": 0.08,
+      "error": "Model not found: infron/free/minimax/minimax-m2.1"
+    },
+    {
+      "model": "free:seed-2-0-code-preview-260328",
+      "http": 500,
+      "ok": false,
+      "text": "",
+      "elapsed": 0.08,
+      "error": "Model not found: free:seed-2-0-code-preview-260328"
+    },
+    {
+      "model": "openrouter:free/openai/gpt-4o-mini",
+      "http": 500,
+      "ok": false,
+      "text": "",
+      "elapsed": 0.1,
+      "error": "Model not found: openrouter:free/openai/gpt-4o-mini"
+    },
+    {
+      "model": "minimax/minimax-m3:free",
+      "http": 500,
+      "ok": false,
+      "text": "",
+      "elapsed": 0.09,
+      "error": "Model not found: minimax/minimax-m3:free"
+    },
+    {
+      "model": "qwen/qwen3.7-flash:free",
+      "http": 500,
+      "ok": false,
+      "text": "",
+      "elapsed": 0.08,
+      "error": "Model not found: qwen/qwen3.7-flash:free"
+    },
+    {
+      "model": "free:mistralai/ministral-3b-2512",
+      "http": 500,
+      "ok": false,
+      "text": "",
+      "elapsed": 0.1,
+      "error": "Model not found: free:mistralai/ministral-3b-2512"
+    },
+    {
+      "model": "openrouter/x-ai/grok-4.7/free",
+      "http": 500,
+      "ok": false,
+      "text": "",
+      "elapsed": 0.09,
+      "error": "Model not found: openrouter/x-ai/grok-4.7/free"
+    },
+    {
+      "model": "free-thedrummer/cydonia-24b-v4.1",
+      "http": 500,
+      "ok": false,
+      "text": "",
+      "elapsed": 0.1,
+      "error": "Model not found: free-thedrummer/cydonia-24b-v4.1"
+    },
+    {
+      "model": "openrouter:free/aion-labs/aion-rp-llama-3.1-8b",
+      "http": 500,
+      "ok": false,
+      "text": "",
+      "elapsed": 10.35,
+      "error": "Model not found: openrouter:free/aion-labs/aion-rp-llama-3.1-8b"
+    },
+    {
+      "model": "openrouter/mistralai/mistral-small-24b-instruct-2501/free",
+      "http": 500,
+      "ok": false,
+      "text": "",
+      "elapsed": 0.11,
+      "error": "Model not found: openrouter/mistralai/mistral-small-24b-instruct-2501/free"
+    },
+    {
+      "model": "infron/free/qwen/qwen3.5-9b",
+      "http": 500,
+      "ok": false,
+      "text": "",
+      "elapsed": 0.11,
+      "error": "Model not found: infron/free/qwen/qwen3.5-9b"
+    },
+    {
+      "model": "infron:free:inclusionai/ling-3.0-flash-vl",
+      "http": 500,
+      "ok": false,
+      "text": "",
+      "elapsed": 0.09,
+      "error": "Model not found: infron:free:inclusionai/ling-3.0-flash-vl"
+    },
+    {
+      "model": "openrouter/fusion:free",
+      "http": 500,
+      "ok": false,
+      "text": "",
+      "elapsed": 0.09,
+      "error": "Model not found: openrouter/fusion:free"
+    },
+    {
+      "model": "openrouter:free/~openai/gpt-astra-latest",
+      "http": 500,
+      "ok": false,
+      "text": "",
+      "elapsed": 0.1,
+      "error": "Model not found: openrouter:free/~openai/gpt-astra-latest"
+    },
+    {
+      "model": "openrouter:free:mistralai/mistral-medium-3",
+      "http": 500,
+      "ok": false,
+      "text": "",
+      "elapsed": 0.1,
+      "error": "Model not found: openrouter:free:mistralai/mistral-medium-3"
+    },
+    {
+      "model": "qwen/qwen3.6-flash:flex/free",
+      "http": 500,
+      "ok": false,
+      "text": "",
+      "elapsed": 0.11,
+      "error": "Model not found: qwen/qwen3.6-flash:flex/free"
+    },
+    {
+      "model": "free/qwen/qwen3.6-35b-a3b",
+      "http": 500,
+      "ok": false,
+      "text": "",
+      "elapsed": 0.12,
+      "error": "Model not found: free/qwen/qwen3.6-35b-a3b"
+    },
+    {
+      "model": "openrouter:free/meta/muse-ember",
+      "http": 500,
+      "ok": false,
+      "text": "",
+      "elapsed": 0.1,
+      "error": "Model not found: openrouter:free/meta/muse-ember"
+    },
+    {
+      "model": "free/z-ai/glm-4.7-flash",
+      "http": 500,
+      "ok": false,
+      "text": "",
+      "elapsed": 10.33,
+      "error": "Model not found: free/z-ai/glm-4.7-flash"
+    },
+    {
+      "model": "free:xiaomi/mimo-v2.6-pro",
+      "http": 500,
+      "ok": false,
+      "text": "",
+      "elapsed": 10.32,
+      "error": "Model not found: free:xiaomi/mimo-v2.6-pro"
+    },
+    {
+      "model": "google/gemini-3-flash-preview:free",
+      "http": 500,
+      "ok": false,
+      "text": "",
+      "elapsed": 10.33,
+      "error": "Model not found: google/gemini-3-flash-preview:free"
+    },
+    {
+      "model": "openrouter:nvidia/nemotron-3.5-content-safety/free",
+      "http": 500,
+      "ok": false,
+      "text": "",
+      "elapsed": 10.34,
+      "error": "Model not found: openrouter:nvidia/nemotron-3.5-content-safety/free"
+    },
+    {
+      "model": "infron:free:google/gemini-3.6-flash",
+      "http": 500,
+      "ok": false,
+      "text": "",
+      "elapsed": 10.32,
+      "error": "Model not found: infron:free:google/gemini-3.6-flash"
+    },
+    {
+      "model": "infron:qwen/qwen3.7-plus/free",
+      "http": null,
+      "ok": false,
+      "text": "",
+      "elapsed": 12.02,
+      "error": "HTTPConnectionPool(host='127.0.0.1', port=8741): Read timed out. (read timeout=12)"
+    },
+    {
+      "model": "google/supergemma4-26b-uncensored-free",
+      "http": null,
+      "ok": false,
+      "text": "",
+      "elapsed": 12.02,
+      "error": "HTTPConnectionPool(host='127.0.0.1', port=8741): Read timed out. (read timeout=12)"
+    },
+    {
+      "model": "infron/free/qwen/qwen3.7-plus",
+      "http": 500,
+      "ok": false,
+      "text": "",
+      "elapsed": 0.08,
+      "error": "Model not found: infron/free/qwen/qwen3.7-plus"
+    },
+    {
+      "model": "free:google/gemini-3-flash-preview:flex",
+      "http": 500,
+      "ok": false,
+      "text": "",
+      "elapsed": 0.07,
+      "error": "Model not found: free:google/gemini-3-flash-preview:flex"
+    },
+    {
+      "model": "xiaomi/mimo-v2.6-flash:free",
+      "http": 500,
+      "ok": false,
+      "text": "",
+      "elapsed": 0.1,
+      "error": "Model not found: xiaomi/mimo-v2.6-flash:free"
+    },
+    {
+      "model": "qwen/qwen3.6-35b-a3b/free",
+      "http": 500,
+      "ok": false,
+      "text": "",
+      "elapsed": 0.08,
+      "error": "Model not found: qwen/qwen3.6-35b-a3b/free"
+    },
+    {
+      "model": "infron:nvidia/nemotron-nano-9b-v2:free",
+      "http": 500,
+      "ok": false,
+      "text": "",
+      "elapsed": 0.08,
+      "error": "Model not found: infron:nvidia/nemotron-nano-9b-v2:free"
+    },
+    {
+      "model": "mistralai/mistral-medium-3:free",
+      "http": 500,
+      "ok": false,
+      "text": "",
+      "elapsed": 0.08,
+      "error": "Model not found: mistralai/mistral-medium-3:free"
+    },
+    {
+      "model": "free/qwen/qwen3.7-flash",
+      "http": 500,
+      "ok": false,
+      "text": "",
+      "elapsed": 0.09,
+      "error": "Model not found: free/qwen/qwen3.7-flash"
+    },
+    {
+      "model": "free-nvidia/nemotron-3.5-content-safety",
+      "http": 500,
+      "ok": false,
+      "text": "",
+      "elapsed": 0.09,
+      "error": "Model not found: free-nvidia/nemotron-3.5-content-safety"
+    },
+    {
+      "model": "openai/gpt-6-luna:priority-free",
+      "http": 500,
+      "ok": false,
+      "text": "",
+      "elapsed": 0.09,
+      "error": "Model not found: openai/gpt-6-luna:priority-free"
+    },
+    {
+      "model": "openrouter/free/deepseek/deepseek-v4-flash",
+      "http": 500,
+      "ok": false,
+      "text": "",
+      "elapsed": 0.1,
+      "error": "Model not found: openrouter/free/deepseek/deepseek-v4-flash"
+    },
+    {
+      "model": "infron/free/xiaomi/mimo-v2.6-flash",
+      "http": 500,
+      "ok": false,
+      "text": "",
+      "elapsed": 0.09,
+      "error": "Model not found: infron/free/xiaomi/mimo-v2.6-flash"
+    },
+    {
+      "model": "free/google/gemini-3.1-flash-lite",
+      "http": 500,
+      "ok": false,
+      "text": "",
+      "elapsed": 0.07,
+      "error": "Model not found: free/google/gemini-3.1-flash-lite"
+    },
+    {
+      "model": "free:deepseek/deepseek-ocr",
+      "http": 500,
+      "ok": false,
+      "text": "",
+      "elapsed": 0.08,
+      "error": "Model not found: free:deepseek/deepseek-ocr"
+    },
+    {
+      "model": "openrouter/free/aion-labs/aion-rp-llama-3.1-8b",
+      "http": 500,
+      "ok": false,
+      "text": "",
+      "elapsed": 0.1,
+      "error": "Model not found: openrouter/free/aion-labs/aion-rp-llama-3.1-8b"
+    },
+    {
+      "model": "minimax/minimax-m2.7:free",
+      "http": 500,
+      "ok": false,
+      "text": "",
+      "elapsed": 0.1,
+      "error": "Model not found: minimax/minimax-m2.7:free"
+    },
+    {
+      "model": "infron:qwen/qwen3.8-27b-cybersecurity/free",
+      "http": 500,
+      "ok": false,
+      "text": "",
+      "elapsed": 0.09,
+      "error": "Model not found: infron:qwen/qwen3.8-27b-cybersecurity/free"
+    },
+    {
+      "model": "anthropic/claude-sonnet-5.5-free",
+      "http": 500,
+      "ok": false,
+      "text": "",
+      "elapsed": 0.1,
+      "error": "Model not found: anthropic/claude-sonnet-5.5-free"
+    },
+    {
+      "model": "free/qwen/qwen3-vl-plus",
+      "http": 500,
+      "ok": false,
+      "text": "",
+      "elapsed": 0.1,
+      "error": "Model not found: free/qwen/qwen3-vl-plus"
+    },
+    {
+      "model": "openrouter:aion-labs/aion-rp-llama-3.1-8b:free",
+      "http": 500,
+      "ok": false,
+      "text": "",
+      "elapsed": 0.08,
+      "error": "Model not found: openrouter:aion-labs/aion-rp-llama-3.1-8b:free"
+    },
+    {
+      "model": "openrouter:free:tencent/hy3-preview",
+      "http": 500,
+      "ok": false,
+      "text": "",
+      "elapsed": 0.09,
+      "error": "Model not found: openrouter:free:tencent/hy3-preview"
+    },
+    {
+      "model": "google/gemini-3.1-flash-lite:free",
+      "http": 500,
+      "ok": false,
+      "text": "",
+      "elapsed": 0.1,
+      "error": "Model not found: google/gemini-3.1-flash-lite:free"
+    },
+    {
+      "model": "deepseek/deepseek-ocr/free",
+      "http": 500,
+      "ok": false,
+      "text": "",
+      "elapsed": 0.12,
+      "error": "Model not found: deepseek/deepseek-ocr/free"
+    },
+    {
+      "model": "infron:free:qwen/qwen3.6-flash:flex",
+      "http": 500,
+      "ok": false,
+      "text": "",
+      "elapsed": 0.11,
+      "error": "Model not found: infron:free:qwen/qwen3.6-flash:flex"
+    },
+    {
+      "model": "infron:free:moonshotai/kimi-k3.1-pro",
+      "http": 500,
+      "ok": false,
+      "text": "",
+      "elapsed": 0.12,
+      "error": "Model not found: infron:free:moonshotai/kimi-k3.1-pro"
+    },
+    {
+      "model": "bytedance/seed-2.0-mini-free",
+      "http": 500,
+      "ok": false,
+      "text": "",
+      "elapsed": 10.44,
+      "error": "Model not found: bytedance/seed-2.0-mini-free"
+    },
+    {
+      "model": "x-ai/grok-4.6-free",
+      "http": 500,
+      "ok": false,
+      "text": "",
+      "elapsed": 10.36,
+      "error": "Model not found: x-ai/grok-4.6-free"
+    },
+    {
+      "model": "free-anthropic/claude-sonnet-4.5",
+      "http": 500,
+      "ok": false,
+      "text": "",
+      "elapsed": 10.39,
+      "error": "Model not found: free-anthropic/claude-sonnet-4.5"
+    },
+    {
+      "model": "infron:free:qwen/qwen3-vl-plus",
+      "http": 500,
+      "ok": false,
+      "text": "",
+      "elapsed": 10.36,
+      "error": "Model not found: infron:free:qwen/qwen3-vl-plus"
+    },
+    {
+      "model": "free-amazon/nova-pro-v1",
+      "http": 500,
+      "ok": false,
+      "text": "",
+      "elapsed": 10.42,
+      "error": "Model not found: free-amazon/nova-pro-v1"
+    },
+    {
+      "model": "free:tencent/hy3-preview",
+      "http": 500,
+      "ok": false,
+      "text": "",
+      "elapsed": 10.4,
+      "error": "Model not found: free:tencent/hy3-preview"
+    },
+    {
+      "model": "infron:google/gemini-3.6-flash/free",
+      "http": 500,
+      "ok": false,
+      "text": "",
+      "elapsed": 8.29,
+      "error": "Model not found: infron:google/gemini-3.6-flash/free"
+    },
+    {
+      "model": "infron/free/z-ai/glm-5.3-uncensored:priority",
+      "http": 500,
+      "ok": false,
+      "text": "",
+      "elapsed": 6.2,
+      "error": "Model not found: infron/free/z-ai/glm-5.3-uncensored:priority"
+    }
+  ],
+  "passed": [
+    "google/gemma-4-26b-a4b-it:free"
+  ]
+}

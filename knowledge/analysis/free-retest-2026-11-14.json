@@ -1,0 +1,134 @@
+{
+  "tested": 15,
+  "first_pass": 1,
+  "stable": [
+    "infron:qwen/qwen3.8-27b:free"
+  ],
+  "intermittent": [],
+  "results": [
+    {
+      "model": "infron:qwen/qwen3.8-27b:free",
+      "http": 200,
+      "ok": true,
+      "text": "OK",
+      "retry1": {
+        "model": "infron:qwen/qwen3.8-27b:free",
+        "http": 200,
+        "ok": true,
+        "text": "OK"
+      },
+      "retry2": {
+        "model": "infron:qwen/qwen3.8-27b:free",
+        "http": 200,
+        "ok": true,
+        "text": "OK"
+      },
+      "stable": true
+    },
+    {
+      "model": "openrouter:baidu/ernie-5.5-flash-preview:free",
+      "http": 200,
+      "ok": false,
+      "text": ""
+    },
+    {
+      "model": "openrouter:cohere/north-mini-code:free",
+      "http": 200,
+      "ok": false,
+      "text": ""
+    },
+    {
+      "model": "openrouter:google/gemma-4-26b-a4b-it:free",
+      "http": 500,
+      "ok": false,
+      "text": ""
+    },
+    {
+      "model": "openrouter:google/gemma-4-31b-it:free",
+      "http": 500,
+      "ok": false,
+      "text": ""
+    },
+    {
+      "model": "openrouter:inclusionai/ling-3.2-flash:free",
+      "http": 200,
+      "ok": false,
+      "text": ""
+    },
+    {
+      "model": "openrouter:liquid/lfm-3-1.7b:free",
+      "http": 200,
+      "ok": false,
+      "text": ""
+    },
+    {
+      "model": "openrouter:nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free",
+      "http": 200,
+      "ok": false,
+      "text": ""
+    },
+    {
+      "model": "openrouter:nvidia/nemotron-3-ultra-550b-a55b:free",
+      "http": 200,
+      "ok": false,
+      "text": ""
+    },
+    {
+      "model": "openrouter:nvidia/nemotron-3.5-lightning:free",
+      "http": 200,
+      "ok": false,
+      "text": ""
+    },
+    {
+      "model": "openrouter:nvidia/nemotron-3.5-super-vl:free",
+      "http": 200,
+      "ok": false,
+      "text": ""
+    },
+    {
+      "model": "openrouter:openrouter/free",
+      "http": 200,
+      "ok": false,
+      "text": ""
+    },
+    {
+      "model": "openrouter:particle-ai/particle-1:free",
+      "http": 200,
+      "ok": false,
+      "text": ""
+    },
+    {
+      "model": "openrouter:recursive/flint-v1.0:free",
+      "http": 200,
+      "ok": false,
+      "text": ""
+    },
+    {
+      "model": "openrouter:thinkingmachines/inkling-2-small:free",
+      "http": 500,
+      "ok": false,
+      "text": ""
+    }
+  ],
+  "passed_details": [
+    {
+      "model": "infron:qwen/qwen3.8-27b:free",
+      "http": 200,
+      "ok": true,
+      "text": "OK",
+      "retry1": {
+        "model": "infron:qwen/qwen3.8-27b:free",
+        "http": 200,
+        "ok": true,
+        "text": "OK"
+      },
+      "retry2": {
+        "model": "infron:qwen/qwen3.8-27b:free",
+        "http": 200,
+        "ok": true,
+        "text": "OK"
+      },
+      "stable": true
+    }
+  ]
+}

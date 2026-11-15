@@ -89,6 +89,7 @@ class AgentLLMModel(LLMModel):
         ("doubao", const.DOUBAO), ("deepseek", const.DEEPSEEK),
         ("ernie", const.QIANFAN),
         ("mimo-", const.MIMO),
+        ("manus", const.MANUS),
     ]
 
     # Which model answers, most specific first. All default to None, meaning
@@ -124,6 +125,15 @@ class AgentLLMModel(LLMModel):
         self.bot_type = bot_type
         self._bot = None
         self._bot_model = None
+
+    def clone_for_subagent(self):
+        """Create an isolated routing state for a delegated Subagent.
+
+        Subagents may change session overrides and fallback links. Returning a
+        fresh adapter avoids sharing those mutable fields with the parent while
+        keeping the same bridge/provider configuration.
+        """
+        return type(self)(self.bridge, bot_type=self.bot_type)
 
     @property
     def model(self):

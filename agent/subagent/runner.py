@@ -35,6 +35,12 @@ class SubagentSettings:
     max_depth: int = 1
     max_concurrent: int = 3
     timeout_seconds: float = 300.0
+    # Sub agents are deliberately routed to the gateway's tested low-cost alias
+    # by default. This is an override on a private model copy, never on the
+    # parent's model, so the main conversation keeps its configured route.
+    model: Optional[str] = "free"
+    provider: Optional[str] = "openai"
+    use_model_override: bool = True
 
     @classmethod
     def from_config(cls) -> "SubagentSettings":
@@ -58,6 +64,8 @@ class SubagentSettings:
                 return default
             return value
 
+        model = str(raw.get("model", "free") or "").strip() or None
+        provider = str(raw.get("provider", "openai") or "").strip() or None
         return cls(
             # On unless switched off: an install that has never heard of this
             # setting gets sub agents, which is the behaviour worth defaulting
@@ -66,6 +74,9 @@ class SubagentSettings:
             max_depth=_bounded("max_depth", 1, 1, 5, int),
             max_concurrent=_bounded("max_concurrent", 3, 1, 10, int),
             timeout_seconds=_bounded("timeout_seconds", 300.0, 10.0, 3600.0, float),
+            model=model,
+            provider=provider,
+            use_model_override=bool(raw.get("use_model_override", True)),
         )
 
 
@@ -97,8 +108,40 @@ def _private_tools(parent, template) -> list:
     return [copy.copy(tool) for tool in template.select_tools(list(parent.tools))]
 
 
-def _build_child(parent, template, task: SubagentTask):
-    """A sibling of the parent Agent that shares its model and workspace.
+def _child_model(parent, settings: SubagentSettings):
+    """Return a private model for a child, optionally routed to a cheap alias.
+
+    The parent model may carry mutable session/fallback state, so never mutate
+    it in place. Prefer the model's explicit clone hook so caches and fallback
+    state are not shared between Parent and Child.
+    """
+    model = parent.model
+    if not settings.use_model_override or not settings.model:
+        return model
+    try:
+        clone = getattr(model, "clone_for_subagent", None)
+        child_model = clone() if callable(clone) else copy.copy(model)
+        setter = getattr(child_model, "set_session_override", None)
+        if not callable(setter):
+            logger.warning("[SubAgent] model has no session override; keeping parent route")
+            return model
+        setter(settings.provider, settings.model)
+        reset = getattr(child_model, "reset_fallback", None)
+        if callable(reset):
+            reset()
+        logger.info(
+            "[SubAgent] routed child to %s/%s",
+            settings.provider or "default",
+            settings.model,
+        )
+        return child_model
+    except Exception as exc:
+        logger.warning("[SubAgent] child model override failed; keeping parent route: %s", exc)
+        return model
+
+
+def _build_child(parent, template, task: SubagentTask, settings: SubagentSettings):
+    """A sibling of the parent Agent with an isolated model route.
 
     Not a copy: no memory manager, no persona files, no message history. It
     knows the task and nothing else, so anything it needs has to arrive through
@@ -109,7 +152,7 @@ def _build_child(parent, template, task: SubagentTask):
     child = Agent(
         system_prompt=template.prompt,
         description=f"sub agent ({template.name})",
-        model=parent.model,
+        model=_child_model(parent, settings),
         tools=_private_tools(parent, template),
         output_mode="logger",
         # Half the parent's budget. A sub agent's task is one self-contained
@@ -211,7 +254,7 @@ def _unfinished(index: int, template, status: str, error: str, on_state=None) ->
 
 
 def _run_one(parent, template, task: SubagentTask, index: int, cancel_event,
-             on_state=None, on_event=None) -> Dict[str, Any]:
+             settings: SubagentSettings, on_state=None, on_event=None) -> Dict[str, Any]:
     if cancel_event.is_set():
         return _unfinished(index, template, "cancelled", _PARENT_CANCELLED, on_state)
     started = time.time()
@@ -237,7 +280,7 @@ def _run_one(parent, template, task: SubagentTask, index: int, cancel_event,
         # attributable to this spawn rather than to the parent's turn.
         with identity_scope(run_id=run_id):
             _depth.set(_depth.get() + 1)
-            child = _build_child(parent, template, task)
+            child = _build_child(parent, template, task, settings)
             summary = child.run_stream(
                 task.goal, clear_history=True, cancel_event=cancel_event,
                 on_event=child_events,
@@ -307,7 +350,7 @@ def run_tasks(
             futures.append(
                 pool.submit(
                     ctx.run, _run_one, parent, template, task, index,
-                    cancel_events[index], on_state, on_event,
+                    cancel_events[index], settings, on_state, on_event,
                 )
             )
 

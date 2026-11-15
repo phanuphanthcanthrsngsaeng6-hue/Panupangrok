@@ -18,6 +18,15 @@
     transition: all 200ms ease;
     z-index: 9999;
 }
+#call-fab.call-fab-inline {
+    position: static;
+    width: 36px;
+    height: 36px;
+    font-size: 16px;
+    box-shadow: 0 2px 8px rgba(167, 139, 250, 0.35);
+    margin-left: 6px;
+    flex-shrink: 0;
+}
 #call-fab:hover { transform: scale(1.08); }
 #call-fab.hidden { display: none; }
 
@@ -140,7 +149,22 @@
 .call-hangup:hover { background: #dc2626; }
 
 @media (max-width: 640px) {
-    #call-fab { right: 16px; bottom: 84px; width: 48px; height: 48px; font-size: 18px; }
-    .call-panel { height: 100vh; max-height: 100vh; border-radius: 0; }
+    #call-fab.call-fab-inline {
+        width: 32px;
+        height: 32px;
+        font-size: 14px;
+        margin-left: 4px;
+    }
+    /* Keep the call overlay lightweight on mobile GPUs. */
+    #call-modal {
+        -webkit-backdrop-filter: blur(4px);
+        backdrop-filter: blur(4px);
+    }
+    .call-panel {
+        height: 100vh;
+        max-height: 100vh;
+        border-radius: 0;
+        box-shadow: none;
+    }
     .call-mic { width: 72px; height: 72px; font-size: 28px; }
 }

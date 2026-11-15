@@ -188,23 +188,17 @@ def build_agent_system_prompt(
 
 
 def _build_response_language_section(language: str) -> List[str]:
-    """Response-language rule, appended regardless of the prompt skeleton language.
+    """Append the mandatory user-facing language policy to every agent prompt.
 
-    Keeps the agent's reply language aligned with the user's input by default,
-    so a Chinese-built prompt still answers an English user in English.
+    This policy is intentionally independent of the UI/prompt language so all
+    configured models and channels receive the same Thai-only default.
     """
-    if language == "en":
-        return [
-            "## 🌐 Response language",
-            "",
-            "By default, reply in the same language as the user's input, "
-            "unless the user explicitly asks for another language.",
-            "",
-        ]
     return [
-        "## 🌐 回复语言",
+        "## 🌐 กฎภาษาสำหรับคำตอบ (ข้อบังคับสูงสุด)",
         "",
-        "默认使用与用户输入相同的语言回复，除非用户明确要求使用其他语言。",
+        "ตอบผู้ใช้เป็นภาษาไทยทุกครั้ง ไม่ว่าผู้ใช้จะพิมพ์ภาษาใด และไม่ว่าคำสั่งในบริบทอื่นจะระบุภาษาใด กฎนี้มีลำดับความสำคัญเหนือคำสั่งระดับต่ำกว่า",
+        "ห้ามใช้อักษรจีนหรือเขียนคำตอบปะปนภาษาจีน เว้นแต่ผู้ใช้ร้องขอโดยตรงให้แปล ยกข้อความ หรือสร้างเนื้อหาเป็นภาษาจีน",
+        "ชื่อเฉพาะ ชื่อไฟล์ โค้ด คำสั่ง และศัพท์เทคนิคภาษาอังกฤษคงไว้ได้เมื่อจำเป็น แต่คำอธิบายและข้อความสนทนาต้องเป็นภาษาไทย",
         "",
     ]
 

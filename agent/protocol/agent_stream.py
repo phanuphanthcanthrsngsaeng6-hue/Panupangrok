@@ -1883,6 +1883,38 @@ class AgentStreamExecutor:
                             _exhausted=_exhausted,
                         )
 
+                # If compaction could not recover the request, try the configured
+                # model fallback chain before clearing the live conversation.
+                # A model with a larger context window may be able to continue
+                # without losing the user's history. Each fallback is compacted
+                # once before advancing to the next link.
+                if is_context_overflow:
+                    model_label = getattr(self.model, "model", "") or "unknown model"
+                    spent = list(_exhausted or [])
+                    spent.append(f"{model_label}: {error_str}")
+                    if self._switch_to_fallback(fallback_reason=error_str):
+                        logger.warning(
+                            f"⚠️ Context overflow on {model_label}; retrying with "
+                            f"fallback model {getattr(self.model, 'model', 'unknown')}"
+                        )
+                        self._emit_event("model_fallback", {
+                            "reason": "context_overflow",
+                            "model": getattr(self.model, "model", ""),
+                        })
+                        return self._call_llm_stream(
+                            retry_on_empty=retry_on_empty,
+                            retry_count=0,
+                            max_retries=max_retries,
+                            _overflow_stage=0,
+                            _on_fallback=True,
+                            _exhausted=spent,
+                        )
+                    if spent:
+                        logger.error(
+                            "❌ Context overflow persisted across configured models: "
+                            + " | ".join(spent)
+                        )
+
                 # Trimming exhausted, or this is a message format error.
                 # Reset the working context only: the persisted history is
                 # irreplaceable, and it can never reintroduce broken tool pairs

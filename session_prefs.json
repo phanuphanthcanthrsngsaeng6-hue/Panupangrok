@@ -3,6 +3,14 @@
     "agent-umukch::session_a4782cce-eeeb-4e61-b345-ffb715410e62": {
       "permission": "full-access",
       "ts": 1792168162.5232337
+    },
+    "default::session_76c0e18c-172d-41b3-8f45-35a9d1388b2f": {
+      "provider": "openai",
+      "model": "byteplus/deepseek-v4-1-flash-260910",
+      "members": [
+        "puter-codex-xai"
+      ],
+      "ts": 1794752625.608181
     }
   }
 }

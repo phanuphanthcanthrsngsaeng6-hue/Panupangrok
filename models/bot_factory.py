@@ -91,6 +91,16 @@ def create_bot(bot_type, credential_bot_type=None):
         from models.doubao.doubao_bot import DoubaoBot
         return DoubaoBot()
 
+    elif bot_type == const.CODEX:
+        from models.codex.codex_bot import CodexBot
+        return CodexBot()
+
+    elif bot_type == const.MANUS:
+        # Talks to the local OpenAI-compatible Manus bridge (manus-api,
+        # http://127.0.0.1:8742/v1), which wraps the task-oriented Manus API.
+        from models.manus.manus_bot import ManusBot
+        return ManusBot()
+
     raise RuntimeError
 
 

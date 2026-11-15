@@ -18,6 +18,7 @@ DEEPSEEK = "deepseek"
 MIMO = "mimo"  # Xiaomi MiMo
 MANUS = "manus"  # Manus AI
 CUSTOM = "custom"  # custom OpenAI-compatible API, bot_type won't auto-switch on model change
+CODEX = "codex"  # local Codex CLI (codex exec), uses the machine's own login
 MODELSCOPE = "modelscope"
 
 # Manus 2.0 models

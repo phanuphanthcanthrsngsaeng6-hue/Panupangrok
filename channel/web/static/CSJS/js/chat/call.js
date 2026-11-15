@@ -3,6 +3,7 @@
     'use strict';
 
     const MIN_RECORD_MS = 350;
+    const MAX_CALL_BUBBLES = 100;
     const I18N = {
         call_title: 'Call Mode',
         call_status_idle: 'Ready',
@@ -102,12 +103,20 @@
         if (micHint) micHint.textContent = tr(hintKey);
     }
 
+    function trimTranscript() {
+        if (!transcriptEl) return;
+        while (transcriptEl.children.length > MAX_CALL_BUBBLES) {
+            transcriptEl.firstElementChild.remove();
+        }
+    }
+
     function addBubble(text, role) {
         if (!transcriptEl) return;
         const div = document.createElement('div');
         div.className = 'call-bubble call-bubble-' + role;
         div.textContent = text;
         transcriptEl.appendChild(div);
+        trimTranscript();
         requestAnimationFrame(() => {
             transcriptEl.scrollTop = transcriptEl.scrollHeight;
         });
@@ -305,11 +314,13 @@
     function waitForAiReply() {
         const chatMessages = document.getElementById('chat-messages');
         if (!chatMessages) { setState('idle'); return; }
-        
-        // นับข้อความ bot-message-group ปัจจุบัน
-        const initialCount = chatMessages.querySelectorAll('.bot-message-group').length;
+
         let done = false;
-        
+        let replyGroup = null;
+        let initialBotCount = chatMessages.querySelectorAll('.bot-message-group').length;
+        let observer;
+        let timeoutId;
+
         const finish = (resetState = true) => {
             if (done) return;
             done = true;
@@ -317,34 +328,53 @@
             clearTimeout(timeoutId);
             if (resetState) setState('idle');
         };
-        
-        const timeoutId = setTimeout(finish, 30000);
-        
-        const observer = new MutationObserver((mutations) => {
-            // ตรวจว่ามี bot-message-group ใหม่เพิ่มขึ้นไหม
-            const currentCount = chatMessages.querySelectorAll('.bot-message-group').length;
-            if (currentCount > initialCount) {
-                // มีข้อความใหม่! ดึง text
-                const allBots = chatMessages.querySelectorAll('.bot-message-group');
-                const lastBot = allBots[allBots.length - 1];
-                let text = '';
-                if (lastBot) {
-                    // พยายามหาข้อความใน .markdown-body หรือ text ปกติ
-                    const mdBody = lastBot.querySelector('.markdown-body, .prose');
-                    text = (mdBody ? mdBody.textContent : lastBot.textContent) || '';
-                    text = text.trim();
+
+        const consumeReply = () => {
+            if (!replyGroup) return;
+            const mdBody = replyGroup.querySelector('.markdown-body, .prose');
+            const text = ((mdBody ? mdBody.textContent : replyGroup.textContent) || '').trim();
+            if (!text) return;
+            addBubble(text, 'ai');
+            playTtsForText(text);
+            // TTS owns the speaking/idle transition while audio is loading.
+            finish(false);
+        };
+
+        observer = new MutationObserver((mutations) => {
+            if (!replyGroup) {
+                for (const mutation of mutations) {
+                    const target = mutation.target.nodeType === 1
+                        ? mutation.target
+                        : mutation.target.parentElement;
+                    const group = target && target.closest
+                        ? target.closest('.bot-message-group')
+                        : null;
+                    if (group && chatMessages.contains(group)) {
+                        replyGroup = group;
+                        break;
+                    }
+                    for (const node of mutation.addedNodes) {
+                        if (node.nodeType !== 1) continue;
+                        if (node.matches('.bot-message-group')) {
+                            replyGroup = node;
+                            break;
+                        }
+                        replyGroup = node.querySelector('.bot-message-group');
+                        if (replyGroup) break;
+                    }
+                    if (replyGroup) break;
                 }
-                if (text) {
-                    addBubble(text, 'ai');
-                    // เล่นเสียง TTS อัตโนมัติ
-                    playTtsForText(text);
-                    // TTS owns the speaking/idle transition. Avoid resetting it
-                    // to idle while the audio request is still in flight.
-                    finish(false);
+                if (!replyGroup) {
+                    const count = chatMessages.querySelectorAll('.bot-message-group').length;
+                    if (count > initialBotCount) {
+                        replyGroup = chatMessages.querySelector('.bot-message-group:last-of-type');
+                        initialBotCount = count;
+                    }
                 }
             }
+            consumeReply();
         });
-        
+        timeoutId = setTimeout(finish, 30000);
         observer.observe(chatMessages, { childList: true, subtree: true });
     }
     
@@ -441,7 +471,13 @@
         fab.setAttribute('data-tooltip', tr('call_start'));
         fab.innerHTML = '<i class="fas fa-phone"></i>';
         fab.addEventListener('click', openModal);
-        document.body.appendChild(fab);
+        const composerMic = document.getElementById('mic-btn');
+        if (composerMic && composerMic.parentElement) {
+            fab.classList.add('call-fab-inline');
+            composerMic.parentElement.insertBefore(fab, composerMic.nextSibling);
+        } else {
+            document.body.appendChild(fab);
+        }
     }
 
     function buildModal() {

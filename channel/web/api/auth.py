@@ -17,19 +17,31 @@ from channel.web.core._common import (
     _is_password_enabled,
     _session_expire_seconds,
 )
+from channel.web.core import user_store
 from common.log import logger
 from common.utils import constant_time_equals
 
 
-def _create_auth_token():
-    """Create a stateless signed token: ``<timestamp_hex>.<hmac_hex>``."""
+def _create_auth_token(identity: str = ""):
+    """Create a stateless signed token.
+
+    Two shapes are emitted:
+
+    * root (no identity): ``<timestamp_hex>.<hmac_hex>``
+    * user: ``<identity>.<timestamp_hex>.<hmac_hex>``
+
+    The HMAC key stays the root ``web_password``; the identity is covered by
+    the signature, so a user's token cannot be forged from another user's
+    password and rotating one user's password does not invalidate the rest.
+    """
     ts = format(int(time.time()), "x")
+    payload = f"{identity}.{ts}" if identity else ts
     sig = hmac.new(
         _get_web_password().encode(),
-        ts.encode(),
+        payload.encode(),
         hashlib.sha256,
     ).hexdigest()
-    return f"{ts}.{sig}"
+    return f"{payload}.{sig}"
 
 
 class McpOAuthCallbackHandler:
@@ -109,17 +121,63 @@ class AuthLoginHandler:
             data = json.loads(web.data())
         except Exception:
             return json.dumps({"status": "error", "message": "Invalid request"})
+        username = str(data.get("username", "") or "").strip()
         password = str(data.get("password", "") or "")
-        expected = _get_web_password()
-        if not constant_time_equals(password, expected):
-            logger.warning("[WebChannel] Invalid login attempt")
-            return json.dumps({"status": "error", "message": "Wrong password"})
-        token = _create_auth_token()
+
+        if username and username != "root":
+            # Named user: verify against the scrypt record in web_users.
+            if not user_store.verify_password(username, password):
+                logger.warning("[WebChannel] Invalid login attempt for user '%s'", username)
+                return json.dumps({"status": "error", "message": "Wrong username or password"})
+            token = _create_auth_token(username)
+            logger.info("[WebChannel] user '%s' signed in", username)
+        else:
+            expected = _get_web_password()
+            if not constant_time_equals(password, expected):
+                logger.warning("[WebChannel] Invalid root login attempt")
+                return json.dumps({"status": "error", "message": "Wrong password"})
+            token = _create_auth_token("")
         web.setcookie("cow_auth_token", token, expires=_session_expire_seconds(),
                        path="/", httponly=True, samesite="Lax")
         # Also return the token in the body: the desktop client (file:// origin)
         # can't rely on the cookie and sends it back via an Authorization header.
-        return json.dumps({"status": "success", "token": token})
+        return json.dumps({"status": "success", "token": token,
+                           "identity": username or "root"})
+
+
+class AuthRegisterHandler:
+    """Create a named console user (``POST /auth/register``)."""
+
+    def POST(self):
+        web.header('Content-Type', 'application/json; charset=utf-8')
+        if not _is_password_enabled():
+            return json.dumps({"status": "error",
+                               "message": "Set a web_password first"})
+        if not _check_auth():
+            # Only root (or an already-signed-in user) may create accounts.
+            return json.dumps({"status": "error", "message": "Unauthorized"})
+        try:
+            data = json.loads(web.data())
+        except Exception:
+            return json.dumps({"status": "error", "message": "Invalid request"})
+        username = str(data.get("username", "") or "").strip()
+        password = str(data.get("password", "") or "")
+        try:
+            user_store.create_user(username, password)
+        except user_store.UserStoreError as e:
+            return json.dumps({"status": "error", "message": str(e)})
+        logger.info("[WebChannel] registered web user '%s'", username)
+        return json.dumps({"status": "success", "username": username})
+
+
+class AuthUsersHandler:
+    """List named console users (``GET /auth/users``)."""
+
+    def GET(self):
+        web.header('Content-Type', 'application/json; charset=utf-8')
+        if not _check_auth():
+            return json.dumps({"status": "error", "message": "Unauthorized"})
+        return json.dumps({"status": "success", "users": user_store.public_list()})
 
 
 class AuthLogoutHandler:
