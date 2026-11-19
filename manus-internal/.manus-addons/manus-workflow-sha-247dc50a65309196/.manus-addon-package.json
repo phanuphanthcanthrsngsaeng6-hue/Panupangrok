@@ -1,0 +1,8 @@
+{
+  "addon_id": "manus-workflow",
+  "materialized_at": "2026-11-18T21:32:42Z",
+  "registration_sha256": "7439593b9f3b246e2cb9a8a7abdb4237e22881541cc92bd30402355a1c4a5b0d",
+  "s3_uri": "",
+  "sha256": "247dc50a65309196ed4d1435b77fd3b6e80915354c32e9a363a2f515ac7b4b56",
+  "version": "0.0.23"
+}

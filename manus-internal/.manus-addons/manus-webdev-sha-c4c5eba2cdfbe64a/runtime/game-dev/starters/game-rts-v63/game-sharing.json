@@ -1,0 +1,15 @@
+{
+  "schemaVersion": 2,
+  "title": "Campus Hero Defense",
+  "description": "Command a squad of student superheroes in a real-time campus defense. Rescue classmates, secure classrooms, level up heroes, chain combos into a Spirit Surge and beat eight invasion waves and the Mecha-Mascot. Sign the local Hall of Fame. Plays on desktop and mobile landscape.",
+  "defaultCaptions": {
+    "x": "Grimsby Prep invaded Maplecrest High. Rally your student superheroes and save the school in Campus Hero Defense!",
+    "facebook": "Rescue classmates, secure classrooms and train a squad of teen superheroes to hold the Main Hall in Campus Hero Defense, a real-time strategy game you can play in your browser.",
+    "reddit": "Campus Hero Defense: a browser RTS where student superheroes defend their high school from eight escalating invasion waves",
+    "discord": "Can your hero squad survive all 8 waves, trigger a Spirit Surge and topple the Mecha-Mascot? Sign the Hall of Fame in Campus Hero Defense!"
+  },
+  "assets": {
+    "og": "assets/template/share/og.png",
+    "favicon": "assets/template/share/favicon.png"
+  }
+}

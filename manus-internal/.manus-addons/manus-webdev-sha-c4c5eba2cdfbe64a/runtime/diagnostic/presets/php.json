@@ -1,0 +1,24 @@
+{
+  "name": "php",
+  "command": "intelephense",
+  "args": [
+    "--stdio"
+  ],
+  "files": {
+    ".php": "php"
+  },
+  "description": "Intelephense 1.18.5 uses nested workspace settings under intelephense. diagnostics.enable is boolean; diagnostics.undefinedVariables is the string enum on/local/off, NOT boolean. The installed parser rejects boolean and retains its default. Configure {\"intelephense\":{\"diagnostics\":{\"enable\":true,\"undefinedVariables\":\"on\"}}}. Indexing must finish before judging diagnostics; project stubs and include paths affect results.",
+  "testedVersion": "1.18.5",
+  "configuration": {
+    "initializationOptions": {},
+    "settings": {
+      "intelephense": {
+        "diagnostics": {
+          "enable": true,
+          "undefinedVariables": "on"
+        }
+      }
+    }
+  },
+  "projectConfigurationExample": {}
+}

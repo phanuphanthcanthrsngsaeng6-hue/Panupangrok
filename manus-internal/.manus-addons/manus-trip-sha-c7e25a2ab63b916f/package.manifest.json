@@ -1,0 +1,100 @@
+{
+  "schema_version": "0.1",
+  "kind": "manus_addon_package",
+  "addon": {
+    "id": "manus-trip",
+    "version": "0.0.1-prod.44026880457.394766c6",
+    "owner": "manus",
+    "display_name": "Trip.com",
+    "description": "Search Trip.com flight deals, hotel recommendations, attraction tickets, local experiences and travel services.",
+    "backend_mode": "addon_server"
+  },
+  "distribution": "managed",
+  "update_mode": "hot",
+  "addon_server": {
+    "path": "server/run.mjs",
+    "healthcheck_path": "/health",
+    "auth_mode": "manus_session_context",
+    "browser_credential": "subject_token",
+    "managed_by": "addon_ci"
+  },
+  "credential": {
+    "auth_method": "private_key_jwt"
+  },
+  "mcp_servers": {
+    "trip": {
+      "execution_modes": [
+        "runtime_mcp",
+        "device_mcp"
+      ],
+      "execution_mode": "runtime_mcp",
+      "description": "Use the trip tools for Trip.com flight deals, hotel recommendations, attraction tickets, local experiences and travel services (read the trip skill first).",
+      "transport": "stdio",
+      "command": "node",
+      "args": [
+        "runtime/mcp/server.mjs"
+      ],
+      "env": {
+        "ADDON_SERVER_ENDPOINT": {
+          "source": "addon_server.public_endpoint"
+        }
+      },
+      "model_visible_tools": [
+        "search_flights",
+        "search_hotels",
+        "search_attractions",
+        "show_results"
+      ],
+      "host_callable_tools": [],
+      "tool_auth": {
+        "search_flights": {
+          "type": "subject_token"
+        },
+        "search_hotels": {
+          "type": "subject_token"
+        },
+        "search_attractions": {
+          "type": "subject_token"
+        }
+      }
+    }
+  },
+  "widgets": {
+    "deals-card": {
+      "type": "card",
+      "version": "1.9.0",
+      "data_source": "inline",
+      "frontend": {
+        "type": "web_component",
+        "tag": "manus-trip--deals-card",
+        "path": "static/widgets/deals-card/index.js"
+      },
+      "skeleton": {
+        "type": "embed",
+        "width": 320,
+        "height": 156,
+        "mobile": {
+          "width": 320,
+          "height": 168
+        }
+      }
+    },
+    "deal-details": {
+      "type": "page",
+      "version": "1.5.2",
+      "data_source": "inline",
+      "frontend": {
+        "type": "web_component",
+        "tag": "manus-trip--deal-details",
+        "path": "static/widgets/deal-details/index.js"
+      }
+    }
+  },
+  "skills": {
+    "trip": {
+      "name": "trip",
+      "mcp_server": "trip",
+      "path": "runtime/skill"
+    }
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "name": "svelte",
+  "command": "svelteserver",
+  "args": [
+    "--stdio"
+  ],
+  "files": {
+    ".svelte": "svelte"
+  },
+  "description": "Svelte accepts initializationOptions.configuration, or native workspace configuration sent directly. In either payload its feature toggles are under svelte.plugin. svelte.plugin.typescript.enable and svelte.plugin.typescript.diagnostics.enable are booleans. Do not put workspace settings under another configuration wrapper. Install the Svelte and TypeScript dependencies required by your project before relying on diagnostics.",
+  "testedVersion": "0.18.3",
+  "configuration": {
+    "initializationOptions": {},
+    "settings": {
+      "svelte": {
+        "plugin": {
+          "typescript": {
+            "enable": true,
+            "diagnostics": {
+              "enable": true
+            }
+          }
+        }
+      }
+    }
+  },
+  "projectConfigurationExample": {
+    "tsconfig.json": "{\"compilerOptions\": {\"strict\": true, \"target\": \"ES2022\", \"module\": \"ESNext\", \"moduleResolution\": \"bundler\", \"noEmit\": true}, \"include\": [\"**/*.svelte\"]}"
+  }
+}

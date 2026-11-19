@@ -1,0 +1,10 @@
+[gd_resource type="FontVariation" load_steps=3 format=3]
+
+[ext_resource type="FontFile" path="res://assets/template/game/fonts/Bangers-Regular.ttf" id="1_primary"]
+[ext_resource type="FontVariation" path="res://assets/template/game/fonts/nunito_black.tres" id="2_fallback"]
+
+[resource]
+resource_name = "Bangers display"
+base_font = ExtResource("1_primary")
+fallbacks = Array[Font]([ExtResource("2_fallback")])
+spacing_glyph = 1

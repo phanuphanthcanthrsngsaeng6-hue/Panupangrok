@@ -1,0 +1,3343 @@
+{
+  "note": "Origin recovery only, not legal clearance. Source lock equality is independently checked; original generation master binaries and transformations were not replayed.",
+  "assets": [
+    {
+      "path": "assets/template/game/anim/enemy_blaster.webp",
+      "sha256": "sha256:904c20faceeeb406cd8fd4ddd064e499ca4530e58ba7cf0265ff59d61989ec96",
+      "sourceSession": "di1svPoqOXG6ob6zKnCGcB",
+      "sourcePath": "assets/game/anim/enemy_blaster.webp",
+      "sourceLockHashAndSizeMatch": true,
+      "generationMasterPaths": [
+        "/home/ubuntu/hh_anim/video/enemy_blaster_idle.mp4",
+        "/home/ubuntu/hh_anim/video/enemy_blaster_walk.mp4",
+        "/home/ubuntu/hh_anim/video/enemy_blaster_attack.mp4"
+      ],
+      "generationResultEventIds": [
+        "180695594",
+        "180696905",
+        "180698602"
+      ],
+      "transformActionEventIds": [
+        "180692409",
+        "180703503",
+        "180714987"
+      ],
+      "missingGenerationRecords": [],
+      "originEvidenceStatus": "recorded-generation-and-transformation-chain",
+      "binaryReplayPerformed": false,
+      "rightsEntitlementStatus": "service-level-ownership-and-commercial-use-evidence-recovered; creating-user/assignment-and-input-rights-not-independently-confirmed"
+    },
+    {
+      "path": "assets/template/game/anim/enemy_brute.webp",
+      "sha256": "sha256:daf11b1a4523dfbf7de58464e3aba3bd433e03a06436feb1f02b78450f70e28c",
+      "sourceSession": "di1svPoqOXG6ob6zKnCGcB",
+      "sourcePath": "assets/game/anim/enemy_brute.webp",
+      "sourceLockHashAndSizeMatch": true,
+      "generationMasterPaths": [
+        "/home/ubuntu/hh_anim/video/enemy_brute_idle.mp4",
+        "/home/ubuntu/hh_anim/video/enemy_brute_walk.mp4",
+        "/home/ubuntu/hh_anim/video/enemy_brute_attack.mp4"
+      ],
+      "generationResultEventIds": [
+        "180695407",
+        "180696964",
+        "180698569"
+      ],
+      "transformActionEventIds": [
+        "180692409",
+        "180703503",
+        "180714987"
+      ],
+      "missingGenerationRecords": [],
+      "originEvidenceStatus": "recorded-generation-and-transformation-chain",
+      "binaryReplayPerformed": false,
+      "rightsEntitlementStatus": "service-level-ownership-and-commercial-use-evidence-recovered; creating-user/assignment-and-input-rights-not-independently-confirmed"
+    },
+    {
+      "path": "assets/template/game/anim/enemy_goon.webp",
+      "sha256": "sha256:ed2708900c25854868b99a7e227b918e3b8ac9f15941793cc51e2d331208f1c1",
+      "sourceSession": "di1svPoqOXG6ob6zKnCGcB",
+      "sourcePath": "assets/game/anim/enemy_goon.webp",
+      "sourceLockHashAndSizeMatch": true,
+      "generationMasterPaths": [
+        "/home/ubuntu/hh_anim/video/enemy_goon_idle.mp4",
+        "/home/ubuntu/hh_anim/video/enemy_goon_walk.mp4",
+        "/home/ubuntu/hh_anim/video/enemy_goon_attack.mp4"
+      ],
+      "generationResultEventIds": [
+        "180695575",
+        "180697139",
+        "180698549"
+      ],
+      "transformActionEventIds": [
+        "180692409",
+        "180703503",
+        "180714987"
+      ],
+      "missingGenerationRecords": [],
+      "originEvidenceStatus": "recorded-generation-and-transformation-chain",
+      "binaryReplayPerformed": false,
+      "rightsEntitlementStatus": "service-level-ownership-and-commercial-use-evidence-recovered; creating-user/assignment-and-input-rights-not-independently-confirmed"
+    },
+    {
+      "path": "assets/template/game/anim/enemy_mech.webp",
+      "sha256": "sha256:93524b9e500a07ab3644a2bc3bc422ac998e7f606d9b78019b7b139339355e75",
+      "sourceSession": "di1svPoqOXG6ob6zKnCGcB",
+      "sourcePath": "assets/game/anim/enemy_mech.webp",
+      "sourceLockHashAndSizeMatch": true,
+      "generationMasterPaths": [
+        "/home/ubuntu/hh_anim/video/enemy_mech_idle.mp4",
+        "/home/ubuntu/hh_anim/video/enemy_mech_walk.mp4",
+        "/home/ubuntu/hh_anim/video/enemy_mech_attack.mp4"
+      ],
+      "generationResultEventIds": [
+        "180703625",
+        "180703956",
+        "180703774"
+      ],
+      "transformActionEventIds": [
+        "180692409",
+        "180703503",
+        "180714987"
+      ],
+      "missingGenerationRecords": [],
+      "originEvidenceStatus": "recorded-generation-and-transformation-chain",
+      "binaryReplayPerformed": false,
+      "rightsEntitlementStatus": "service-level-ownership-and-commercial-use-evidence-recovered; creating-user/assignment-and-input-rights-not-independently-confirmed"
+    },
+    {
+      "path": "assets/template/game/anim/hero_blaze.webp",
+      "sha256": "sha256:050713ed7d346033b4d6c37573e21813599cb5aca46d120760612f75ea93e7a7",
+      "sourceSession": "di1svPoqOXG6ob6zKnCGcB",
+      "sourcePath": "assets/game/anim/hero_blaze.webp",
+      "sourceLockHashAndSizeMatch": true,
+      "generationMasterPaths": [
+        "/home/ubuntu/hh_anim/video/hero_blaze_idle.mp4",
+        "/home/ubuntu/hh_anim/video/hero_blaze_walk.mp4",
+        "/home/ubuntu/hh_anim/video/hero_blaze_attack.mp4"
+      ],
+      "generationResultEventIds": [
+        "180695599",
+        "180704039",
+        "180703973"
+      ],
+      "transformActionEventIds": [
+        "180692409",
+        "180703503",
+        "180714987"
+      ],
+      "missingGenerationRecords": [],
+      "originEvidenceStatus": "recorded-generation-and-transformation-chain",
+      "binaryReplayPerformed": false,
+      "rightsEntitlementStatus": "service-level-ownership-and-commercial-use-evidence-recovered; creating-user/assignment-and-input-rights-not-independently-confirmed"
+    },
+    {
+      "path": "assets/template/game/anim/hero_frost.webp",
+      "sha256": "sha256:93ff8927d3e41da538d8d2a1cc3510f4eb8156526bc598694c9c88ee7c4719b9",
+      "sourceSession": "di1svPoqOXG6ob6zKnCGcB",
+      "sourcePath": "assets/game/anim/hero_frost.webp",
+      "sourceLockHashAndSizeMatch": true,
+      "generationMasterPaths": [
+        "/home/ubuntu/hh_anim/video/hero_frost_idle.mp4",
+        "/home/ubuntu/hh_anim/video/hero_frost_walk.mp4",
+        "/home/ubuntu/hh_anim/video/hero_frost_attack.mp4"
+      ],
+      "generationResultEventIds": [
+        "180695391",
+        "180697137",
+        "180703605"
+      ],
+      "transformActionEventIds": [
+        "180692409",
+        "180703503",
+        "180714987"
+      ],
+      "missingGenerationRecords": [],
+      "originEvidenceStatus": "recorded-generation-and-transformation-chain",
+      "binaryReplayPerformed": false,
+      "rightsEntitlementStatus": "service-level-ownership-and-commercial-use-evidence-recovered; creating-user/assignment-and-input-rights-not-independently-confirmed"
+    },
+    {
+      "path": "assets/template/game/anim/hero_monitor.webp",
+      "sha256": "sha256:58af4218357a4e1f22da7a35c419c4204ffc8abbfa0d092b95a89aec8dc02392",
+      "sourceSession": "di1svPoqOXG6ob6zKnCGcB",
+      "sourcePath": "assets/game/anim/hero_monitor.webp",
+      "sourceLockHashAndSizeMatch": true,
+      "generationMasterPaths": [
+        "/home/ubuntu/hh_anim/video/hero_monitor_idle.mp4",
+        "/home/ubuntu/hh_anim/video/hero_monitor_walk.mp4",
+        "/home/ubuntu/hh_anim/video/hero_monitor_attack.mp4"
+      ],
+      "generationResultEventIds": [
+        "180695511",
+        "180703756",
+        "180703824"
+      ],
+      "transformActionEventIds": [
+        "180692409",
+        "180703503",
+        "180714987"
+      ],
+      "missingGenerationRecords": [],
+      "originEvidenceStatus": "recorded-generation-and-transformation-chain",
+      "binaryReplayPerformed": false,
+      "rightsEntitlementStatus": "service-level-ownership-and-commercial-use-evidence-recovered; creating-user/assignment-and-input-rights-not-independently-confirmed"
+    },
+    {
+      "path": "assets/template/game/anim/hero_psi.webp",
+      "sha256": "sha256:22cd04073bb901dbe82e222e8e690820fb123a51be8ab9f1d2dbe56c2bcabb94",
+      "sourceSession": "di1svPoqOXG6ob6zKnCGcB",
+      "sourcePath": "assets/game/anim/hero_psi.webp",
+      "sourceLockHashAndSizeMatch": true,
+      "generationMasterPaths": [
+        "/home/ubuntu/hh_anim/video/hero_psi_idle.mp4",
+        "/home/ubuntu/hh_anim/video/hero_psi_walk.mp4",
+        "/home/ubuntu/hh_anim/video/hero_psi_attack.mp4"
+      ],
+      "generationResultEventIds": [
+        "180695579",
+        "180696916",
+        "180703788"
+      ],
+      "transformActionEventIds": [
+        "180692409",
+        "180703503",
+        "180714987"
+      ],
+      "missingGenerationRecords": [],
+      "originEvidenceStatus": "recorded-generation-and-transformation-chain",
+      "binaryReplayPerformed": false,
+      "rightsEntitlementStatus": "service-level-ownership-and-commercial-use-evidence-recovered; creating-user/assignment-and-input-rights-not-independently-confirmed"
+    },
+    {
+      "path": "assets/template/game/anim/hero_stretch.webp",
+      "sha256": "sha256:88326562e5d4d75eac0a688c730bccfd581d570081326500606d2eaae1c8b760",
+      "sourceSession": "di1svPoqOXG6ob6zKnCGcB",
+      "sourcePath": "assets/game/anim/hero_stretch.webp",
+      "sourceLockHashAndSizeMatch": true,
+      "generationMasterPaths": [
+        "/home/ubuntu/hh_anim/video/hero_stretch_idle.mp4",
+        "/home/ubuntu/hh_anim/video/hero_stretch_walk.mp4",
+        "/home/ubuntu/hh_anim/video/hero_stretch_attack.mp4"
+      ],
+      "generationResultEventIds": [
+        "180695397",
+        "180703844",
+        "180698516"
+      ],
+      "transformActionEventIds": [
+        "180692409",
+        "180703503",
+        "180714987"
+      ],
+      "missingGenerationRecords": [],
+      "originEvidenceStatus": "recorded-generation-and-transformation-chain",
+      "binaryReplayPerformed": false,
+      "rightsEntitlementStatus": "service-level-ownership-and-commercial-use-evidence-recovered; creating-user/assignment-and-input-rights-not-independently-confirmed"
+    },
+    {
+      "path": "assets/template/game/audio/music/bgm_battle.ogg",
+      "sha256": "sha256:36ed73302e636a75f970e28504c6a86e84b66dbfc61f2ed5bf52d33e477add4d",
+      "sourceSession": "di1svPoqOXG6ob6zKnCGcB",
+      "sourcePath": "assets/game/audio/music/bgm_battle.ogg",
+      "sourceLockHashAndSizeMatch": true,
+      "generationMasterPaths": [
+        "/home/ubuntu/hh2_masters/bgm_battle.mp3"
+      ],
+      "generationResultEventIds": [
+        "179802018"
+      ],
+      "transformActionEventIds": [
+        "179805837",
+        "179852388"
+      ],
+      "missingGenerationRecords": [],
+      "originEvidenceStatus": "recorded-generation-and-transformation-chain",
+      "binaryReplayPerformed": false,
+      "rightsEntitlementStatus": "service-level-ownership-and-commercial-use-evidence-recovered; creating-user/assignment-and-input-rights-not-independently-confirmed"
+    },
+    {
+      "path": "assets/template/game/audio/music/bgm_boss.ogg",
+      "sha256": "sha256:cc73515ffcdf22a9d514c3f2f9b218dbe4af8814574c4729d058996f462a01fc",
+      "sourceSession": "di1svPoqOXG6ob6zKnCGcB",
+      "sourcePath": "assets/game/audio/music/bgm_boss.ogg",
+      "sourceLockHashAndSizeMatch": true,
+      "generationMasterPaths": [
+        "/home/ubuntu/hh2_masters/bgm_boss.mp3"
+      ],
+      "generationResultEventIds": [
+        "179801877"
+      ],
+      "transformActionEventIds": [
+        "179805837",
+        "179852388"
+      ],
+      "missingGenerationRecords": [],
+      "originEvidenceStatus": "recorded-generation-and-transformation-chain",
+      "binaryReplayPerformed": false,
+      "rightsEntitlementStatus": "service-level-ownership-and-commercial-use-evidence-recovered; creating-user/assignment-and-input-rights-not-independently-confirmed"
+    },
+    {
+      "path": "assets/template/game/audio/music/bgm_title.ogg",
+      "sha256": "sha256:2f5ca65369b5f00d7d80064cd709b417b021936c79ce5d262054fc36d69f53bd",
+      "sourceSession": "di1svPoqOXG6ob6zKnCGcB",
+      "sourcePath": "assets/game/audio/music/bgm_title.ogg",
+      "sourceLockHashAndSizeMatch": true,
+      "generationMasterPaths": [
+        "/home/ubuntu/hh2_masters/bgm_title.mp3"
+      ],
+      "generationResultEventIds": [
+        "179802001"
+      ],
+      "transformActionEventIds": [
+        "179805837",
+        "179852388"
+      ],
+      "missingGenerationRecords": [],
+      "originEvidenceStatus": "recorded-generation-and-transformation-chain",
+      "binaryReplayPerformed": false,
+      "rightsEntitlementStatus": "service-level-ownership-and-commercial-use-evidence-recovered; creating-user/assignment-and-input-rights-not-independently-confirmed"
+    },
+    {
+      "path": "assets/template/game/audio/sfx/ai_alarm.ogg",
+      "sha256": "sha256:7a8873a70cc4a1aed24926118c2212f299dabc8445e8275006bd29c6c45b1657",
+      "sourceSession": "di1svPoqOXG6ob6zKnCGcB",
+      "sourcePath": "assets/game/audio/sfx/ai_alarm.ogg",
+      "sourceLockHashAndSizeMatch": true,
+      "generationMasterPaths": [
+        "/home/ubuntu/hh2_masters/sfx_ai_alarm.mp3"
+      ],
+      "generationResultEventIds": [
+        "180686631"
+      ],
+      "transformActionEventIds": [
+        "180687023"
+      ],
+      "missingGenerationRecords": [],
+      "originEvidenceStatus": "recorded-generation-and-transformation-chain",
+      "binaryReplayPerformed": false,
+      "rightsEntitlementStatus": "service-level-ownership-and-commercial-use-evidence-recovered; creating-user/assignment-and-input-rights-not-independently-confirmed"
+    },
+    {
+      "path": "assets/template/game/audio/sfx/ai_charge.ogg",
+      "sha256": "sha256:d799295606fc30dfe221c22797f0be512d83b1c436be0edf7c6262d4c97b21a4",
+      "sourceSession": "di1svPoqOXG6ob6zKnCGcB",
+      "sourcePath": "assets/game/audio/sfx/ai_charge.ogg",
+      "sourceLockHashAndSizeMatch": true,
+      "generationMasterPaths": [
+        "/home/ubuntu/hh2_masters/sfx_ai_charge.mp3"
+      ],
+      "generationResultEventIds": [
+        "180686637"
+      ],
+      "transformActionEventIds": [
+        "180687023"
+      ],
+      "missingGenerationRecords": [],
+      "originEvidenceStatus": "recorded-generation-and-transformation-chain",
+      "binaryReplayPerformed": false,
+      "rightsEntitlementStatus": "service-level-ownership-and-commercial-use-evidence-recovered; creating-user/assignment-and-input-rights-not-independently-confirmed"
+    },
+    {
+      "path": "assets/template/game/audio/sfx/ai_retreat.ogg",
+      "sha256": "sha256:d7b1bfc57f5cb3f1f893ebb42e101f56330bcf7dcf463e5df4a698fee930daf7",
+      "sourceSession": "di1svPoqOXG6ob6zKnCGcB",
+      "sourcePath": "assets/game/audio/sfx/ai_retreat.ogg",
+      "sourceLockHashAndSizeMatch": true,
+      "generationMasterPaths": [
+        "/home/ubuntu/hh2_masters/sfx_ai_retreat.mp3"
+      ],
+      "generationResultEventIds": [
+        "180686633"
+      ],
+      "transformActionEventIds": [
+        "180687023"
+      ],
+      "missingGenerationRecords": [],
+      "originEvidenceStatus": "recorded-generation-and-transformation-chain",
+      "binaryReplayPerformed": false,
+      "rightsEntitlementStatus": "service-level-ownership-and-commercial-use-evidence-recovered; creating-user/assignment-and-input-rights-not-independently-confirmed"
+    },
+    {
+      "path": "assets/template/game/audio/sfx/boss_roar.ogg",
+      "sha256": "sha256:2914ffd0a91a2d0a0761ae674b417dcda7bf30dc62cf5ff80a1ed61601f2108c",
+      "sourceSession": "di1svPoqOXG6ob6zKnCGcB",
+      "sourcePath": "assets/game/audio/sfx/boss_roar.ogg",
+      "sourceLockHashAndSizeMatch": true,
+      "generationMasterPaths": [
+        "/home/ubuntu/hh2_masters/sfx_boss_roar.mp3"
+      ],
+      "generationResultEventIds": [
+        "179801980"
+      ],
+      "transformActionEventIds": [
+        "179805837"
+      ],
+      "missingGenerationRecords": [],
+      "originEvidenceStatus": "recorded-generation-and-transformation-chain",
+      "binaryReplayPerformed": false,
+      "rightsEntitlementStatus": "service-level-ownership-and-commercial-use-evidence-recovered; creating-user/assignment-and-input-rights-not-independently-confirmed"
+    },
+    {
+      "path": "assets/template/game/audio/sfx/boss_stomp.ogg",
+      "sha256": "sha256:88374f80a1e78773cb7069a725892833e61539ea396bc3da5bf9a61dac36a368",
+      "sourceSession": "di1svPoqOXG6ob6zKnCGcB",
+      "sourcePath": "assets/game/audio/sfx/boss_stomp.ogg",
+      "sourceLockHashAndSizeMatch": true,
+      "generationMasterPaths": [
+        "/home/ubuntu/hh2_masters/sfx_boss_stomp.mp3"
+      ],
+      "generationResultEventIds": [
+        "179801970"
+      ],
+      "transformActionEventIds": [
+        "179805837"
+      ],
+      "missingGenerationRecords": [],
+      "originEvidenceStatus": "recorded-generation-and-transformation-chain",
+      "binaryReplayPerformed": false,
+      "rightsEntitlementStatus": "service-level-ownership-and-commercial-use-evidence-recovered; creating-user/assignment-and-input-rights-not-independently-confirmed"
+    },
+    {
+      "path": "assets/template/game/audio/sfx/capture.ogg",
+      "sha256": "sha256:123f464b8776b1d0aa5eccac8cdee5a5f1f56f08ed31988638ccc969002d9bd8",
+      "sourceSession": "di1svPoqOXG6ob6zKnCGcB",
+      "sourcePath": "assets/game/audio/sfx/capture.ogg",
+      "sourceLockHashAndSizeMatch": true,
+      "generationMasterPaths": [
+        "/home/ubuntu/hh2_masters/sfx_capture.mp3"
+      ],
+      "generationResultEventIds": [
+        "179802734"
+      ],
+      "transformActionEventIds": [
+        "179805837"
+      ],
+      "missingGenerationRecords": [],
+      "originEvidenceStatus": "recorded-generation-and-transformation-chain",
+      "binaryReplayPerformed": false,
+      "rightsEntitlementStatus": "service-level-ownership-and-commercial-use-evidence-recovered; creating-user/assignment-and-input-rights-not-independently-confirmed"
+    },
+    {
+      "path": "assets/template/game/audio/sfx/coin.ogg",
+      "sha256": "sha256:c292240dfb584d9b5cf0b96dc44b5a57946fa043480f207f04c5d6c4e0b0376a",
+      "sourceSession": "di1svPoqOXG6ob6zKnCGcB",
+      "sourcePath": "assets/game/audio/sfx/coin.ogg",
+      "sourceLockHashAndSizeMatch": true,
+      "generationMasterPaths": [
+        "/home/ubuntu/hh2_masters/sfx_coin.mp3"
+      ],
+      "generationResultEventIds": [
+        "179804281"
+      ],
+      "transformActionEventIds": [
+        "179805837"
+      ],
+      "missingGenerationRecords": [],
+      "originEvidenceStatus": "recorded-generation-and-transformation-chain",
+      "binaryReplayPerformed": false,
+      "rightsEntitlementStatus": "service-level-ownership-and-commercial-use-evidence-recovered; creating-user/assignment-and-input-rights-not-independently-confirmed"
+    },
+    {
+      "path": "assets/template/game/audio/sfx/comic_page.ogg",
+      "sha256": "sha256:77c8dfc8512a43d9440170b7372960098e6bd8091dd7b7a77c0e34ddc0c7395d",
+      "sourceSession": "di1svPoqOXG6ob6zKnCGcB",
+      "sourcePath": "assets/game/audio/sfx/comic_page.ogg",
+      "sourceLockHashAndSizeMatch": true,
+      "generationMasterPaths": [
+        "/home/ubuntu/hh3_masters/comic_page.mp3"
+      ],
+      "generationResultEventIds": [
+        "180745166"
+      ],
+      "transformActionEventIds": [
+        "180745459"
+      ],
+      "missingGenerationRecords": [],
+      "originEvidenceStatus": "recorded-generation-and-transformation-chain",
+      "binaryReplayPerformed": false,
+      "rightsEntitlementStatus": "service-level-ownership-and-commercial-use-evidence-recovered; creating-user/assignment-and-input-rights-not-independently-confirmed"
+    },
+    {
+      "path": "assets/template/game/audio/sfx/comic_slam.ogg",
+      "sha256": "sha256:79684000d1dbb77bf7ff01d96e38369c434e702a75159429802b35dfff0595ae",
+      "sourceSession": "di1svPoqOXG6ob6zKnCGcB",
+      "sourcePath": "assets/game/audio/sfx/comic_slam.ogg",
+      "sourceLockHashAndSizeMatch": true,
+      "generationMasterPaths": [
+        "/home/ubuntu/hh3_masters/comic_slam.mp3"
+      ],
+      "generationResultEventIds": [
+        "180745150"
+      ],
+      "transformActionEventIds": [
+        "180745459"
+      ],
+      "missingGenerationRecords": [],
+      "originEvidenceStatus": "recorded-generation-and-transformation-chain",
+      "binaryReplayPerformed": false,
+      "rightsEntitlementStatus": "service-level-ownership-and-commercial-use-evidence-recovered; creating-user/assignment-and-input-rights-not-independently-confirmed"
+    },
+    {
+      "path": "assets/template/game/audio/sfx/comic_sting.ogg",
+      "sha256": "sha256:fb47e9d4a3790836049ab7becfbc67744f062276ed616ffcd894e8654e7ff628",
+      "sourceSession": "di1svPoqOXG6ob6zKnCGcB",
+      "sourcePath": "assets/game/audio/sfx/comic_sting.ogg",
+      "sourceLockHashAndSizeMatch": true,
+      "generationMasterPaths": [
+        "/home/ubuntu/hh3_masters/comic_sting.mp3"
+      ],
+      "generationResultEventIds": [
+        "180745159"
+      ],
+      "transformActionEventIds": [
+        "180745459"
+      ],
+      "missingGenerationRecords": [],
+      "originEvidenceStatus": "recorded-generation-and-transformation-chain",
+      "binaryReplayPerformed": false,
+      "rightsEntitlementStatus": "service-level-ownership-and-commercial-use-evidence-recovered; creating-user/assignment-and-input-rights-not-independently-confirmed"
+    },
+    {
+      "path": "assets/template/game/audio/sfx/dash.ogg",
+      "sha256": "sha256:ce54efbbecab32852646b8c8048ee970fccaabded7b4d5dde8078234bb72b759",
+      "sourceSession": "di1svPoqOXG6ob6zKnCGcB",
+      "sourcePath": "assets/game/audio/sfx/dash.ogg",
+      "sourceLockHashAndSizeMatch": true,
+      "generationMasterPaths": [
+        "/home/ubuntu/hh2_masters/sfx_dash.mp3"
+      ],
+      "generationResultEventIds": [
+        "179801972"
+      ],
+      "transformActionEventIds": [
+        "179805837"
+      ],
+      "missingGenerationRecords": [],
+      "originEvidenceStatus": "recorded-generation-and-transformation-chain",
+      "binaryReplayPerformed": false,
+      "rightsEntitlementStatus": "service-level-ownership-and-commercial-use-evidence-recovered; creating-user/assignment-and-input-rights-not-independently-confirmed"
+    },
+    {
+      "path": "assets/template/game/audio/sfx/defeat.ogg",
+      "sha256": "sha256:f1a53c02fc798a49100e7033d57b513c4680d16d38f397991629e0d2770aff16",
+      "sourceSession": "di1svPoqOXG6ob6zKnCGcB",
+      "sourcePath": "assets/game/audio/sfx/defeat.ogg",
+      "sourceLockHashAndSizeMatch": true,
+      "generationMasterPaths": [
+        "/home/ubuntu/hh2_masters/sfx_defeat.mp3"
+      ],
+      "generationResultEventIds": [
+        "179802754"
+      ],
+      "transformActionEventIds": [
+        "179805837"
+      ],
+      "missingGenerationRecords": [],
+      "originEvidenceStatus": "recorded-generation-and-transformation-chain",
+      "binaryReplayPerformed": false,
+      "rightsEntitlementStatus": "service-level-ownership-and-commercial-use-evidence-recovered; creating-user/assignment-and-input-rights-not-independently-confirmed"
+    },
+    {
+      "path": "assets/template/game/audio/sfx/fireball.ogg",
+      "sha256": "sha256:d1ea997449f3f7fcff7081eefa729c05da94c138cf989b76382340667ef3e5d9",
+      "sourceSession": "di1svPoqOXG6ob6zKnCGcB",
+      "sourcePath": "assets/game/audio/sfx/fireball.ogg",
+      "sourceLockHashAndSizeMatch": true,
+      "generationMasterPaths": [
+        "/home/ubuntu/hh2_masters/sfx_fireball.mp3"
+      ],
+      "generationResultEventIds": [
+        "179801991"
+      ],
+      "transformActionEventIds": [
+        "179805837"
+      ],
+      "missingGenerationRecords": [],
+      "originEvidenceStatus": "recorded-generation-and-transformation-chain",
+      "binaryReplayPerformed": false,
+      "rightsEntitlementStatus": "service-level-ownership-and-commercial-use-evidence-recovered; creating-user/assignment-and-input-rights-not-independently-confirmed"
+    },
+    {
+      "path": "assets/template/game/audio/sfx/goon_grunt.ogg",
+      "sha256": "sha256:6fc73282d336ee02af83ab8026c61a87cadf75eb4fee3a9ab630352342ab9946",
+      "sourceSession": "di1svPoqOXG6ob6zKnCGcB",
+      "sourcePath": "assets/game/audio/sfx/goon_grunt.ogg",
+      "sourceLockHashAndSizeMatch": true,
+      "generationMasterPaths": [
+        "/home/ubuntu/hh2_masters/sfx_goon_grunt.mp3"
+      ],
+      "generationResultEventIds": [
+        "179804272"
+      ],
+      "transformActionEventIds": [
+        "179805837"
+      ],
+      "missingGenerationRecords": [],
+      "originEvidenceStatus": "recorded-generation-and-transformation-chain",
+      "binaryReplayPerformed": false,
+      "rightsEntitlementStatus": "service-level-ownership-and-commercial-use-evidence-recovered; creating-user/assignment-and-input-rights-not-independently-confirmed"
+    },
+    {
+      "path": "assets/template/game/audio/sfx/hall_hit.ogg",
+      "sha256": "sha256:c4e6764b3e965ee3b0afa1ee8033c26ddbc0f68553eae33660359e763672d075",
+      "sourceSession": "di1svPoqOXG6ob6zKnCGcB",
+      "sourcePath": "assets/game/audio/sfx/hall_hit.ogg",
+      "sourceLockHashAndSizeMatch": true,
+      "generationMasterPaths": [
+        "/home/ubuntu/hh2_masters/sfx_hall_hit.mp3"
+      ],
+      "generationResultEventIds": [
+        "179804335"
+      ],
+      "transformActionEventIds": [
+        "179805837"
+      ],
+      "missingGenerationRecords": [],
+      "originEvidenceStatus": "recorded-generation-and-transformation-chain",
+      "binaryReplayPerformed": false,
+      "rightsEntitlementStatus": "service-level-ownership-and-commercial-use-evidence-recovered; creating-user/assignment-and-input-rights-not-independently-confirmed"
+    },
+    {
+      "path": "assets/template/game/audio/sfx/ice.ogg",
+      "sha256": "sha256:cceb7a15a409b37ee3cd3d3a48b70b5d4cc2234cad2330b4745109fc9f07e4bd",
+      "sourceSession": "di1svPoqOXG6ob6zKnCGcB",
+      "sourcePath": "assets/game/audio/sfx/ice.ogg",
+      "sourceLockHashAndSizeMatch": true,
+      "generationMasterPaths": [
+        "/home/ubuntu/hh2_masters/sfx_ice.mp3"
+      ],
+      "generationResultEventIds": [
+        "179801967"
+      ],
+      "transformActionEventIds": [
+        "179805837"
+      ],
+      "missingGenerationRecords": [],
+      "originEvidenceStatus": "recorded-generation-and-transformation-chain",
+      "binaryReplayPerformed": false,
+      "rightsEntitlementStatus": "service-level-ownership-and-commercial-use-evidence-recovered; creating-user/assignment-and-input-rights-not-independently-confirmed"
+    },
+    {
+      "path": "assets/template/game/audio/sfx/ko.ogg",
+      "sha256": "sha256:687fdecb65ba5d373bc764e6ac4bc53febb0c106492de1a2fda94f376ead5d8b",
+      "sourceSession": "di1svPoqOXG6ob6zKnCGcB",
+      "sourcePath": "assets/game/audio/sfx/ko.ogg",
+      "sourceLockHashAndSizeMatch": true,
+      "generationMasterPaths": [
+        "/home/ubuntu/hh2_masters/sfx_ko.mp3"
+      ],
+      "generationResultEventIds": [
+        "179802719"
+      ],
+      "transformActionEventIds": [
+        "179805837"
+      ],
+      "missingGenerationRecords": [],
+      "originEvidenceStatus": "recorded-generation-and-transformation-chain",
+      "binaryReplayPerformed": false,
+      "rightsEntitlementStatus": "service-level-ownership-and-commercial-use-evidence-recovered; creating-user/assignment-and-input-rights-not-independently-confirmed"
+    },
+    {
+      "path": "assets/template/game/audio/sfx/levelup.ogg",
+      "sha256": "sha256:acedccadc8b6f51d645e27f9ad0f1234e5b9cd2b990349d8a6ef5811a94c2661",
+      "sourceSession": "di1svPoqOXG6ob6zKnCGcB",
+      "sourcePath": "assets/game/audio/sfx/levelup.ogg",
+      "sourceLockHashAndSizeMatch": true,
+      "generationMasterPaths": [
+        "/home/ubuntu/hh2_masters/sfx_levelup.mp3"
+      ],
+      "generationResultEventIds": [
+        "179802715"
+      ],
+      "transformActionEventIds": [
+        "179805837"
+      ],
+      "missingGenerationRecords": [],
+      "originEvidenceStatus": "recorded-generation-and-transformation-chain",
+      "binaryReplayPerformed": false,
+      "rightsEntitlementStatus": "service-level-ownership-and-commercial-use-evidence-recovered; creating-user/assignment-and-input-rights-not-independently-confirmed"
+    },
+    {
+      "path": "assets/template/game/audio/sfx/portal.ogg",
+      "sha256": "sha256:53b4592a4d23332324eb761974faba84c287ff2a8411d01fb32450c4f3447f92",
+      "sourceSession": "di1svPoqOXG6ob6zKnCGcB",
+      "sourcePath": "assets/game/audio/sfx/portal.ogg",
+      "sourceLockHashAndSizeMatch": true,
+      "generationMasterPaths": [
+        "/home/ubuntu/hh2_masters/sfx_portal.mp3"
+      ],
+      "generationResultEventIds": [
+        "179802735"
+      ],
+      "transformActionEventIds": [
+        "179805837"
+      ],
+      "missingGenerationRecords": [],
+      "originEvidenceStatus": "recorded-generation-and-transformation-chain",
+      "binaryReplayPerformed": false,
+      "rightsEntitlementStatus": "service-level-ownership-and-commercial-use-evidence-recovered; creating-user/assignment-and-input-rights-not-independently-confirmed"
+    },
+    {
+      "path": "assets/template/game/audio/sfx/psi.ogg",
+      "sha256": "sha256:921c692b9b520bf94bf4d01ecbc8a5fcf97f56bbf852b57243da5672c7ed7755",
+      "sourceSession": "di1svPoqOXG6ob6zKnCGcB",
+      "sourcePath": "assets/game/audio/sfx/psi.ogg",
+      "sourceLockHashAndSizeMatch": true,
+      "generationMasterPaths": [
+        "/home/ubuntu/hh2_masters/sfx_psi.mp3"
+      ],
+      "generationResultEventIds": [
+        "179801977"
+      ],
+      "transformActionEventIds": [
+        "179805837"
+      ],
+      "missingGenerationRecords": [],
+      "originEvidenceStatus": "recorded-generation-and-transformation-chain",
+      "binaryReplayPerformed": false,
+      "rightsEntitlementStatus": "service-level-ownership-and-commercial-use-evidence-recovered; creating-user/assignment-and-input-rights-not-independently-confirmed"
+    },
+    {
+      "path": "assets/template/game/audio/sfx/rally.ogg",
+      "sha256": "sha256:87976c8f4d556a035a2d6b4ae01bfba00ae27a24925c5a512b8bb2b824a9b1f8",
+      "sourceSession": "di1svPoqOXG6ob6zKnCGcB",
+      "sourcePath": "assets/game/audio/sfx/rally.ogg",
+      "sourceLockHashAndSizeMatch": true,
+      "generationMasterPaths": [
+        "/home/ubuntu/hh2_masters/sfx_rally.mp3"
+      ],
+      "generationResultEventIds": [
+        "179801987"
+      ],
+      "transformActionEventIds": [
+        "179805837"
+      ],
+      "missingGenerationRecords": [],
+      "originEvidenceStatus": "recorded-generation-and-transformation-chain",
+      "binaryReplayPerformed": false,
+      "rightsEntitlementStatus": "service-level-ownership-and-commercial-use-evidence-recovered; creating-user/assignment-and-input-rights-not-independently-confirmed"
+    },
+    {
+      "path": "assets/template/game/audio/sfx/rockets.ogg",
+      "sha256": "sha256:e018de3cf72f0cb1f50a887f52fdebc53d4478929732792c7ad08afb024cd16b",
+      "sourceSession": "di1svPoqOXG6ob6zKnCGcB",
+      "sourcePath": "assets/game/audio/sfx/rockets.ogg",
+      "sourceLockHashAndSizeMatch": true,
+      "generationMasterPaths": [
+        "/home/ubuntu/hh2_masters/sfx_rockets.mp3"
+      ],
+      "generationResultEventIds": [
+        "179801984"
+      ],
+      "transformActionEventIds": [
+        "179805837"
+      ],
+      "missingGenerationRecords": [],
+      "originEvidenceStatus": "recorded-generation-and-transformation-chain",
+      "binaryReplayPerformed": false,
+      "rightsEntitlementStatus": "service-level-ownership-and-commercial-use-evidence-recovered; creating-user/assignment-and-input-rights-not-independently-confirmed"
+    },
+    {
+      "path": "assets/template/game/audio/sfx/slam.ogg",
+      "sha256": "sha256:51ab106eb779f0e24b457499d3af2f406024475d5fd26e8c89cd9b338a794df7",
+      "sourceSession": "di1svPoqOXG6ob6zKnCGcB",
+      "sourcePath": "assets/game/audio/sfx/slam.ogg",
+      "sourceLockHashAndSizeMatch": true,
+      "generationMasterPaths": [
+        "/home/ubuntu/hh2_masters/sfx_slam.mp3"
+      ],
+      "generationResultEventIds": [
+        "179802728"
+      ],
+      "transformActionEventIds": [
+        "179805837"
+      ],
+      "missingGenerationRecords": [],
+      "originEvidenceStatus": "recorded-generation-and-transformation-chain",
+      "binaryReplayPerformed": false,
+      "rightsEntitlementStatus": "service-level-ownership-and-commercial-use-evidence-recovered; creating-user/assignment-and-input-rights-not-independently-confirmed"
+    },
+    {
+      "path": "assets/template/game/audio/sfx/stretch.ogg",
+      "sha256": "sha256:e6e75030ce696ef7330859313da878475d6f7802479fa52a8bbbbbcb1ada736d",
+      "sourceSession": "di1svPoqOXG6ob6zKnCGcB",
+      "sourcePath": "assets/game/audio/sfx/stretch.ogg",
+      "sourceLockHashAndSizeMatch": true,
+      "generationMasterPaths": [
+        "/home/ubuntu/hh2_masters/sfx_stretch.mp3"
+      ],
+      "generationResultEventIds": [
+        "179801952"
+      ],
+      "transformActionEventIds": [
+        "179805837"
+      ],
+      "missingGenerationRecords": [],
+      "originEvidenceStatus": "recorded-generation-and-transformation-chain",
+      "binaryReplayPerformed": false,
+      "rightsEntitlementStatus": "service-level-ownership-and-commercial-use-evidence-recovered; creating-user/assignment-and-input-rights-not-independently-confirmed"
+    },
+    {
+      "path": "assets/template/game/audio/sfx/surge.ogg",
+      "sha256": "sha256:3e81c980a9627371b539e7f3d977c9298d651173d37d54c093cf1a0b57cc0072",
+      "sourceSession": "di1svPoqOXG6ob6zKnCGcB",
+      "sourcePath": "assets/game/audio/sfx/surge.ogg",
+      "sourceLockHashAndSizeMatch": true,
+      "generationMasterPaths": [
+        "/home/ubuntu/hh2_masters/sfx_surge.mp3"
+      ],
+      "generationResultEventIds": [
+        "179801997"
+      ],
+      "transformActionEventIds": [
+        "179805837"
+      ],
+      "missingGenerationRecords": [],
+      "originEvidenceStatus": "recorded-generation-and-transformation-chain",
+      "binaryReplayPerformed": false,
+      "rightsEntitlementStatus": "service-level-ownership-and-commercial-use-evidence-recovered; creating-user/assignment-and-input-rights-not-independently-confirmed"
+    },
+    {
+      "path": "assets/template/game/audio/sfx/train.ogg",
+      "sha256": "sha256:6a4916180777c6e596bdb622b32d7c85675606e1bd1e68d25367fba6d0411b44",
+      "sourceSession": "di1svPoqOXG6ob6zKnCGcB",
+      "sourcePath": "assets/game/audio/sfx/train.ogg",
+      "sourceLockHashAndSizeMatch": true,
+      "generationMasterPaths": [
+        "/home/ubuntu/hh2_masters/sfx_train.mp3"
+      ],
+      "generationResultEventIds": [
+        "179802724"
+      ],
+      "transformActionEventIds": [
+        "179805837"
+      ],
+      "missingGenerationRecords": [],
+      "originEvidenceStatus": "recorded-generation-and-transformation-chain",
+      "binaryReplayPerformed": false,
+      "rightsEntitlementStatus": "service-level-ownership-and-commercial-use-evidence-recovered; creating-user/assignment-and-input-rights-not-independently-confirmed"
+    },
+    {
+      "path": "assets/template/game/audio/sfx/victory.ogg",
+      "sha256": "sha256:3345aa41e839c7b77ba15f79d6d55a3a9a5f7320ef1dd5eecbc58c474f1bf76f",
+      "sourceSession": "di1svPoqOXG6ob6zKnCGcB",
+      "sourcePath": "assets/game/audio/sfx/victory.ogg",
+      "sourceLockHashAndSizeMatch": true,
+      "generationMasterPaths": [
+        "/home/ubuntu/hh2_masters/sfx_victory.mp3"
+      ],
+      "generationResultEventIds": [
+        "179802751"
+      ],
+      "transformActionEventIds": [
+        "179805837"
+      ],
+      "missingGenerationRecords": [],
+      "originEvidenceStatus": "recorded-generation-and-transformation-chain",
+      "binaryReplayPerformed": false,
+      "rightsEntitlementStatus": "service-level-ownership-and-commercial-use-evidence-recovered; creating-user/assignment-and-input-rights-not-independently-confirmed"
+    },
+    {
+      "path": "assets/template/game/audio/sfx/wave_horn.ogg",
+      "sha256": "sha256:2475d7e8cc6ebdc760d4f1308ed571799944e2d6ea534da876d9946dce6d17b2",
+      "sourceSession": "di1svPoqOXG6ob6zKnCGcB",
+      "sourcePath": "assets/game/audio/sfx/wave_horn.ogg",
+      "sourceLockHashAndSizeMatch": true,
+      "generationMasterPaths": [
+        "/home/ubuntu/hh2_masters/sfx_wave_horn.mp3"
+      ],
+      "generationResultEventIds": [
+        "179802746"
+      ],
+      "transformActionEventIds": [
+        "179805837"
+      ],
+      "missingGenerationRecords": [],
+      "originEvidenceStatus": "recorded-generation-and-transformation-chain",
+      "binaryReplayPerformed": false,
+      "rightsEntitlementStatus": "service-level-ownership-and-commercial-use-evidence-recovered; creating-user/assignment-and-input-rights-not-independently-confirmed"
+    },
+    {
+      "path": "assets/template/game/audio/sfx/zap.ogg",
+      "sha256": "sha256:24e7078caf375a26f4bb36b6a34db059f10a74ae7691bedb023fd0fdc0dee511",
+      "sourceSession": "di1svPoqOXG6ob6zKnCGcB",
+      "sourcePath": "assets/game/audio/sfx/zap.ogg",
+      "sourceLockHashAndSizeMatch": true,
+      "generationMasterPaths": [
+        "/home/ubuntu/hh2_masters/sfx_zap.mp3"
+      ],
+      "generationResultEventIds": [
+        "179804266"
+      ],
+      "transformActionEventIds": [
+        "179805837"
+      ],
+      "missingGenerationRecords": [],
+      "originEvidenceStatus": "recorded-generation-and-transformation-chain",
+      "binaryReplayPerformed": false,
+      "rightsEntitlementStatus": "service-level-ownership-and-commercial-use-evidence-recovered; creating-user/assignment-and-input-rights-not-independently-confirmed"
+    },
+    {
+      "path": "assets/template/game/audio/sfx_rescue.ogg",
+      "sha256": "sha256:c342499c5ce09797ab8a4cab84dc331396b0c211c771004dfa396a86091b9afb",
+      "sourceSession": "di1svPoqOXG6ob6zKnCGcB",
+      "sourcePath": "assets/game/audio/sfx_rescue.ogg",
+      "sourceLockHashAndSizeMatch": true,
+      "generationMasterPaths": [
+        "/home/ubuntu/hallhero/art_src/sfx_rescue.mp3"
+      ],
+      "generationResultEventIds": [
+        "179673080"
+      ],
+      "transformActionEventIds": [
+        "179678138"
+      ],
+      "missingGenerationRecords": [],
+      "originEvidenceStatus": "recorded-generation-and-transformation-chain",
+      "binaryReplayPerformed": false,
+      "rightsEntitlementStatus": "service-level-ownership-and-commercial-use-evidence-recovered; creating-user/assignment-and-input-rights-not-independently-confirmed"
+    },
+    {
+      "path": "assets/template/game/audio/sfx_wave_bell.ogg",
+      "sha256": "sha256:17ccf51bd68aca410d8ed8d1ab2fb2e3a95465336a23619942b57a3285fbf7a5",
+      "sourceSession": "di1svPoqOXG6ob6zKnCGcB",
+      "sourcePath": "assets/game/audio/sfx_wave_bell.ogg",
+      "sourceLockHashAndSizeMatch": true,
+      "generationMasterPaths": [
+        "/home/ubuntu/hallhero/art_src/sfx_wave_bell.mp3"
+      ],
+      "generationResultEventIds": [
+        "179673082"
+      ],
+      "transformActionEventIds": [
+        "179678138"
+      ],
+      "missingGenerationRecords": [],
+      "originEvidenceStatus": "recorded-generation-and-transformation-chain",
+      "binaryReplayPerformed": false,
+      "rightsEntitlementStatus": "service-level-ownership-and-commercial-use-evidence-recovered; creating-user/assignment-and-input-rights-not-independently-confirmed"
+    },
+    {
+      "path": "assets/template/game/audio/vo/blaze_level.ogg",
+      "sha256": "sha256:390826c0adcbd2e0764e319131d671c7b884d2073969160783efb4afa3542bae",
+      "sourceSession": "di1svPoqOXG6ob6zKnCGcB",
+      "sourcePath": "assets/game/audio/vo/blaze_level.ogg",
+      "sourceLockHashAndSizeMatch": true,
+      "generationMasterPaths": [
+        "/home/ubuntu/hh2_masters/vo_blaze.wav"
+      ],
+      "generationResultEventIds": [
+        "179804367"
+      ],
+      "transformActionEventIds": [
+        "179805837",
+        "179840448",
+        "179840818"
+      ],
+      "missingGenerationRecords": [],
+      "originEvidenceStatus": "recorded-generation-and-transformation-chain",
+      "binaryReplayPerformed": false,
+      "rightsEntitlementStatus": "service-level-ownership-and-commercial-use-evidence-recovered; creating-user/assignment-and-input-rights-not-independently-confirmed"
+    },
+    {
+      "path": "assets/template/game/audio/vo/blaze_power.ogg",
+      "sha256": "sha256:fa697c7eda3abb721dc39c1ff0258964be38b739d1cbbc1bf3c48b9b011e7323",
+      "sourceSession": "di1svPoqOXG6ob6zKnCGcB",
+      "sourcePath": "assets/game/audio/vo/blaze_power.ogg",
+      "sourceLockHashAndSizeMatch": true,
+      "generationMasterPaths": [
+        "/home/ubuntu/hh2_masters/vo_blaze.wav"
+      ],
+      "generationResultEventIds": [
+        "179804367"
+      ],
+      "transformActionEventIds": [
+        "179805837",
+        "179840448",
+        "179840818"
+      ],
+      "missingGenerationRecords": [],
+      "originEvidenceStatus": "recorded-generation-and-transformation-chain",
+      "binaryReplayPerformed": false,
+      "rightsEntitlementStatus": "service-level-ownership-and-commercial-use-evidence-recovered; creating-user/assignment-and-input-rights-not-independently-confirmed"
+    },
+    {
+      "path": "assets/template/game/audio/vo/blaze_select.ogg",
+      "sha256": "sha256:d7378887c7c3ef28fba7b2e6c4c63b65009d5355086650c720dcebaa8520d77f",
+      "sourceSession": "di1svPoqOXG6ob6zKnCGcB",
+      "sourcePath": "assets/game/audio/vo/blaze_select.ogg",
+      "sourceLockHashAndSizeMatch": true,
+      "generationMasterPaths": [
+        "/home/ubuntu/hh2_masters/vo_blaze.wav"
+      ],
+      "generationResultEventIds": [
+        "179804367"
+      ],
+      "transformActionEventIds": [
+        "179805837",
+        "179840448",
+        "179840818"
+      ],
+      "missingGenerationRecords": [],
+      "originEvidenceStatus": "recorded-generation-and-transformation-chain",
+      "binaryReplayPerformed": false,
+      "rightsEntitlementStatus": "service-level-ownership-and-commercial-use-evidence-recovered; creating-user/assignment-and-input-rights-not-independently-confirmed"
+    },
+    {
+      "path": "assets/template/game/audio/vo/frost_level.ogg",
+      "sha256": "sha256:ad62a823eec929d42a3e8353b033bc87ae66f1b492add2426d1e88b9cad59f77",
+      "sourceSession": "di1svPoqOXG6ob6zKnCGcB",
+      "sourcePath": "assets/game/audio/vo/frost_level.ogg",
+      "sourceLockHashAndSizeMatch": true,
+      "generationMasterPaths": [
+        "/home/ubuntu/hh2_masters/vo_frost.wav"
+      ],
+      "generationResultEventIds": [
+        "179804354"
+      ],
+      "transformActionEventIds": [
+        "179805837",
+        "179840448",
+        "179840818"
+      ],
+      "missingGenerationRecords": [],
+      "originEvidenceStatus": "recorded-generation-and-transformation-chain",
+      "binaryReplayPerformed": false,
+      "rightsEntitlementStatus": "service-level-ownership-and-commercial-use-evidence-recovered; creating-user/assignment-and-input-rights-not-independently-confirmed"
+    },
+    {
+      "path": "assets/template/game/audio/vo/frost_power.ogg",
+      "sha256": "sha256:fece40d9d07a2d949d9d6a36b13b7c19c375afbb23e0867f5d6abf8761c9d64c",
+      "sourceSession": "di1svPoqOXG6ob6zKnCGcB",
+      "sourcePath": "assets/game/audio/vo/frost_power.ogg",
+      "sourceLockHashAndSizeMatch": true,
+      "generationMasterPaths": [
+        "/home/ubuntu/hh2_masters/vo_frost.wav"
+      ],
+      "generationResultEventIds": [
+        "179804354"
+      ],
+      "transformActionEventIds": [
+        "179805837",
+        "179840448",
+        "179840818"
+      ],
+      "missingGenerationRecords": [],
+      "originEvidenceStatus": "recorded-generation-and-transformation-chain",
+      "binaryReplayPerformed": false,
+      "rightsEntitlementStatus": "service-level-ownership-and-commercial-use-evidence-recovered; creating-user/assignment-and-input-rights-not-independently-confirmed"
+    },
+    {
+      "path": "assets/template/game/audio/vo/frost_select.ogg",
+      "sha256": "sha256:b61a0fbc7b7855877c09cfd51447fe4d938c404f9543c54839e4b47b4b8ce19b",
+      "sourceSession": "di1svPoqOXG6ob6zKnCGcB",
+      "sourcePath": "assets/game/audio/vo/frost_select.ogg",
+      "sourceLockHashAndSizeMatch": true,
+      "generationMasterPaths": [
+        "/home/ubuntu/hh2_masters/vo_frost.wav"
+      ],
+      "generationResultEventIds": [
+        "179804354"
+      ],
+      "transformActionEventIds": [
+        "179805837",
+        "179840448",
+        "179840818"
+      ],
+      "missingGenerationRecords": [],
+      "originEvidenceStatus": "recorded-generation-and-transformation-chain",
+      "binaryReplayPerformed": false,
+      "rightsEntitlementStatus": "service-level-ownership-and-commercial-use-evidence-recovered; creating-user/assignment-and-input-rights-not-independently-confirmed"
+    },
+    {
+      "path": "assets/template/game/audio/vo/intro_coach.ogg",
+      "sha256": "sha256:2b260b4ad7dc558052b30717311fec7e1f6424d9d0f788bdaca0f59ae2d94a57",
+      "sourceSession": "di1svPoqOXG6ob6zKnCGcB",
+      "sourcePath": "assets/game/audio/vo/intro_coach.ogg",
+      "sourceLockHashAndSizeMatch": true,
+      "generationMasterPaths": [
+        "/home/ubuntu/hh3_masters/intro_coach.wav"
+      ],
+      "generationResultEventIds": [
+        "180745005"
+      ],
+      "transformActionEventIds": [
+        "180745262"
+      ],
+      "missingGenerationRecords": [],
+      "originEvidenceStatus": "recorded-generation-and-transformation-chain",
+      "binaryReplayPerformed": false,
+      "rightsEntitlementStatus": "service-level-ownership-and-commercial-use-evidence-recovered; creating-user/assignment-and-input-rights-not-independently-confirmed"
+    },
+    {
+      "path": "assets/template/game/audio/vo/intro_n1.ogg",
+      "sha256": "sha256:e6f4f3ce7a7f31d21390b864998ba6a171f9efa6cf007ecd49b7c62bbeb54013",
+      "sourceSession": "di1svPoqOXG6ob6zKnCGcB",
+      "sourcePath": "assets/game/audio/vo/intro_n1.ogg",
+      "sourceLockHashAndSizeMatch": true,
+      "generationMasterPaths": [
+        "/home/ubuntu/hh3_masters/intro_n1.wav"
+      ],
+      "generationResultEventIds": [
+        "180745027"
+      ],
+      "transformActionEventIds": [
+        "180745262"
+      ],
+      "missingGenerationRecords": [],
+      "originEvidenceStatus": "recorded-generation-and-transformation-chain",
+      "binaryReplayPerformed": false,
+      "rightsEntitlementStatus": "service-level-ownership-and-commercial-use-evidence-recovered; creating-user/assignment-and-input-rights-not-independently-confirmed"
+    },
+    {
+      "path": "assets/template/game/audio/vo/intro_n2.ogg",
+      "sha256": "sha256:7bad20c8eada53a58ff8921a042a5419014818430759aa3b230c5f68a15e1e54",
+      "sourceSession": "di1svPoqOXG6ob6zKnCGcB",
+      "sourcePath": "assets/game/audio/vo/intro_n2.ogg",
+      "sourceLockHashAndSizeMatch": true,
+      "generationMasterPaths": [
+        "/home/ubuntu/hh3_masters/intro_n2.wav"
+      ],
+      "generationResultEventIds": [
+        "180745017"
+      ],
+      "transformActionEventIds": [
+        "180745262"
+      ],
+      "missingGenerationRecords": [],
+      "originEvidenceStatus": "recorded-generation-and-transformation-chain",
+      "binaryReplayPerformed": false,
+      "rightsEntitlementStatus": "service-level-ownership-and-commercial-use-evidence-recovered; creating-user/assignment-and-input-rights-not-independently-confirmed"
+    },
+    {
+      "path": "assets/template/game/audio/vo/intro_n3.ogg",
+      "sha256": "sha256:6b480b9bcbf632167a9c18837ab7be593a3e6658d5b453443987d6f91db0edae",
+      "sourceSession": "di1svPoqOXG6ob6zKnCGcB",
+      "sourcePath": "assets/game/audio/vo/intro_n3.ogg",
+      "sourceLockHashAndSizeMatch": true,
+      "generationMasterPaths": [
+        "/home/ubuntu/hh3_masters/intro_n3.wav"
+      ],
+      "generationResultEventIds": [
+        "180745010"
+      ],
+      "transformActionEventIds": [
+        "180745262"
+      ],
+      "missingGenerationRecords": [],
+      "originEvidenceStatus": "recorded-generation-and-transformation-chain",
+      "binaryReplayPerformed": false,
+      "rightsEntitlementStatus": "service-level-ownership-and-commercial-use-evidence-recovered; creating-user/assignment-and-input-rights-not-independently-confirmed"
+    },
+    {
+      "path": "assets/template/game/audio/vo/intro_n5.ogg",
+      "sha256": "sha256:d24b3710f7f729a9175cbe9a6054cb19a4ff25bc26d0721dd70ef6b49891187a",
+      "sourceSession": "di1svPoqOXG6ob6zKnCGcB",
+      "sourcePath": "assets/game/audio/vo/intro_n5.ogg",
+      "sourceLockHashAndSizeMatch": true,
+      "generationMasterPaths": [
+        "/home/ubuntu/hh3_masters/intro_n5.wav"
+      ],
+      "generationResultEventIds": [
+        "180744991"
+      ],
+      "transformActionEventIds": [
+        "180745262"
+      ],
+      "missingGenerationRecords": [],
+      "originEvidenceStatus": "recorded-generation-and-transformation-chain",
+      "binaryReplayPerformed": false,
+      "rightsEntitlementStatus": "service-level-ownership-and-commercial-use-evidence-recovered; creating-user/assignment-and-input-rights-not-independently-confirmed"
+    },
+    {
+      "path": "assets/template/game/audio/vo/intro_n6.ogg",
+      "sha256": "sha256:de519cf5d5d6131f074545a8c73691b6ed8682c24862721b592604cf2e95c0f2",
+      "sourceSession": "di1svPoqOXG6ob6zKnCGcB",
+      "sourcePath": "assets/game/audio/vo/intro_n6.ogg",
+      "sourceLockHashAndSizeMatch": true,
+      "generationMasterPaths": [
+        "/home/ubuntu/hh3_masters/intro_n6.wav"
+      ],
+      "generationResultEventIds": [
+        "180744996"
+      ],
+      "transformActionEventIds": [
+        "180745262"
+      ],
+      "missingGenerationRecords": [],
+      "originEvidenceStatus": "recorded-generation-and-transformation-chain",
+      "binaryReplayPerformed": false,
+      "rightsEntitlementStatus": "service-level-ownership-and-commercial-use-evidence-recovered; creating-user/assignment-and-input-rights-not-independently-confirmed"
+    },
+    {
+      "path": "assets/template/game/audio/vo/intro_principal.ogg",
+      "sha256": "sha256:d79dccb1b1ba5208508efed7294adc5ba9165a3677c4bb1bd09f07d1442b6a23",
+      "sourceSession": "di1svPoqOXG6ob6zKnCGcB",
+      "sourcePath": "assets/game/audio/vo/intro_principal.ogg",
+      "sourceLockHashAndSizeMatch": true,
+      "generationMasterPaths": [
+        "/home/ubuntu/hh3_masters/intro_principal.wav"
+      ],
+      "generationResultEventIds": [
+        "180745022"
+      ],
+      "transformActionEventIds": [
+        "180745262"
+      ],
+      "missingGenerationRecords": [],
+      "originEvidenceStatus": "recorded-generation-and-transformation-chain",
+      "binaryReplayPerformed": false,
+      "rightsEntitlementStatus": "service-level-ownership-and-commercial-use-evidence-recovered; creating-user/assignment-and-input-rights-not-independently-confirmed"
+    },
+    {
+      "path": "assets/template/game/audio/vo/monitor_level.ogg",
+      "sha256": "sha256:7237134552e491f54364ccd1e3bfa73239111209895468c8d0348bdcd9be20d9",
+      "sourceSession": "di1svPoqOXG6ob6zKnCGcB",
+      "sourcePath": "assets/game/audio/vo/monitor_level.ogg",
+      "sourceLockHashAndSizeMatch": true,
+      "generationMasterPaths": [
+        "/home/ubuntu/hh2_masters/vo_monitor.wav"
+      ],
+      "generationResultEventIds": [
+        "179804381"
+      ],
+      "transformActionEventIds": [
+        "179805837",
+        "179840448",
+        "179840818"
+      ],
+      "missingGenerationRecords": [],
+      "originEvidenceStatus": "recorded-generation-and-transformation-chain",
+      "binaryReplayPerformed": false,
+      "rightsEntitlementStatus": "service-level-ownership-and-commercial-use-evidence-recovered; creating-user/assignment-and-input-rights-not-independently-confirmed"
+    },
+    {
+      "path": "assets/template/game/audio/vo/monitor_power.ogg",
+      "sha256": "sha256:fad4556f3c05ca9836dce9c8fb96e02fb8ff27969bf70a22cdd5920e5aa23983",
+      "sourceSession": "di1svPoqOXG6ob6zKnCGcB",
+      "sourcePath": "assets/game/audio/vo/monitor_power.ogg",
+      "sourceLockHashAndSizeMatch": true,
+      "generationMasterPaths": [
+        "/home/ubuntu/hh2_masters/vo_monitor.wav"
+      ],
+      "generationResultEventIds": [
+        "179804381"
+      ],
+      "transformActionEventIds": [
+        "179805837",
+        "179840448",
+        "179840818"
+      ],
+      "missingGenerationRecords": [],
+      "originEvidenceStatus": "recorded-generation-and-transformation-chain",
+      "binaryReplayPerformed": false,
+      "rightsEntitlementStatus": "service-level-ownership-and-commercial-use-evidence-recovered; creating-user/assignment-and-input-rights-not-independently-confirmed"
+    },
+    {
+      "path": "assets/template/game/audio/vo/monitor_select.ogg",
+      "sha256": "sha256:5334889d077cce352a674512142f7cf3a9ac9977fc4d0964cecbe5e9810f6682",
+      "sourceSession": "di1svPoqOXG6ob6zKnCGcB",
+      "sourcePath": "assets/game/audio/vo/monitor_select.ogg",
+      "sourceLockHashAndSizeMatch": true,
+      "generationMasterPaths": [
+        "/home/ubuntu/hh2_masters/vo_monitor.wav"
+      ],
+      "generationResultEventIds": [
+        "179804381"
+      ],
+      "transformActionEventIds": [
+        "179805837",
+        "179840448",
+        "179840818"
+      ],
+      "missingGenerationRecords": [],
+      "originEvidenceStatus": "recorded-generation-and-transformation-chain",
+      "binaryReplayPerformed": false,
+      "rightsEntitlementStatus": "service-level-ownership-and-commercial-use-evidence-recovered; creating-user/assignment-and-input-rights-not-independently-confirmed"
+    },
+    {
+      "path": "assets/template/game/audio/vo/pa_defeat.ogg",
+      "sha256": "sha256:562c4af3d2ebce72ab45b1891ac63733ca455d5d821efba40b96f21b542858c8",
+      "sourceSession": "di1svPoqOXG6ob6zKnCGcB",
+      "sourcePath": "assets/game/audio/vo/pa_defeat.ogg",
+      "sourceLockHashAndSizeMatch": true,
+      "generationMasterPaths": [
+        "/home/ubuntu/hh2_masters/vo_principal.wav"
+      ],
+      "generationResultEventIds": [
+        "179804586"
+      ],
+      "transformActionEventIds": [
+        "179805837",
+        "179840448",
+        "179840818"
+      ],
+      "missingGenerationRecords": [],
+      "originEvidenceStatus": "recorded-generation-and-transformation-chain",
+      "binaryReplayPerformed": false,
+      "rightsEntitlementStatus": "service-level-ownership-and-commercial-use-evidence-recovered; creating-user/assignment-and-input-rights-not-independently-confirmed"
+    },
+    {
+      "path": "assets/template/game/audio/vo/pa_final.ogg",
+      "sha256": "sha256:5a7caef28d4015bb6d979106ab2c55598cda63fa51e090e4c928f926e6000bac",
+      "sourceSession": "di1svPoqOXG6ob6zKnCGcB",
+      "sourcePath": "assets/game/audio/vo/pa_final.ogg",
+      "sourceLockHashAndSizeMatch": true,
+      "generationMasterPaths": [
+        "/home/ubuntu/hh2_masters/vo_principal.wav"
+      ],
+      "generationResultEventIds": [
+        "179804586"
+      ],
+      "transformActionEventIds": [
+        "179805837",
+        "179840448",
+        "179840818"
+      ],
+      "missingGenerationRecords": [],
+      "originEvidenceStatus": "recorded-generation-and-transformation-chain",
+      "binaryReplayPerformed": false,
+      "rightsEntitlementStatus": "service-level-ownership-and-commercial-use-evidence-recovered; creating-user/assignment-and-input-rights-not-independently-confirmed"
+    },
+    {
+      "path": "assets/template/game/audio/vo/pa_room.ogg",
+      "sha256": "sha256:367611db5c3b22af173b27dc8f7343a0cc434a161f59831645a71d21f9ad2fea",
+      "sourceSession": "di1svPoqOXG6ob6zKnCGcB",
+      "sourcePath": "assets/game/audio/vo/pa_room.ogg",
+      "sourceLockHashAndSizeMatch": true,
+      "generationMasterPaths": [
+        "/home/ubuntu/hh2_masters/vo_principal.wav"
+      ],
+      "generationResultEventIds": [
+        "179804586"
+      ],
+      "transformActionEventIds": [
+        "179805837",
+        "179840448",
+        "179840818"
+      ],
+      "missingGenerationRecords": [],
+      "originEvidenceStatus": "recorded-generation-and-transformation-chain",
+      "binaryReplayPerformed": false,
+      "rightsEntitlementStatus": "service-level-ownership-and-commercial-use-evidence-recovered; creating-user/assignment-and-input-rights-not-independently-confirmed"
+    },
+    {
+      "path": "assets/template/game/audio/vo/pa_surge.ogg",
+      "sha256": "sha256:180df60e4751e33d6d3d4b7dbd6c8276a50f8e12eb6aab6bc491ec0f508df3c1",
+      "sourceSession": "di1svPoqOXG6ob6zKnCGcB",
+      "sourcePath": "assets/game/audio/vo/pa_surge.ogg",
+      "sourceLockHashAndSizeMatch": true,
+      "generationMasterPaths": [
+        "/home/ubuntu/hh2_masters/vo_principal.wav"
+      ],
+      "generationResultEventIds": [
+        "179804586"
+      ],
+      "transformActionEventIds": [
+        "179805837",
+        "179840448",
+        "179840818"
+      ],
+      "missingGenerationRecords": [],
+      "originEvidenceStatus": "recorded-generation-and-transformation-chain",
+      "binaryReplayPerformed": false,
+      "rightsEntitlementStatus": "service-level-ownership-and-commercial-use-evidence-recovered; creating-user/assignment-and-input-rights-not-independently-confirmed"
+    },
+    {
+      "path": "assets/template/game/audio/vo/pa_victory.ogg",
+      "sha256": "sha256:da2b88264db04951f630ae39e2879e36568beebc5a24633e68f275163f745619",
+      "sourceSession": "di1svPoqOXG6ob6zKnCGcB",
+      "sourcePath": "assets/game/audio/vo/pa_victory.ogg",
+      "sourceLockHashAndSizeMatch": true,
+      "generationMasterPaths": [
+        "/home/ubuntu/hh2_masters/vo_principal.wav"
+      ],
+      "generationResultEventIds": [
+        "179804586"
+      ],
+      "transformActionEventIds": [
+        "179805837",
+        "179840448",
+        "179840818"
+      ],
+      "missingGenerationRecords": [],
+      "originEvidenceStatus": "recorded-generation-and-transformation-chain",
+      "binaryReplayPerformed": false,
+      "rightsEntitlementStatus": "service-level-ownership-and-commercial-use-evidence-recovered; creating-user/assignment-and-input-rights-not-independently-confirmed"
+    },
+    {
+      "path": "assets/template/game/audio/vo/pa_wave.ogg",
+      "sha256": "sha256:e1327b766c59a14b1d546d10946b16570994f28eab3d2a242a410676b47ee055",
+      "sourceSession": "di1svPoqOXG6ob6zKnCGcB",
+      "sourcePath": "assets/game/audio/vo/pa_wave.ogg",
+      "sourceLockHashAndSizeMatch": true,
+      "generationMasterPaths": [
+        "/home/ubuntu/hh2_masters/vo_principal.wav"
+      ],
+      "generationResultEventIds": [
+        "179804586"
+      ],
+      "transformActionEventIds": [
+        "179805837",
+        "179840448",
+        "179840818"
+      ],
+      "missingGenerationRecords": [],
+      "originEvidenceStatus": "recorded-generation-and-transformation-chain",
+      "binaryReplayPerformed": false,
+      "rightsEntitlementStatus": "service-level-ownership-and-commercial-use-evidence-recovered; creating-user/assignment-and-input-rights-not-independently-confirmed"
+    },
+    {
+      "path": "assets/template/game/audio/vo/pa_welcome.ogg",
+      "sha256": "sha256:0e41e7590fcdce831d9aa6df14cac0260c40974c63bcfccbf9eaa8d642234cdc",
+      "sourceSession": "di1svPoqOXG6ob6zKnCGcB",
+      "sourcePath": "assets/game/audio/vo/pa_welcome.ogg",
+      "sourceLockHashAndSizeMatch": true,
+      "generationMasterPaths": [
+        "/home/ubuntu/hh2_masters/vo_principal.wav"
+      ],
+      "generationResultEventIds": [
+        "179804586"
+      ],
+      "transformActionEventIds": [
+        "179805837",
+        "179840448",
+        "179840818"
+      ],
+      "missingGenerationRecords": [],
+      "originEvidenceStatus": "recorded-generation-and-transformation-chain",
+      "binaryReplayPerformed": false,
+      "rightsEntitlementStatus": "service-level-ownership-and-commercial-use-evidence-recovered; creating-user/assignment-and-input-rights-not-independently-confirmed"
+    },
+    {
+      "path": "assets/template/game/audio/vo/psi_level.ogg",
+      "sha256": "sha256:cf28a4b8f5a0acf3d33ba0bd6621bd11ef3006d15a7a8810f0a5f31e1d1f3439",
+      "sourceSession": "di1svPoqOXG6ob6zKnCGcB",
+      "sourcePath": "assets/game/audio/vo/psi_level.ogg",
+      "sourceLockHashAndSizeMatch": true,
+      "generationMasterPaths": [
+        "/home/ubuntu/hh2_masters/vo_psi.wav"
+      ],
+      "generationResultEventIds": [
+        "179804437"
+      ],
+      "transformActionEventIds": [
+        "179805837",
+        "179840448",
+        "179840818"
+      ],
+      "missingGenerationRecords": [],
+      "originEvidenceStatus": "recorded-generation-and-transformation-chain",
+      "binaryReplayPerformed": false,
+      "rightsEntitlementStatus": "service-level-ownership-and-commercial-use-evidence-recovered; creating-user/assignment-and-input-rights-not-independently-confirmed"
+    },
+    {
+      "path": "assets/template/game/audio/vo/psi_power.ogg",
+      "sha256": "sha256:ffbb20ee6bb0783819fb54a23166af38c5ee9ec9ecc52d137af06a6fe8b16d28",
+      "sourceSession": "di1svPoqOXG6ob6zKnCGcB",
+      "sourcePath": "assets/game/audio/vo/psi_power.ogg",
+      "sourceLockHashAndSizeMatch": true,
+      "generationMasterPaths": [
+        "/home/ubuntu/hh2_masters/vo_psi.wav"
+      ],
+      "generationResultEventIds": [
+        "179804437"
+      ],
+      "transformActionEventIds": [
+        "179805837",
+        "179840448",
+        "179840818"
+      ],
+      "missingGenerationRecords": [],
+      "originEvidenceStatus": "recorded-generation-and-transformation-chain",
+      "binaryReplayPerformed": false,
+      "rightsEntitlementStatus": "service-level-ownership-and-commercial-use-evidence-recovered; creating-user/assignment-and-input-rights-not-independently-confirmed"
+    },
+    {
+      "path": "assets/template/game/audio/vo/psi_select.ogg",
+      "sha256": "sha256:25e65a6fdbfd6608c36f1f14534a7ac606a310c2256269904a42f5749a4935da",
+      "sourceSession": "di1svPoqOXG6ob6zKnCGcB",
+      "sourcePath": "assets/game/audio/vo/psi_select.ogg",
+      "sourceLockHashAndSizeMatch": true,
+      "generationMasterPaths": [
+        "/home/ubuntu/hh2_masters/vo_psi.wav"
+      ],
+      "generationResultEventIds": [
+        "179804437"
+      ],
+      "transformActionEventIds": [
+        "179805837",
+        "179840448",
+        "179840818"
+      ],
+      "missingGenerationRecords": [],
+      "originEvidenceStatus": "recorded-generation-and-transformation-chain",
+      "binaryReplayPerformed": false,
+      "rightsEntitlementStatus": "service-level-ownership-and-commercial-use-evidence-recovered; creating-user/assignment-and-input-rights-not-independently-confirmed"
+    },
+    {
+      "path": "assets/template/game/audio/vo/stretch_level.ogg",
+      "sha256": "sha256:9ce9697e61616509e13c3e99365459a3dfb562e60cc9eb9afece2f5b491fa620",
+      "sourceSession": "di1svPoqOXG6ob6zKnCGcB",
+      "sourcePath": "assets/game/audio/vo/stretch_level.ogg",
+      "sourceLockHashAndSizeMatch": true,
+      "generationMasterPaths": [
+        "/home/ubuntu/hh2_masters/vo_stretch.wav"
+      ],
+      "generationResultEventIds": [
+        "179804379"
+      ],
+      "transformActionEventIds": [
+        "179805837",
+        "179840448",
+        "179840818"
+      ],
+      "missingGenerationRecords": [],
+      "originEvidenceStatus": "recorded-generation-and-transformation-chain",
+      "binaryReplayPerformed": false,
+      "rightsEntitlementStatus": "service-level-ownership-and-commercial-use-evidence-recovered; creating-user/assignment-and-input-rights-not-independently-confirmed"
+    },
+    {
+      "path": "assets/template/game/audio/vo/stretch_power.ogg",
+      "sha256": "sha256:4019364a9f61cc6f522a1ca0b582447240c34dd050bda426cbee0a0b729fa420",
+      "sourceSession": "di1svPoqOXG6ob6zKnCGcB",
+      "sourcePath": "assets/game/audio/vo/stretch_power.ogg",
+      "sourceLockHashAndSizeMatch": true,
+      "generationMasterPaths": [
+        "/home/ubuntu/hh2_masters/vo_stretch.wav"
+      ],
+      "generationResultEventIds": [
+        "179804379"
+      ],
+      "transformActionEventIds": [
+        "179805837",
+        "179840448",
+        "179840818"
+      ],
+      "missingGenerationRecords": [],
+      "originEvidenceStatus": "recorded-generation-and-transformation-chain",
+      "binaryReplayPerformed": false,
+      "rightsEntitlementStatus": "service-level-ownership-and-commercial-use-evidence-recovered; creating-user/assignment-and-input-rights-not-independently-confirmed"
+    },
+    {
+      "path": "assets/template/game/audio/vo/stretch_select.ogg",
+      "sha256": "sha256:08aaaef98bc0612407484f6b41d7f26d6c849d249942aa6990592f7a054f97cb",
+      "sourceSession": "di1svPoqOXG6ob6zKnCGcB",
+      "sourcePath": "assets/game/audio/vo/stretch_select.ogg",
+      "sourceLockHashAndSizeMatch": true,
+      "generationMasterPaths": [
+        "/home/ubuntu/hh2_masters/vo_stretch.wav"
+      ],
+      "generationResultEventIds": [
+        "179804379"
+      ],
+      "transformActionEventIds": [
+        "179805837",
+        "179840448",
+        "179840818"
+      ],
+      "missingGenerationRecords": [],
+      "originEvidenceStatus": "recorded-generation-and-transformation-chain",
+      "binaryReplayPerformed": false,
+      "rightsEntitlementStatus": "service-level-ownership-and-commercial-use-evidence-recovered; creating-user/assignment-and-input-rights-not-independently-confirmed"
+    },
+    {
+      "path": "assets/template/game/backgrounds/title_bg.webp",
+      "sha256": "sha256:2225b5517e2c4dc9ebb9c8afb93e76482ec36099d2da7abf589504afd7bcaa2f",
+      "sourceSession": "di1svPoqOXG6ob6zKnCGcB",
+      "sourcePath": "assets/game/backgrounds/title_bg.webp",
+      "sourceLockHashAndSizeMatch": true,
+      "generationMasterPaths": [
+        "/home/ubuntu/hh2_masters/title_bg.png"
+      ],
+      "generationResultEventIds": [
+        "179801437"
+      ],
+      "transformActionEventIds": [
+        "179841137"
+      ],
+      "missingGenerationRecords": [],
+      "originEvidenceStatus": "recorded-generation-and-transformation-chain",
+      "binaryReplayPerformed": false,
+      "rightsEntitlementStatus": "service-level-ownership-and-commercial-use-evidence-recovered; creating-user/assignment-and-input-rights-not-independently-confirmed"
+    },
+    {
+      "path": "assets/template/game/buildings/bld_cafeteria.png",
+      "sha256": "sha256:fa8ae57ccf27dbb60ad71688572d90226f460ed457f6520c553a8ff2be9c7294",
+      "sourceSession": "di1svPoqOXG6ob6zKnCGcB",
+      "sourcePath": "assets/game/buildings/bld_cafeteria.png",
+      "sourceLockHashAndSizeMatch": true,
+      "generationMasterPaths": [
+        "/home/ubuntu/hh2_masters/bld_cafeteria.png"
+      ],
+      "generationResultEventIds": [
+        "179799778"
+      ],
+      "transformActionEventIds": [
+        "179841137"
+      ],
+      "missingGenerationRecords": [],
+      "originEvidenceStatus": "recorded-generation-and-transformation-chain",
+      "binaryReplayPerformed": false,
+      "rightsEntitlementStatus": "service-level-ownership-and-commercial-use-evidence-recovered; creating-user/assignment-and-input-rights-not-independently-confirmed"
+    },
+    {
+      "path": "assets/template/game/buildings/bld_chem_lab.png",
+      "sha256": "sha256:6fdf57308aaa4f837b3dd6e714bdb02f803d3f89d55853a9b68f0de164df8588",
+      "sourceSession": "di1svPoqOXG6ob6zKnCGcB",
+      "sourcePath": "assets/game/buildings/bld_chem_lab.png",
+      "sourceLockHashAndSizeMatch": true,
+      "generationMasterPaths": [
+        "/home/ubuntu/hh2_masters/bld_chem_lab.png"
+      ],
+      "generationResultEventIds": [
+        "179799778"
+      ],
+      "transformActionEventIds": [
+        "179841137"
+      ],
+      "missingGenerationRecords": [],
+      "originEvidenceStatus": "recorded-generation-and-transformation-chain",
+      "binaryReplayPerformed": false,
+      "rightsEntitlementStatus": "service-level-ownership-and-commercial-use-evidence-recovered; creating-user/assignment-and-input-rights-not-independently-confirmed"
+    },
+    {
+      "path": "assets/template/game/buildings/bld_gym.png",
+      "sha256": "sha256:c90c3fb5cc0068f4d52a6bbae67b668b7e5a8893b0c70f76b6ffff45e42c1732",
+      "sourceSession": "di1svPoqOXG6ob6zKnCGcB",
+      "sourcePath": "assets/game/buildings/bld_gym.png",
+      "sourceLockHashAndSizeMatch": true,
+      "generationMasterPaths": [
+        "/home/ubuntu/hh2_masters/bld_gym.png"
+      ],
+      "generationResultEventIds": [
+        "179799778"
+      ],
+      "transformActionEventIds": [
+        "179841137"
+      ],
+      "missingGenerationRecords": [],
+      "originEvidenceStatus": "recorded-generation-and-transformation-chain",
+      "binaryReplayPerformed": false,
+      "rightsEntitlementStatus": "service-level-ownership-and-commercial-use-evidence-recovered; creating-user/assignment-and-input-rights-not-independently-confirmed"
+    },
+    {
+      "path": "assets/template/game/buildings/bld_library.png",
+      "sha256": "sha256:971ef6955173ae158cac8dd1ad529a687467de0bfb6c3ca161fdcda93b5181c8",
+      "sourceSession": "di1svPoqOXG6ob6zKnCGcB",
+      "sourcePath": "assets/game/buildings/bld_library.png",
+      "sourceLockHashAndSizeMatch": true,
+      "generationMasterPaths": [
+        "/home/ubuntu/hh2_masters/bld_library.png"
+      ],
+      "generationResultEventIds": [
+        "179799778"
+      ],
+      "transformActionEventIds": [
+        "179841137"
+      ],
+      "missingGenerationRecords": [],
+      "originEvidenceStatus": "recorded-generation-and-transformation-chain",
+      "binaryReplayPerformed": false,
+      "rightsEntitlementStatus": "service-level-ownership-and-commercial-use-evidence-recovered; creating-user/assignment-and-input-rights-not-independently-confirmed"
+    },
+    {
+      "path": "assets/template/game/buildings/bld_main_hall.png",
+      "sha256": "sha256:d4324a0ef63b01bcd2072ea84cea2a10b5b3f86d9687c252be6f2e276994c4eb",
+      "sourceSession": "di1svPoqOXG6ob6zKnCGcB",
+      "sourcePath": "assets/game/buildings/bld_main_hall.png",
+      "sourceLockHashAndSizeMatch": true,
+      "generationMasterPaths": [
+        "/home/ubuntu/hallhero/art_src/bld_main_hall.png"
+      ],
+      "generationResultEventIds": [
+        "179670966"
+      ],
+      "transformActionEventIds": [
+        "179672781"
+      ],
+      "missingGenerationRecords": [],
+      "originEvidenceStatus": "recorded-generation-and-transformation-chain",
+      "binaryReplayPerformed": false,
+      "rightsEntitlementStatus": "service-level-ownership-and-commercial-use-evidence-recovered; creating-user/assignment-and-input-rights-not-independently-confirmed"
+    },
+    {
+      "path": "assets/template/game/comic/p1_quad.webp",
+      "sha256": "sha256:aadb65f272f5e97b9b97938b6908c18b15e2ef7ab9830903fcae8458614d5735",
+      "sourceSession": "di1svPoqOXG6ob6zKnCGcB",
+      "sourcePath": "assets/game/comic/p1_quad.webp",
+      "sourceLockHashAndSizeMatch": true,
+      "generationMasterPaths": [
+        "/home/ubuntu/hh3_masters/panel1_quad.png"
+      ],
+      "generationResultEventIds": [
+        "180744895"
+      ],
+      "transformActionEventIds": [
+        "180745459"
+      ],
+      "missingGenerationRecords": [],
+      "originEvidenceStatus": "recorded-generation-and-transformation-chain",
+      "binaryReplayPerformed": false,
+      "rightsEntitlementStatus": "service-level-ownership-and-commercial-use-evidence-recovered; creating-user/assignment-and-input-rights-not-independently-confirmed"
+    },
+    {
+      "path": "assets/template/game/comic/p2_villain.webp",
+      "sha256": "sha256:3788e41502185608fbce554fbe4c4be4860cd1bc4c37ace7be46c91605ec0b07",
+      "sourceSession": "di1svPoqOXG6ob6zKnCGcB",
+      "sourcePath": "assets/game/comic/p2_villain.webp",
+      "sourceLockHashAndSizeMatch": true,
+      "generationMasterPaths": [
+        "/home/ubuntu/hh3_masters/panel2_villain.png"
+      ],
+      "generationResultEventIds": [
+        "180744895"
+      ],
+      "transformActionEventIds": [
+        "180745459"
+      ],
+      "missingGenerationRecords": [],
+      "originEvidenceStatus": "recorded-generation-and-transformation-chain",
+      "binaryReplayPerformed": false,
+      "rightsEntitlementStatus": "service-level-ownership-and-commercial-use-evidence-recovered; creating-user/assignment-and-input-rights-not-independently-confirmed"
+    },
+    {
+      "path": "assets/template/game/comic/p3_invasion.webp",
+      "sha256": "sha256:fce8638b521d580469390340fadd542b85f8681bcaad9a10c6c561b743cdc7e2",
+      "sourceSession": "di1svPoqOXG6ob6zKnCGcB",
+      "sourcePath": "assets/game/comic/p3_invasion.webp",
+      "sourceLockHashAndSizeMatch": true,
+      "generationMasterPaths": [
+        "/home/ubuntu/hh3_masters/panel3_invasion.png"
+      ],
+      "generationResultEventIds": [
+        "180744895"
+      ],
+      "transformActionEventIds": [
+        "180745459"
+      ],
+      "missingGenerationRecords": [],
+      "originEvidenceStatus": "recorded-generation-and-transformation-chain",
+      "binaryReplayPerformed": false,
+      "rightsEntitlementStatus": "service-level-ownership-and-commercial-use-evidence-recovered; creating-user/assignment-and-input-rights-not-independently-confirmed"
+    },
+    {
+      "path": "assets/template/game/comic/p4_principal.webp",
+      "sha256": "sha256:fe00deaef7205a97a46fa5167b252e28f871ce219fcd82d6a92e86c6c58a1815",
+      "sourceSession": "di1svPoqOXG6ob6zKnCGcB",
+      "sourcePath": "assets/game/comic/p4_principal.webp",
+      "sourceLockHashAndSizeMatch": true,
+      "generationMasterPaths": [
+        "/home/ubuntu/hh3_masters/panel4_principal.png"
+      ],
+      "generationResultEventIds": [
+        "180744895"
+      ],
+      "transformActionEventIds": [
+        "180745459"
+      ],
+      "missingGenerationRecords": [],
+      "originEvidenceStatus": "recorded-generation-and-transformation-chain",
+      "binaryReplayPerformed": false,
+      "rightsEntitlementStatus": "service-level-ownership-and-commercial-use-evidence-recovered; creating-user/assignment-and-input-rights-not-independently-confirmed"
+    },
+    {
+      "path": "assets/template/game/comic/p5_squad.webp",
+      "sha256": "sha256:bbbbfa9cbc3aef48ecf98b03992833abac13c60bfd9b483a46a453e9b13111ce",
+      "sourceSession": "di1svPoqOXG6ob6zKnCGcB",
+      "sourcePath": "assets/game/comic/p5_squad.webp",
+      "sourceLockHashAndSizeMatch": true,
+      "generationMasterPaths": [
+        "/home/ubuntu/hh3_masters/panel5_squad.png"
+      ],
+      "generationResultEventIds": [
+        "180744895"
+      ],
+      "transformActionEventIds": [
+        "180745459"
+      ],
+      "missingGenerationRecords": [],
+      "originEvidenceStatus": "recorded-generation-and-transformation-chain",
+      "binaryReplayPerformed": false,
+      "rightsEntitlementStatus": "service-level-ownership-and-commercial-use-evidence-recovered; creating-user/assignment-and-input-rights-not-independently-confirmed"
+    },
+    {
+      "path": "assets/template/game/comic/p6_splash.webp",
+      "sha256": "sha256:7f9e5ab7d252d7c9cafa3558b29dd4a007ba9ee70ad39af0f4b793cbcc1d7b19",
+      "sourceSession": "di1svPoqOXG6ob6zKnCGcB",
+      "sourcePath": "assets/game/comic/p6_splash.webp",
+      "sourceLockHashAndSizeMatch": true,
+      "generationMasterPaths": [
+        "/home/ubuntu/hh3_masters/panel6_splash.png"
+      ],
+      "generationResultEventIds": [
+        "180745253"
+      ],
+      "transformActionEventIds": [
+        "180745459"
+      ],
+      "missingGenerationRecords": [],
+      "originEvidenceStatus": "recorded-generation-and-transformation-chain",
+      "binaryReplayPerformed": false,
+      "rightsEntitlementStatus": "service-level-ownership-and-commercial-use-evidence-recovered; creating-user/assignment-and-input-rights-not-independently-confirmed"
+    },
+    {
+      "path": "assets/template/game/fx/book.png",
+      "sha256": "sha256:3caab015d5669ebd09c0019a56d6be356b79c05f985ba9b30cd82539bf53b27b",
+      "sourceSession": "di1svPoqOXG6ob6zKnCGcB",
+      "sourcePath": "assets/game/fx/book.png",
+      "sourceLockHashAndSizeMatch": true,
+      "generationMasterPaths": [
+        "/home/ubuntu/hh2_masters/fx_sheet_a.png"
+      ],
+      "generationResultEventIds": [
+        "179800956"
+      ],
+      "transformActionEventIds": [
+        "179841137"
+      ],
+      "missingGenerationRecords": [],
+      "originEvidenceStatus": "recorded-generation-and-transformation-chain",
+      "binaryReplayPerformed": false,
+      "rightsEntitlementStatus": "service-level-ownership-and-commercial-use-evidence-recovered; creating-user/assignment-and-input-rights-not-independently-confirmed"
+    },
+    {
+      "path": "assets/template/game/fx/coin.png",
+      "sha256": "sha256:ba330aa7da21f98127d8af7ae22cdbe8cb1b85dca77dedf2fe9452acf2ccd25f",
+      "sourceSession": "di1svPoqOXG6ob6zKnCGcB",
+      "sourcePath": "assets/game/fx/coin.png",
+      "sourceLockHashAndSizeMatch": true,
+      "generationMasterPaths": [
+        "/home/ubuntu/hh2_masters/fx_sheet_a.png"
+      ],
+      "generationResultEventIds": [
+        "179800956"
+      ],
+      "transformActionEventIds": [
+        "179841137"
+      ],
+      "missingGenerationRecords": [],
+      "originEvidenceStatus": "recorded-generation-and-transformation-chain",
+      "binaryReplayPerformed": false,
+      "rightsEntitlementStatus": "service-level-ownership-and-commercial-use-evidence-recovered; creating-user/assignment-and-input-rights-not-independently-confirmed"
+    },
+    {
+      "path": "assets/template/game/fx/confetti_gold.png",
+      "sha256": "sha256:b8cbc93477d120b25f7de8e8af6c42843877f3cf58cf825f12881e2c9f9e790b",
+      "sourceSession": "di1svPoqOXG6ob6zKnCGcB",
+      "sourcePath": "assets/game/fx/confetti_gold.png",
+      "sourceLockHashAndSizeMatch": true,
+      "generationMasterPaths": [
+        "/home/ubuntu/hh2_masters/fx_sheet_a.png"
+      ],
+      "generationResultEventIds": [
+        "179800956"
+      ],
+      "transformActionEventIds": [
+        "179841137"
+      ],
+      "missingGenerationRecords": [],
+      "originEvidenceStatus": "recorded-generation-and-transformation-chain",
+      "binaryReplayPerformed": false,
+      "rightsEntitlementStatus": "service-level-ownership-and-commercial-use-evidence-recovered; creating-user/assignment-and-input-rights-not-independently-confirmed"
+    },
+    {
+      "path": "assets/template/game/fx/confetti_maroon.png",
+      "sha256": "sha256:0fcc89b1f4d9ae809f3248930a0b9e6708657cdc6dd6c0b63a063a52f9f3bebf",
+      "sourceSession": "di1svPoqOXG6ob6zKnCGcB",
+      "sourcePath": "assets/game/fx/confetti_maroon.png",
+      "sourceLockHashAndSizeMatch": true,
+      "generationMasterPaths": [
+        "/home/ubuntu/hh2_masters/fx_sheet_a.png"
+      ],
+      "generationResultEventIds": [
+        "179800956"
+      ],
+      "transformActionEventIds": [
+        "179841137"
+      ],
+      "missingGenerationRecords": [],
+      "originEvidenceStatus": "recorded-generation-and-transformation-chain",
+      "binaryReplayPerformed": false,
+      "rightsEntitlementStatus": "service-level-ownership-and-commercial-use-evidence-recovered; creating-user/assignment-and-input-rights-not-independently-confirmed"
+    },
+    {
+      "path": "assets/template/game/fx/dust.png",
+      "sha256": "sha256:dfffb59f85dd635d7bc0bd4cf7685130e8899458297e90e9e24a79cd61bc2430",
+      "sourceSession": "di1svPoqOXG6ob6zKnCGcB",
+      "sourcePath": "assets/game/fx/dust.png",
+      "sourceLockHashAndSizeMatch": true,
+      "generationMasterPaths": [
+        "/home/ubuntu/hh2_masters/fx_sheet_a.png"
+      ],
+      "generationResultEventIds": [
+        "179800956"
+      ],
+      "transformActionEventIds": [
+        "179841137"
+      ],
+      "missingGenerationRecords": [],
+      "originEvidenceStatus": "recorded-generation-and-transformation-chain",
+      "binaryReplayPerformed": false,
+      "rightsEntitlementStatus": "service-level-ownership-and-commercial-use-evidence-recovered; creating-user/assignment-and-input-rights-not-independently-confirmed"
+    },
+    {
+      "path": "assets/template/game/fx/ember.png",
+      "sha256": "sha256:080ad79ce658b7e4ff3f93bd62c5bdba9985a20c0ad58ec027cdcebec32bb457",
+      "sourceSession": "di1svPoqOXG6ob6zKnCGcB",
+      "sourcePath": "assets/game/fx/ember.png",
+      "sourceLockHashAndSizeMatch": true,
+      "generationMasterPaths": [
+        "/home/ubuntu/hh2_masters/fx_sheet_a.png"
+      ],
+      "generationResultEventIds": [
+        "179800956"
+      ],
+      "transformActionEventIds": [
+        "179841137"
+      ],
+      "missingGenerationRecords": [],
+      "originEvidenceStatus": "recorded-generation-and-transformation-chain",
+      "binaryReplayPerformed": false,
+      "rightsEntitlementStatus": "service-level-ownership-and-commercial-use-evidence-recovered; creating-user/assignment-and-input-rights-not-independently-confirmed"
+    },
+    {
+      "path": "assets/template/game/fx/flame.png",
+      "sha256": "sha256:e47ca0d9325daccdd8212075d3da28a34025f82a78a645e00e8bfe9b82685a9a",
+      "sourceSession": "di1svPoqOXG6ob6zKnCGcB",
+      "sourcePath": "assets/game/fx/flame.png",
+      "sourceLockHashAndSizeMatch": true,
+      "generationMasterPaths": [
+        "/home/ubuntu/hh2_masters/fx_sheet_a.png"
+      ],
+      "generationResultEventIds": [
+        "179800956"
+      ],
+      "transformActionEventIds": [
+        "179841137"
+      ],
+      "missingGenerationRecords": [],
+      "originEvidenceStatus": "recorded-generation-and-transformation-chain",
+      "binaryReplayPerformed": false,
+      "rightsEntitlementStatus": "service-level-ownership-and-commercial-use-evidence-recovered; creating-user/assignment-and-input-rights-not-independently-confirmed"
+    },
+    {
+      "path": "assets/template/game/fx/heart.png",
+      "sha256": "sha256:47a0633649c0f2d6e33d611223bada754f6873f02510477b7e6166f2315c5c01",
+      "sourceSession": "di1svPoqOXG6ob6zKnCGcB",
+      "sourcePath": "assets/game/fx/heart.png",
+      "sourceLockHashAndSizeMatch": true,
+      "generationMasterPaths": [
+        "/home/ubuntu/hh2_masters/fx_sheet_a.png"
+      ],
+      "generationResultEventIds": [
+        "179800956"
+      ],
+      "transformActionEventIds": [
+        "179841137"
+      ],
+      "missingGenerationRecords": [],
+      "originEvidenceStatus": "recorded-generation-and-transformation-chain",
+      "binaryReplayPerformed": false,
+      "rightsEntitlementStatus": "service-level-ownership-and-commercial-use-evidence-recovered; creating-user/assignment-and-input-rights-not-independently-confirmed"
+    },
+    {
+      "path": "assets/template/game/fx/ice_shard.png",
+      "sha256": "sha256:e7833f3e5c9519e35a527db1867c3162cb898dd1cb728ff256f2cef1e2e25a6b",
+      "sourceSession": "di1svPoqOXG6ob6zKnCGcB",
+      "sourcePath": "assets/game/fx/ice_shard.png",
+      "sourceLockHashAndSizeMatch": true,
+      "generationMasterPaths": [
+        "/home/ubuntu/hh2_masters/fx_sheet_a.png"
+      ],
+      "generationResultEventIds": [
+        "179800956"
+      ],
+      "transformActionEventIds": [
+        "179841137"
+      ],
+      "missingGenerationRecords": [],
+      "originEvidenceStatus": "recorded-generation-and-transformation-chain",
+      "binaryReplayPerformed": false,
+      "rightsEntitlementStatus": "service-level-ownership-and-commercial-use-evidence-recovered; creating-user/assignment-and-input-rights-not-independently-confirmed"
+    },
+    {
+      "path": "assets/template/game/fx/leaf.png",
+      "sha256": "sha256:2b0e0555b4755b9373f9a4467630a0ec3b756278eae236958bffeb932b3e8b3e",
+      "sourceSession": "di1svPoqOXG6ob6zKnCGcB",
+      "sourcePath": "assets/game/fx/leaf.png",
+      "sourceLockHashAndSizeMatch": true,
+      "generationMasterPaths": [
+        "/home/ubuntu/hh2_masters/fx_sheet_a.png"
+      ],
+      "generationResultEventIds": [
+        "179800956"
+      ],
+      "transformActionEventIds": [
+        "179841137"
+      ],
+      "missingGenerationRecords": [],
+      "originEvidenceStatus": "recorded-generation-and-transformation-chain",
+      "binaryReplayPerformed": false,
+      "rightsEntitlementStatus": "service-level-ownership-and-commercial-use-evidence-recovered; creating-user/assignment-and-input-rights-not-independently-confirmed"
+    },
+    {
+      "path": "assets/template/game/fx/plus.png",
+      "sha256": "sha256:b8f33c26992b4562fe8f7dffbf8296270e66228a00ba102c53c1d6eb6919e003",
+      "sourceSession": "di1svPoqOXG6ob6zKnCGcB",
+      "sourcePath": "assets/game/fx/plus.png",
+      "sourceLockHashAndSizeMatch": true,
+      "generationMasterPaths": [
+        "/home/ubuntu/hh2_masters/fx_sheet_a.png"
+      ],
+      "generationResultEventIds": [
+        "179800956"
+      ],
+      "transformActionEventIds": [
+        "179841137"
+      ],
+      "missingGenerationRecords": [],
+      "originEvidenceStatus": "recorded-generation-and-transformation-chain",
+      "binaryReplayPerformed": false,
+      "rightsEntitlementStatus": "service-level-ownership-and-commercial-use-evidence-recovered; creating-user/assignment-and-input-rights-not-independently-confirmed"
+    },
+    {
+      "path": "assets/template/game/fx/portal.png",
+      "sha256": "sha256:4132c973a4e32f3baa5076e12f17f4b9abf10ef1fbe7b0442887c8d3aff6e2ce",
+      "sourceSession": "di1svPoqOXG6ob6zKnCGcB",
+      "sourcePath": "assets/game/fx/portal.png",
+      "sourceLockHashAndSizeMatch": true,
+      "generationMasterPaths": [
+        "/home/ubuntu/hh2_masters/fx_portal.png"
+      ],
+      "generationResultEventIds": [
+        "179800956"
+      ],
+      "transformActionEventIds": [
+        "179841137"
+      ],
+      "missingGenerationRecords": [],
+      "originEvidenceStatus": "recorded-generation-and-transformation-chain",
+      "binaryReplayPerformed": false,
+      "rightsEntitlementStatus": "service-level-ownership-and-commercial-use-evidence-recovered; creating-user/assignment-and-input-rights-not-independently-confirmed"
+    },
+    {
+      "path": "assets/template/game/fx/psi_swirl.png",
+      "sha256": "sha256:5e14811cf8f9fca3dfafcc37c0597d5f68ca20de1cc69ad47eefeda0161e40de",
+      "sourceSession": "di1svPoqOXG6ob6zKnCGcB",
+      "sourcePath": "assets/game/fx/psi_swirl.png",
+      "sourceLockHashAndSizeMatch": true,
+      "generationMasterPaths": [
+        "/home/ubuntu/hh2_masters/fx_sheet_a.png"
+      ],
+      "generationResultEventIds": [
+        "179800956"
+      ],
+      "transformActionEventIds": [
+        "179841137"
+      ],
+      "missingGenerationRecords": [],
+      "originEvidenceStatus": "recorded-generation-and-transformation-chain",
+      "binaryReplayPerformed": false,
+      "rightsEntitlementStatus": "service-level-ownership-and-commercial-use-evidence-recovered; creating-user/assignment-and-input-rights-not-independently-confirmed"
+    },
+    {
+      "path": "assets/template/game/fx/scorch.png",
+      "sha256": "sha256:6226b930b50118fc9b5971b6760144747c8801d629da610c3b23354197db3601",
+      "sourceSession": "di1svPoqOXG6ob6zKnCGcB",
+      "sourcePath": "assets/game/fx/scorch.png",
+      "sourceLockHashAndSizeMatch": true,
+      "generationMasterPaths": [
+        "/home/ubuntu/hh2_masters/fx_scorch.png"
+      ],
+      "generationResultEventIds": [
+        "179800956"
+      ],
+      "transformActionEventIds": [
+        "179841137"
+      ],
+      "missingGenerationRecords": [],
+      "originEvidenceStatus": "recorded-generation-and-transformation-chain",
+      "binaryReplayPerformed": false,
+      "rightsEntitlementStatus": "service-level-ownership-and-commercial-use-evidence-recovered; creating-user/assignment-and-input-rights-not-independently-confirmed"
+    },
+    {
+      "path": "assets/template/game/fx/smoke_a.png",
+      "sha256": "sha256:daf3c94f5d585996a4677fdad350f81546e49e0592937146315bf149974032c9",
+      "sourceSession": "di1svPoqOXG6ob6zKnCGcB",
+      "sourcePath": "assets/game/fx/smoke_a.png",
+      "sourceLockHashAndSizeMatch": true,
+      "generationMasterPaths": [
+        "/home/ubuntu/hh2_masters/fx_sheet_a.png"
+      ],
+      "generationResultEventIds": [
+        "179800956"
+      ],
+      "transformActionEventIds": [
+        "179841137"
+      ],
+      "missingGenerationRecords": [],
+      "originEvidenceStatus": "recorded-generation-and-transformation-chain",
+      "binaryReplayPerformed": false,
+      "rightsEntitlementStatus": "service-level-ownership-and-commercial-use-evidence-recovered; creating-user/assignment-and-input-rights-not-independently-confirmed"
+    },
+    {
+      "path": "assets/template/game/fx/smoke_b.png",
+      "sha256": "sha256:1275d2e0aaac4ed918e5955851948781e64d3a0ef4269acc0517d7c680fcaebd",
+      "sourceSession": "di1svPoqOXG6ob6zKnCGcB",
+      "sourcePath": "assets/game/fx/smoke_b.png",
+      "sourceLockHashAndSizeMatch": true,
+      "generationMasterPaths": [
+        "/home/ubuntu/hh2_masters/fx_sheet_a.png"
+      ],
+      "generationResultEventIds": [
+        "179800956"
+      ],
+      "transformActionEventIds": [
+        "179841137"
+      ],
+      "missingGenerationRecords": [],
+      "originEvidenceStatus": "recorded-generation-and-transformation-chain",
+      "binaryReplayPerformed": false,
+      "rightsEntitlementStatus": "service-level-ownership-and-commercial-use-evidence-recovered; creating-user/assignment-and-input-rights-not-independently-confirmed"
+    },
+    {
+      "path": "assets/template/game/fx/snowflake.png",
+      "sha256": "sha256:c5409bdf808c21ae1c1961e8f483e7d32db10c1f9db90100a978ea5cba0eb88d",
+      "sourceSession": "di1svPoqOXG6ob6zKnCGcB",
+      "sourcePath": "assets/game/fx/snowflake.png",
+      "sourceLockHashAndSizeMatch": true,
+      "generationMasterPaths": [
+        "/home/ubuntu/hh2_masters/fx_sheet_a.png"
+      ],
+      "generationResultEventIds": [
+        "179800956"
+      ],
+      "transformActionEventIds": [
+        "179841137"
+      ],
+      "missingGenerationRecords": [],
+      "originEvidenceStatus": "recorded-generation-and-transformation-chain",
+      "binaryReplayPerformed": false,
+      "rightsEntitlementStatus": "service-level-ownership-and-commercial-use-evidence-recovered; creating-user/assignment-and-input-rights-not-independently-confirmed"
+    },
+    {
+      "path": "assets/template/game/fx/star.png",
+      "sha256": "sha256:c0b139ca668d33e3d5d3036ccc96e52a026879a78df8da796f1fecd6f8b022c8",
+      "sourceSession": "di1svPoqOXG6ob6zKnCGcB",
+      "sourcePath": "assets/game/fx/star.png",
+      "sourceLockHashAndSizeMatch": true,
+      "generationMasterPaths": [
+        "/home/ubuntu/hh2_masters/fx_sheet_a.png"
+      ],
+      "generationResultEventIds": [
+        "179800956"
+      ],
+      "transformActionEventIds": [
+        "179841137"
+      ],
+      "missingGenerationRecords": [],
+      "originEvidenceStatus": "recorded-generation-and-transformation-chain",
+      "binaryReplayPerformed": false,
+      "rightsEntitlementStatus": "service-level-ownership-and-commercial-use-evidence-recovered; creating-user/assignment-and-input-rights-not-independently-confirmed"
+    },
+    {
+      "path": "assets/template/game/fx/sticker_bubble.png",
+      "sha256": "sha256:d17b0910c73c748492b1fd5776d72df4b54e24c29980e6fd33e4f52c6c2b5548",
+      "sourceSession": "di1svPoqOXG6ob6zKnCGcB",
+      "sourcePath": "assets/game/fx/sticker_bubble.png",
+      "sourceLockHashAndSizeMatch": true,
+      "generationMasterPaths": [
+        "/home/ubuntu/hh2_masters/fx_sheet_b.png"
+      ],
+      "generationResultEventIds": [
+        "179800956"
+      ],
+      "transformActionEventIds": [
+        "179841137"
+      ],
+      "missingGenerationRecords": [],
+      "originEvidenceStatus": "recorded-generation-and-transformation-chain",
+      "binaryReplayPerformed": false,
+      "rightsEntitlementStatus": "service-level-ownership-and-commercial-use-evidence-recovered; creating-user/assignment-and-input-rights-not-independently-confirmed"
+    },
+    {
+      "path": "assets/template/game/fx/sticker_burst.png",
+      "sha256": "sha256:070689ac313375aa6b1c91f291a22ecb7d770da2c156029348c6fc5ea3cc870f",
+      "sourceSession": "di1svPoqOXG6ob6zKnCGcB",
+      "sourcePath": "assets/game/fx/sticker_burst.png",
+      "sourceLockHashAndSizeMatch": true,
+      "generationMasterPaths": [
+        "/home/ubuntu/hh2_masters/fx_sheet_b.png"
+      ],
+      "generationResultEventIds": [
+        "179800956"
+      ],
+      "transformActionEventIds": [
+        "179841137"
+      ],
+      "missingGenerationRecords": [],
+      "originEvidenceStatus": "recorded-generation-and-transformation-chain",
+      "binaryReplayPerformed": false,
+      "rightsEntitlementStatus": "service-level-ownership-and-commercial-use-evidence-recovered; creating-user/assignment-and-input-rights-not-independently-confirmed"
+    },
+    {
+      "path": "assets/template/game/fx/sticker_combo.png",
+      "sha256": "sha256:c104b723840028bc7984092fd8f4b1e14556fa155e0356cf8c81f38232ae77d4",
+      "sourceSession": "di1svPoqOXG6ob6zKnCGcB",
+      "sourcePath": "assets/game/fx/sticker_combo.png",
+      "sourceLockHashAndSizeMatch": true,
+      "generationMasterPaths": [
+        "/home/ubuntu/hh2_masters/fx_sheet_b.png"
+      ],
+      "generationResultEventIds": [
+        "179800956"
+      ],
+      "transformActionEventIds": [
+        "179841137"
+      ],
+      "missingGenerationRecords": [],
+      "originEvidenceStatus": "recorded-generation-and-transformation-chain",
+      "binaryReplayPerformed": false,
+      "rightsEntitlementStatus": "service-level-ownership-and-commercial-use-evidence-recovered; creating-user/assignment-and-input-rights-not-independently-confirmed"
+    },
+    {
+      "path": "assets/template/game/fx/sticker_help.png",
+      "sha256": "sha256:7b5005a2701bbc9755f454cdd29b0813e814d50acd9a624bb1b43390456de3ce",
+      "sourceSession": "di1svPoqOXG6ob6zKnCGcB",
+      "sourcePath": "assets/game/fx/sticker_help.png",
+      "sourceLockHashAndSizeMatch": true,
+      "generationMasterPaths": [
+        "/home/ubuntu/hh2_masters/fx_sheet_b.png"
+      ],
+      "generationResultEventIds": [
+        "179800956"
+      ],
+      "transformActionEventIds": [
+        "179841137"
+      ],
+      "missingGenerationRecords": [],
+      "originEvidenceStatus": "recorded-generation-and-transformation-chain",
+      "binaryReplayPerformed": false,
+      "rightsEntitlementStatus": "service-level-ownership-and-commercial-use-evidence-recovered; creating-user/assignment-and-input-rights-not-independently-confirmed"
+    },
+    {
+      "path": "assets/template/game/fx/sticker_kaboom.png",
+      "sha256": "sha256:332a9c3d53914e9845658e03dea04b247f8b9fb454d2e290e846ab1b8896fc0b",
+      "sourceSession": "di1svPoqOXG6ob6zKnCGcB",
+      "sourcePath": "assets/game/fx/sticker_kaboom.png",
+      "sourceLockHashAndSizeMatch": true,
+      "generationMasterPaths": [
+        "/home/ubuntu/hh2_masters/fx_sheet_b.png"
+      ],
+      "generationResultEventIds": [
+        "179800956"
+      ],
+      "transformActionEventIds": [
+        "179841137"
+      ],
+      "missingGenerationRecords": [],
+      "originEvidenceStatus": "recorded-generation-and-transformation-chain",
+      "binaryReplayPerformed": false,
+      "rightsEntitlementStatus": "service-level-ownership-and-commercial-use-evidence-recovered; creating-user/assignment-and-input-rights-not-independently-confirmed"
+    },
+    {
+      "path": "assets/template/game/fx/sticker_ko.png",
+      "sha256": "sha256:fe60a53822ea2f17ab6572f122da3a7f1c7f582fa0d1c5cf0079947ebb647047",
+      "sourceSession": "di1svPoqOXG6ob6zKnCGcB",
+      "sourcePath": "assets/game/fx/sticker_ko.png",
+      "sourceLockHashAndSizeMatch": true,
+      "generationMasterPaths": [
+        "/home/ubuntu/hh2_masters/fx_sheet_b.png"
+      ],
+      "generationResultEventIds": [
+        "179800956"
+      ],
+      "transformActionEventIds": [
+        "179841137"
+      ],
+      "missingGenerationRecords": [],
+      "originEvidenceStatus": "recorded-generation-and-transformation-chain",
+      "binaryReplayPerformed": false,
+      "rightsEntitlementStatus": "service-level-ownership-and-commercial-use-evidence-recovered; creating-user/assignment-and-input-rights-not-independently-confirmed"
+    },
+    {
+      "path": "assets/template/game/fx/sticker_levelup.png",
+      "sha256": "sha256:82ad646e5749ea8018abf7c776dfa6cf8bc255fe26fc61e5cc4acd35c0e66c66",
+      "sourceSession": "di1svPoqOXG6ob6zKnCGcB",
+      "sourcePath": "assets/game/fx/sticker_levelup.png",
+      "sourceLockHashAndSizeMatch": true,
+      "generationMasterPaths": [
+        "/home/ubuntu/hh2_masters/fx_sheet_b.png"
+      ],
+      "generationResultEventIds": [
+        "179800956"
+      ],
+      "transformActionEventIds": [
+        "179841137"
+      ],
+      "missingGenerationRecords": [],
+      "originEvidenceStatus": "recorded-generation-and-transformation-chain",
+      "binaryReplayPerformed": false,
+      "rightsEntitlementStatus": "service-level-ownership-and-commercial-use-evidence-recovered; creating-user/assignment-and-input-rights-not-independently-confirmed"
+    },
+    {
+      "path": "assets/template/game/fx/sticker_sproing.png",
+      "sha256": "sha256:7daf24370341ee695160c36ce01cbec1254aa5bf91aa61352b8e191d28f0bdfe",
+      "sourceSession": "di1svPoqOXG6ob6zKnCGcB",
+      "sourcePath": "assets/game/fx/sticker_sproing.png",
+      "sourceLockHashAndSizeMatch": true,
+      "generationMasterPaths": [
+        "/home/ubuntu/hh2_masters/fx_sheet_b.png"
+      ],
+      "generationResultEventIds": [
+        "179800956"
+      ],
+      "transformActionEventIds": [
+        "179841137"
+      ],
+      "missingGenerationRecords": [],
+      "originEvidenceStatus": "recorded-generation-and-transformation-chain",
+      "binaryReplayPerformed": false,
+      "rightsEntitlementStatus": "service-level-ownership-and-commercial-use-evidence-recovered; creating-user/assignment-and-input-rights-not-independently-confirmed"
+    },
+    {
+      "path": "assets/template/game/fx/sticker_warning.png",
+      "sha256": "sha256:df7c99a371d3edc222f27889be27da986fb3a69b83468f2a4e2b25e07d49faac",
+      "sourceSession": "di1svPoqOXG6ob6zKnCGcB",
+      "sourcePath": "assets/game/fx/sticker_warning.png",
+      "sourceLockHashAndSizeMatch": true,
+      "generationMasterPaths": [
+        "/home/ubuntu/hh2_masters/fx_sheet_b.png"
+      ],
+      "generationResultEventIds": [
+        "179800956"
+      ],
+      "transformActionEventIds": [
+        "179841137"
+      ],
+      "missingGenerationRecords": [],
+      "originEvidenceStatus": "recorded-generation-and-transformation-chain",
+      "binaryReplayPerformed": false,
+      "rightsEntitlementStatus": "service-level-ownership-and-commercial-use-evidence-recovered; creating-user/assignment-and-input-rights-not-independently-confirmed"
+    },
+    {
+      "path": "assets/template/game/fx/telegraph.png",
+      "sha256": "sha256:058d62ca45db3346cd1dd758d7f8f0de292a3b499e5dfc62e193bead56a012a7",
+      "sourceSession": "di1svPoqOXG6ob6zKnCGcB",
+      "sourcePath": "assets/game/fx/telegraph.png",
+      "sourceLockHashAndSizeMatch": true,
+      "generationMasterPaths": [
+        "/home/ubuntu/hh2_masters/fx_telegraph.png"
+      ],
+      "generationResultEventIds": [
+        "179800956"
+      ],
+      "transformActionEventIds": [
+        "179841137"
+      ],
+      "missingGenerationRecords": [],
+      "originEvidenceStatus": "recorded-generation-and-transformation-chain",
+      "binaryReplayPerformed": false,
+      "rightsEntitlementStatus": "service-level-ownership-and-commercial-use-evidence-recovered; creating-user/assignment-and-input-rights-not-independently-confirmed"
+    },
+    {
+      "path": "assets/template/game/portraits/portrait_blaster.png",
+      "sha256": "sha256:5484885ab7c9556c2fb190831b1cd9bf3c16237ad1ee606203560124aced44ad",
+      "sourceSession": "di1svPoqOXG6ob6zKnCGcB",
+      "sourcePath": "assets/game/portraits/portrait_blaster.png",
+      "sourceLockHashAndSizeMatch": true,
+      "generationMasterPaths": [
+        "/home/ubuntu/hh2_masters/portrait_blaster.png"
+      ],
+      "generationResultEventIds": [
+        "179800198"
+      ],
+      "transformActionEventIds": [
+        "179841137"
+      ],
+      "missingGenerationRecords": [],
+      "originEvidenceStatus": "recorded-generation-and-transformation-chain",
+      "binaryReplayPerformed": false,
+      "rightsEntitlementStatus": "service-level-ownership-and-commercial-use-evidence-recovered; creating-user/assignment-and-input-rights-not-independently-confirmed"
+    },
+    {
+      "path": "assets/template/game/portraits/portrait_blaze.png",
+      "sha256": "sha256:fc006bb6d7f00ceababb0439f8601ba2ce29fa6046ccab1a87b641ebc820c471",
+      "sourceSession": "di1svPoqOXG6ob6zKnCGcB",
+      "sourcePath": "assets/game/portraits/portrait_blaze.png",
+      "sourceLockHashAndSizeMatch": true,
+      "generationMasterPaths": [
+        "/home/ubuntu/hh2_masters/portrait_blaze.png"
+      ],
+      "generationResultEventIds": [
+        "179800379"
+      ],
+      "transformActionEventIds": [
+        "179841137"
+      ],
+      "missingGenerationRecords": [],
+      "originEvidenceStatus": "recorded-generation-and-transformation-chain",
+      "binaryReplayPerformed": false,
+      "rightsEntitlementStatus": "service-level-ownership-and-commercial-use-evidence-recovered; creating-user/assignment-and-input-rights-not-independently-confirmed"
+    },
+    {
+      "path": "assets/template/game/portraits/portrait_brute.png",
+      "sha256": "sha256:d3e35d7ffd2d423127cbaf57fd45b1cc5c0ed948e9f470be6c2eca33b85de5ea",
+      "sourceSession": "di1svPoqOXG6ob6zKnCGcB",
+      "sourcePath": "assets/game/portraits/portrait_brute.png",
+      "sourceLockHashAndSizeMatch": true,
+      "generationMasterPaths": [
+        "/home/ubuntu/hh2_masters/portrait_brute.png"
+      ],
+      "generationResultEventIds": [
+        "179800198"
+      ],
+      "transformActionEventIds": [
+        "179841137"
+      ],
+      "missingGenerationRecords": [],
+      "originEvidenceStatus": "recorded-generation-and-transformation-chain",
+      "binaryReplayPerformed": false,
+      "rightsEntitlementStatus": "service-level-ownership-and-commercial-use-evidence-recovered; creating-user/assignment-and-input-rights-not-independently-confirmed"
+    },
+    {
+      "path": "assets/template/game/portraits/portrait_frost.png",
+      "sha256": "sha256:a79bed2c1ce539de41479088c395b3c250a8dbd98937455ce19b5b76e1dc5842",
+      "sourceSession": "di1svPoqOXG6ob6zKnCGcB",
+      "sourcePath": "assets/game/portraits/portrait_frost.png",
+      "sourceLockHashAndSizeMatch": true,
+      "generationMasterPaths": [
+        "/home/ubuntu/hh2_masters/portrait_frost.png"
+      ],
+      "generationResultEventIds": [
+        "179800379"
+      ],
+      "transformActionEventIds": [
+        "179841137"
+      ],
+      "missingGenerationRecords": [],
+      "originEvidenceStatus": "recorded-generation-and-transformation-chain",
+      "binaryReplayPerformed": false,
+      "rightsEntitlementStatus": "service-level-ownership-and-commercial-use-evidence-recovered; creating-user/assignment-and-input-rights-not-independently-confirmed"
+    },
+    {
+      "path": "assets/template/game/portraits/portrait_goon.png",
+      "sha256": "sha256:27fb949a2d8313061cd4275ecbd6d9a87d55dbd2749644fd29c0cf0d8677d4f7",
+      "sourceSession": "di1svPoqOXG6ob6zKnCGcB",
+      "sourcePath": "assets/game/portraits/portrait_goon.png",
+      "sourceLockHashAndSizeMatch": true,
+      "generationMasterPaths": [
+        "/home/ubuntu/hh2_masters/portrait_goon.png"
+      ],
+      "generationResultEventIds": [
+        "179800198"
+      ],
+      "transformActionEventIds": [
+        "179841137"
+      ],
+      "missingGenerationRecords": [],
+      "originEvidenceStatus": "recorded-generation-and-transformation-chain",
+      "binaryReplayPerformed": false,
+      "rightsEntitlementStatus": "service-level-ownership-and-commercial-use-evidence-recovered; creating-user/assignment-and-input-rights-not-independently-confirmed"
+    },
+    {
+      "path": "assets/template/game/portraits/portrait_mech.png",
+      "sha256": "sha256:80c055f8c6225911d457bef03dced15923aba65b8ee324f0b5bc608fc1ece380",
+      "sourceSession": "di1svPoqOXG6ob6zKnCGcB",
+      "sourcePath": "assets/game/portraits/portrait_mech.png",
+      "sourceLockHashAndSizeMatch": true,
+      "generationMasterPaths": [
+        "/home/ubuntu/hh2_masters/portrait_mech.png"
+      ],
+      "generationResultEventIds": [
+        "179800198"
+      ],
+      "transformActionEventIds": [
+        "179841137"
+      ],
+      "missingGenerationRecords": [],
+      "originEvidenceStatus": "recorded-generation-and-transformation-chain",
+      "binaryReplayPerformed": false,
+      "rightsEntitlementStatus": "service-level-ownership-and-commercial-use-evidence-recovered; creating-user/assignment-and-input-rights-not-independently-confirmed"
+    },
+    {
+      "path": "assets/template/game/portraits/portrait_monitor.png",
+      "sha256": "sha256:fc109efb7a50accc9817cd1318337954468d1eb78c21123666e858fbd27e630f",
+      "sourceSession": "di1svPoqOXG6ob6zKnCGcB",
+      "sourcePath": "assets/game/portraits/portrait_monitor.png",
+      "sourceLockHashAndSizeMatch": true,
+      "generationMasterPaths": [
+        "/home/ubuntu/hh2_masters/portrait_monitor.png"
+      ],
+      "generationResultEventIds": [
+        "179800379"
+      ],
+      "transformActionEventIds": [
+        "179841137"
+      ],
+      "missingGenerationRecords": [],
+      "originEvidenceStatus": "recorded-generation-and-transformation-chain",
+      "binaryReplayPerformed": false,
+      "rightsEntitlementStatus": "service-level-ownership-and-commercial-use-evidence-recovered; creating-user/assignment-and-input-rights-not-independently-confirmed"
+    },
+    {
+      "path": "assets/template/game/portraits/portrait_principal.png",
+      "sha256": "sha256:77f8ebfa6aa0ca296266026b8ad0cd7619da26b613b411256bd1f61d1220f0f6",
+      "sourceSession": "di1svPoqOXG6ob6zKnCGcB",
+      "sourcePath": "assets/game/portraits/portrait_principal.png",
+      "sourceLockHashAndSizeMatch": true,
+      "generationMasterPaths": [
+        "/home/ubuntu/hh2_masters/portrait_principal.png"
+      ],
+      "generationResultEventIds": [
+        "179800198"
+      ],
+      "transformActionEventIds": [
+        "179841137"
+      ],
+      "missingGenerationRecords": [],
+      "originEvidenceStatus": "recorded-generation-and-transformation-chain",
+      "binaryReplayPerformed": false,
+      "rightsEntitlementStatus": "service-level-ownership-and-commercial-use-evidence-recovered; creating-user/assignment-and-input-rights-not-independently-confirmed"
+    },
+    {
+      "path": "assets/template/game/portraits/portrait_psi.png",
+      "sha256": "sha256:6d3354e224672e200ac5882dd5f65df7ad17aea24ab68e402b1f51b01ffcf6ea",
+      "sourceSession": "di1svPoqOXG6ob6zKnCGcB",
+      "sourcePath": "assets/game/portraits/portrait_psi.png",
+      "sourceLockHashAndSizeMatch": true,
+      "generationMasterPaths": [
+        "/home/ubuntu/hh2_masters/portrait_psi.png"
+      ],
+      "generationResultEventIds": [
+        "179800379"
+      ],
+      "transformActionEventIds": [
+        "179841137"
+      ],
+      "missingGenerationRecords": [],
+      "originEvidenceStatus": "recorded-generation-and-transformation-chain",
+      "binaryReplayPerformed": false,
+      "rightsEntitlementStatus": "service-level-ownership-and-commercial-use-evidence-recovered; creating-user/assignment-and-input-rights-not-independently-confirmed"
+    },
+    {
+      "path": "assets/template/game/portraits/portrait_stretch.png",
+      "sha256": "sha256:7a48d035f3adf8aca977cfd549a35bf9a28c7d4d9dbb1aeadcaebbb5d32aaa46",
+      "sourceSession": "di1svPoqOXG6ob6zKnCGcB",
+      "sourcePath": "assets/game/portraits/portrait_stretch.png",
+      "sourceLockHashAndSizeMatch": true,
+      "generationMasterPaths": [
+        "/home/ubuntu/hh2_masters/portrait_stretch.png"
+      ],
+      "generationResultEventIds": [
+        "179800379"
+      ],
+      "transformActionEventIds": [
+        "179841137"
+      ],
+      "missingGenerationRecords": [],
+      "originEvidenceStatus": "recorded-generation-and-transformation-chain",
+      "binaryReplayPerformed": false,
+      "rightsEntitlementStatus": "service-level-ownership-and-commercial-use-evidence-recovered; creating-user/assignment-and-input-rights-not-independently-confirmed"
+    },
+    {
+      "path": "assets/template/game/props/decal_field.png",
+      "sha256": "sha256:8c39ec2029c0fa29ea3261ffd01ade5c592ade7123bdeb035eb1cb769d3983fb",
+      "sourceSession": "di1svPoqOXG6ob6zKnCGcB",
+      "sourcePath": "assets/game/props/decal_field.png",
+      "sourceLockHashAndSizeMatch": true,
+      "generationMasterPaths": [
+        "/home/ubuntu/hh2_masters/prop_field.png"
+      ],
+      "generationResultEventIds": [
+        "179801001"
+      ],
+      "transformActionEventIds": [
+        "179841137"
+      ],
+      "missingGenerationRecords": [],
+      "originEvidenceStatus": "recorded-generation-and-transformation-chain",
+      "binaryReplayPerformed": false,
+      "rightsEntitlementStatus": "service-level-ownership-and-commercial-use-evidence-recovered; creating-user/assignment-and-input-rights-not-independently-confirmed"
+    },
+    {
+      "path": "assets/template/game/props/prop_bench.png",
+      "sha256": "sha256:f466dda50649c32dc3523eb588e882d6d817e67969288be8dea77921c6602fec",
+      "sourceSession": "di1svPoqOXG6ob6zKnCGcB",
+      "sourcePath": "assets/game/props/prop_bench.png",
+      "sourceLockHashAndSizeMatch": true,
+      "generationMasterPaths": [
+        "/home/ubuntu/hh2_masters/prop_bench.png"
+      ],
+      "generationResultEventIds": [
+        "179801001"
+      ],
+      "transformActionEventIds": [
+        "179841137"
+      ],
+      "missingGenerationRecords": [],
+      "originEvidenceStatus": "recorded-generation-and-transformation-chain",
+      "binaryReplayPerformed": false,
+      "rightsEntitlementStatus": "service-level-ownership-and-commercial-use-evidence-recovered; creating-user/assignment-and-input-rights-not-independently-confirmed"
+    },
+    {
+      "path": "assets/template/game/props/prop_bleachers.png",
+      "sha256": "sha256:115f712e2496d192df9fb6e184b93358b7fd52836b2e6d1ccc66603165aa7837",
+      "sourceSession": "di1svPoqOXG6ob6zKnCGcB",
+      "sourcePath": "assets/game/props/prop_bleachers.png",
+      "sourceLockHashAndSizeMatch": true,
+      "generationMasterPaths": [
+        "/home/ubuntu/hh2_masters/prop_bleachers.png"
+      ],
+      "generationResultEventIds": [
+        "179801001"
+      ],
+      "transformActionEventIds": [
+        "179841137"
+      ],
+      "missingGenerationRecords": [],
+      "originEvidenceStatus": "recorded-generation-and-transformation-chain",
+      "binaryReplayPerformed": false,
+      "rightsEntitlementStatus": "service-level-ownership-and-commercial-use-evidence-recovered; creating-user/assignment-and-input-rights-not-independently-confirmed"
+    },
+    {
+      "path": "assets/template/game/props/prop_bus.png",
+      "sha256": "sha256:34bffb8da5bf85289e9e249ac663417dd6a62e65c6011c74be8914d0cf6104ff",
+      "sourceSession": "di1svPoqOXG6ob6zKnCGcB",
+      "sourcePath": "assets/game/props/prop_bus.png",
+      "sourceLockHashAndSizeMatch": true,
+      "generationMasterPaths": [
+        "/home/ubuntu/hh2_masters/prop_bus.png"
+      ],
+      "generationResultEventIds": [
+        "179799778"
+      ],
+      "transformActionEventIds": [
+        "179841137"
+      ],
+      "missingGenerationRecords": [],
+      "originEvidenceStatus": "recorded-generation-and-transformation-chain",
+      "binaryReplayPerformed": false,
+      "rightsEntitlementStatus": "service-level-ownership-and-commercial-use-evidence-recovered; creating-user/assignment-and-input-rights-not-independently-confirmed"
+    },
+    {
+      "path": "assets/template/game/props/prop_flagpole.png",
+      "sha256": "sha256:8e3a243535c66600686709b14c029b87137b2f2a14eaf4ac4b96d741b5f438d4",
+      "sourceSession": "di1svPoqOXG6ob6zKnCGcB",
+      "sourcePath": "assets/game/props/prop_flagpole.png",
+      "sourceLockHashAndSizeMatch": true,
+      "generationMasterPaths": [
+        "/home/ubuntu/hh2_masters/prop_flagpole.png"
+      ],
+      "generationResultEventIds": [
+        "179801001"
+      ],
+      "transformActionEventIds": [
+        "179841137"
+      ],
+      "missingGenerationRecords": [],
+      "originEvidenceStatus": "recorded-generation-and-transformation-chain",
+      "binaryReplayPerformed": false,
+      "rightsEntitlementStatus": "service-level-ownership-and-commercial-use-evidence-recovered; creating-user/assignment-and-input-rights-not-independently-confirmed"
+    },
+    {
+      "path": "assets/template/game/props/prop_lockers.png",
+      "sha256": "sha256:c4d512c655c3612bf14fc0679d55291c8d1227db38ed35c45444f7939bf498aa",
+      "sourceSession": "di1svPoqOXG6ob6zKnCGcB",
+      "sourcePath": "assets/game/props/prop_lockers.png",
+      "sourceLockHashAndSizeMatch": true,
+      "generationMasterPaths": [
+        "/home/ubuntu/hh2_masters/prop_lockers.png"
+      ],
+      "generationResultEventIds": [
+        "179801001"
+      ],
+      "transformActionEventIds": [
+        "179841137"
+      ],
+      "missingGenerationRecords": [],
+      "originEvidenceStatus": "recorded-generation-and-transformation-chain",
+      "binaryReplayPerformed": false,
+      "rightsEntitlementStatus": "service-level-ownership-and-commercial-use-evidence-recovered; creating-user/assignment-and-input-rights-not-independently-confirmed"
+    },
+    {
+      "path": "assets/template/game/props/prop_maple.png",
+      "sha256": "sha256:3382c223e93ad6c3809ec69e5ebdfb78825250ef2494ff4e5042a022ff7835cb",
+      "sourceSession": "di1svPoqOXG6ob6zKnCGcB",
+      "sourcePath": "assets/game/props/prop_maple.png",
+      "sourceLockHashAndSizeMatch": true,
+      "generationMasterPaths": [
+        "/home/ubuntu/hallhero/art_src/prop_maple.png"
+      ],
+      "generationResultEventIds": [
+        "179671339"
+      ],
+      "transformActionEventIds": [
+        "179672781"
+      ],
+      "missingGenerationRecords": [],
+      "originEvidenceStatus": "recorded-generation-and-transformation-chain",
+      "binaryReplayPerformed": false,
+      "rightsEntitlementStatus": "service-level-ownership-and-commercial-use-evidence-recovered; creating-user/assignment-and-input-rights-not-independently-confirmed"
+    },
+    {
+      "path": "assets/template/game/props/prop_oak.png",
+      "sha256": "sha256:dec8cb436ea57b2866ebbc4608ea82a68e21b3f8ac7aecaef6b4120ba1b5379f",
+      "sourceSession": "di1svPoqOXG6ob6zKnCGcB",
+      "sourcePath": "assets/game/props/prop_oak.png",
+      "sourceLockHashAndSizeMatch": true,
+      "generationMasterPaths": [
+        "/home/ubuntu/hallhero/art_src/prop_oak.png"
+      ],
+      "generationResultEventIds": [
+        "179671339"
+      ],
+      "transformActionEventIds": [
+        "179672781"
+      ],
+      "missingGenerationRecords": [],
+      "originEvidenceStatus": "recorded-generation-and-transformation-chain",
+      "binaryReplayPerformed": false,
+      "rightsEntitlementStatus": "service-level-ownership-and-commercial-use-evidence-recovered; creating-user/assignment-and-input-rights-not-independently-confirmed"
+    },
+    {
+      "path": "assets/template/game/props/prop_statue.png",
+      "sha256": "sha256:3615ba0ab571e84036154eae299693ddd2e3c827f9f4d0fcbca94ea4274413d7",
+      "sourceSession": "di1svPoqOXG6ob6zKnCGcB",
+      "sourcePath": "assets/game/props/prop_statue.png",
+      "sourceLockHashAndSizeMatch": true,
+      "generationMasterPaths": [
+        "/home/ubuntu/hallhero/art_src/prop_statue.png"
+      ],
+      "generationResultEventIds": [
+        "179671339"
+      ],
+      "transformActionEventIds": [
+        "179672781"
+      ],
+      "missingGenerationRecords": [],
+      "originEvidenceStatus": "recorded-generation-and-transformation-chain",
+      "binaryReplayPerformed": false,
+      "rightsEntitlementStatus": "service-level-ownership-and-commercial-use-evidence-recovered; creating-user/assignment-and-input-rights-not-independently-confirmed"
+    },
+    {
+      "path": "assets/template/game/terrain/terrain_asphalt.webp",
+      "sha256": "sha256:b68b9a24582aead53aea737806f8b526bee6a6a951d6e4de283fc7c7ae47383c",
+      "sourceSession": "di1svPoqOXG6ob6zKnCGcB",
+      "sourcePath": "assets/game/terrain/terrain_asphalt.webp",
+      "sourceLockHashAndSizeMatch": true,
+      "generationMasterPaths": [
+        "/home/ubuntu/hallhero/art_src/terrain_asphalt.png"
+      ],
+      "generationResultEventIds": [
+        "179672252"
+      ],
+      "transformActionEventIds": [
+        "179672781"
+      ],
+      "missingGenerationRecords": [],
+      "originEvidenceStatus": "recorded-generation-and-transformation-chain",
+      "binaryReplayPerformed": false,
+      "rightsEntitlementStatus": "service-level-ownership-and-commercial-use-evidence-recovered; creating-user/assignment-and-input-rights-not-independently-confirmed"
+    },
+    {
+      "path": "assets/template/game/terrain/terrain_grass.webp",
+      "sha256": "sha256:5320386d277a32ce4187cca7032aa5a5c60dc0ad4172a2e366cc18c71810e576",
+      "sourceSession": "di1svPoqOXG6ob6zKnCGcB",
+      "sourcePath": "assets/game/terrain/terrain_grass.webp",
+      "sourceLockHashAndSizeMatch": true,
+      "generationMasterPaths": [
+        "/home/ubuntu/hallhero/art_src/terrain_grass.png"
+      ],
+      "generationResultEventIds": [
+        "179672252"
+      ],
+      "transformActionEventIds": [
+        "179672781"
+      ],
+      "missingGenerationRecords": [],
+      "originEvidenceStatus": "recorded-generation-and-transformation-chain",
+      "binaryReplayPerformed": false,
+      "rightsEntitlementStatus": "service-level-ownership-and-commercial-use-evidence-recovered; creating-user/assignment-and-input-rights-not-independently-confirmed"
+    },
+    {
+      "path": "assets/template/game/terrain/terrain_pavers.webp",
+      "sha256": "sha256:5db07d53d82d68440dd754906dea54b87a0a96a57209e7605b65a33054f8a7b5",
+      "sourceSession": "di1svPoqOXG6ob6zKnCGcB",
+      "sourcePath": "assets/game/terrain/terrain_pavers.webp",
+      "sourceLockHashAndSizeMatch": true,
+      "generationMasterPaths": [
+        "/home/ubuntu/hallhero/art_src/terrain_pavers.png"
+      ],
+      "generationResultEventIds": [
+        "179672252"
+      ],
+      "transformActionEventIds": [
+        "179672781"
+      ],
+      "missingGenerationRecords": [],
+      "originEvidenceStatus": "recorded-generation-and-transformation-chain",
+      "binaryReplayPerformed": false,
+      "rightsEntitlementStatus": "service-level-ownership-and-commercial-use-evidence-recovered; creating-user/assignment-and-input-rights-not-independently-confirmed"
+    },
+    {
+      "path": "assets/template/game/ui/btn_cream_s.png",
+      "sha256": "sha256:7059fc08ba6642e3eff31b6e2f2d00695dc2232ab1246d28c4067ef17b16f473",
+      "sourceSession": "di1svPoqOXG6ob6zKnCGcB",
+      "sourcePath": "assets/game/ui/btn_cream_s.png",
+      "sourceLockHashAndSizeMatch": true,
+      "generationMasterPaths": [
+        "/home/ubuntu/hh2_masters/ui_tag_buttons.png"
+      ],
+      "generationResultEventIds": [
+        "179800032"
+      ],
+      "transformActionEventIds": [
+        "179841137",
+        "179841847",
+        "179862684"
+      ],
+      "missingGenerationRecords": [],
+      "originEvidenceStatus": "recorded-generation-and-transformation-chain",
+      "binaryReplayPerformed": false,
+      "rightsEntitlementStatus": "service-level-ownership-and-commercial-use-evidence-recovered; creating-user/assignment-and-input-rights-not-independently-confirmed"
+    },
+    {
+      "path": "assets/template/game/ui/btn_gold_s.png",
+      "sha256": "sha256:0ec320629869f0ffdd50278667b0284a145a638384c40976824fde60a4ab84c1",
+      "sourceSession": "di1svPoqOXG6ob6zKnCGcB",
+      "sourcePath": "assets/game/ui/btn_gold_s.png",
+      "sourceLockHashAndSizeMatch": true,
+      "generationMasterPaths": [
+        "/home/ubuntu/hh2_masters/ui_tag_buttons.png"
+      ],
+      "generationResultEventIds": [
+        "179800032"
+      ],
+      "transformActionEventIds": [
+        "179841137",
+        "179841847",
+        "179862684"
+      ],
+      "missingGenerationRecords": [],
+      "originEvidenceStatus": "recorded-generation-and-transformation-chain",
+      "binaryReplayPerformed": false,
+      "rightsEntitlementStatus": "service-level-ownership-and-commercial-use-evidence-recovered; creating-user/assignment-and-input-rights-not-independently-confirmed"
+    },
+    {
+      "path": "assets/template/game/ui/btn_maroon_s.png",
+      "sha256": "sha256:b89e07c05f753a4bad8c628933473c17c00c5846c86d40c9d0084959f4ee1f35",
+      "sourceSession": "di1svPoqOXG6ob6zKnCGcB",
+      "sourcePath": "assets/game/ui/btn_maroon_s.png",
+      "sourceLockHashAndSizeMatch": true,
+      "generationMasterPaths": [
+        "/home/ubuntu/hh2_masters/ui_tag_buttons.png"
+      ],
+      "generationResultEventIds": [
+        "179800032"
+      ],
+      "transformActionEventIds": [
+        "179841137",
+        "179841847",
+        "179862684"
+      ],
+      "missingGenerationRecords": [],
+      "originEvidenceStatus": "recorded-generation-and-transformation-chain",
+      "binaryReplayPerformed": false,
+      "rightsEntitlementStatus": "service-level-ownership-and-commercial-use-evidence-recovered; creating-user/assignment-and-input-rights-not-independently-confirmed"
+    },
+    {
+      "path": "assets/template/game/ui/card_frame_s.png",
+      "sha256": "sha256:707db47c1e4b11e8409a0820551dfb23aaabd00205da01b2607bbaf3027d819e",
+      "sourceSession": "di1svPoqOXG6ob6zKnCGcB",
+      "sourcePath": "assets/game/ui/card_frame_s.png",
+      "sourceLockHashAndSizeMatch": true,
+      "generationMasterPaths": [
+        "/home/ubuntu/hh2_masters/ui_card_frame.png"
+      ],
+      "generationResultEventIds": [
+        "179800032"
+      ],
+      "transformActionEventIds": [
+        "179841137",
+        "179841847",
+        "179862684"
+      ],
+      "missingGenerationRecords": [],
+      "originEvidenceStatus": "recorded-generation-and-transformation-chain",
+      "binaryReplayPerformed": false,
+      "rightsEntitlementStatus": "service-level-ownership-and-commercial-use-evidence-recovered; creating-user/assignment-and-input-rights-not-independently-confirmed"
+    },
+    {
+      "path": "assets/template/game/ui/crest.png",
+      "sha256": "sha256:3ac0d59b0021cdad10139cd8e44aa934a909c64edcf6e2ff2b9b80c60f2f186d",
+      "sourceSession": "di1svPoqOXG6ob6zKnCGcB",
+      "sourcePath": "assets/game/ui/crest.png",
+      "sourceLockHashAndSizeMatch": true,
+      "generationMasterPaths": [
+        "/home/ubuntu/hh2_masters/ui_crest.png"
+      ],
+      "generationResultEventIds": [
+        "179800032"
+      ],
+      "transformActionEventIds": [
+        "179841137",
+        "179841847",
+        "179862684"
+      ],
+      "missingGenerationRecords": [],
+      "originEvidenceStatus": "recorded-generation-and-transformation-chain",
+      "binaryReplayPerformed": false,
+      "rightsEntitlementStatus": "service-level-ownership-and-commercial-use-evidence-recovered; creating-user/assignment-and-input-rights-not-independently-confirmed"
+    },
+    {
+      "path": "assets/template/game/ui/icon_bell.png",
+      "sha256": "sha256:393b1ef496a086f5a1e640e8196112a8f9243ae6504b6cb4320cf0df8798d2bf",
+      "sourceSession": "di1svPoqOXG6ob6zKnCGcB",
+      "sourcePath": "assets/game/ui/icon_bell.png",
+      "sourceLockHashAndSizeMatch": true,
+      "generationMasterPaths": [
+        "/home/ubuntu/hallhero/art_src/icon_bell.png"
+      ],
+      "generationResultEventIds": [
+        "179672619"
+      ],
+      "transformActionEventIds": [
+        "179672781"
+      ],
+      "missingGenerationRecords": [],
+      "originEvidenceStatus": "recorded-generation-and-transformation-chain",
+      "binaryReplayPerformed": false,
+      "rightsEntitlementStatus": "service-level-ownership-and-commercial-use-evidence-recovered; creating-user/assignment-and-input-rights-not-independently-confirmed"
+    },
+    {
+      "path": "assets/template/game/ui/icon_reputation.png",
+      "sha256": "sha256:bd80859826a602c85422a816001240e4dabc1f4a711bf9882dcae434bea1f44e",
+      "sourceSession": "di1svPoqOXG6ob6zKnCGcB",
+      "sourcePath": "assets/game/ui/icon_reputation.png",
+      "sourceLockHashAndSizeMatch": true,
+      "generationMasterPaths": [
+        "/home/ubuntu/hallhero/art_src/icon_reputation.png"
+      ],
+      "generationResultEventIds": [
+        "179672619"
+      ],
+      "transformActionEventIds": [
+        "179672781"
+      ],
+      "missingGenerationRecords": [],
+      "originEvidenceStatus": "recorded-generation-and-transformation-chain",
+      "binaryReplayPerformed": false,
+      "rightsEntitlementStatus": "service-level-ownership-and-commercial-use-evidence-recovered; creating-user/assignment-and-input-rights-not-independently-confirmed"
+    },
+    {
+      "path": "assets/template/game/ui/icon_spirit.png",
+      "sha256": "sha256:80642d8b1b0015958c553fef59ea38c9159d66ee9549d7e8b2416d5806fa718e",
+      "sourceSession": "di1svPoqOXG6ob6zKnCGcB",
+      "sourcePath": "assets/game/ui/icon_spirit.png",
+      "sourceLockHashAndSizeMatch": true,
+      "generationMasterPaths": [
+        "/home/ubuntu/hallhero/art_src/icon_spirit.png"
+      ],
+      "generationResultEventIds": [
+        "179672619"
+      ],
+      "transformActionEventIds": [
+        "179672781"
+      ],
+      "missingGenerationRecords": [],
+      "originEvidenceStatus": "recorded-generation-and-transformation-chain",
+      "binaryReplayPerformed": false,
+      "rightsEntitlementStatus": "service-level-ownership-and-commercial-use-evidence-recovered; creating-user/assignment-and-input-rights-not-independently-confirmed"
+    },
+    {
+      "path": "assets/template/game/ui/icon_squad.png",
+      "sha256": "sha256:14d8c73cfcafdec1b798beb7e453b57f5919040ae2c49ec046864850610feadf",
+      "sourceSession": "di1svPoqOXG6ob6zKnCGcB",
+      "sourcePath": "assets/game/ui/icon_squad.png",
+      "sourceLockHashAndSizeMatch": true,
+      "generationMasterPaths": [
+        "/home/ubuntu/hallhero/art_src/icon_squad.png"
+      ],
+      "generationResultEventIds": [
+        "179672619"
+      ],
+      "transformActionEventIds": [
+        "179672781"
+      ],
+      "missingGenerationRecords": [],
+      "originEvidenceStatus": "recorded-generation-and-transformation-chain",
+      "binaryReplayPerformed": false,
+      "rightsEntitlementStatus": "service-level-ownership-and-commercial-use-evidence-recovered; creating-user/assignment-and-input-rights-not-independently-confirmed"
+    },
+    {
+      "path": "assets/template/game/ui/icon_wave.png",
+      "sha256": "sha256:4e6314f9f293666b0a35b6e191e74a2307ebd070a980da6e027b43c09c92eac9",
+      "sourceSession": "di1svPoqOXG6ob6zKnCGcB",
+      "sourcePath": "assets/game/ui/icon_wave.png",
+      "sourceLockHashAndSizeMatch": true,
+      "generationMasterPaths": [
+        "/home/ubuntu/hallhero/art_src/icon_wave.png"
+      ],
+      "generationResultEventIds": [
+        "179672619"
+      ],
+      "transformActionEventIds": [
+        "179672781"
+      ],
+      "missingGenerationRecords": [],
+      "originEvidenceStatus": "recorded-generation-and-transformation-chain",
+      "binaryReplayPerformed": false,
+      "rightsEntitlementStatus": "service-level-ownership-and-commercial-use-evidence-recovered; creating-user/assignment-and-input-rights-not-independently-confirmed"
+    },
+    {
+      "path": "assets/template/game/ui/logo.png",
+      "sha256": "sha256:e05c975365296997e54e72912d87a76bef671fa3e364096f95524616b8936428",
+      "sourceSession": "di1svPoqOXG6ob6zKnCGcB",
+      "sourcePath": "assets/game/ui/logo.png",
+      "sourceLockHashAndSizeMatch": true,
+      "generationMasterPaths": [
+        "/home/ubuntu/hh3_masters/logo_v3.png"
+      ],
+      "generationResultEventIds": [
+        "180745142"
+      ],
+      "transformActionEventIds": [
+        "180745459"
+      ],
+      "missingGenerationRecords": [],
+      "originEvidenceStatus": "recorded-generation-and-transformation-chain",
+      "binaryReplayPerformed": false,
+      "rightsEntitlementStatus": "service-level-ownership-and-commercial-use-evidence-recovered; creating-user/assignment-and-input-rights-not-independently-confirmed"
+    },
+    {
+      "path": "assets/template/game/ui/paper_panel_s.png",
+      "sha256": "sha256:de209d7ce5a0e2bf333c61af95bae97bbac714173ad55fa65cbe282475e36469",
+      "sourceSession": "di1svPoqOXG6ob6zKnCGcB",
+      "sourcePath": "assets/game/ui/paper_panel_s.png",
+      "sourceLockHashAndSizeMatch": true,
+      "generationMasterPaths": [
+        "/home/ubuntu/hh2_masters/ui_paper_panel.png"
+      ],
+      "generationResultEventIds": [
+        "179800032"
+      ],
+      "transformActionEventIds": [
+        "179841137",
+        "179841847",
+        "179862684"
+      ],
+      "missingGenerationRecords": [],
+      "originEvidenceStatus": "recorded-generation-and-transformation-chain",
+      "binaryReplayPerformed": false,
+      "rightsEntitlementStatus": "service-level-ownership-and-commercial-use-evidence-recovered; creating-user/assignment-and-input-rights-not-independently-confirmed"
+    },
+    {
+      "path": "assets/template/game/ui/sticky_note_s.png",
+      "sha256": "sha256:0dcff2179483dc8ef32d01e5e8d56eb5ba0c88889ce4290bfaa695835f9e7d0e",
+      "sourceSession": "di1svPoqOXG6ob6zKnCGcB",
+      "sourcePath": "assets/game/ui/sticky_note_s.png",
+      "sourceLockHashAndSizeMatch": true,
+      "generationMasterPaths": [
+        "/home/ubuntu/hh2_masters/ui_sticky_note.png"
+      ],
+      "generationResultEventIds": [
+        "179800032"
+      ],
+      "transformActionEventIds": [
+        "179841137",
+        "179841847",
+        "179862684"
+      ],
+      "missingGenerationRecords": [],
+      "originEvidenceStatus": "recorded-generation-and-transformation-chain",
+      "binaryReplayPerformed": false,
+      "rightsEntitlementStatus": "service-level-ownership-and-commercial-use-evidence-recovered; creating-user/assignment-and-input-rights-not-independently-confirmed"
+    },
+    {
+      "path": "assets/template/game/units/civ_girl.png",
+      "sha256": "sha256:ae79722168cb31a15ab25122199b5107bce857a8b14e201b2d0a96ad5599057b",
+      "sourceSession": "di1svPoqOXG6ob6zKnCGcB",
+      "sourcePath": "assets/game/units/civ_girl.png",
+      "sourceLockHashAndSizeMatch": true,
+      "generationMasterPaths": [
+        "/home/ubuntu/hallhero/art_src/civ_girl.png"
+      ],
+      "generationResultEventIds": [
+        "179671339"
+      ],
+      "transformActionEventIds": [
+        "179672781"
+      ],
+      "missingGenerationRecords": [],
+      "originEvidenceStatus": "recorded-generation-and-transformation-chain",
+      "binaryReplayPerformed": false,
+      "rightsEntitlementStatus": "service-level-ownership-and-commercial-use-evidence-recovered; creating-user/assignment-and-input-rights-not-independently-confirmed"
+    },
+    {
+      "path": "assets/template/game/units/civ_janitor.png",
+      "sha256": "sha256:8b6711864b7631eb8d28b6cfc3b90be58f9d10d65218af4e4c70a6baed0a1b6d",
+      "sourceSession": "di1svPoqOXG6ob6zKnCGcB",
+      "sourcePath": "assets/game/units/civ_janitor.png",
+      "sourceLockHashAndSizeMatch": true,
+      "generationMasterPaths": [
+        "/home/ubuntu/hallhero/art_src/civ_janitor.png"
+      ],
+      "generationResultEventIds": [
+        "179671339"
+      ],
+      "transformActionEventIds": [
+        "179672781"
+      ],
+      "missingGenerationRecords": [],
+      "originEvidenceStatus": "recorded-generation-and-transformation-chain",
+      "binaryReplayPerformed": false,
+      "rightsEntitlementStatus": "service-level-ownership-and-commercial-use-evidence-recovered; creating-user/assignment-and-input-rights-not-independently-confirmed"
+    },
+    {
+      "path": "assets/template/game/units/civ_student.png",
+      "sha256": "sha256:1880cd8966c4b068b8c18f50563096b847928ed3208dcaa37b075adb0fe696e1",
+      "sourceSession": "di1svPoqOXG6ob6zKnCGcB",
+      "sourcePath": "assets/game/units/civ_student.png",
+      "sourceLockHashAndSizeMatch": true,
+      "generationMasterPaths": [
+        "/home/ubuntu/hallhero/art_src/civ_student.png"
+      ],
+      "generationResultEventIds": [
+        "179670636"
+      ],
+      "transformActionEventIds": [
+        "179672781"
+      ],
+      "missingGenerationRecords": [],
+      "originEvidenceStatus": "recorded-generation-and-transformation-chain",
+      "binaryReplayPerformed": false,
+      "rightsEntitlementStatus": "service-level-ownership-and-commercial-use-evidence-recovered; creating-user/assignment-and-input-rights-not-independently-confirmed"
+    },
+    {
+      "path": "assets/template/game/units/enemy_blaster.png",
+      "sha256": "sha256:9b63f3d02fc58c7fd92afa7d021ab966ddf64b5c862b2cbe79bf98798a27db65",
+      "sourceSession": "di1svPoqOXG6ob6zKnCGcB",
+      "sourcePath": "assets/game/units/enemy_blaster.png",
+      "sourceLockHashAndSizeMatch": true,
+      "generationMasterPaths": [
+        "/home/ubuntu/hallhero/art_src/enemy_blaster.png"
+      ],
+      "generationResultEventIds": [
+        "179670636"
+      ],
+      "transformActionEventIds": [
+        "179672781"
+      ],
+      "missingGenerationRecords": [],
+      "originEvidenceStatus": "recorded-generation-and-transformation-chain",
+      "binaryReplayPerformed": false,
+      "rightsEntitlementStatus": "service-level-ownership-and-commercial-use-evidence-recovered; creating-user/assignment-and-input-rights-not-independently-confirmed"
+    },
+    {
+      "path": "assets/template/game/units/enemy_brute.png",
+      "sha256": "sha256:4f0d21deb7a1760810263b2eb280f8249a105e6877d15b94d0a79d48382a72e9",
+      "sourceSession": "di1svPoqOXG6ob6zKnCGcB",
+      "sourcePath": "assets/game/units/enemy_brute.png",
+      "sourceLockHashAndSizeMatch": true,
+      "generationMasterPaths": [
+        "/home/ubuntu/hallhero/art_src/enemy_brute.png"
+      ],
+      "generationResultEventIds": [
+        "179670636"
+      ],
+      "transformActionEventIds": [
+        "179672781"
+      ],
+      "missingGenerationRecords": [],
+      "originEvidenceStatus": "recorded-generation-and-transformation-chain",
+      "binaryReplayPerformed": false,
+      "rightsEntitlementStatus": "service-level-ownership-and-commercial-use-evidence-recovered; creating-user/assignment-and-input-rights-not-independently-confirmed"
+    },
+    {
+      "path": "assets/template/game/units/enemy_goon.png",
+      "sha256": "sha256:ea3cc3cbf2c6cb68ec6e34d3918e75d780cc9ae5de566648024f62e3551c9c91",
+      "sourceSession": "di1svPoqOXG6ob6zKnCGcB",
+      "sourcePath": "assets/game/units/enemy_goon.png",
+      "sourceLockHashAndSizeMatch": true,
+      "generationMasterPaths": [
+        "/home/ubuntu/hallhero/art_src/enemy_goon.png"
+      ],
+      "generationResultEventIds": [
+        "179670636"
+      ],
+      "transformActionEventIds": [
+        "179672781"
+      ],
+      "missingGenerationRecords": [],
+      "originEvidenceStatus": "recorded-generation-and-transformation-chain",
+      "binaryReplayPerformed": false,
+      "rightsEntitlementStatus": "service-level-ownership-and-commercial-use-evidence-recovered; creating-user/assignment-and-input-rights-not-independently-confirmed"
+    },
+    {
+      "path": "assets/template/game/units/enemy_mech.png",
+      "sha256": "sha256:a5966c9cdec6c05cd9856baba79b5ea0f7537b9fdb626c527e51a459e67d990a",
+      "sourceSession": "di1svPoqOXG6ob6zKnCGcB",
+      "sourcePath": "assets/game/units/enemy_mech.png",
+      "sourceLockHashAndSizeMatch": true,
+      "generationMasterPaths": [
+        "/home/ubuntu/hallhero/art_src/enemy_mech.png"
+      ],
+      "generationResultEventIds": [
+        "179670636"
+      ],
+      "transformActionEventIds": [
+        "179672781"
+      ],
+      "missingGenerationRecords": [],
+      "originEvidenceStatus": "recorded-generation-and-transformation-chain",
+      "binaryReplayPerformed": false,
+      "rightsEntitlementStatus": "service-level-ownership-and-commercial-use-evidence-recovered; creating-user/assignment-and-input-rights-not-independently-confirmed"
+    },
+    {
+      "path": "assets/template/game/units/hero_blaze.png",
+      "sha256": "sha256:068c4d54d6ef2f46cbede10572d2be87b611d0fd1bb5e8d91ee00c9846b52df2",
+      "sourceSession": "di1svPoqOXG6ob6zKnCGcB",
+      "sourcePath": "assets/game/units/hero_blaze.png",
+      "sourceLockHashAndSizeMatch": true,
+      "generationMasterPaths": [
+        "/home/ubuntu/hallhero/art_src/hero_blaze.png"
+      ],
+      "generationResultEventIds": [
+        "179670068"
+      ],
+      "transformActionEventIds": [
+        "179672781"
+      ],
+      "missingGenerationRecords": [],
+      "originEvidenceStatus": "recorded-generation-and-transformation-chain",
+      "binaryReplayPerformed": false,
+      "rightsEntitlementStatus": "service-level-ownership-and-commercial-use-evidence-recovered; creating-user/assignment-and-input-rights-not-independently-confirmed"
+    },
+    {
+      "path": "assets/template/game/units/hero_frost.png",
+      "sha256": "sha256:5c23f1248d0cbe070e506d731759e3da201ca08e1d3d26163c3913b5c07f9ed6",
+      "sourceSession": "di1svPoqOXG6ob6zKnCGcB",
+      "sourcePath": "assets/game/units/hero_frost.png",
+      "sourceLockHashAndSizeMatch": true,
+      "generationMasterPaths": [
+        "/home/ubuntu/hallhero/art_src/hero_frost.png"
+      ],
+      "generationResultEventIds": [
+        "179670068"
+      ],
+      "transformActionEventIds": [
+        "179672781"
+      ],
+      "missingGenerationRecords": [],
+      "originEvidenceStatus": "recorded-generation-and-transformation-chain",
+      "binaryReplayPerformed": false,
+      "rightsEntitlementStatus": "service-level-ownership-and-commercial-use-evidence-recovered; creating-user/assignment-and-input-rights-not-independently-confirmed"
+    },
+    {
+      "path": "assets/template/game/units/hero_monitor.png",
+      "sha256": "sha256:b29fbb50122620ead4195fe2bcdab2874cb893aade7df0091ad67b9eaa2536d4",
+      "sourceSession": "di1svPoqOXG6ob6zKnCGcB",
+      "sourcePath": "assets/game/units/hero_monitor.png",
+      "sourceLockHashAndSizeMatch": true,
+      "generationMasterPaths": [
+        "/home/ubuntu/hallhero/art_src/hero_monitor.png"
+      ],
+      "generationResultEventIds": [
+        "179670068"
+      ],
+      "transformActionEventIds": [
+        "179672781"
+      ],
+      "missingGenerationRecords": [],
+      "originEvidenceStatus": "recorded-generation-and-transformation-chain",
+      "binaryReplayPerformed": false,
+      "rightsEntitlementStatus": "service-level-ownership-and-commercial-use-evidence-recovered; creating-user/assignment-and-input-rights-not-independently-confirmed"
+    },
+    {
+      "path": "assets/template/game/units/hero_psi.png",
+      "sha256": "sha256:f1341afa571ebc70d36c3a0b1eacd0b44c7d489b21f121bdb70d3ba1dc872460",
+      "sourceSession": "di1svPoqOXG6ob6zKnCGcB",
+      "sourcePath": "assets/game/units/hero_psi.png",
+      "sourceLockHashAndSizeMatch": true,
+      "generationMasterPaths": [
+        "/home/ubuntu/hallhero/art_src/hero_psi.png"
+      ],
+      "generationResultEventIds": [
+        "179670068"
+      ],
+      "transformActionEventIds": [
+        "179672781"
+      ],
+      "missingGenerationRecords": [],
+      "originEvidenceStatus": "recorded-generation-and-transformation-chain",
+      "binaryReplayPerformed": false,
+      "rightsEntitlementStatus": "service-level-ownership-and-commercial-use-evidence-recovered; creating-user/assignment-and-input-rights-not-independently-confirmed"
+    },
+    {
+      "path": "assets/template/game/units/hero_stretch.png",
+      "sha256": "sha256:6b5323f9522f36f2a1006da7fd0de051f04b8ebf66ade079f6e135d1090f23b4",
+      "sourceSession": "di1svPoqOXG6ob6zKnCGcB",
+      "sourcePath": "assets/game/units/hero_stretch.png",
+      "sourceLockHashAndSizeMatch": true,
+      "generationMasterPaths": [
+        "/home/ubuntu/hallhero/art_src/hero_stretch.png"
+      ],
+      "generationResultEventIds": [
+        "179670068"
+      ],
+      "transformActionEventIds": [
+        "179672781"
+      ],
+      "missingGenerationRecords": [],
+      "originEvidenceStatus": "recorded-generation-and-transformation-chain",
+      "binaryReplayPerformed": false,
+      "rightsEntitlementStatus": "service-level-ownership-and-commercial-use-evidence-recovered; creating-user/assignment-and-input-rights-not-independently-confirmed"
+    },
+    {
+      "path": "assets/template/share/favicon.png",
+      "sha256": "sha256:a8981c2f6fcd4e3b9d6bbc678a86e007acaff77ccbf5628d727f9ce80b23da12",
+      "sourceSession": "di1svPoqOXG6ob6zKnCGcB",
+      "sourcePath": "assets/share/favicon.png",
+      "sourceLockHashAndSizeMatch": true,
+      "generationMasterPaths": [
+        "/home/ubuntu/hh2_masters/favicon_src.png"
+      ],
+      "generationResultEventIds": [
+        "179801437"
+      ],
+      "transformActionEventIds": [
+        "179897785"
+      ],
+      "missingGenerationRecords": [],
+      "originEvidenceStatus": "recorded-generation-and-transformation-chain",
+      "binaryReplayPerformed": false,
+      "rightsEntitlementStatus": "service-level-ownership-and-commercial-use-evidence-recovered; creating-user/assignment-and-input-rights-not-independently-confirmed"
+    },
+    {
+      "path": "assets/template/share/og.png",
+      "sha256": "sha256:ec69b208f4bc95a581c591c31a2ba17abcb2d37ccb7c282b3659bf88c097d9a3",
+      "sourceSession": "di1svPoqOXG6ob6zKnCGcB",
+      "sourcePath": "assets/share/og.png",
+      "sourceLockHashAndSizeMatch": true,
+      "generationMasterPaths": [
+        "/home/ubuntu/hh3_masters/og_card_v3.png"
+      ],
+      "generationResultEventIds": [
+        "180745253"
+      ],
+      "transformActionEventIds": [
+        "180745459",
+        "180745521",
+        "180745593"
+      ],
+      "missingGenerationRecords": [],
+      "originEvidenceStatus": "recorded-generation-and-transformation-chain",
+      "binaryReplayPerformed": false,
+      "rightsEntitlementStatus": "service-level-ownership-and-commercial-use-evidence-recovered; creating-user/assignment-and-input-rights-not-independently-confirmed"
+    }
+  ],
+  "serviceRightsEvidence": "manus-generated-output-rights.json"
+}

@@ -1,0 +1,779 @@
+{
+  "$schema": "../../config/pinball-template.schema.json",
+  "version": 1,
+  "table": {
+    "size": [
+      480,
+      740
+    ],
+    "surface_inset": [
+      19,
+      19,
+      19,
+      29
+    ],
+    "drain_y": 756,
+    "rails": [
+      {
+        "a": [
+          78,
+          639
+        ],
+        "b": [
+          44,
+          566
+        ]
+      },
+      {
+        "a": [
+          44,
+          566
+        ],
+        "b": [
+          30,
+          450
+        ]
+      },
+      {
+        "a": [
+          30,
+          450
+        ],
+        "b": [
+          30,
+          180
+        ]
+      },
+      {
+        "a": [
+          30,
+          180
+        ],
+        "b": [
+          45,
+          112
+        ]
+      },
+      {
+        "a": [
+          45,
+          112
+        ],
+        "b": [
+          86,
+          62
+        ]
+      },
+      {
+        "a": [
+          86,
+          62
+        ],
+        "b": [
+          155,
+          34
+        ]
+      },
+      {
+        "a": [
+          155,
+          34
+        ],
+        "b": [
+          308,
+          34
+        ]
+      },
+      {
+        "a": [
+          308,
+          34
+        ],
+        "b": [
+          380,
+          66
+        ]
+      },
+      {
+        "a": [
+          380,
+          66
+        ],
+        "b": [
+          414,
+          118
+        ]
+      },
+      {
+        "a": [
+          414,
+          118
+        ],
+        "b": [
+          418,
+          200
+        ]
+      },
+      {
+        "a": [
+          418,
+          200
+        ],
+        "b": [
+          418,
+          450
+        ]
+      },
+      {
+        "a": [
+          418,
+          450
+        ],
+        "b": [
+          402,
+          566
+        ]
+      },
+      {
+        "a": [
+          402,
+          566
+        ],
+        "b": [
+          390,
+          637
+        ]
+      },
+      {
+        "a": [
+          48,
+          525
+        ],
+        "b": [
+          132,
+          633
+        ]
+      },
+      {
+        "a": [
+          402,
+          525
+        ],
+        "b": [
+          332,
+          633
+        ]
+      },
+      {
+        "a": [
+          48,
+          676
+        ],
+        "b": [
+          161,
+          727
+        ]
+      },
+      {
+        "a": [
+          402,
+          676
+        ],
+        "b": [
+          303,
+          727
+        ]
+      }
+    ],
+    "rail_radius": 6.0,
+    "rail_restitution": 0.82,
+    "launcher": {
+      "spawn": [
+        443,
+        656
+      ],
+      "gate_y": 93,
+      "exit": [
+        378,
+        91
+      ],
+      "exit_velocity": [
+        -415,
+        -90
+      ],
+      "exit_charge_velocity": [
+        -125,
+        0
+      ],
+      "launch_speed": 1080,
+      "charge_speed": 280,
+      "charge_rate": 0.9,
+      "lane_bottom": 674,
+      "retry_speed": 1140,
+      "walls": [
+        {
+          "a": [
+            425,
+            162
+          ],
+          "b": [
+            425,
+            689
+          ],
+          "width": 10
+        },
+        {
+          "a": [
+            463,
+            126
+          ],
+          "b": [
+            463,
+            688
+          ],
+          "width": 8
+        }
+      ],
+      "spring_anchor": [
+        443,
+        692
+      ]
+    },
+    "flippers": {
+      "left": {
+        "pivot": [
+          132,
+          633
+        ],
+        "rest_offset": [
+          76,
+          35
+        ],
+        "active_offset": [
+          76,
+          -33
+        ],
+        "radius": 10.5,
+        "restitution": 0.55,
+        "response": 17.0,
+        "hot_seconds": 0.13,
+        "hit_below_pivot": 30,
+        "strike_length": 95,
+        "kick_x": 140,
+        "kick_x_along": 270,
+        "kick_y": -730,
+        "kick_y_along": -160
+      },
+      "right": {
+        "pivot": [
+          332,
+          633
+        ],
+        "rest_offset": [
+          -76,
+          35
+        ],
+        "active_offset": [
+          -76,
+          -33
+        ],
+        "radius": 10.5,
+        "restitution": 0.55,
+        "response": 17.0,
+        "hot_seconds": 0.13,
+        "hit_below_pivot": 30,
+        "strike_length": 95,
+        "kick_x": 140,
+        "kick_x_along": 270,
+        "kick_y": -730,
+        "kick_y_along": -160
+      }
+    },
+    "bumpers": [
+      {
+        "id": "upper_left",
+        "position": [
+          150,
+          245
+        ],
+        "radius": 25,
+        "visual_radius": 39,
+        "kick": 240,
+        "cooldown": 0.13,
+        "points": 225,
+        "color": "ffbd62"
+      },
+      {
+        "id": "upper_right",
+        "position": [
+          315,
+          245
+        ],
+        "radius": 27,
+        "visual_radius": 42,
+        "kick": 240,
+        "cooldown": 0.13,
+        "points": 175,
+        "color": "73ede0"
+      },
+      {
+        "id": "core",
+        "position": [
+          230,
+          370
+        ],
+        "radius": 32,
+        "visual_radius": 49,
+        "kick": 240,
+        "cooldown": 0.13,
+        "points": 300,
+        "color": "73ede0"
+      },
+      {
+        "id": "bonus",
+        "position": [
+          232,
+          220
+        ],
+        "radius": 20,
+        "visual_radius": 31,
+        "kick": 180,
+        "cooldown": 0.2,
+        "points": 500,
+        "color": "be9bff"
+      }
+    ],
+    "rollovers": [
+      {
+        "id": "light_1",
+        "position": [
+          112,
+          145
+        ],
+        "radius": 21,
+        "cooldown": 0.7,
+        "points": 400,
+        "label": "1"
+      },
+      {
+        "id": "light_2",
+        "position": [
+          167,
+          114
+        ],
+        "radius": 21,
+        "cooldown": 0.7,
+        "points": 400,
+        "label": "2"
+      },
+      {
+        "id": "light_3",
+        "position": [
+          232,
+          105
+        ],
+        "radius": 21,
+        "cooldown": 0.7,
+        "points": 400,
+        "label": "3"
+      },
+      {
+        "id": "light_4",
+        "position": [
+          297,
+          114
+        ],
+        "radius": 21,
+        "cooldown": 0.7,
+        "points": 400,
+        "label": "4"
+      },
+      {
+        "id": "light_5",
+        "position": [
+          350,
+          145
+        ],
+        "radius": 21,
+        "cooldown": 0.7,
+        "points": 400,
+        "label": "5"
+      }
+    ],
+    "banks": [
+      {
+        "id": "left_1",
+        "position": [
+          52,
+          212
+        ],
+        "normal": [
+          1,
+          0
+        ],
+        "half_length": 8,
+        "radius": 5,
+        "restitution": 0.86,
+        "kick": 75,
+        "cooldown": 0.35,
+        "points": 150
+      },
+      {
+        "id": "left_3",
+        "position": [
+          52,
+          288
+        ],
+        "normal": [
+          1,
+          0
+        ],
+        "half_length": 8,
+        "radius": 5,
+        "restitution": 0.86,
+        "kick": 75,
+        "cooldown": 0.35,
+        "points": 150
+      },
+      {
+        "id": "right_1",
+        "position": [
+          397,
+          212
+        ],
+        "normal": [
+          -1,
+          0
+        ],
+        "half_length": 8,
+        "radius": 5,
+        "restitution": 0.86,
+        "kick": 75,
+        "cooldown": 0.35,
+        "points": 150
+      },
+      {
+        "id": "right_3",
+        "position": [
+          397,
+          288
+        ],
+        "normal": [
+          -1,
+          0
+        ],
+        "half_length": 8,
+        "radius": 5,
+        "restitution": 0.86,
+        "kick": 75,
+        "cooldown": 0.35,
+        "points": 150
+      }
+    ],
+    "slingshots": [
+      {
+        "id": "left",
+        "a": [
+          78,
+          470
+        ],
+        "b": [
+          145,
+          578
+        ],
+        "outline": [
+          [
+            77,
+            470
+          ],
+          [
+            143,
+            578
+          ],
+          [
+            78,
+            557
+          ]
+        ],
+        "impulse": [
+          360,
+          -490
+        ],
+        "radius": 9,
+        "restitution": 0.78,
+        "cooldown": 0.25,
+        "damping": 0.88,
+        "coil_threshold": 450,
+        "coil_gain": 0.35,
+        "coil_max": 140,
+        "points": 50
+      },
+      {
+        "id": "right",
+        "a": [
+          385,
+          470
+        ],
+        "b": [
+          318,
+          578
+        ],
+        "outline": [
+          [
+            386,
+            470
+          ],
+          [
+            320,
+            578
+          ],
+          [
+            386,
+            557
+          ]
+        ],
+        "impulse": [
+          -360,
+          -490
+        ],
+        "radius": 9,
+        "restitution": 0.78,
+        "cooldown": 0.25,
+        "damping": 0.88,
+        "coil_threshold": 450,
+        "coil_gain": 0.35,
+        "coil_max": 140,
+        "points": 50
+      }
+    ],
+    "decoration": {
+      "enabled": true,
+      "orbit_center": [
+        232,
+        288
+      ],
+      "orbit_radii": [
+        72,
+        119,
+        174
+      ],
+      "ticks_radius": 182,
+      "arch_center": [
+        232,
+        172
+      ],
+      "arch_radius": 157,
+      "gears": [
+        {
+          "position": [
+            70,
+            331
+          ],
+          "size": 70
+        },
+        {
+          "position": [
+            355,
+            369
+          ],
+          "size": 62
+        },
+        {
+          "position": [
+            360,
+            193
+          ],
+          "size": 38
+        },
+        {
+          "position": [
+            97,
+            219
+          ],
+          "size": 36
+        }
+      ],
+      "arrows": [
+        [
+          95,
+          587
+        ],
+        [
+          95,
+          604
+        ],
+        [
+          370,
+          587
+        ],
+        [
+          370,
+          604
+        ]
+      ]
+    },
+    "labels": {
+      "multiplier": [
+        232,
+        560
+      ],
+      "save": [
+        232,
+        589
+      ],
+      "toast": [
+        69,
+        391,
+        324,
+        28
+      ],
+      "reward": [
+        232,
+        160
+      ]
+    }
+  },
+  "physics": {
+    "ball_radius": 8,
+    "gravity": 480,
+    "drag": 0.025,
+    "max_speed": 1450,
+    "substeps": 6,
+    "unstick_speed": 25,
+    "unstick_above_y": 590,
+    "unstick_seconds": 2,
+    "unstick_impulse": [
+      75,
+      140
+    ]
+  },
+  "gameplay": {
+    "balls": 5,
+    "next_ball_delay": 1.3,
+    "ball_save_seconds": 7,
+    "save_velocity": [
+      -480,
+      0
+    ],
+    "nudge_cooldown": 4,
+    "nudge_y": 165,
+    "nudge_center_x": 232,
+    "nudge_center_strength": 0.22
+  },
+  "scoring": {
+    "multiplier": {
+      "initial": 2,
+      "step": 2,
+      "cap": 8,
+      "completion_points": 1200
+    },
+    "skill_shot": {
+      "enabled": true,
+      "charge_min": 0.5,
+      "charge_max": 0.7,
+      "points": 2200
+    },
+    "chain": {
+      "enabled": true,
+      "seconds": 4.5,
+      "cap": 6,
+      "bonus_per_link": 0.15,
+      "eligible_kinds": [
+        "bumper",
+        "rollover",
+        "bank"
+      ]
+    },
+    "jackpot": {
+      "enabled": true,
+      "bumper_id": "upper_left",
+      "points": 4500,
+      "cooldown": 1.2
+    }
+  },
+  "missions": [
+    {
+      "id": "ignite",
+      "kind": "bumper",
+      "goal": 4,
+      "bonus": 1000,
+      "title": {
+        "en": "IGNITE THE CORE",
+        "cn": "点燃核心"
+      },
+      "label": {
+        "en": "BUMPER HITS",
+        "cn": "击中弹球器"
+      },
+      "short": {
+        "en": "IGNITE",
+        "cn": "点燃"
+      },
+      "objective": {
+        "en": "HIT THE BUMPERS",
+        "cn": "击中弹球器"
+      }
+    },
+    {
+      "id": "align",
+      "kind": "rollover",
+      "goal": 5,
+      "bonus": 1500,
+      "title": {
+        "en": "ALIGN THE ORBIT",
+        "cn": "对齐轨道"
+      },
+      "label": {
+        "en": "ROLLOVER HITS",
+        "cn": "击中轨道灯"
+      },
+      "short": {
+        "en": "ALIGN",
+        "cn": "对齐"
+      },
+      "objective": {
+        "en": "HIT THE TOP ROLLOVERS",
+        "cn": "击中顶部轨道灯"
+      }
+    },
+    {
+      "id": "release",
+      "kind": "bank",
+      "goal": 4,
+      "bonus": 2000,
+      "title": {
+        "en": "RELEASE THE COMET",
+        "cn": "释放彗星"
+      },
+      "label": {
+        "en": "SIDE TARGETS",
+        "cn": "击中侧面目标"
+      },
+      "short": {
+        "en": "RELEASE",
+        "cn": "释放"
+      },
+      "objective": {
+        "en": "HIT EITHER SIDE BANK",
+        "cn": "击中两侧目标"
+      }
+    }
+  ],
+  "multiball": {
+    "enabled": true,
+    "seconds": 24,
+    "spawn_save_seconds": 2,
+    "spawns": [
+      {
+        "position": [
+          167,
+          430
+        ],
+        "velocity": [
+          -280,
+          -470
+        ]
+      }
+    ]
+  }
+}

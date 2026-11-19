@@ -1,0 +1,25 @@
+{
+  "name": "rts-logo",
+  "file": "rts-logo.png",
+  "sha256": "2d5527bd3aa0c4b1886e8232fee71ee88bf153b0c8155398d0b490051d27c39c",
+  "bytes": 1571330,
+  "method": "built-in imagegen; actual model identifier not returned",
+  "prompt": "prompts.json#rts-logo",
+  "inputImageSha256": "e05c975365296997e54e72912d87a76bef671fa3e364096f95524616b8936428",
+  "postprocessing": "none",
+  "path": "assets/template/game/ui/logo.png",
+  "date": "2026-09-30",
+  "publication": {
+    "url": "https://d1oupeiobkpcny.cloudfront.net/assets/dashboard/materials/2026/09/30/2d5527bd3aa0c4b1886e8232fee71ee88bf153b0c8155398d0b490051d27c39c.bin",
+    "sha256": "sha256:2d5527bd3aa0c4b1886e8232fee71ee88bf153b0c8155398d0b490051d27c39c",
+    "size": 1571330
+  },
+  "scope": "Creation and byte evidence; no independent guarantee of third-party clearance.",
+  "promptText": "Use case: text-localization. Edit the supplied game title logo. Replace ALL existing text with exactly \"CAMPUS HERO\" on the upper line, \"DEFENSE\" on the lower main line, and \"TACTICAL TEAMWORK\" in the small lower banner. Preserve the existing energetic hand-lettered comic style, dark red letters, gold edges, white outer sticker border, stars/lightning, overall wide composition and transparent background. Remove every instance of \"SUPERHERO HIGH SCHOOL\" and \"HOMECOMING HAVOC\". No additional text or logos.",
+  "generatedMaster": {
+    "file": "rts-logo-source.png",
+    "sha256": "sha256:2d5527bd3aa0c4b1886e8232fee71ee88bf153b0c8155398d0b490051d27c39c",
+    "size": 1571330,
+    "scope": "Retained review master; no backend model identifier returned."
+  }
+}

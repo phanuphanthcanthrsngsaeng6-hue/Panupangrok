@@ -1,0 +1,38 @@
+{
+  "version": 1,
+  "build": {
+    "fontTools": "4.60.1",
+    "brotli": "1.2.0",
+    "headModified": 3873119038,
+    "excludes": { "name": "NotoSansSC-VF.subset.woff2", "sha256": "sha256:38f4c5f927f746b3dfa4c3a5d7edf0b7a3e828e27438418fa54f9e1565289412" }
+  },
+  "files": [
+    {
+      "name": "NotoSansSC-Supplement.woff2",
+      "role": "font",
+      "size": 2404352,
+      "sha256": "sha256:11be9907d82fb201608b0a6d1a979a57db81a8abb1fdaf16b6e569c60154c9f2",
+      "unicodeCodepoints": 17000,
+      "family": "Noto Sans SC",
+      "license": "OFL-1.1",
+      "licenseFile": "NotoSansSC-OFL.txt",
+      "instance": { "wght": 400 },
+      "omitRanges": [["3400", "4DBF"], ["20000", "10FFFF"]],
+      "source": { "filename": "NotoSansSC[wght].ttf", "project": "google/fonts ofl/notosanssc", "version": "2.004", "size": 17772300, "sha256": "sha256:a3041811a78c361b1de50f953c805e0244951c21c5bd412f7232ef0d899af0da" }
+    },
+    {
+      "name": "NotoEmoji.woff2",
+      "role": "font",
+      "size": 451832,
+      "sha256": "sha256:0b1e7113d1b3b3d66165403aa79f5846364f5f8aaa6b2bf2a28347ff746b601e",
+      "unicodeCodepoints": 1401,
+      "family": "Noto Emoji",
+      "license": "OFL-1.1",
+      "licenseFile": "NotoEmoji-OFL.txt",
+      "instance": { "wght": 400 },
+      "source": { "filename": "NotoEmoji[wght].ttf", "project": "google/fonts ofl/notoemoji", "version": "3.002", "commit": "b979dba422e445492b0eb9951ac52ee0b4d648c3", "size": 1982596, "sha256": "sha256:de6c18832938afc99caf132b39d6a30a19bac7f2e812e28db2535b4608d27551" }
+    },
+    { "name": "NotoSansSC-OFL.txt", "role": "license", "size": 4388, "sha256": "sha256:1c05c68c34f9708415aada51f17e1b0092d2cea709bf4a94cd38114f9e73d7d9" },
+    { "name": "NotoEmoji-OFL.txt", "role": "license", "size": 4330, "sha256": "sha256:500bb1ccf43df7bbb522112f9133a52b16e1c35e809632f5d8609b179152de5b" }
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "removedStalePaths": [
+    "assets/template/fonts/ManusCC0-Bold.ttf",
+    "assets/template/fonts/ManusCC0-Medium.ttf",
+    "assets/template/fonts/ManusCC0-Regular.ttf",
+    "assets/template/fonts/ManusCC0SansCJKSC-Regular.woff2"
+  ],
+  "addedFontPaths": [
+    "assets/template/fonts/Figtree-VF.subset.woff2",
+    "assets/template/fonts/NotoSansSC-VF.subset.woff2",
+    "assets/template/fonts/display/Cinzel-VF.subset.woff2",
+    "assets/template/fonts/display/CinzelDecorative-Black.subset.woff2",
+    "assets/template/fonts/display/CinzelDecorative-Bold.subset.woff2",
+    "assets/template/fonts/display/NotoSerifSC-VF.subset.woff2",
+    "assets/template/fonts/display/Oswald-VF.subset.woff2"
+  ],
+  "activeLockRows": 21,
+  "proposedLedgerRows": 21,
+  "note": "Use only as a patch basis; root font remediation must replace hashes and transformation evidence if fonts change. No RFN waiver is implied."
+}

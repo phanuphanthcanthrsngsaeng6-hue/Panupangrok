@@ -1,0 +1,654 @@
+{
+  "version": 1,
+  "source": {
+    "repository": "junnyboi/game-pinball",
+    "upstreamCommit": "dc35d627eee1334881f3c8f3adca74ec40613d7e",
+    "path": "asset-provenance.json",
+    "sha256": "sha256:3791755f9a95cf3b73208a874611fca5c8d466160335c1942e8f1006aff02c7b"
+  },
+  "visualCoverage": {
+    "attempts": {
+      "sha256:03b352877668a121129531c48e16017f5cec6769481f7f95eee8dc92fc78f42c": {
+        "filters": {},
+        "limit": 5,
+        "outcomes": {
+          "sha256:6a3d6b0006648f7038a21520de85569653665ab188e23411b9fe4a7942b3f6fb": {
+            "hasMore": false,
+            "outcome": "empty",
+            "packIds": [],
+            "snapshotId": "catalog-20260916-full-music-v1",
+            "total": 0
+          }
+        },
+        "query": "pinball"
+      },
+      "sha256:846c8d6af94ced416a9ecc4066e2f347c9536b353f7a6d11e28b15ee760958c5": {
+        "filters": {
+          "category": [
+            "2d-sprites",
+            "ui"
+          ]
+        },
+        "limit": 3,
+        "outcomes": {
+          "sha256:df2a94a8a224f247c02cd80477a94fd0ba9f5f7000ad41863d98819f3a3cce43": {
+            "hasMore": true,
+            "outcome": "results",
+            "packIds": [
+              "itch-io:4152648",
+              "itch-io:57261",
+              "ambientcg:Sign016"
+            ],
+            "snapshotId": "catalog-20260916-full-music-v1",
+            "total": 6
+          }
+        },
+        "query": "gear"
+      }
+    },
+    "expected": {
+      "approvedRevision": 1,
+      "blueprintId": "gbp_2f830c40dca6c8bbd33b5f02",
+      "digest": "a26a22e14f1f8b22211c83047245921888f5f2aab1571295492ca819cae26559",
+      "roles": [
+        {
+          "description": "Layered brass rails, engraved orbit lines, geared bumpers, rollover lamps and a readable launcher lane.",
+          "id": "table",
+          "label": "Clockwork table"
+        },
+        {
+          "description": "Midnight-blue starfield and catalog space art supporting rather than obscuring the table.",
+          "id": "cosmos",
+          "label": "Cosmic atmosphere"
+        },
+        {
+          "description": "Procedural sparks, expanding rings, comet trails, score callouts and animated mechanisms.",
+          "id": "feedback",
+          "label": "Mechanical impact effects"
+        },
+        {
+          "description": "Polished score display, tutorial, touch controls, pause/settings and replay results matching your table.",
+          "id": "interface",
+          "label": "Arcade cabinet interface"
+        }
+      ]
+    },
+    "overflowEvents": 0,
+    "previousResolutions": {
+      "cosmos": {
+        "assetIds": [
+          "assets/cosmos/space/Background_space.png"
+        ],
+        "attemptIds": [],
+        "decision": "catalog_adapted",
+        "expectedDigest": "a26a22e14f1f8b22211c83047245921888f5f2aab1571295492ca819cae26559",
+        "procedureIds": [],
+        "renderedEvidence": {
+          "inputs": [
+            {
+              "path": "scenes/main.tscn",
+              "sha256": "sha256:86794c17315c55154267026258f527a8f38ea21f945ef17afbda85e0c08eca9d"
+            },
+            {
+              "path": "scripts/comet_main.gd",
+              "sha256": "sha256:61aae8f5465a7f20b9632e74a7e337ec35e32e83015f95bd849a57333a73cbe4"
+            },
+            {
+              "path": "assets/cosmos/space/Background_space.png",
+              "sha256": "sha256:0f4a28c2a2025c2998fa18980b64ff75c2222acafd9b30a617fb8568c363f38e"
+            }
+          ],
+          "paths": [
+            {
+              "path": "docs/evidence/01-title-en.png",
+              "sha256": "sha256:f266b708dcbff7a600896aac738aafcbcd397789fc1cc28a6a981ee75051aa97"
+            },
+            {
+              "path": "docs/evidence/04-in-flight.png",
+              "sha256": "sha256:dba34110fc0031fec8ea59777253248ec6a760761e8386130961c6a0cbbebca1"
+            }
+          ]
+        }
+      },
+      "feedback": {
+        "assetIds": [],
+        "attemptIds": [],
+        "decision": "intentional_procedural",
+        "expectedDigest": "a26a22e14f1f8b22211c83047245921888f5f2aab1571295492ca819cae26559",
+        "procedureIds": [
+          "comet-feedback"
+        ],
+        "renderedEvidence": {
+          "inputs": [
+            {
+              "path": "scenes/main.tscn",
+              "sha256": "sha256:86794c17315c55154267026258f527a8f38ea21f945ef17afbda85e0c08eca9d"
+            },
+            {
+              "path": "scripts/comet_main.gd",
+              "sha256": "sha256:61aae8f5465a7f20b9632e74a7e337ec35e32e83015f95bd849a57333a73cbe4"
+            },
+            {
+              "path": "scripts/comet_physics.gd",
+              "sha256": "sha256:4b3745b78550e100909c8d3eab07dd1b449d33c00bb16e5394bda4e219ffeec3"
+            }
+          ],
+          "paths": [
+            {
+              "path": "docs/evidence/04-in-flight.png",
+              "sha256": "sha256:dba34110fc0031fec8ea59777253248ec6a760761e8386130961c6a0cbbebca1"
+            },
+            {
+              "path": "docs/evidence/05-moving-comet.png",
+              "sha256": "sha256:a3858f8ed5c31f430e035cff73973aae4b01156f2fda53d950fe4a2663798308"
+            }
+          ]
+        }
+      },
+      "interface": {
+        "assetIds": [],
+        "attemptIds": [],
+        "decision": "intentional_procedural",
+        "expectedDigest": "a26a22e14f1f8b22211c83047245921888f5f2aab1571295492ca819cae26559",
+        "procedureIds": [
+          "arcade-interface"
+        ],
+        "renderedEvidence": {
+          "inputs": [
+            {
+              "path": "scenes/main.tscn",
+              "sha256": "sha256:86794c17315c55154267026258f527a8f38ea21f945ef17afbda85e0c08eca9d"
+            },
+            {
+              "path": "scripts/comet_main.gd",
+              "sha256": "sha256:61aae8f5465a7f20b9632e74a7e337ec35e32e83015f95bd849a57333a73cbe4"
+            },
+            {
+              "path": "assets/template/fonts/manuscc0_regular.tres",
+              "sha256": "sha256:e9c6551beed493a1a4c3200c8726bb2edc3196966990ff87c25b7e5cc234e769"
+            },
+            {
+              "path": "assets/template/fonts/manuscc0_bold.tres",
+              "sha256": "sha256:fbc3fa9654e3f53e50adcda8a9cfa55d2cbf351bdd50ec4341cab52fd43f096c"
+            },
+            {
+              "path": "assets/template/fonts/ManusCC0SansCJKSC-Regular.woff2",
+              "sha256": "sha256:0a4981b817d7fb556dd8cd80f278483f1849017a312ca965e027d8e0e066968c"
+            },
+            {
+              "path": "web/loading.html",
+              "sha256": "sha256:2857b710f7476aaebc8b319b6d799b35985008c30d88833cfd4627c0ec8af6c8"
+            }
+          ],
+          "paths": [
+            {
+              "path": "docs/evidence/01-title-en.png",
+              "sha256": "sha256:f266b708dcbff7a600896aac738aafcbcd397789fc1cc28a6a981ee75051aa97"
+            },
+            {
+              "path": "docs/evidence/02-title-cn.png",
+              "sha256": "sha256:ba86ec54a75c61d62db0eb14bb9bed62d9420f208e672e871a0cb3370f904a36"
+            },
+            {
+              "path": "docs/evidence/08-results.png",
+              "sha256": "sha256:be1e07e7748ddd8910902b4b761e626a4e6416ec738097857e011b812f89f0eb"
+            },
+            {
+              "path": "docs/evidence/12-portrait-cn.png",
+              "sha256": "sha256:a031f0c1466eefd483ebbe68ba5cd42bf8db5d21c5514974c203faa19299d882"
+            }
+          ]
+        }
+      },
+      "table": {
+        "assetIds": [
+          "assets/mechanisms/bronze-gears/Cog Wheels - Gears/SpriteSheets/Bronze Gear Wheels/Gear 1 - Bronze_spritesheet.png"
+        ],
+        "attemptIds": [
+          "sha256:03b352877668a121129531c48e16017f5cec6769481f7f95eee8dc92fc78f42c",
+          "sha256:846c8d6af94ced416a9ecc4066e2f347c9536b353f7a6d11e28b15ee760958c5"
+        ],
+        "decision": "procedural_gap",
+        "expectedDigest": "a26a22e14f1f8b22211c83047245921888f5f2aab1571295492ca819cae26559",
+        "procedureIds": [
+          "clockwork-table"
+        ],
+        "renderedEvidence": {
+          "inputs": [
+            {
+              "path": "scenes/main.tscn",
+              "sha256": "sha256:86794c17315c55154267026258f527a8f38ea21f945ef17afbda85e0c08eca9d"
+            },
+            {
+              "path": "scripts/comet_main.gd",
+              "sha256": "sha256:61aae8f5465a7f20b9632e74a7e337ec35e32e83015f95bd849a57333a73cbe4"
+            },
+            {
+              "path": "scripts/comet_physics.gd",
+              "sha256": "sha256:4b3745b78550e100909c8d3eab07dd1b449d33c00bb16e5394bda4e219ffeec3"
+            },
+            {
+              "path": "assets/mechanisms/bronze-gears/Cog Wheels - Gears/SpriteSheets/Bronze Gear Wheels/Gear 1 - Bronze_spritesheet.png",
+              "sha256": "sha256:e24da95dcd43484428623aa3888448467c0b6174f5fefd50d168542454ea4cf2"
+            }
+          ],
+          "paths": [
+            {
+              "path": "docs/evidence/01-title-en.png",
+              "sha256": "sha256:f266b708dcbff7a600896aac738aafcbcd397789fc1cc28a6a981ee75051aa97"
+            },
+            {
+              "path": "docs/evidence/04-in-flight.png",
+              "sha256": "sha256:dba34110fc0031fec8ea59777253248ec6a760761e8386130961c6a0cbbebca1"
+            }
+          ]
+        },
+        "residualGap": "No suitable indexed pinball table components were found. Catalog bronze gears cover mechanical decoration; bespoke collision-aligned rails, flippers, bumper caps and launcher were deliberately constructed as polished vector mechanisms."
+      }
+    },
+    "resolutions": {
+      "cosmos": {
+        "assetIds": [
+          "assets/observatory/cosmos.webp",
+          "assets/cosmos/space/Background_space.png"
+        ],
+        "attemptIds": [],
+        "decision": "existing",
+        "expectedDigest": "a26a22e14f1f8b22211c83047245921888f5f2aab1571295492ca819cae26559",
+        "procedureIds": [
+          "living-cosmos-background"
+        ],
+        "renderedEvidence": {
+          "inputs": [
+            {
+              "path": "assets/cosmos/space/Background_space.png",
+              "sha256": "sha256:0f4a28c2a2025c2998fa18980b64ff75c2222acafd9b30a617fb8568c363f38e"
+            },
+            {
+              "path": "assets/observatory/bumper.png",
+              "sha256": "sha256:11d1ac40042b8a6a98cc020ba1ddc7ab75efcbcaaf1c4f8b59ee24fb8eba4a24"
+            },
+            {
+              "path": "assets/observatory/cosmos.webp",
+              "sha256": "sha256:c5daf2784ac096aab2a9159530e5277a183ff89321ae8878b63da024742a8600"
+            },
+            {
+              "path": "assets/observatory/surface.webp",
+              "sha256": "sha256:3419fa80b6adc0ba3b5b3eafa471e85e23c4e64484d4545cbc8921b3dd0f4c85"
+            },
+            {
+              "path": "scenes/main.tscn",
+              "sha256": "sha256:a6a26c0933bcadacaa0a613274197c705c4ba58246f4875920f533fc7de3761f"
+            },
+            {
+              "path": "scripts/comet_cosmos.gd",
+              "sha256": "sha256:1b3887743864d8d320bf7aaff36c6ca4bd8438a1ead2a743a87aa3ee24d078dd"
+            },
+            {
+              "path": "scripts/comet_juice.gd",
+              "sha256": "sha256:a9ec076e36d745b166c55665ab7cd5da93d16a3ff0acd21955c0d775a7426dc6"
+            },
+            {
+              "path": "scripts/comet_main.gd",
+              "sha256": "sha256:8613b5ba71fe3f53d21712effc1dd9b3a269564a1ae989fce2413153624189be"
+            },
+            {
+              "path": "scripts/comet_observatory.gd",
+              "sha256": "sha256:22c658edda8dcf8cbde8591a8758c27936c82366f16960c13559d81ea9019842"
+            },
+            {
+              "path": "scripts/comet_physics.gd",
+              "sha256": "sha256:ba5a735b7a58583e404a2dec1802c629b081a55acdf8c0c387dba3f2df209217"
+            },
+            {
+              "path": "scripts/comet_rules.gd",
+              "sha256": "sha256:62d2b7096c1b9b66150c7076f6b7decad0ac5431ebf6d7bb25bfd68798ec732d"
+            },
+            {
+              "path": "shaders/living_cosmos.gdshader",
+              "sha256": "sha256:797b578d58d37cd284b7a7e5f23eb7f0c0412bbbfae4655f6312c87052a9bdf4"
+            }
+          ],
+          "paths": [
+            {
+              "path": "captures/01-title-en.png",
+              "sha256": "sha256:fa82f84f3685061e683b3c3606f7d9374f2df0c448d9458b6b1230e9dacd5c83"
+            },
+            {
+              "path": "captures/20-fast-comet.png",
+              "sha256": "sha256:4715abb435b4827989de4171633f741ea422920dfa99e398e6060947bf45f8c3"
+            },
+            {
+              "path": "captures/13-supernova.png",
+              "sha256": "sha256:557e3fd0a0e16daab24dbbf3621c233a402a66ec5eda33a554dd344d035e1aa8"
+            },
+            {
+              "path": "captures/17-portrait-mission-cn.png",
+              "sha256": "sha256:e66758e47af1dd99fdb4df9a80cd13010aba2eacdfcd99eec29815c335dc6494"
+            }
+          ]
+        }
+      },
+      "feedback": {
+        "assetIds": [],
+        "attemptIds": [],
+        "decision": "intentional_procedural",
+        "expectedDigest": "a26a22e14f1f8b22211c83047245921888f5f2aab1571295492ca819cae26559",
+        "procedureIds": [
+          "comet-feedback",
+          "speed-comet-stardust"
+        ],
+        "renderedEvidence": {
+          "inputs": [
+            {
+              "path": "assets/observatory/bumper.png",
+              "sha256": "sha256:11d1ac40042b8a6a98cc020ba1ddc7ab75efcbcaaf1c4f8b59ee24fb8eba4a24"
+            },
+            {
+              "path": "assets/observatory/cosmos.webp",
+              "sha256": "sha256:c5daf2784ac096aab2a9159530e5277a183ff89321ae8878b63da024742a8600"
+            },
+            {
+              "path": "assets/observatory/surface.webp",
+              "sha256": "sha256:3419fa80b6adc0ba3b5b3eafa471e85e23c4e64484d4545cbc8921b3dd0f4c85"
+            },
+            {
+              "path": "scenes/main.tscn",
+              "sha256": "sha256:a6a26c0933bcadacaa0a613274197c705c4ba58246f4875920f533fc7de3761f"
+            },
+            {
+              "path": "scripts/comet_cosmos.gd",
+              "sha256": "sha256:1b3887743864d8d320bf7aaff36c6ca4bd8438a1ead2a743a87aa3ee24d078dd"
+            },
+            {
+              "path": "scripts/comet_juice.gd",
+              "sha256": "sha256:a9ec076e36d745b166c55665ab7cd5da93d16a3ff0acd21955c0d775a7426dc6"
+            },
+            {
+              "path": "scripts/comet_main.gd",
+              "sha256": "sha256:8613b5ba71fe3f53d21712effc1dd9b3a269564a1ae989fce2413153624189be"
+            },
+            {
+              "path": "scripts/comet_observatory.gd",
+              "sha256": "sha256:22c658edda8dcf8cbde8591a8758c27936c82366f16960c13559d81ea9019842"
+            },
+            {
+              "path": "scripts/comet_physics.gd",
+              "sha256": "sha256:ba5a735b7a58583e404a2dec1802c629b081a55acdf8c0c387dba3f2df209217"
+            },
+            {
+              "path": "scripts/comet_rules.gd",
+              "sha256": "sha256:62d2b7096c1b9b66150c7076f6b7decad0ac5431ebf6d7bb25bfd68798ec732d"
+            },
+            {
+              "path": "shaders/living_cosmos.gdshader",
+              "sha256": "sha256:797b578d58d37cd284b7a7e5f23eb7f0c0412bbbfae4655f6312c87052a9bdf4"
+            }
+          ],
+          "paths": [
+            {
+              "path": "captures/01-title-en.png",
+              "sha256": "sha256:fa82f84f3685061e683b3c3606f7d9374f2df0c448d9458b6b1230e9dacd5c83"
+            },
+            {
+              "path": "captures/20-fast-comet.png",
+              "sha256": "sha256:4715abb435b4827989de4171633f741ea422920dfa99e398e6060947bf45f8c3"
+            },
+            {
+              "path": "captures/13-supernova.png",
+              "sha256": "sha256:557e3fd0a0e16daab24dbbf3621c233a402a66ec5eda33a554dd344d035e1aa8"
+            },
+            {
+              "path": "captures/17-portrait-mission-cn.png",
+              "sha256": "sha256:e66758e47af1dd99fdb4df9a80cd13010aba2eacdfcd99eec29815c335dc6494"
+            }
+          ]
+        }
+      },
+      "interface": {
+        "assetIds": [],
+        "attemptIds": [],
+        "decision": "intentional_procedural",
+        "expectedDigest": "a26a22e14f1f8b22211c83047245921888f5f2aab1571295492ca819cae26559",
+        "procedureIds": [
+          "arcade-interface"
+        ],
+        "renderedEvidence": {
+          "inputs": [
+            {
+              "path": "assets/observatory/bumper.png",
+              "sha256": "sha256:11d1ac40042b8a6a98cc020ba1ddc7ab75efcbcaaf1c4f8b59ee24fb8eba4a24"
+            },
+            {
+              "path": "assets/observatory/cosmos.webp",
+              "sha256": "sha256:c5daf2784ac096aab2a9159530e5277a183ff89321ae8878b63da024742a8600"
+            },
+            {
+              "path": "assets/observatory/surface.webp",
+              "sha256": "sha256:3419fa80b6adc0ba3b5b3eafa471e85e23c4e64484d4545cbc8921b3dd0f4c85"
+            },
+            {
+              "path": "scenes/main.tscn",
+              "sha256": "sha256:a6a26c0933bcadacaa0a613274197c705c4ba58246f4875920f533fc7de3761f"
+            },
+            {
+              "path": "scripts/comet_cosmos.gd",
+              "sha256": "sha256:1b3887743864d8d320bf7aaff36c6ca4bd8438a1ead2a743a87aa3ee24d078dd"
+            },
+            {
+              "path": "scripts/comet_juice.gd",
+              "sha256": "sha256:a9ec076e36d745b166c55665ab7cd5da93d16a3ff0acd21955c0d775a7426dc6"
+            },
+            {
+              "path": "scripts/comet_main.gd",
+              "sha256": "sha256:8613b5ba71fe3f53d21712effc1dd9b3a269564a1ae989fce2413153624189be"
+            },
+            {
+              "path": "scripts/comet_observatory.gd",
+              "sha256": "sha256:22c658edda8dcf8cbde8591a8758c27936c82366f16960c13559d81ea9019842"
+            },
+            {
+              "path": "scripts/comet_physics.gd",
+              "sha256": "sha256:ba5a735b7a58583e404a2dec1802c629b081a55acdf8c0c387dba3f2df209217"
+            },
+            {
+              "path": "scripts/comet_rules.gd",
+              "sha256": "sha256:62d2b7096c1b9b66150c7076f6b7decad0ac5431ebf6d7bb25bfd68798ec732d"
+            },
+            {
+              "path": "shaders/living_cosmos.gdshader",
+              "sha256": "sha256:797b578d58d37cd284b7a7e5f23eb7f0c0412bbbfae4655f6312c87052a9bdf4"
+            },
+            {
+              "path": "web/loading.html",
+              "sha256": "sha256:2857b710f7476aaebc8b319b6d799b35985008c30d88833cfd4627c0ec8af6c8"
+            }
+          ],
+          "paths": [
+            {
+              "path": "captures/01-title-en.png",
+              "sha256": "sha256:fa82f84f3685061e683b3c3606f7d9374f2df0c448d9458b6b1230e9dacd5c83"
+            },
+            {
+              "path": "captures/20-fast-comet.png",
+              "sha256": "sha256:4715abb435b4827989de4171633f741ea422920dfa99e398e6060947bf45f8c3"
+            },
+            {
+              "path": "captures/13-supernova.png",
+              "sha256": "sha256:557e3fd0a0e16daab24dbbf3621c233a402a66ec5eda33a554dd344d035e1aa8"
+            },
+            {
+              "path": "captures/17-portrait-mission-cn.png",
+              "sha256": "sha256:e66758e47af1dd99fdb4df9a80cd13010aba2eacdfcd99eec29815c335dc6494"
+            }
+          ]
+        }
+      },
+      "table": {
+        "assetIds": [
+          "assets/observatory/surface.webp",
+          "assets/observatory/bumper.png",
+          "assets/mechanisms/bronze-gears/Cog Wheels - Gears/SpriteSheets/Bronze Gear Wheels/Gear 1 - Bronze_spritesheet.png"
+        ],
+        "attemptIds": [],
+        "decision": "existing",
+        "expectedDigest": "a26a22e14f1f8b22211c83047245921888f5f2aab1571295492ca819cae26559",
+        "procedureIds": [
+          "clockwork-table"
+        ],
+        "renderedEvidence": {
+          "inputs": [
+            {
+              "path": "assets/mechanisms/bronze-gears/Cog Wheels - Gears/SpriteSheets/Bronze Gear Wheels/Gear 1 - Bronze_spritesheet.png",
+              "sha256": "sha256:e24da95dcd43484428623aa3888448467c0b6174f5fefd50d168542454ea4cf2"
+            },
+            {
+              "path": "assets/observatory/bumper.png",
+              "sha256": "sha256:11d1ac40042b8a6a98cc020ba1ddc7ab75efcbcaaf1c4f8b59ee24fb8eba4a24"
+            },
+            {
+              "path": "assets/observatory/cosmos.webp",
+              "sha256": "sha256:c5daf2784ac096aab2a9159530e5277a183ff89321ae8878b63da024742a8600"
+            },
+            {
+              "path": "assets/observatory/surface.webp",
+              "sha256": "sha256:3419fa80b6adc0ba3b5b3eafa471e85e23c4e64484d4545cbc8921b3dd0f4c85"
+            },
+            {
+              "path": "scenes/main.tscn",
+              "sha256": "sha256:a6a26c0933bcadacaa0a613274197c705c4ba58246f4875920f533fc7de3761f"
+            },
+            {
+              "path": "scripts/comet_cosmos.gd",
+              "sha256": "sha256:1b3887743864d8d320bf7aaff36c6ca4bd8438a1ead2a743a87aa3ee24d078dd"
+            },
+            {
+              "path": "scripts/comet_juice.gd",
+              "sha256": "sha256:a9ec076e36d745b166c55665ab7cd5da93d16a3ff0acd21955c0d775a7426dc6"
+            },
+            {
+              "path": "scripts/comet_main.gd",
+              "sha256": "sha256:8613b5ba71fe3f53d21712effc1dd9b3a269564a1ae989fce2413153624189be"
+            },
+            {
+              "path": "scripts/comet_observatory.gd",
+              "sha256": "sha256:22c658edda8dcf8cbde8591a8758c27936c82366f16960c13559d81ea9019842"
+            },
+            {
+              "path": "scripts/comet_physics.gd",
+              "sha256": "sha256:ba5a735b7a58583e404a2dec1802c629b081a55acdf8c0c387dba3f2df209217"
+            },
+            {
+              "path": "scripts/comet_rules.gd",
+              "sha256": "sha256:62d2b7096c1b9b66150c7076f6b7decad0ac5431ebf6d7bb25bfd68798ec732d"
+            },
+            {
+              "path": "shaders/living_cosmos.gdshader",
+              "sha256": "sha256:797b578d58d37cd284b7a7e5f23eb7f0c0412bbbfae4655f6312c87052a9bdf4"
+            }
+          ],
+          "paths": [
+            {
+              "path": "captures/01-title-en.png",
+              "sha256": "sha256:fa82f84f3685061e683b3c3606f7d9374f2df0c448d9458b6b1230e9dacd5c83"
+            },
+            {
+              "path": "captures/20-fast-comet.png",
+              "sha256": "sha256:4715abb435b4827989de4171633f741ea422920dfa99e398e6060947bf45f8c3"
+            },
+            {
+              "path": "captures/13-supernova.png",
+              "sha256": "sha256:557e3fd0a0e16daab24dbbf3621c233a402a66ec5eda33a554dd344d035e1aa8"
+            },
+            {
+              "path": "captures/17-portrait-mission-cn.png",
+              "sha256": "sha256:e66758e47af1dd99fdb4df9a80cd13010aba2eacdfcd99eec29815c335dc6494"
+            }
+          ]
+        }
+      }
+    },
+    "scopeChange": {
+      "instructionRef": "Conversation request 2026-09-22 22:12 +08:00 and the supplied annotated game screenshot",
+      "reason": "Simplify the game for template reuse: remove the marked Celestial Orbit label, entire central C/P emblem and rings, and bottom table caption. Remove all animated UI/playfield backgrounds and their shader, viewport, twinkling, transition and loading implementations. Retain one static background, gameplay, particle effects, audio and controls. Current baseline: docs/template-baseline.md.",
+      "roleIds": [
+        "table",
+        "cosmos",
+        "interface"
+      ]
+    },
+    "version": 1
+  },
+  "summaryVisualCoverage": {
+    "approvedRevision": 1,
+    "blueprintId": "gbp_2f830c40dca6c8bbd33b5f02",
+    "committedRoles": 4,
+    "expectedDigest": "a26a22e14f1f8b22211c83047245921888f5f2aab1571295492ca819cae26559",
+    "fulfilledRoles": 0,
+    "reason": "scope_changed",
+    "roles": [
+      {
+        "id": "table",
+        "reasons": [
+          "missing_asset",
+          "stale_rendered_evidence"
+        ],
+        "status": "unresolved"
+      },
+      {
+        "id": "cosmos",
+        "reasons": [
+          "missing_asset",
+          "stale_rendered_evidence"
+        ],
+        "status": "unresolved"
+      },
+      {
+        "id": "feedback",
+        "reasons": [
+          "incomplete_review_inputs",
+          "stale_rendered_evidence"
+        ],
+        "status": "unresolved"
+      },
+      {
+        "id": "interface",
+        "reasons": [
+          "stale_rendered_evidence"
+        ],
+        "status": "unresolved"
+      }
+    ],
+    "scopeChange": {
+      "instructionRef": "Conversation request 2026-09-22 22:12 +08:00 and the supplied annotated game screenshot",
+      "reason": "Simplify the game for template reuse: remove the marked Celestial Orbit label, entire central C/P emblem and rings, and bottom table caption. Remove all animated UI/playfield backgrounds and their shader, viewport, twinkling, transition and loading implementations. Retain one static background, gameplay, particle effects, audio and controls. Current baseline: docs/template-baseline.md.",
+      "roleIds": [
+        "table",
+        "cosmos",
+        "interface"
+      ]
+    },
+    "search": {
+      "checkedPages": 2,
+      "outcomes": 2,
+      "overflowEvents": 0,
+      "requests": 2
+    },
+    "selectedButUnusedAssets": [],
+    "staleRenderedEvidence": [
+      "table",
+      "cosmos",
+      "feedback",
+      "interface"
+    ],
+    "status": "unverified",
+    "unexplainedFallbacks": [],
+    "unresolvedRoles": [
+      "table",
+      "cosmos",
+      "feedback",
+      "interface"
+    ],
+    "visualQuality": "requires_agent_review"
+  }
+}

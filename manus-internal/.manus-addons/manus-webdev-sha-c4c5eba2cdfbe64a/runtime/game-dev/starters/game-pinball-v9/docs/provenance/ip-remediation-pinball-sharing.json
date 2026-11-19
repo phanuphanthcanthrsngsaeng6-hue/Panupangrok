@@ -1,0 +1,18 @@
+{
+  "name": "pinball-sharing",
+  "file": "pinball-sharing.png",
+  "sha256": "f0800d14f217cc1f124801b0f0a5c49d1c294f23dc15aa902929350f3534a195",
+  "bytes": 379728,
+  "method": "native Godot gameplay capture",
+  "prompt": null,
+  "inputImageSha256": null,
+  "postprocessing": "none",
+  "path": "assets/template/share/v5/og.png",
+  "date": "2026-09-30",
+  "publication": {
+    "url": "https://d1oupeiobkpcny.cloudfront.net/assets/dashboard/materials/2026/09/30/f0800d14f217cc1f124801b0f0a5c49d1c294f23dc15aa902929350f3534a195.bin",
+    "sha256": "sha256:f0800d14f217cc1f124801b0f0a5c49d1c294f23dc15aa902929350f3534a195",
+    "size": 379728
+  },
+  "scope": "Creation and byte evidence; no independent guarantee of third-party clearance."
+}

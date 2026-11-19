@@ -1,0 +1,111 @@
+{
+  "schema_version": "0.1",
+  "kind": "manus_addon_package",
+  "update_mode": "hot",
+  "addon": {
+    "id": "manus-triggers",
+    "version": "0.0.64",
+    "owner": "manus",
+    "display_name": "Triggers",
+    "description": "Create event triggers first using discovered events, authorized resources and OR/AND filters; use scheduled script triggers only when events and filters cannot express the requirement. Manage triggers and their run history. Ordinary scheduled tasks remain separate.",
+    "backend_mode": "serverless"
+  },
+  "host_permissions": [
+    "triggers.read",
+    "triggers.write"
+  ],
+  "mcp_servers": {
+    "triggers": {
+      "execution_mode": "runtime_mcp",
+      "execution_modes": [
+        "runtime_mcp",
+        "device_mcp"
+      ],
+      "transport": "stdio",
+      "runtime": "manus-js/v1",
+      "entrypoint": "runtime/mcp/server.mjs",
+      "command": "node",
+      "args": [
+        "runtime/mcp/server.mjs"
+      ],
+      "model_visible_tools": [
+        "triggers.create_trigger",
+        "triggers.create_script_trigger",
+        "triggers.update_trigger",
+        "triggers.set_trigger_enabled",
+        "triggers.list_triggers",
+        "triggers.delete_trigger",
+        "triggers.get_trigger",
+        "triggers.list_events",
+        "triggers.list_event_options",
+        "triggers.list_executions",
+        "triggers.get_execution",
+        "triggers.list_data_apis",
+        "triggers.dry_run_script",
+        "triggers.dry_run_entry",
+        "triggers.preview_schedule"
+      ]
+    }
+  },
+  "skills": {
+    "triggers": {
+      "name": "triggers",
+      "mcp_server": "triggers",
+      "path": "runtime/skill"
+    }
+  },
+  "resources": {
+    "trigger": {
+      "schema": "manus.addon.resource/v1",
+      "uri_scheme": "manus-resource",
+      "uri_template": "manus-resource://manus-triggers/trigger/{trigger_uid}",
+      "content_kind": "trigger"
+    }
+  },
+  "device_artifacts": [
+    {
+      "target": {
+        "os": "darwin",
+        "arch": "arm64"
+      },
+      "path": "device/darwin-arm64.tar.gz"
+    },
+    {
+      "target": {
+        "os": "darwin",
+        "arch": "amd64"
+      },
+      "path": "device/darwin-amd64.tar.gz"
+    },
+    {
+      "target": {
+        "os": "windows",
+        "arch": "arm64"
+      },
+      "path": "device/windows-arm64.tar.gz"
+    },
+    {
+      "target": {
+        "os": "windows",
+        "arch": "amd64"
+      },
+      "path": "device/windows-amd64.tar.gz"
+    },
+    {
+      "target": {
+        "os": "linux",
+        "arch": "arm64",
+        "libc": "gnu"
+      },
+      "path": "device/linux-arm64-gnu.tar.gz"
+    },
+    {
+      "target": {
+        "os": "linux",
+        "arch": "amd64",
+        "libc": "gnu"
+      },
+      "path": "device/linux-amd64-gnu.tar.gz"
+    }
+  ]
+}

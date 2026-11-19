@@ -1,0 +1,12 @@
+{
+  "name": "game-pong-online",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "verify": "./tools/verify.sh",
+    "test:server": "pnpm --dir server test",
+    "export": "mkdir -p dist && godot --headless --path . --export-release Web dist/index.html",
+    "verify:release": "./tools/verify.sh --export"
+  }
+}

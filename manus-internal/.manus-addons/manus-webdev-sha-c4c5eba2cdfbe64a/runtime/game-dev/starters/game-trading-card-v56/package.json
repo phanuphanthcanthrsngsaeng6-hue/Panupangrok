@@ -1,0 +1,8 @@
+{
+  "name": "game-trading-card",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "export": "mkdir -p dist && godot --headless --path . --export-release Web dist/index.html"
+  }
+}

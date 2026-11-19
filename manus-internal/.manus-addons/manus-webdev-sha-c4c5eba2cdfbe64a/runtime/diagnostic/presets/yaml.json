@@ -1,0 +1,28 @@
+{
+  "name": "yaml",
+  "command": "yaml-language-server",
+  "args": [
+    "--stdio"
+  ],
+  "files": {
+    ".yaml": "yaml",
+    ".yml": "yaml"
+  },
+  "description": "Native workspace section yaml: validate boolean; customTags string array, each entry a tag and kind scalar/sequence/mapping; schemaStore.enable controls remote catalog loading. schemas maps schema URLs to matching files. Example tag syntax is !Custom scalar.",
+  "testedVersion": "1.24.0",
+  "configuration": {
+    "initializationOptions": {},
+    "settings": {
+      "yaml": {
+        "validate": true,
+        "customTags": [
+          "!Ref scalar"
+        ],
+        "schemaStore": {
+          "enable": false
+        }
+      }
+    }
+  },
+  "projectConfigurationExample": {}
+}

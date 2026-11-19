@@ -1,0 +1,13 @@
+{
+  "schemaVersion": 2,
+  "title": "Space Pinball",
+  "description": "A streamlined pinball game with a static cosmic table, responsive flippers, comet trails and atmospheric music. Build the reactor and earn three-ball Supernova.",
+  "defaultCaptions": {
+    "x": "Ignite. Align. Release. Play Space Pinball and earn three-ball Supernova.",
+    "discord": "Space Pinball: skill shots, shot chains, three-ball Supernova and local high scores. Play with keyboard or touch."
+  },
+  "assets": {
+    "og": "assets/template/share/v5/og.png",
+    "favicon": "assets/template/share/v3/favicon.png"
+  }
+}

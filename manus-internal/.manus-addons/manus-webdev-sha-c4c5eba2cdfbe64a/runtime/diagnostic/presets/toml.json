@@ -1,0 +1,20 @@
+{
+  "name": "toml",
+  "command": "taplo",
+  "args": [
+    "lsp",
+    "stdio"
+  ],
+  "files": {
+    ".toml": "toml"
+  },
+  "description": "Taplo reads .taplo.toml or taplo.toml from the workspace root. [schema] has path (local file or schema URL) and enabled (boolean). Schema directives in a document may override the workspace schema configuration. Do not translate TOML configuration into an invented taplo.workspace flag.",
+  "testedVersion": "0.10.0",
+  "configuration": {
+    "initializationOptions": {},
+    "settings": {}
+  },
+  "projectConfigurationExample": {
+    ".taplo.toml": "[schema]\npath = \"./schema.json\"\nenabled = true\n"
+  }
+}

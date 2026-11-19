@@ -1,0 +1,41 @@
+{
+  "name": "vue",
+  "command": "typescript-language-server",
+  "args": [
+    "--stdio"
+  ],
+  "files": {
+    ".js": "javascript",
+    ".jsx": "javascriptreact",
+    ".mjs": "javascript",
+    ".cjs": "javascript",
+    ".ts": "typescript",
+    ".tsx": "typescriptreact",
+    ".mts": "typescript",
+    ".cts": "typescript",
+    ".vue": "vue"
+  },
+  "description": "This is typescript-language-server with the installed @vue/typescript-plugin@3.3.8 plugin, not a separate vue executable. LSP initialize.initializationOptions.plugins is an array of {name, location, languages}. The printed plugin location is inferred from the Node installation prefix and is not checked for existence. For a project-local or custom installation, override adapter_config.servers[].initializationOptions.plugins[].location with the actual package directory; it handles languageId vue. A tsconfig project should include .vue and use normal TypeScript compilerOptions, including strict and jsx=preserve. Workspace implicitProjectConfiguration.checkJs affects inferred JS, not the tsconfig project.",
+  "testedVersion": "5.3.0 + @vue/typescript-plugin 3.3.8",
+  "configuration": {
+    "initializationOptions": {
+      "plugins": [
+        {
+          "name": "@vue/typescript-plugin",
+          "location": "/home/ubuntu/.nvm/versions/node/v22.23.4/lib/node_modules/@vue/typescript-plugin",
+          "languages": [
+            "vue"
+          ]
+        }
+      ]
+    },
+    "settings": {
+      "implicitProjectConfiguration": {
+        "checkJs": true
+      }
+    }
+  },
+  "projectConfigurationExample": {
+    "tsconfig.json": "{\"compilerOptions\": {\"strict\": true, \"target\": \"ES2022\", \"module\": \"ESNext\", \"moduleResolution\": \"bundler\", \"jsx\": \"preserve\", \"noEmit\": true}, \"include\": [\"**/*.vue\"]}"
+  }
+}

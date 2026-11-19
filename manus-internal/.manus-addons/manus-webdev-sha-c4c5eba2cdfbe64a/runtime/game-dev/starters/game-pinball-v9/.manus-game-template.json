@@ -1,0 +1,6 @@
+{
+  "schema_version": 1,
+  "template_id": "game-pinball",
+  "game_genre": "pinball",
+  "starter_id": "game-pinball-v9"
+}

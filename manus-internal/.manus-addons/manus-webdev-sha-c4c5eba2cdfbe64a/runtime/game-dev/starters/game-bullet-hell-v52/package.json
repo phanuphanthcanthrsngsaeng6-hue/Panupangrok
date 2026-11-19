@@ -1,0 +1,11 @@
+{
+  "name": "game-bullet-hell",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "export": "mkdir -p dist && godot --headless --path . --export-release Web dist/index.html",
+    "verify-export": "node scripts/check-exported-pack.mjs",
+    "check": "node scripts/check.mjs",
+    "test": "node --test test/english-copy.test.mjs && node scripts/check-game.mjs"
+  }
+}

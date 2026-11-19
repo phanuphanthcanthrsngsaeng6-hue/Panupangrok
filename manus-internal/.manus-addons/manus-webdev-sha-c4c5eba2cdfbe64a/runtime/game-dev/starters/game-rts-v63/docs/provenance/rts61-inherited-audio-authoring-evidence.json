@@ -1,0 +1,577 @@
+{
+  "source": "starters/game-rts-v54/assets/template/runtime/audio/audio-report.json",
+  "assets": [
+    {
+      "path": "assets/template/runtime/audio/sfx/attack_magic.ogg",
+      "currentSha256": "sha256:accb99e4e8452fede3a6cf81875f628e7260138647a6afb2367d1b0c81658cd0",
+      "report": {
+        "candidates": {
+          "A": {
+            "active_ratio": 0.9656573346176552,
+            "duration_seconds": 2.6819166666666665,
+            "path": "/home/ubuntu/proto-rts-audio-candidates/sfx/attack_magic_A.mp3",
+            "peak_dbfs": -0.6047948789695599,
+            "rms_dbfs": -16.367429712721844,
+            "score": -9.607828370398257,
+            "sha256": "d6a1abefebe8acae94e8fef0e43030091063a80d746f70a669b8d46a7e55dddf"
+          },
+          "B": {
+            "active_ratio": 0.43349749867942705,
+            "duration_seconds": 2.6819166666666665,
+            "path": "/home/ubuntu/proto-rts-audio-candidates/sfx/attack_magic_B.mp3",
+            "peak_dbfs": -19.962441053306886,
+            "rms_dbfs": -38.08661733663607,
+            "score": -35.052134845880076,
+            "sha256": "ce98bec5bf4f9cb482388b3e24cb2dcdc0e6bd3b6ae8b29a7f105ded735cc04e"
+          },
+          "C": {
+            "active_ratio": 0.0,
+            "duration_seconds": 2.6362083333333333,
+            "path": "/home/ubuntu/proto-rts-audio-candidates/sfx/attack_magic_C.mp3",
+            "peak_dbfs": -49.80288139389895,
+            "rms_dbfs": -68.87993923706544,
+            "score": -73.67993923706544,
+            "sha256": "4b16ad994680ac86a38411a983a381c601abc4b42ba74e5f493fd96db372726a"
+          }
+        },
+        "postprocessing": {
+          "fade_out_seconds": 0.035,
+          "input_duration_seconds": 2.661917,
+          "input_sha256": "4cc0b5e77e17482713dca8541e7f164afeb362e0f8a7de9d6bfa4ff7ff931b6d",
+          "operation": "keep_first_half",
+          "previous_runtime_sha256": "4cc0b5e77e17482713dca8541e7f164afeb362e0f8a7de9d6bfa4ff7ff931b6d",
+          "target_duration_seconds": 1.3309585
+        },
+        "runtime_duration_seconds": 1.330958,
+        "runtime_path": "/home/ubuntu/proto-rts-source/assets/template/runtime/audio/sfx/attack_magic.ogg",
+        "runtime_sha256": "accb99e4e8452fede3a6cf81875f628e7260138647a6afb2367d1b0c81658cd0",
+        "runtime_size_bytes": 29949,
+        "selected_candidate": "A",
+        "selected_source": "/home/ubuntu/proto-rts-audio-candidates/sfx/attack_magic_A.mp3",
+        "selected_source_sha256": "d6a1abefebe8acae94e8fef0e43030091063a80d746f70a669b8d46a7e55dddf",
+        "source_reel": "/home/ubuntu/proto-rts-audio-candidates/reels/attack_magic.mp3",
+        "source_reel_sha256": "16603d4e7929c50a5e43fa912289a90c46f76cf82ae79a410018c090afbf7536"
+      },
+      "generatorDeclaration": "Built-in ElevenLabs via Manus generate_music/generate_sound_effect",
+      "evidenceClass": "existing-hash-bound-authoring-report; underlying-generation-tool-receipt-not-recovered",
+      "runtimeSha256Matches": true
+    },
+    {
+      "path": "assets/template/runtime/audio/sfx/attack_ranged.ogg",
+      "currentSha256": "sha256:3c0cca4b80ba4742c3bb58f8c6f9f95c87bb89e3f48976f262c02ff94ed332e1",
+      "report": {
+        "candidates": {
+          "A": {
+            "active_ratio": 0.2527394336132062,
+            "duration_seconds": 2.3423333333333334,
+            "path": "/home/ubuntu/proto-rts-audio-candidates/sfx/attack_ranged_A.mp3",
+            "peak_dbfs": 0.0,
+            "rms_dbfs": -15.434795219352132,
+            "score": -19.66561918405969,
+            "sha256": "b1b3fff2bc272c78d6c3ac488ed01597762c1fb8cbf8a92479979fb9612c94fb"
+          },
+          "B": {
+            "active_ratio": 0.8227728760495233,
+            "duration_seconds": 2.3423333333333334,
+            "path": "/home/ubuntu/proto-rts-audio-candidates/sfx/attack_ranged_B.mp3",
+            "peak_dbfs": 0.0,
+            "rms_dbfs": -7.150992313115614,
+            "score": -7.391582180768951,
+            "sha256": "ac65a0f1271d24d4eb2847298d5300bf0aeac99694971b0767b43dd0a12c49f0"
+          },
+          "C": {
+            "active_ratio": 0.1709946193021289,
+            "duration_seconds": 2.315375,
+            "path": "/home/ubuntu/proto-rts-audio-candidates/sfx/attack_ranged_C.mp3",
+            "peak_dbfs": -34.433191005377985,
+            "rms_dbfs": -48.45658292486721,
+            "score": -47.25962058975231,
+            "sha256": "a3d292390bca5491cda44d0341f79526ae8f22f20968554f3794abe6ab3dc7ad"
+          }
+        },
+        "runtime_duration_seconds": 1.906875,
+        "runtime_path": "/home/ubuntu/proto-rts-source/assets/template/runtime/audio/sfx/attack_ranged.ogg",
+        "runtime_sha256": "3c0cca4b80ba4742c3bb58f8c6f9f95c87bb89e3f48976f262c02ff94ed332e1",
+        "runtime_size_bytes": 36759,
+        "selected_candidate": "B",
+        "selected_source": "/home/ubuntu/proto-rts-audio-candidates/sfx/attack_ranged_B.mp3",
+        "selected_source_sha256": "ac65a0f1271d24d4eb2847298d5300bf0aeac99694971b0767b43dd0a12c49f0",
+        "source_reel": "/home/ubuntu/proto-rts-audio-candidates/reels/attack_ranged.mp3",
+        "source_reel_sha256": "3cada2e63c29c4ae37159369657e1dda902fdffcfb619b42dd7a8f9ce8cadcb9"
+      },
+      "generatorDeclaration": "Built-in ElevenLabs via Manus generate_music/generate_sound_effect",
+      "evidenceClass": "existing-hash-bound-authoring-report; underlying-generation-tool-receipt-not-recovered",
+      "runtimeSha256Matches": true
+    },
+    {
+      "path": "assets/template/runtime/audio/sfx/impact_damage.ogg",
+      "currentSha256": "sha256:fcabd3dce93f2344700d42cb196b173dbb911f85847a9ac956534468ea269474",
+      "report": {
+        "candidates": {
+          "A": {
+            "active_ratio": 0.8459538679841324,
+            "duration_seconds": 2.0114375,
+            "path": "/home/ubuntu/proto-rts-audio-candidates/sfx/impact_damage_A.mp3",
+            "peak_dbfs": 0.0,
+            "rms_dbfs": -9.836359840457348,
+            "score": -9.914682764568422,
+            "sha256": "65759eab0534624a84fd0c054021aab6e4ca1d092464911534aaaf72d470dd3a"
+          },
+          "B": {
+            "active_ratio": 0.4895545267170038,
+            "duration_seconds": 2.0114375,
+            "path": "/home/ubuntu/proto-rts-audio-candidates/sfx/impact_damage_B.mp3",
+            "peak_dbfs": -0.7976086566448295,
+            "rms_dbfs": -32.49368440718034,
+            "score": -29.066802720161313,
+            "sha256": "0d8738f953f6039fbd75d8f37ea2da6ee2fe7f275c19146e9b87520820bc120f"
+          },
+          "C": {
+            "active_ratio": 0.02465675479173472,
+            "duration_seconds": 1.9771458333333334,
+            "path": "/home/ubuntu/proto-rts-audio-candidates/sfx/impact_damage_C.mp3",
+            "peak_dbfs": -39.402856369877874,
+            "rms_dbfs": -56.731728679544204,
+            "score": -60.37286120433267,
+            "sha256": "b50c68b77b02929c17219282f373e2503215c534e28df38f4296060b6136220c"
+          }
+        },
+        "runtime_duration_seconds": 1.745375,
+        "runtime_path": "/home/ubuntu/proto-rts-source/assets/template/runtime/audio/sfx/impact_damage.ogg",
+        "runtime_sha256": "fcabd3dce93f2344700d42cb196b173dbb911f85847a9ac956534468ea269474",
+        "runtime_size_bytes": 33038,
+        "selected_candidate": "A",
+        "selected_source": "/home/ubuntu/proto-rts-audio-candidates/sfx/impact_damage_A.mp3",
+        "selected_source_sha256": "65759eab0534624a84fd0c054021aab6e4ca1d092464911534aaaf72d470dd3a",
+        "source_reel": "/home/ubuntu/proto-rts-audio-candidates/reels/impact_damage.mp3",
+        "source_reel_sha256": "04091bf95f2dc427e3cde5bbf14ae25dbe59a182421ae6fc04ab51954c603efb"
+      },
+      "generatorDeclaration": "Built-in ElevenLabs via Manus generate_music/generate_sound_effect",
+      "evidenceClass": "existing-hash-bound-authoring-report; underlying-generation-tool-receipt-not-recovered",
+      "runtimeSha256Matches": true
+    },
+    {
+      "path": "assets/template/runtime/audio/sfx/objective_secured.ogg",
+      "currentSha256": "sha256:f587f6746bd46f7abb508284730db47f4514b454e33beeab65834dfbf266641e",
+      "report": {
+        "candidates": {
+          "A": {
+            "active_ratio": 0.9593997635706488,
+            "duration_seconds": 3.6832708333333333,
+            "path": "/home/ubuntu/proto-rts-audio-candidates/sfx/objective_secured_A.mp3",
+            "peak_dbfs": -0.00026507636037961915,
+            "rms_dbfs": -19.045785267659017,
+            "score": -18.329986922664474,
+            "sha256": "2b92bb215e7f2b1a9c737e14e797af13dac71a94df23d06881a31bb4cbc7346c"
+          },
+          "B": {
+            "active_ratio": 0.849290429136241,
+            "duration_seconds": 3.6832708333333333,
+            "path": "/home/ubuntu/proto-rts-audio-candidates/sfx/objective_secured_B.mp3",
+            "peak_dbfs": -22.171385298211863,
+            "rms_dbfs": -34.08429617768292,
+            "score": -28.139263173729237,
+            "sha256": "d2b504c70f51e67716a82aad363bca013f2158fdf39324b42c4cc700fe08fdaf"
+          },
+          "C": {
+            "active_ratio": 0.1096114261468863,
+            "duration_seconds": 3.6334791666666666,
+            "path": "/home/ubuntu/proto-rts-audio-candidates/sfx/objective_secured_C.mp3",
+            "peak_dbfs": -40.651527027019284,
+            "rms_dbfs": -52.68801787143285,
+            "score": -52.33628084252919,
+            "sha256": "966f5f86e548c2897c8653fcfebe9ab8e9d22efc3a9891ae64de377b18ef14cc"
+          }
+        },
+        "runtime_duration_seconds": 3.645917,
+        "runtime_path": "/home/ubuntu/proto-rts-source/assets/template/runtime/audio/sfx/objective_secured.ogg",
+        "runtime_sha256": "f587f6746bd46f7abb508284730db47f4514b454e33beeab65834dfbf266641e",
+        "runtime_size_bytes": 56724,
+        "selected_candidate": "A",
+        "selected_source": "/home/ubuntu/proto-rts-audio-candidates/sfx/objective_secured_A.mp3",
+        "selected_source_sha256": "2b92bb215e7f2b1a9c737e14e797af13dac71a94df23d06881a31bb4cbc7346c",
+        "source_reel": "/home/ubuntu/proto-rts-audio-candidates/reels/objective_secured.mp3",
+        "source_reel_sha256": "92e3283a6616340129120df652d0dab97978cde7fd2ee92915c45c6ec4a85914"
+      },
+      "generatorDeclaration": "Built-in ElevenLabs via Manus generate_music/generate_sound_effect",
+      "evidenceClass": "existing-hash-bound-authoring-report; underlying-generation-tool-receipt-not-recovered",
+      "runtimeSha256Matches": true
+    },
+    {
+      "path": "assets/template/runtime/audio/sfx/order_attack.ogg",
+      "currentSha256": "sha256:a466f8a00e3009fe8ab64a964ef183aec591084cdb0a52561dcab99950e14b57",
+      "report": {
+        "candidates": {
+          "A": {
+            "active_ratio": 0.986142735164366,
+            "duration_seconds": 2.3423333333333334,
+            "path": "/home/ubuntu/proto-rts-audio-candidates/sfx/order_attack_A.mp3",
+            "peak_dbfs": -0.044113837515908,
+            "rms_dbfs": -12.676744123762864,
+            "score": -11.773744977612303,
+            "sha256": "ab1b3432131a27c83abac290e9216fb808927521b3cbfd78d221c316847104b2"
+          },
+          "B": {
+            "active_ratio": 0.6862370143731322,
+            "duration_seconds": 2.3423333333333334,
+            "path": "/home/ubuntu/proto-rts-audio-candidates/sfx/order_attack_B.mp3",
+            "peak_dbfs": -3.1514447145969013,
+            "rms_dbfs": -24.07084381644131,
+            "score": -19.267184715829387,
+            "sha256": "781104861d89ef3d594b3dfeaba4e855457c5f830beeb563da91d2478726df66"
+          },
+          "C": {
+            "active_ratio": 8.997822526948479e-06,
+            "duration_seconds": 2.315375,
+            "path": "/home/ubuntu/proto-rts-audio-candidates/sfx/order_attack_C.mp3",
+            "peak_dbfs": -47.89752007507736,
+            "rms_dbfs": -64.2400724475887,
+            "score": -69.03964954992993,
+            "sha256": "1fcbba122710477df73447df95d07f18eeea398dd1d67036e172ef8dedca401f"
+          }
+        },
+        "runtime_duration_seconds": 2.322333,
+        "runtime_path": "/home/ubuntu/proto-rts-source/assets/template/runtime/audio/sfx/order_attack.ogg",
+        "runtime_sha256": "a466f8a00e3009fe8ab64a964ef183aec591084cdb0a52561dcab99950e14b57",
+        "runtime_size_bytes": 39221,
+        "selected_candidate": "A",
+        "selected_source": "/home/ubuntu/proto-rts-audio-candidates/sfx/order_attack_A.mp3",
+        "selected_source_sha256": "ab1b3432131a27c83abac290e9216fb808927521b3cbfd78d221c316847104b2",
+        "source_reel": "/home/ubuntu/proto-rts-audio-candidates/reels/order_attack.mp3",
+        "source_reel_sha256": "eeae89ad8ae907d11b5fd6a13282eb730ec693d6536ae8a793ce0960a4bddecb"
+      },
+      "generatorDeclaration": "Built-in ElevenLabs via Manus generate_music/generate_sound_effect",
+      "evidenceClass": "existing-hash-bound-authoring-report; underlying-generation-tool-receipt-not-recovered",
+      "runtimeSha256Matches": true
+    },
+    {
+      "path": "assets/template/runtime/audio/sfx/order_move.ogg",
+      "currentSha256": "sha256:32b315d812b9378eadc85ca49413b6f00d5b38d6865183cf1d1da45e81ad2dba",
+      "report": {
+        "candidates": {
+          "A": {
+            "active_ratio": 0.952873670364271,
+            "duration_seconds": 2.0114375,
+            "path": "/home/ubuntu/proto-rts-audio-candidates/sfx/order_move_A.mp3",
+            "peak_dbfs": -2.946609526893778,
+            "rms_dbfs": -16.781391412864583,
+            "score": -10.111275720314687,
+            "sha256": "91c9464d09f32511e24407fb2e7f052a27a3ee32f7a0d40747481ed53c970859"
+          },
+          "B": {
+            "active_ratio": 0.3608633957886669,
+            "duration_seconds": 2.0114375,
+            "path": "/home/ubuntu/proto-rts-audio-candidates/sfx/order_move_B.mp3",
+            "peak_dbfs": -35.39189479571978,
+            "rms_dbfs": -45.74768499604912,
+            "score": -43.22164122552845,
+            "sha256": "ea072292045bc7eff4e427830c68801442e5ed90cfbf71996e740b69746511f8"
+          },
+          "C": {
+            "active_ratio": 0.0,
+            "duration_seconds": 1.9771458333333334,
+            "path": "/home/ubuntu/proto-rts-audio-candidates/sfx/order_move_C.mp3",
+            "peak_dbfs": -50.13699526395601,
+            "rms_dbfs": -75.8530283443443,
+            "score": -80.65302834434429,
+            "sha256": "e55fbba0b8fa1ce5ddab5441981196669712a898a455972f0e76816b699f3a69"
+          }
+        },
+        "runtime_duration_seconds": 1.991438,
+        "runtime_path": "/home/ubuntu/proto-rts-source/assets/template/runtime/audio/sfx/order_move.ogg",
+        "runtime_sha256": "32b315d812b9378eadc85ca49413b6f00d5b38d6865183cf1d1da45e81ad2dba",
+        "runtime_size_bytes": 26511,
+        "selected_candidate": "A",
+        "selected_source": "/home/ubuntu/proto-rts-audio-candidates/sfx/order_move_A.mp3",
+        "selected_source_sha256": "91c9464d09f32511e24407fb2e7f052a27a3ee32f7a0d40747481ed53c970859",
+        "source_reel": "/home/ubuntu/proto-rts-audio-candidates/reels/order_move.mp3",
+        "source_reel_sha256": "8933a4d3359e6dc239373d53523332b6e17b39df2129c9d02a1c61a7879c5b42"
+      },
+      "generatorDeclaration": "Built-in ElevenLabs via Manus generate_music/generate_sound_effect",
+      "evidenceClass": "existing-hash-bound-authoring-report; underlying-generation-tool-receipt-not-recovered",
+      "runtimeSha256Matches": true
+    },
+    {
+      "path": "assets/template/runtime/audio/sfx/order_work.ogg",
+      "currentSha256": "sha256:5685632c10546e5d3484b0b78754d000f1612e7f5c74ccbdd2076594bb0633ba",
+      "report": {
+        "candidates": {
+          "A": {
+            "active_ratio": 0.5816114097504894,
+            "duration_seconds": 2.0114375,
+            "path": "/home/ubuntu/proto-rts-audio-candidates/sfx/order_work_A.mp3",
+            "peak_dbfs": -0.2883614777826989,
+            "rms_dbfs": -13.092622996015447,
+            "score": -9.02134312776202,
+            "sha256": "677dbe170b8bb20e8e6485aacc1ce55065d465e421423221aafd5657f15fa592"
+          },
+          "B": {
+            "active_ratio": 0.20270536204414338,
+            "duration_seconds": 2.0114375,
+            "path": "/home/ubuntu/proto-rts-audio-candidates/sfx/order_work_B.mp3",
+            "peak_dbfs": -0.14594883289545532,
+            "rms_dbfs": -20.72471599655229,
+            "score": -25.30577846224329,
+            "sha256": "ebd4e8d226f53e574b8a70274a5abc79d6d88798566df0846af2908e1244dbda"
+          },
+          "C": {
+            "active_ratio": 0.1467709134590055,
+            "duration_seconds": 1.9771458333333334,
+            "path": "/home/ubuntu/proto-rts-audio-candidates/sfx/order_work_C.mp3",
+            "peak_dbfs": -0.12736880674388812,
+            "rms_dbfs": -20.59847277833239,
+            "score": -25.57107638411935,
+            "sha256": "abc7af7ff560ab85fd410905ded1a6394a168775ac3c67b5607646c8ccb7a861"
+          }
+        },
+        "runtime_duration_seconds": 1.611708,
+        "runtime_path": "/home/ubuntu/proto-rts-source/assets/template/runtime/audio/sfx/order_work.ogg",
+        "runtime_sha256": "5685632c10546e5d3484b0b78754d000f1612e7f5c74ccbdd2076594bb0633ba",
+        "runtime_size_bytes": 31808,
+        "selected_candidate": "A",
+        "selected_source": "/home/ubuntu/proto-rts-audio-candidates/sfx/order_work_A.mp3",
+        "selected_source_sha256": "677dbe170b8bb20e8e6485aacc1ce55065d465e421423221aafd5657f15fa592",
+        "source_reel": "/home/ubuntu/proto-rts-audio-candidates/reels/order_work.mp3",
+        "source_reel_sha256": "1829bb615da49f037a62b413a8a5f8d6130ec5b18dd1cc30c24aa843998767a9"
+      },
+      "generatorDeclaration": "Built-in ElevenLabs via Manus generate_music/generate_sound_effect",
+      "evidenceClass": "existing-hash-bound-authoring-report; underlying-generation-tool-receipt-not-recovered",
+      "runtimeSha256Matches": true
+    },
+    {
+      "path": "assets/template/runtime/audio/sfx/structure_destroyed.ogg",
+      "currentSha256": "sha256:bfd391cb63a187245aa8619bb0bb2ac35bd43507ec8a2702929ea0a9f8200157",
+      "report": {
+        "candidates": {
+          "A": {
+            "active_ratio": 0.9749034203069057,
+            "duration_seconds": 3.6832708333333333,
+            "path": "/home/ubuntu/proto-rts-audio-candidates/sfx/structure_destroyed_A.mp3",
+            "peak_dbfs": 0.0,
+            "rms_dbfs": -12.046238579712066,
+            "score": -11.221914637563726,
+            "sha256": "b4f89f43646d71fa7ef4f2e588993d8614cfcd54855f94268931e384bf720b61"
+          },
+          "B": {
+            "active_ratio": 0.8647658048496298,
+            "duration_seconds": 3.6832708333333333,
+            "path": "/home/ubuntu/proto-rts-audio-candidates/sfx/structure_destroyed_B.mp3",
+            "peak_dbfs": -11.996781445965015,
+            "rms_dbfs": -26.401593680308228,
+            "score": -20.348233046360818,
+            "sha256": "ba15c965da0f39793b68f1ba16f973d9b59d889d636492e9d091b1335da8fea3"
+          },
+          "C": {
+            "active_ratio": 0.1092387346838143,
+            "duration_seconds": 3.6334791666666666,
+            "path": "/home/ubuntu/proto-rts-audio-candidates/sfx/structure_destroyed_C.mp3",
+            "peak_dbfs": -35.581068653661504,
+            "rms_dbfs": -51.89455814283206,
+            "score": -51.560337612692784,
+            "sha256": "036f1a25396037fa006a43791229eaa69f401c56eef48094d5183cc6ef598405"
+          }
+        },
+        "runtime_duration_seconds": 3.635271,
+        "runtime_path": "/home/ubuntu/proto-rts-source/assets/template/runtime/audio/sfx/structure_destroyed.ogg",
+        "runtime_sha256": "bfd391cb63a187245aa8619bb0bb2ac35bd43507ec8a2702929ea0a9f8200157",
+        "runtime_size_bytes": 60441,
+        "selected_candidate": "A",
+        "selected_source": "/home/ubuntu/proto-rts-audio-candidates/sfx/structure_destroyed_A.mp3",
+        "selected_source_sha256": "b4f89f43646d71fa7ef4f2e588993d8614cfcd54855f94268931e384bf720b61",
+        "source_reel": "/home/ubuntu/proto-rts-audio-candidates/reels/structure_destroyed.mp3",
+        "source_reel_sha256": "3b43030bad2a675bbb77babb7423dfbca46369b8e8a679ea5ea7b9c8688c6b15"
+      },
+      "generatorDeclaration": "Built-in ElevenLabs via Manus generate_music/generate_sound_effect",
+      "evidenceClass": "existing-hash-bound-authoring-report; underlying-generation-tool-receipt-not-recovered",
+      "runtimeSha256Matches": true
+    },
+    {
+      "path": "assets/template/runtime/audio/sfx/ui_cancel.ogg",
+      "currentSha256": "sha256:79cb48e72a9c3419fe731974d67de6683ff593c3a85fc406d340f1ed9394a230",
+      "report": {
+        "candidates": {
+          "A": {
+            "active_ratio": 0.7543837843996313,
+            "duration_seconds": 2.0114375,
+            "path": "/home/ubuntu/proto-rts-audio-candidates/sfx/ui_cancel_A.mp3",
+            "peak_dbfs": -1.2276585936162665,
+            "rms_dbfs": -20.71625262497507,
+            "score": -15.435566134177652,
+            "sha256": "2dca3cc2183ec029ace4de1d000f2afe6af11be75fb598e16b7fc14d2ee9cec0"
+          },
+          "B": {
+            "active_ratio": 0.08070513418057153,
+            "duration_seconds": 2.0114375,
+            "path": "/home/ubuntu/proto-rts-audio-candidates/sfx/ui_cancel_B.mp3",
+            "peak_dbfs": -39.52747672333883,
+            "rms_dbfs": -53.538721951009485,
+            "score": -54.54558064452262,
+            "sha256": "77fe89a912ea1677f5de48beaf2d75a6aa7cc1b654d798f280585b2b2740ef15"
+          },
+          "C": {
+            "active_ratio": 0.00026342686743306324,
+            "duration_seconds": 1.9771458333333334,
+            "path": "/home/ubuntu/proto-rts-audio-candidates/sfx/ui_cancel_C.mp3",
+            "peak_dbfs": -39.47741382026274,
+            "rms_dbfs": -72.90589685017653,
+            "score": -77.69351578740718,
+            "sha256": "f02155cef4fed291a5d6c7d03d4cb6dcca325667eedf68bb11301366a858d5eb"
+          }
+        },
+        "runtime_duration_seconds": 1.991438,
+        "runtime_path": "/home/ubuntu/proto-rts-source/assets/template/runtime/audio/sfx/ui_cancel.ogg",
+        "runtime_sha256": "79cb48e72a9c3419fe731974d67de6683ff593c3a85fc406d340f1ed9394a230",
+        "runtime_size_bytes": 27626,
+        "selected_candidate": "A",
+        "selected_source": "/home/ubuntu/proto-rts-audio-candidates/sfx/ui_cancel_A.mp3",
+        "selected_source_sha256": "2dca3cc2183ec029ace4de1d000f2afe6af11be75fb598e16b7fc14d2ee9cec0",
+        "source_reel": "/home/ubuntu/proto-rts-audio-candidates/reels/ui_cancel.mp3",
+        "source_reel_sha256": "54c4c459c9468b8203ede9c5d3a650e62dbc06765018705f1f0e0449eb0fdf6a"
+      },
+      "generatorDeclaration": "Built-in ElevenLabs via Manus generate_music/generate_sound_effect",
+      "evidenceClass": "existing-hash-bound-authoring-report; underlying-generation-tool-receipt-not-recovered",
+      "runtimeSha256Matches": true
+    },
+    {
+      "path": "assets/template/runtime/audio/sfx/ui_error.ogg",
+      "currentSha256": "sha256:64386e4985ee6a397f25480a8e3f2b9e6e52a5f4d7c21a5cebd6c3045eeea511",
+      "report": {
+        "candidates": {
+          "A": {
+            "active_ratio": 0.3484966182974448,
+            "duration_seconds": 2.0114375,
+            "path": "/home/ubuntu/proto-rts-audio-candidates/sfx/ui_error_A.mp3",
+            "peak_dbfs": -4.246806258052317,
+            "rms_dbfs": -23.49309358376461,
+            "score": -21.053617255682497,
+            "sha256": "e03130185b82451817baad43ff1699842bbfd48ee6e425935c2ab9c71f41b1f0"
+          },
+          "B": {
+            "active_ratio": 0.0013361091259360533,
+            "duration_seconds": 2.0114375,
+            "path": "/home/ubuntu/proto-rts-audio-candidates/sfx/ui_error_B.mp3",
+            "peak_dbfs": -47.141748857289365,
+            "rms_dbfs": -55.86607416434756,
+            "score": -60.60327703542856,
+            "sha256": "50caefa41a5b23e89d74793cdb1db197b3799542b3f4692ccb54b228025218e9"
+          },
+          "C": {
+            "active_ratio": 0.00018966734455180552,
+            "duration_seconds": 1.9771458333333334,
+            "path": "/home/ubuntu/proto-rts-audio-candidates/sfx/ui_error_C.mp3",
+            "peak_dbfs": -43.188481555331904,
+            "rms_dbfs": -72.03167213950358,
+            "score": -76.82275777430965,
+            "sha256": "09b280ef1eb9409524ea45544db41aac3fb3b37251e71c6a7a5addbf657845ee"
+          }
+        },
+        "runtime_duration_seconds": 1.2955,
+        "runtime_path": "/home/ubuntu/proto-rts-source/assets/template/runtime/audio/sfx/ui_error.ogg",
+        "runtime_sha256": "64386e4985ee6a397f25480a8e3f2b9e6e52a5f4d7c21a5cebd6c3045eeea511",
+        "runtime_size_bytes": 20977,
+        "selected_candidate": "A",
+        "selected_source": "/home/ubuntu/proto-rts-audio-candidates/sfx/ui_error_A.mp3",
+        "selected_source_sha256": "e03130185b82451817baad43ff1699842bbfd48ee6e425935c2ab9c71f41b1f0",
+        "source_reel": "/home/ubuntu/proto-rts-audio-candidates/reels/ui_error.mp3",
+        "source_reel_sha256": "3672dec64f1ea8d5bcefba4ec57093b099b2057b8e7815d3fe969300085f2d2e"
+      },
+      "generatorDeclaration": "Built-in ElevenLabs via Manus generate_music/generate_sound_effect",
+      "evidenceClass": "existing-hash-bound-authoring-report; underlying-generation-tool-receipt-not-recovered",
+      "runtimeSha256Matches": true
+    },
+    {
+      "path": "assets/template/runtime/audio/sfx/unit_death.ogg",
+      "currentSha256": "sha256:6049b7f1ab789f7e88456a09eab53c4a5710295b78aa33dbe5f84282f227be83",
+      "report": {
+        "candidates": {
+          "A": {
+            "active_ratio": 0.9109837221845741,
+            "duration_seconds": 3.0127916666666668,
+            "path": "/home/ubuntu/proto-rts-audio-candidates/sfx/unit_death_A.mp3",
+            "peak_dbfs": -0.23563594828137252,
+            "rms_dbfs": -15.653636324909886,
+            "score": -9.276750269617867,
+            "sha256": "02c02db4e2685586e91cb35f606cc7ceda1d21003369de2ce960c165617db1ac"
+          },
+          "B": {
+            "active_ratio": 0.9264317424315764,
+            "duration_seconds": 3.0127916666666668,
+            "path": "/home/ubuntu/proto-rts-audio-candidates/sfx/unit_death_B.mp3",
+            "peak_dbfs": 0.0,
+            "rms_dbfs": -14.358369936606476,
+            "score": -13.87334773958544,
+            "sha256": "cb05432d576fdba1bd8a11c7d6c9c6375ba2db296b87e0e939ce096c29e89fe9"
+          },
+          "C": {
+            "active_ratio": 0.262738753125591,
+            "duration_seconds": 2.9744375,
+            "path": "/home/ubuntu/proto-rts-audio-candidates/sfx/unit_death_C.mp3",
+            "peak_dbfs": -0.42841272535961206,
+            "rms_dbfs": -31.13083037352414,
+            "score": -29.291659101645003,
+            "sha256": "457c4fe8aa668a8f1941822868064d7106fe143e1381f1f6e93fd0a63e0de199"
+          }
+        },
+        "runtime_duration_seconds": 2.909979,
+        "runtime_path": "/home/ubuntu/proto-rts-source/assets/template/runtime/audio/sfx/unit_death.ogg",
+        "runtime_sha256": "6049b7f1ab789f7e88456a09eab53c4a5710295b78aa33dbe5f84282f227be83",
+        "runtime_size_bytes": 57684,
+        "selected_candidate": "A",
+        "selected_source": "/home/ubuntu/proto-rts-audio-candidates/sfx/unit_death_A.mp3",
+        "selected_source_sha256": "02c02db4e2685586e91cb35f606cc7ceda1d21003369de2ce960c165617db1ac",
+        "source_reel": "/home/ubuntu/proto-rts-audio-candidates/reels/unit_death.mp3",
+        "source_reel_sha256": "e0608043056c5ef08114f68131abf3d949a0d710ed124433881186deefe9686c"
+      },
+      "generatorDeclaration": "Built-in ElevenLabs via Manus generate_music/generate_sound_effect",
+      "evidenceClass": "existing-hash-bound-authoring-report; underlying-generation-tool-receipt-not-recovered",
+      "runtimeSha256Matches": true
+    },
+    {
+      "path": "assets/template/runtime/audio/sfx/unit_select.ogg",
+      "currentSha256": "sha256:4de5e6871d4a31aab85a59710981ffe1c7d5d200a5982c50ea87ac9da28a68e2",
+      "report": {
+        "candidates": {
+          "A": {
+            "active_ratio": 0.06282820122424883,
+            "duration_seconds": 2.0114375,
+            "path": "/home/ubuntu/proto-rts-audio-candidates/sfx/unit_select_A.mp3",
+            "peak_dbfs": -4.5230181216260315,
+            "rms_dbfs": -30.769171145388622,
+            "score": -32.616245687848924,
+            "sha256": "6642bb3e6e328a68c57c8f948c570ee44ee8090a7bfcc6100917051d4fef9e46"
+          },
+          "B": {
+            "active_ratio": 0.03068908015619012,
+            "duration_seconds": 2.0114375,
+            "path": "/home/ubuntu/proto-rts-audio-candidates/sfx/unit_select_B.mp3",
+            "peak_dbfs": -18.996764201153184,
+            "rms_dbfs": -45.95260009882339,
+            "score": -49.31021333148245,
+            "sha256": "5b60697c004ef919fedcf731f90dbf2b2eab9542a8cf84f7ce7239cd4691f4a8"
+          },
+          "C": {
+            "active_ratio": 0.0,
+            "duration_seconds": 1.9771458333333334,
+            "path": "/home/ubuntu/proto-rts-audio-candidates/sfx/unit_select_C.mp3",
+            "peak_dbfs": -50.39629480724336,
+            "rms_dbfs": -81.85272621518762,
+            "score": -86.65272621518761,
+            "sha256": "2aadc6d89db5d57e5cc9e72d9a57d6c16aa49f97dcf1e0f0e107ac6270e7ab1a"
+          }
+        },
+        "runtime_duration_seconds": 0.372208,
+        "runtime_path": "/home/ubuntu/proto-rts-source/assets/template/runtime/audio/sfx/unit_select.ogg",
+        "runtime_sha256": "4de5e6871d4a31aab85a59710981ffe1c7d5d200a5982c50ea87ac9da28a68e2",
+        "runtime_size_bytes": 10774,
+        "selected_candidate": "A",
+        "selected_source": "/home/ubuntu/proto-rts-audio-candidates/sfx/unit_select_A.mp3",
+        "selected_source_sha256": "6642bb3e6e328a68c57c8f948c570ee44ee8090a7bfcc6100917051d4fef9e46",
+        "source_reel": "/home/ubuntu/proto-rts-audio-candidates/reels/unit_select.mp3",
+        "source_reel_sha256": "ebfc4ca721bac11975fdc9b0fc57b37c7302a14b6012c2ab6b31babe6db44103"
+      },
+      "generatorDeclaration": "Built-in ElevenLabs via Manus generate_music/generate_sound_effect",
+      "evidenceClass": "existing-hash-bound-authoring-report; underlying-generation-tool-receipt-not-recovered",
+      "runtimeSha256Matches": true
+    }
+  ]
+}

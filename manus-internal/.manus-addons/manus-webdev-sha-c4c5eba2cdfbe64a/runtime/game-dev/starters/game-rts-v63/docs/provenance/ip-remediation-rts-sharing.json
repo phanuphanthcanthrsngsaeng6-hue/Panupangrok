@@ -1,0 +1,25 @@
+{
+  "name": "rts-sharing",
+  "file": "rts-sharing.png",
+  "sha256": "54352af1df0a2ae96407d378f60f1566dde03fb99c1b5dfbc088f00fd1a827bf",
+  "bytes": 1612512,
+  "method": "built-in imagegen; actual model identifier not returned",
+  "prompt": "prompts.json#rts-sharing",
+  "inputImageSha256": "ec69b208f4bc95a581c591c31a2ba17abcb2d37ccb7c282b3659bf88c097d9a3",
+  "postprocessing": "PNG export resized to1200x630 with FFmpeg default scale filter",
+  "path": "assets/template/share/og.png",
+  "date": "2026-09-30",
+  "publication": {
+    "url": "https://d1oupeiobkpcny.cloudfront.net/assets/dashboard/materials/2026/09/30/54352af1df0a2ae96407d378f60f1566dde03fb99c1b5dfbc088f00fd1a827bf.bin",
+    "sha256": "sha256:54352af1df0a2ae96407d378f60f1566dde03fb99c1b5dfbc088f00fd1a827bf",
+    "size": 1612512
+  },
+  "scope": "Creation and byte evidence; no independent guarantee of third-party clearance.",
+  "promptText": "Use case: text-localization. Edit only the title lettering in this wide game sharing illustration. Replace \"SUPERHERO HIGH SCHOOL\" with exactly \"CAMPUS HERO DEFENSE\", arranged within the same upper-left title area, and replace \"Homecoming Havoc\" with exactly \"Tactical Teamwork\". Preserve the five student characters, eagle robot, school architecture, autumn trees, effects, palette, composition and all other artwork. Keep the landscape 1200:630 aspect ratio. Remove all old title words. No additional text or logos.",
+  "generatedMaster": {
+    "file": "rts-sharing-source.png",
+    "sha256": "sha256:32cf097d414200c720b2e39b79af94151ec234f948f98399d2df58751ba02720",
+    "size": 3048608,
+    "scope": "Retained review master; no backend model identifier returned."
+  }
+}

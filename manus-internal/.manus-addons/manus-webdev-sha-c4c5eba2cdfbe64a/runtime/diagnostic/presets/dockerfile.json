@@ -1,0 +1,26 @@
+{
+  "name": "dockerfile",
+  "command": "docker-langserver",
+  "args": [
+    "--stdio"
+  ],
+  "files": {
+    "Dockerfile": "dockerfile",
+    ".dockerfile": "dockerfile"
+  },
+  "description": "docker-langserver native workspace settings shape is docker.languageserver.diagnostics. deprecatedMaintainer, directiveCasing, emptyContinuationLine and instructionCasing use ignore/warning/error. formatter is a sibling of diagnostics. LSP transport is --stdio; --socket is a separate startup transport.",
+  "testedVersion": "0.15.0",
+  "configuration": {
+    "initializationOptions": {},
+    "settings": {
+      "docker": {
+        "languageserver": {
+          "diagnostics": {
+            "deprecatedMaintainer": "error"
+          }
+        }
+      }
+    }
+  },
+  "projectConfigurationExample": {}
+}

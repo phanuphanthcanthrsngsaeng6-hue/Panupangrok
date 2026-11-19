@@ -1,0 +1,1299 @@
+{
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "$schema",
+    "version",
+    "table",
+    "physics",
+    "gameplay",
+    "scoring",
+    "missions",
+    "multiball"
+  ],
+  "properties": {
+    "$schema": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 160
+    },
+    "version": {
+      "type": "integer",
+      "minimum": 1,
+      "maximum": 1
+    },
+    "table": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "size",
+        "surface_inset",
+        "drain_y",
+        "rails",
+        "rail_radius",
+        "rail_restitution",
+        "launcher",
+        "flippers",
+        "bumpers",
+        "rollovers",
+        "banks",
+        "slingshots",
+        "decoration",
+        "labels"
+      ],
+      "properties": {
+        "size": {
+          "type": "array",
+          "items": {
+            "type": "number",
+            "minimum": 240,
+            "maximum": 1600
+          },
+          "maxItems": 2,
+          "minItems": 2
+        },
+        "surface_inset": {
+          "type": "array",
+          "items": {
+            "type": "number",
+            "minimum": 0
+          },
+          "maxItems": 4,
+          "minItems": 4
+        },
+        "drain_y": {
+          "type": "number"
+        },
+        "rails": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "a",
+              "b"
+            ],
+            "properties": {
+              "a": {
+                "type": "array",
+                "items": {
+                  "type": "number"
+                },
+                "maxItems": 2,
+                "minItems": 2
+              },
+              "b": {
+                "type": "array",
+                "items": {
+                  "type": "number"
+                },
+                "maxItems": 2,
+                "minItems": 2
+              }
+            }
+          },
+          "maxItems": 128,
+          "minItems": 1
+        },
+        "rail_radius": {
+          "type": "number",
+          "minimum": 2,
+          "maximum": 40
+        },
+        "rail_restitution": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 1.5
+        },
+        "launcher": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "spawn",
+            "gate_y",
+            "exit",
+            "exit_velocity",
+            "exit_charge_velocity",
+            "launch_speed",
+            "charge_speed",
+            "charge_rate",
+            "lane_bottom",
+            "retry_speed",
+            "walls",
+            "spring_anchor"
+          ],
+          "properties": {
+            "spawn": {
+              "type": "array",
+              "items": {
+                "type": "number"
+              },
+              "maxItems": 2,
+              "minItems": 2
+            },
+            "gate_y": {
+              "type": "number"
+            },
+            "exit": {
+              "type": "array",
+              "items": {
+                "type": "number"
+              },
+              "maxItems": 2,
+              "minItems": 2
+            },
+            "exit_velocity": {
+              "type": "array",
+              "items": {
+                "type": "number"
+              },
+              "maxItems": 2,
+              "minItems": 2
+            },
+            "exit_charge_velocity": {
+              "type": "array",
+              "items": {
+                "type": "number"
+              },
+              "maxItems": 2,
+              "minItems": 2
+            },
+            "launch_speed": {
+              "type": "number",
+              "minimum": 100,
+              "maximum": 4000
+            },
+            "charge_speed": {
+              "type": "number",
+              "minimum": 0,
+              "maximum": 2000
+            },
+            "charge_rate": {
+              "type": "number",
+              "minimum": 0.01,
+              "maximum": 10
+            },
+            "lane_bottom": {
+              "type": "number"
+            },
+            "retry_speed": {
+              "type": "number",
+              "minimum": 100,
+              "maximum": 4000
+            },
+            "walls": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "additionalProperties": false,
+                "required": [
+                  "a",
+                  "b",
+                  "width"
+                ],
+                "properties": {
+                  "a": {
+                    "type": "array",
+                    "items": {
+                      "type": "number"
+                    },
+                    "maxItems": 2,
+                    "minItems": 2
+                  },
+                  "b": {
+                    "type": "array",
+                    "items": {
+                      "type": "number"
+                    },
+                    "maxItems": 2,
+                    "minItems": 2
+                  },
+                  "width": {
+                    "type": "number",
+                    "minimum": 3,
+                    "maximum": 60
+                  }
+                }
+              },
+              "maxItems": 128
+            },
+            "spring_anchor": {
+              "type": "array",
+              "items": {
+                "type": "number"
+              },
+              "maxItems": 2,
+              "minItems": 2
+            }
+          }
+        },
+        "flippers": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "left",
+            "right"
+          ],
+          "properties": {
+            "left": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": [
+                "pivot",
+                "rest_offset",
+                "active_offset",
+                "radius",
+                "restitution",
+                "response",
+                "hot_seconds",
+                "hit_below_pivot",
+                "strike_length",
+                "kick_x",
+                "kick_x_along",
+                "kick_y",
+                "kick_y_along"
+              ],
+              "properties": {
+                "pivot": {
+                  "type": "array",
+                  "items": {
+                    "type": "number"
+                  },
+                  "maxItems": 2,
+                  "minItems": 2
+                },
+                "rest_offset": {
+                  "type": "array",
+                  "items": {
+                    "type": "number"
+                  },
+                  "maxItems": 2,
+                  "minItems": 2
+                },
+                "active_offset": {
+                  "type": "array",
+                  "items": {
+                    "type": "number"
+                  },
+                  "maxItems": 2,
+                  "minItems": 2
+                },
+                "radius": {
+                  "type": "number",
+                  "minimum": 2,
+                  "maximum": 30
+                },
+                "restitution": {
+                  "type": "number",
+                  "minimum": 0,
+                  "maximum": 1.5
+                },
+                "response": {
+                  "type": "number",
+                  "minimum": 0.1,
+                  "maximum": 100
+                },
+                "hot_seconds": {
+                  "type": "number",
+                  "minimum": 0.01,
+                  "maximum": 1
+                },
+                "hit_below_pivot": {
+                  "type": "number"
+                },
+                "strike_length": {
+                  "type": "number",
+                  "minimum": 1,
+                  "maximum": 400
+                },
+                "kick_x": {
+                  "type": "number"
+                },
+                "kick_x_along": {
+                  "type": "number"
+                },
+                "kick_y": {
+                  "type": "number"
+                },
+                "kick_y_along": {
+                  "type": "number"
+                }
+              }
+            },
+            "right": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": [
+                "pivot",
+                "rest_offset",
+                "active_offset",
+                "radius",
+                "restitution",
+                "response",
+                "hot_seconds",
+                "hit_below_pivot",
+                "strike_length",
+                "kick_x",
+                "kick_x_along",
+                "kick_y",
+                "kick_y_along"
+              ],
+              "properties": {
+                "pivot": {
+                  "type": "array",
+                  "items": {
+                    "type": "number"
+                  },
+                  "maxItems": 2,
+                  "minItems": 2
+                },
+                "rest_offset": {
+                  "type": "array",
+                  "items": {
+                    "type": "number"
+                  },
+                  "maxItems": 2,
+                  "minItems": 2
+                },
+                "active_offset": {
+                  "type": "array",
+                  "items": {
+                    "type": "number"
+                  },
+                  "maxItems": 2,
+                  "minItems": 2
+                },
+                "radius": {
+                  "type": "number",
+                  "minimum": 2,
+                  "maximum": 30
+                },
+                "restitution": {
+                  "type": "number",
+                  "minimum": 0,
+                  "maximum": 1.5
+                },
+                "response": {
+                  "type": "number",
+                  "minimum": 0.1,
+                  "maximum": 100
+                },
+                "hot_seconds": {
+                  "type": "number",
+                  "minimum": 0.01,
+                  "maximum": 1
+                },
+                "hit_below_pivot": {
+                  "type": "number"
+                },
+                "strike_length": {
+                  "type": "number",
+                  "minimum": 1,
+                  "maximum": 400
+                },
+                "kick_x": {
+                  "type": "number"
+                },
+                "kick_x_along": {
+                  "type": "number"
+                },
+                "kick_y": {
+                  "type": "number"
+                },
+                "kick_y_along": {
+                  "type": "number"
+                }
+              }
+            }
+          }
+        },
+        "bumpers": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "id",
+              "position",
+              "radius",
+              "visual_radius",
+              "kick",
+              "cooldown",
+              "points",
+              "color"
+            ],
+            "properties": {
+              "id": {
+                "type": "string",
+                "minLength": 1,
+                "maxLength": 160
+              },
+              "position": {
+                "type": "array",
+                "items": {
+                  "type": "number"
+                },
+                "maxItems": 2,
+                "minItems": 2
+              },
+              "radius": {
+                "type": "number",
+                "minimum": 1,
+                "maximum": 100
+              },
+              "visual_radius": {
+                "type": "number",
+                "minimum": 2,
+                "maximum": 140
+              },
+              "kick": {
+                "type": "number",
+                "minimum": 0,
+                "maximum": 2000
+              },
+              "cooldown": {
+                "type": "number",
+                "minimum": 0.01,
+                "maximum": 10
+              },
+              "points": {
+                "type": "integer",
+                "minimum": 0,
+                "maximum": 1000000
+              },
+              "color": {
+                "type": "string",
+                "minLength": 1,
+                "maxLength": 160,
+                "pattern": "^[0-9a-fA-F]{6}$"
+              }
+            }
+          },
+          "maxItems": 64,
+          "minItems": 1
+        },
+        "rollovers": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "id",
+              "position",
+              "radius",
+              "cooldown",
+              "points",
+              "label"
+            ],
+            "properties": {
+              "id": {
+                "type": "string",
+                "minLength": 1,
+                "maxLength": 160
+              },
+              "position": {
+                "type": "array",
+                "items": {
+                  "type": "number"
+                },
+                "maxItems": 2,
+                "minItems": 2
+              },
+              "radius": {
+                "type": "number",
+                "minimum": 1,
+                "maximum": 100
+              },
+              "cooldown": {
+                "type": "number",
+                "minimum": 0.01,
+                "maximum": 10
+              },
+              "points": {
+                "type": "integer",
+                "minimum": 0,
+                "maximum": 1000000
+              },
+              "label": {
+                "type": "string",
+                "minLength": 1,
+                "maxLength": 160
+              }
+            }
+          },
+          "maxItems": 32,
+          "minItems": 0
+        },
+        "banks": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "id",
+              "position",
+              "normal",
+              "half_length",
+              "radius",
+              "restitution",
+              "kick",
+              "cooldown",
+              "points"
+            ],
+            "properties": {
+              "id": {
+                "type": "string",
+                "minLength": 1,
+                "maxLength": 160
+              },
+              "position": {
+                "type": "array",
+                "items": {
+                  "type": "number"
+                },
+                "maxItems": 2,
+                "minItems": 2
+              },
+              "normal": {
+                "type": "array",
+                "items": {
+                  "type": "number"
+                },
+                "maxItems": 2,
+                "minItems": 2
+              },
+              "half_length": {
+                "type": "number",
+                "minimum": 1,
+                "maximum": 100
+              },
+              "radius": {
+                "type": "number",
+                "minimum": 1,
+                "maximum": 100
+              },
+              "restitution": {
+                "type": "number",
+                "minimum": 0,
+                "maximum": 1.5
+              },
+              "kick": {
+                "type": "number",
+                "minimum": 0,
+                "maximum": 1000
+              },
+              "cooldown": {
+                "type": "number",
+                "minimum": 0.01,
+                "maximum": 10
+              },
+              "points": {
+                "type": "integer",
+                "minimum": 0,
+                "maximum": 1000000
+              }
+            }
+          },
+          "maxItems": 64,
+          "minItems": 0
+        },
+        "slingshots": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "id",
+              "a",
+              "b",
+              "outline",
+              "impulse",
+              "radius",
+              "restitution",
+              "cooldown",
+              "damping",
+              "coil_threshold",
+              "coil_gain",
+              "coil_max",
+              "points"
+            ],
+            "properties": {
+              "id": {
+                "type": "string",
+                "minLength": 1,
+                "maxLength": 160
+              },
+              "a": {
+                "type": "array",
+                "items": {
+                  "type": "number"
+                },
+                "maxItems": 2,
+                "minItems": 2
+              },
+              "b": {
+                "type": "array",
+                "items": {
+                  "type": "number"
+                },
+                "maxItems": 2,
+                "minItems": 2
+              },
+              "outline": {
+                "type": "array",
+                "items": {
+                  "type": "array",
+                  "items": {
+                    "type": "number"
+                  },
+                  "maxItems": 2,
+                  "minItems": 2
+                },
+                "maxItems": 3,
+                "minItems": 3
+              },
+              "impulse": {
+                "type": "array",
+                "items": {
+                  "type": "number"
+                },
+                "maxItems": 2,
+                "minItems": 2
+              },
+              "radius": {
+                "type": "number",
+                "minimum": 1,
+                "maximum": 100
+              },
+              "restitution": {
+                "type": "number",
+                "minimum": 0,
+                "maximum": 1.5
+              },
+              "cooldown": {
+                "type": "number",
+                "minimum": 0.01,
+                "maximum": 10
+              },
+              "damping": {
+                "type": "number",
+                "minimum": 0,
+                "maximum": 1.5
+              },
+              "coil_threshold": {
+                "type": "number",
+                "minimum": 0,
+                "maximum": 4000
+              },
+              "coil_gain": {
+                "type": "number",
+                "minimum": 0,
+                "maximum": 2
+              },
+              "coil_max": {
+                "type": "number",
+                "minimum": 0,
+                "maximum": 2000
+              },
+              "points": {
+                "type": "integer",
+                "minimum": 0,
+                "maximum": 1000000
+              }
+            }
+          },
+          "maxItems": 16,
+          "minItems": 0
+        },
+        "decoration": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "enabled",
+            "orbit_center",
+            "orbit_radii",
+            "ticks_radius",
+            "arch_center",
+            "arch_radius",
+            "gears",
+            "arrows"
+          ],
+          "properties": {
+            "enabled": {
+              "type": "boolean"
+            },
+            "orbit_center": {
+              "type": "array",
+              "items": {
+                "type": "number"
+              },
+              "maxItems": 2,
+              "minItems": 2
+            },
+            "orbit_radii": {
+              "type": "array",
+              "items": {
+                "type": "number",
+                "minimum": 0
+              },
+              "maxItems": 128
+            },
+            "ticks_radius": {
+              "type": "number",
+              "minimum": 1
+            },
+            "arch_center": {
+              "type": "array",
+              "items": {
+                "type": "number"
+              },
+              "maxItems": 2,
+              "minItems": 2
+            },
+            "arch_radius": {
+              "type": "number",
+              "minimum": 1
+            },
+            "gears": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "additionalProperties": false,
+                "required": [
+                  "position",
+                  "size"
+                ],
+                "properties": {
+                  "position": {
+                    "type": "array",
+                    "items": {
+                      "type": "number"
+                    },
+                    "maxItems": 2,
+                    "minItems": 2
+                  },
+                  "size": {
+                    "type": "number",
+                    "minimum": 1
+                  }
+                }
+              },
+              "maxItems": 128
+            },
+            "arrows": {
+              "type": "array",
+              "items": {
+                "type": "array",
+                "items": {
+                  "type": "number"
+                },
+                "maxItems": 2,
+                "minItems": 2
+              },
+              "maxItems": 128
+            }
+          }
+        },
+        "labels": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "multiplier",
+            "save",
+            "toast",
+            "reward"
+          ],
+          "properties": {
+            "multiplier": {
+              "type": "array",
+              "items": {
+                "type": "number"
+              },
+              "maxItems": 2,
+              "minItems": 2
+            },
+            "save": {
+              "type": "array",
+              "items": {
+                "type": "number"
+              },
+              "maxItems": 2,
+              "minItems": 2
+            },
+            "toast": {
+              "type": "array",
+              "items": {
+                "type": "number"
+              },
+              "maxItems": 4,
+              "minItems": 4
+            },
+            "reward": {
+              "type": "array",
+              "items": {
+                "type": "number"
+              },
+              "maxItems": 2,
+              "minItems": 2
+            }
+          }
+        }
+      }
+    },
+    "physics": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "ball_radius",
+        "gravity",
+        "drag",
+        "max_speed",
+        "substeps",
+        "unstick_speed",
+        "unstick_above_y",
+        "unstick_seconds",
+        "unstick_impulse"
+      ],
+      "properties": {
+        "ball_radius": {
+          "type": "number",
+          "minimum": 2,
+          "maximum": 30
+        },
+        "gravity": {
+          "type": "number",
+          "minimum": 10,
+          "maximum": 3000
+        },
+        "drag": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 2
+        },
+        "max_speed": {
+          "type": "number",
+          "minimum": 100,
+          "maximum": 4000
+        },
+        "substeps": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 24
+        },
+        "unstick_speed": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 100
+        },
+        "unstick_above_y": {
+          "type": "number"
+        },
+        "unstick_seconds": {
+          "type": "number",
+          "minimum": 0.1,
+          "maximum": 20
+        },
+        "unstick_impulse": {
+          "type": "array",
+          "items": {
+            "type": "number"
+          },
+          "maxItems": 2,
+          "minItems": 2
+        }
+      }
+    },
+    "gameplay": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "balls",
+        "next_ball_delay",
+        "ball_save_seconds",
+        "save_velocity",
+        "nudge_cooldown",
+        "nudge_y",
+        "nudge_center_x",
+        "nudge_center_strength"
+      ],
+      "properties": {
+        "balls": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 9
+        },
+        "next_ball_delay": {
+          "type": "number",
+          "minimum": 0.01,
+          "maximum": 10
+        },
+        "ball_save_seconds": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 60
+        },
+        "save_velocity": {
+          "type": "array",
+          "items": {
+            "type": "number"
+          },
+          "maxItems": 2,
+          "minItems": 2
+        },
+        "nudge_cooldown": {
+          "type": "number",
+          "minimum": 0.1,
+          "maximum": 60
+        },
+        "nudge_y": {
+          "type": "number"
+        },
+        "nudge_center_x": {
+          "type": "number"
+        },
+        "nudge_center_strength": {
+          "type": "number"
+        }
+      }
+    },
+    "scoring": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "multiplier",
+        "skill_shot",
+        "chain",
+        "jackpot"
+      ],
+      "properties": {
+        "multiplier": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "initial",
+            "step",
+            "cap",
+            "completion_points"
+          ],
+          "properties": {
+            "initial": {
+              "type": "integer",
+              "minimum": 1,
+              "maximum": 100
+            },
+            "step": {
+              "type": "integer",
+              "minimum": 0,
+              "maximum": 100
+            },
+            "cap": {
+              "type": "integer",
+              "minimum": 1,
+              "maximum": 100
+            },
+            "completion_points": {
+              "type": "integer",
+              "minimum": 0,
+              "maximum": 1000000
+            }
+          }
+        },
+        "skill_shot": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "enabled",
+            "charge_min",
+            "charge_max",
+            "points"
+          ],
+          "properties": {
+            "enabled": {
+              "type": "boolean"
+            },
+            "charge_min": {
+              "type": "number",
+              "minimum": 0,
+              "maximum": 1
+            },
+            "charge_max": {
+              "type": "number",
+              "minimum": 0,
+              "maximum": 1
+            },
+            "points": {
+              "type": "integer",
+              "minimum": 0,
+              "maximum": 1000000
+            }
+          }
+        },
+        "chain": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "enabled",
+            "seconds",
+            "cap",
+            "bonus_per_link",
+            "eligible_kinds"
+          ],
+          "properties": {
+            "enabled": {
+              "type": "boolean"
+            },
+            "seconds": {
+              "type": "number",
+              "minimum": 0.1,
+              "maximum": 60
+            },
+            "cap": {
+              "type": "integer",
+              "minimum": 1,
+              "maximum": 100
+            },
+            "bonus_per_link": {
+              "type": "number",
+              "minimum": 0,
+              "maximum": 10
+            },
+            "eligible_kinds": {
+              "type": "array",
+              "items": {
+                "type": "string",
+                "minLength": 1,
+                "maxLength": 160,
+                "enum": [
+                  "bumper",
+                  "rollover",
+                  "bank",
+                  "sling",
+                  "skill",
+                  "multiplier"
+                ]
+              },
+              "maxItems": 128
+            }
+          }
+        },
+        "jackpot": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "enabled",
+            "bumper_id",
+            "points",
+            "cooldown"
+          ],
+          "properties": {
+            "enabled": {
+              "type": "boolean"
+            },
+            "bumper_id": {
+              "type": "string",
+              "minLength": 1,
+              "maxLength": 160
+            },
+            "points": {
+              "type": "integer",
+              "minimum": 0,
+              "maximum": 1000000
+            },
+            "cooldown": {
+              "type": "number",
+              "minimum": 0.01,
+              "maximum": 20
+            }
+          }
+        }
+      }
+    },
+    "missions": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "id",
+          "kind",
+          "goal",
+          "bonus",
+          "title",
+          "label",
+          "short",
+          "objective"
+        ],
+        "properties": {
+          "id": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 160
+          },
+          "kind": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 160,
+            "enum": [
+              "bumper",
+              "rollover",
+              "bank",
+              "sling",
+              "skill",
+              "multiplier"
+            ]
+          },
+          "goal": {
+            "type": "integer",
+            "minimum": 1,
+            "maximum": 10000
+          },
+          "bonus": {
+            "type": "integer",
+            "minimum": 0,
+            "maximum": 1000000
+          },
+          "title": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "en",
+              "cn"
+            ],
+            "properties": {
+              "en": {
+                "type": "string",
+                "minLength": 1,
+                "maxLength": 24
+              },
+              "cn": {
+                "type": "string",
+                "minLength": 1,
+                "maxLength": 12
+              }
+            }
+          },
+          "label": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "en",
+              "cn"
+            ],
+            "properties": {
+              "en": {
+                "type": "string",
+                "minLength": 1,
+                "maxLength": 26
+              },
+              "cn": {
+                "type": "string",
+                "minLength": 1,
+                "maxLength": 16
+              }
+            }
+          },
+          "short": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "en",
+              "cn"
+            ],
+            "properties": {
+              "en": {
+                "type": "string",
+                "minLength": 1,
+                "maxLength": 8
+              },
+              "cn": {
+                "type": "string",
+                "minLength": 1,
+                "maxLength": 4
+              }
+            }
+          },
+          "objective": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "en",
+              "cn"
+            ],
+            "properties": {
+              "en": {
+                "type": "string",
+                "minLength": 1,
+                "maxLength": 32
+              },
+              "cn": {
+                "type": "string",
+                "minLength": 1,
+                "maxLength": 18
+              }
+            }
+          }
+        }
+      },
+      "maxItems": 8,
+      "minItems": 0
+    },
+    "multiball": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "enabled",
+        "seconds",
+        "spawn_save_seconds",
+        "spawns"
+      ],
+      "properties": {
+        "enabled": {
+          "type": "boolean"
+        },
+        "seconds": {
+          "type": "number",
+          "minimum": 0.1,
+          "maximum": 300
+        },
+        "spawn_save_seconds": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 60
+        },
+        "spawns": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "position",
+              "velocity"
+            ],
+            "properties": {
+              "position": {
+                "type": "array",
+                "items": {
+                  "type": "number"
+                },
+                "maxItems": 2,
+                "minItems": 2
+              },
+              "velocity": {
+                "type": "array",
+                "items": {
+                  "type": "number"
+                },
+                "maxItems": 2,
+                "minItems": 2
+              }
+            }
+          },
+          "maxItems": 7,
+          "minItems": 1
+        }
+      }
+    }
+  },
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Space Pinball Template Configuration v1"
+}

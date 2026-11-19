@@ -1,0 +1,1214 @@
+{
+  "sourceRepository": "junnyboi/game-pinball",
+  "sourceCommit": "dc35d627eee1334881f3c8f3adca74ec40613d7e",
+  "sourcePath": ".",
+  "starterId": "game-pinball-v9",
+  "engineVersion": "4.7.2",
+  "maintenanceRepository": "manus-ai/manus-addon-webdev",
+  "adaptations": [
+    "Supplied upstream game imported as a new Pinball template; existing starter revisions are unchanged.",
+    "Source Git blob IDs identify the immutable supplied commit; importInputs separately identify the locally adapted source bytes and their imported SHA-256 hashes.",
+    "Managed media relocated under assets/template; lock keys and project references changed without altering upstream remote restoration locations.",
+    "Original source configuration, development and example documents are retained; source README is docs/source-game.md. Addon generates the delivered README and common multiplayer guidance.",
+    "Inherited Generic catalog identities and session scaffold marker are excluded; Addon injects current runtime command aliases at initialization.",
+    "Site/export/cache artifacts, obsolete migration scripts and historical capture receipts are excluded.",
+    "Pinball router, timed stages, local result integrity, onboarding, localization and typed tuning are maintained with the supplied physics/table owners.",
+    "The supplied session visualCoverage object and its derived summary are archived unchanged in assets/template/provenance/source-session-visual-coverage.json with the exact source manifest hash. Only these session-bound fields are removed from active asset-provenance.json; asset, discovery, download and procedure evidence remains. New projects must receive their own authenticated Blueprint coverage projection and satisfy its evidence requirements."
+  ],
+  "sourceGitBlobs": {
+    ".gitignore": "83d022db231d25a3c3c67e98eaa633b1a3396a42",
+    ".manus-game-template.json": "a5b0e3d78930dde4655d9a066a8c5c6336d600a9",
+    ".manus-starter-init.json": "16a7488db7d6e495c6b836383a02af0e12204b46",
+    "README.md": "e3f4075a9f3941403253e6d83aaf5c6cf10a3513",
+    "asset-provenance.json": "a61d413002c360ae67467bb398ee39396561eee6",
+    "assets.lock.json": "369d24d487e8f9ac73eb179552e4e9f995eb9218",
+    "assets/audio/combat/.catalog-retrieval-b008d95a0f913f0b.json": "1964fa449062d518159af259165e0c527b54bfda",
+    "assets/audio/cosmic/celestial-drift.ogg.import": "64c0b21f8dffaace98be029f57348ca8e4ad4500",
+    "assets/audio/cues/enemy-impact.wav.import": "61d6226016e0d69077002e800d409473516da502",
+    "assets/audio/cues/game-defeat.wav.import": "0a4bd991aa4821f71a31ad89c074068fa775518a",
+    "assets/audio/cues/game-pause.wav.import": "4ca337bd052200b8a540eb4ac925fa82112140a7",
+    "assets/audio/cues/game-victory.wav.import": "9f35bb87353089318c738cde3625c95749afc853",
+    "assets/audio/cues/player-action.wav.import": "f4d4224d89292408ef5f72623be5f696fdaf69c0",
+    "assets/audio/cues/score-reward.wav.import": "9c490582f93be306ea2166c20d019c65bc7769fd",
+    "assets/audio/cues/ui-cancel.wav.import": "73f7056484f9132de5ca468bb9f8bdbad48c5995",
+    "assets/audio/cues/ui-confirm.wav.import": "f213d562546118fb39544ae2890291fbc74041c1",
+    "assets/cosmos/space/.catalog-retrieval-ca3b089cc6fbbfa7.json": "79d2a59202f7734bfca6b5851c462c57781991a0",
+    "assets/mechanisms/bronze-gears/.catalog-retrieval-a37b24c4af61616e.json": "c22ce5281b0dbdc18a8c9667bc6821b3c727c6a7",
+    "assets/mechanisms/bronze-gears/Cog Wheels - Gears/SpriteSheets/Bronze Gear Wheels/Gear 1 - Bronze_spritesheet.png.import": "624a8fefa8df85bfcff0310a6e275539583e7b10",
+    "assets/observatory/background-placeholder.webp.import": "c9c9ef06b093174ce7aa95c88fec00d068fba2de",
+    "assets/observatory/bumper.png.import": "4d6993281e9087861d8247506e5a3a3b1501c334",
+    "assets/share/v1/render-receipt.json": "843c7882f4947e5b69270aab44d2482a86afed31",
+    "assets/share/v2/render-receipt.json": "83666ea57536bd1f67a1a677b606680db529b6f7",
+    "assets/share/v3/favicon.png.import": "a871742cbbfd8ee0548999e0d33c181f7c601ff4",
+    "assets/share/v3/render-receipt.json": "c278c59827dcd6ab7accb1a083437934aab82f1e",
+    "assets/share/v4/render-receipt.json": "7997c5dd7738399973b359527205483e03d51e41",
+    "assets/share/v5/og.png.import": "8e98fae5ebf11cd7748c8781be21164ee2fb793a",
+    "assets/share/v5/render-receipt.json": "378bf7b50d8dbcfda62978527f98738d3888d64e",
+    "assets/template/fonts/ManusCC0-Bold.ttf.import": "6d6198128d2a64d6ed868b4b372e7b374420115a",
+    "assets/template/fonts/ManusCC0-LICENSE.txt": "0e259d42c996742e9e3cba14c677129b2c1b6311",
+    "assets/template/fonts/ManusCC0-Medium.ttf.import": "c0ece6385cec8d4a6f43f480a4fe8ad211d606cf",
+    "assets/template/fonts/ManusCC0-Regular.ttf.import": "57f16f3874efd37a9402291bd925a02eefb22461",
+    "assets/template/fonts/ManusCC0-SOURCE.md": "8fbdde1eb59968399e7f5c88f4b17354bbd23cfb",
+    "assets/template/fonts/ManusCC0SansCJKSC-Regular.woff2.import": "5b24a55a9f1d59b06f1528343705816d2761eeff",
+    "assets/template/fonts/NotoSansCJKsc-Generic2D.corpus.txt": "7014d88b1eaa7f4f89993bac7537b469ad8837f3",
+    "assets/template/fonts/SOURCES.md": "680edb15898d30dfdfdff344f62d72c228a9f633",
+    "assets/template/fonts/manuscc0_bold.tres": "95862fa069225eada3a8cf43fefff130f2c5ab38",
+    "assets/template/fonts/manuscc0_medium.tres": "6ea7507f1d587dcf4fd444b79876d644c7c576c5",
+    "assets/template/fonts/manuscc0_regular.tres": "bcd51ded56aaeb91c60e1b525c75833bc3506e21",
+    "assets/template/fonts/runtime-cjk.json": "6d0ac869ecf049632842dd703417026ea02bad38",
+    "assets/template/provenance/AUDIO.md": "d3426b27dde36e92b6667fefb49eb34eed1f39d1",
+    "assets/template/provenance/IMAGEGEN.md": "6291eaf4d894d5eca8bb130f70c490fef3381d2d",
+    "autoload/audio_director.gd": "a289194c3e789df85e43b51100bf90b7cc590703",
+    "autoload/audio_director.gd.uid": "daccd7d2a5cc119de47801236a27dc762ebde740",
+    "autoload/manus_font_theme.gd": "1822f9384b2792791859095d7b507755ba2aacd0",
+    "autoload/manus_font_theme.gd.uid": "ef63eacd2cf79296c91b00d53948296caf2ad39e",
+    "autoload/sandbox_bridge.gd": "7f6a5140121c08d8901d967179850a7edd9759ea",
+    "autoload/sandbox_bridge.gd.uid": "0a5a7128bafe9f77e3d639ad63cd51403b9d4e30",
+    "autoload/tuning_store.gd": "a5b19a5ac37ff3cacad0b9bb042856391242cf08",
+    "autoload/tuning_store.gd.uid": "4c8a1ce57d226726c7e179ceca63aa66b18e0aa3",
+    "build/.gdignore": "8b137891791fe96927ad78e64b0aad7bded08bdc",
+    "config/pinball-template.json": "8cd93554a102ff87bd65a959c131621bcd240c8a",
+    "config/pinball-template.schema.json": "39116a0d5c4fd40b6f7117196b1280cabeb9a336",
+    "config/tuning.json": "d1c290ae672930507442c78ffe50682377591b0b",
+    "docs/comet-production.md": "4fbc306dc91c68bb69b34cefabdf8def011d5290",
+    "docs/configuration.md": "811a9dfa61044b5583d44d5a7eba8fd86820fe1f",
+    "docs/development.md": "65425258fba18e518c14aeebe8bd09714058051e",
+    "docs/evidence/01-title-en.png": "41288a8395beb3954c3a8c94f332a308ce6f13f4",
+    "docs/evidence/01-title-en.png.import": "a967040b474ef1964adf2002f3456f1ac2f59828",
+    "docs/evidence/02-title-cn.png": "311c060ec8b59fcfaea7cb48c020da4c781cd17e",
+    "docs/evidence/02-title-cn.png.import": "c39d99ee92319e11ad9bbdea018d9d52332b1357",
+    "docs/evidence/04-in-flight.png": "9f7a79e25e09fbd5488e809f8ab26868f02b1573",
+    "docs/evidence/04-in-flight.png.import": "8255f5d184ba8d8a1d61f518fb1a927fdf120dfe",
+    "docs/evidence/05-moving-comet.png": "bb7483a325f083807c4c52d17eb3659b24c5df17",
+    "docs/evidence/05-moving-comet.png.import": "0fc2e9fb81596e2ced8434d77bb9cba2c9f11e02",
+    "docs/evidence/08-results.png": "03cc2dd12c69756128e06c62495f89731cb92a5d",
+    "docs/evidence/08-results.png.import": "dc8a81c40efc850f74d980085ba21cc2b3e3e29e",
+    "docs/evidence/12-portrait-cn.png": "04df3c70a46ccf1831aee17352e1cdcabbcb177c",
+    "docs/evidence/12-portrait-cn.png.import": "392bbe0ec78280a6436ed787e61aca269d5cd6e5",
+    "docs/examples/four-bumper-table.json": "6dd55cee8c242aada05caffe38c9ad826b88a431",
+    "docs/game-multiplayer.md": "e862dab44b80f503d7afedafdab3588323803016",
+    "docs/living-cosmos-proposal.md": "b64a33255425935810e9b3d1c4874313a4e5f1d6",
+    "docs/living-cosmos-review.md": "44b810f1b3eb810e0126e44961395aa0fbc85ce4",
+    "docs/minimalist-redesign.md": "9c418ea2192fce6d142fac1602cbfcfdc0c2c7f7",
+    "docs/startup/plan.md": "5c4095a7966bfe98acf22316f2a32d0a1e156912",
+    "docs/startup/shared-background.md": "8e57af923c5b1c5633f48d8aa8682989a5c9f7fe",
+    "docs/template-baseline.md": "5d6f2c62f908ac3c6a1b5011e0642d8258973b71",
+    "docs/upgrade/concept-review.md": "b42afc8b14a6ccaba8e2ec3a32c59939f7a9aa2b",
+    "docs/upgrade/proposal.md": "842afe9d35c60a3a67183eb4feecebbb1c6fd923",
+    "export_presets.cfg": "051121f3dbc5b3e507aa735396c0c4609b401e1b",
+    "game-release-profile.json": "9c38cae594ae64188dbc28e73eb5fd9df5b408bd",
+    "game-sharing.json": "70bd8efa3feefa99f4b3de412d4fe19ef5ffa05e",
+    "game-verification.json": "70ebba5199710ba2e40d49826a7e005088e62a2b",
+    "localization/en.json": "d826d7c204e8c545bc71a276d802f0ac8e76c078",
+    "localization/zh-CN.json": "299ae9eb932a03ff8b4d58cd0b4bae08466762b7",
+    "package.json": "fe4a4645afcf03b4baba5cf2dda9f1c5ae64e5e4",
+    "project.godot": "01959c86b47b047622f08761771d4af7f70315c4",
+    "scenes/main.tscn": "db27e13df8ce72afba32d00ee78178305c294017",
+    "scripts/comet_effects.gd": "028ca594e01efd1cc89d2935c44489c56d343681",
+    "scripts/comet_effects.gd.uid": "bf340f0c69d9b8a03f7fc064f7f8116282b5f040",
+    "scripts/comet_juice.gd": "6a1026de052e844d69991be0b1e154def91832e8",
+    "scripts/comet_juice.gd.uid": "a166b3e92635e8a499951181f12fac23d1118c03",
+    "scripts/comet_loading.gd": "a33c0cfcd20499a4078ffc84011e4c090b0e01f5",
+    "scripts/comet_loading.gd.uid": "ce65401de58cfab96de1b0808003bb4c77bc072a",
+    "scripts/comet_main.gd": "da726bb81c881bd06946c69f41fa8c989c2b5f87",
+    "scripts/comet_main.gd.uid": "6fac730c476a22b7851bb1b0a1de27da42957403",
+    "scripts/comet_observatory.gd": "588fc1d83bcef9c1d38dac35348b55189cb2e418",
+    "scripts/comet_observatory.gd.uid": "1c94f67dc88361060db517b46518e6d2000a0c21",
+    "scripts/comet_physics.gd": "d18e66a9b885c1673d33e0af63f4289ca43b04ec",
+    "scripts/comet_physics.gd.uid": "ec001b521b19fe5f303c124dd5773683b7dc5f5d",
+    "scripts/comet_rules.gd": "c787649c3f9f0bf32c995913cb3f27f93962704d",
+    "scripts/comet_rules.gd.uid": "2e7151ae447216b1932e1c7f5f1cce5fb6d64433",
+    "scripts/manus/game_fonts.gd": "64352dfb3fb49053ac8a290a09b37de0ca4f7adf",
+    "scripts/manus/game_fonts.gd.uid": "d294871ee7bc7c17b71f516e418c03a2355b849f",
+    "scripts/manus/procedural_sfx.gd": "5bac89f3f21e5b2fe574b0896ad0f90f1792247a",
+    "scripts/manus/procedural_sfx.gd.uid": "da3cfbc2d5557abd01d6400b184f97a019a18dfd",
+    "scripts/template_config.gd": "c0f66a8767d5c6d8ab2fcfc65bf661e71a05f578",
+    "scripts/template_config.gd.uid": "441fa11b20d4bca1172b3e111ca71608950034ae",
+    "shaders/arcade_filter.gdshader": "e4760cab6cac6d31a763e2c3fc5f672245ad8ee9",
+    "shaders/arcade_filter.gdshader.uid": "2a1483a77c5d14ff9bbef71ee3e977fad6c98a99",
+    "site/game-release.json": "bf05cea7bd13940d55474d69befc70e01d5456b1",
+    "site/game-sharing.json": "c735cfb88a81e8fb63faa3836ed1eb9eebe0b8e4",
+    "site/index.audio.position.worklet.js": "4e512c1e3c99c63cc69b0345b7bb250679e0d313",
+    "site/index.audio.worklet.js": "3b94cab85cb937fa27056d17648cdbb73e44bdbd",
+    "site/index.html": "7843a78e68df850b4aa138ebd3179d4d02b4ccbf",
+    "site/index.js": "93f3f94ef262034ce6ae4a76071679e7bd24afda",
+    "site/index.png": "766b0b66efb1ac8cb53d9cd6b7fa2ef70c6ec559",
+    "site/share/4306c9d485d7e80687964b113fab5853e07581bc3d49775eb6ac9fe7b734dd98.png": "148c9c0c8ff16dc67de8699ec52d7ede8c4b387b",
+    "site/share/ba5feaa4b9b08b56b485f54b4e441a4c32d6af68769b9b0465fd21751e6d84b1.png": "4beb7a5c37394c14140420f6e4f813f72acc768a",
+    "template-provenance.json": "e294f9e39e24927b25e39df062bc733da7a784c3",
+    "template.json": "4fad95346f5c75e70357defb5a1522a8e41f5806",
+    "tools/bake_comet_cues.gd": "028c2e0d309d8ce0e2a38f005bab0c0b33ce1afb",
+    "tools/bake_comet_cues.gd.uid": "bcaeabfe9d814bbf879324b0fd00c62d5004f5e9",
+    "tools/build_cjk_font.py": "84fe6c75d8f3ac0484364455f7ba9ac26ef1f4ab",
+    "tools/build_cjk_font_subset.py": "bbc5070d4a55e037bb598531f27d15d17fab2ccf",
+    "tools/capture_fast_comet.py": "d37519d985448bd839beabc2e45ef9b19b4a1b69",
+    "tools/capture_native.gd": "160f63053432824fa19dcfb8d14d402bdaf80958",
+    "tools/capture_native.gd.uid": "68d74a30443d1ea9763ac0f3eab4c9b41cd0fc24",
+    "tools/comet_acceptance.gd": "028853a7f038e32cf140fe4e487c4f3f677a3250",
+    "tools/comet_acceptance.gd.uid": "d71629203b61ead64245f28fca749a03f50480d8",
+    "tools/comet_pack.gd": "92c2a4b0a4826931178f4244dbbb6069259ac857",
+    "tools/comet_pack.gd.uid": "c7db9e151ff2e52f64251da11533f0582a375bd3",
+    "tools/complete_evidence.py": "f3156974adbe2763be3d4d24c9d72e5d49b8df46",
+    "tools/customize_comet.py": "a13432feeea55c0f87ebf8d93819c391c75eace2",
+    "tools/final_delivery_prep.py": "4f0a1e2f571386d80ba798a121c8faf1dff5d227",
+    "tools/finalize_comet_tests.py": "4a0943081ede3ab019c06fd67243669ed1f2ee14",
+    "tools/finalize_observatory.py": "13b58251c193a3f64400c327d565f16a11675f7d",
+    "tools/fix_headless_audio_assertion.py": "dd851a2fee17ceabe764b0153f3cd6fb35fa2a9a",
+    "tools/fix_observatory_balance.py": "34ba7cce0ef730353858f33cea5ca207962cbf28",
+    "tools/fix_sling.py": "fdb5ef87530351afe29f156e53809c83fb41dda1",
+    "tools/fix_staged_audio_lifecycle.py": "dc3684a6d4e57de5c6a113c1265c91c807e78771",
+    "tools/game-runtime-font-codepoints.json": "d58015f2c8148087b62a53d7893da2591ffa5cac",
+    "tools/game-runtime-font.json": "d1c7fcd9305431c9c09775c184d7daccd73ce576",
+    "tools/game-runtime-font.requirements.txt": "0e93f38696696cb140c3fa2a001ccb3b3e53810d",
+    "tools/install_cjk_font.py": "079df8f7bb30a3e929e6b37cae3cdf31e75f47ac",
+    "tools/integrate_observatory.py": "39dc635497a161f37377c3af92b078a6a87a7126",
+    "tools/juice_check.gd": "a2c7ac538d2f4de45706abc46785e8f5a05ac28b",
+    "tools/juice_check.gd.uid": "ab6c00740137bd73ff108b7c7abff285b2e844d4",
+    "tools/measure_optional_startup.py": "606be0f4912a966f78a06d8325f1845bbd9c5c4c",
+    "tools/observatory_acceptance.gd": "b7987ce2d4a4c29712b1715066ae84a4cde37354",
+    "tools/observatory_acceptance.gd.uid": "bb4cc2ac9e1a25faf4e18196de66b584a00d9cda",
+    "tools/observatory_probe.gd": "69834f1ad2210d7f4a139eb1f44cb54068d641cc",
+    "tools/observatory_probe.gd.uid": "fdff1e7e5cb7a3716590491475858d5ff200cf1c",
+    "tools/physics_probe.gd": "b3c7b36b4f9ac69cc6269be8b0539ba6465e2b12",
+    "tools/physics_probe.gd.uid": "080293d50178b057255c3b191af20d29ee00f21c",
+    "tools/prepare_annotation_revision.py": "3a4ae7deb456e35207b77f9814d0bd8c112b8371",
+    "tools/prepare_comet_release.py": "28194c63dda56afedf303b0a1fd7caa8175e3d40",
+    "tools/prepare_cosmic_music.py": "9695f89cc990ed308f1550861753d89b51eafe88",
+    "tools/prepare_rename_release.py": "b024e8fe6c517ee57dde3c2154b18efe44d83334",
+    "tools/profile_startup.gd": "1abcbaaef04227a7452e5726fc99a94d162886e8",
+    "tools/profile_startup.gd.uid": "4bc275f7d028c35fe8590e04e65bfb68d9899cc0",
+    "tools/record_observatory_release.py": "60cb1de98d961d676d232f5dcf26274b83ad79bd",
+    "tools/record_startup_assets.py": "ab10c1e91805559a754158be967d75173aea32e1",
+    "tools/refine_comet.py": "43d343b043454aa60f254cdbc417f5c652a2596a",
+    "tools/refine_observatory.py": "8d569f1cdef978f31d8964e9b926041051014062",
+    "tools/remove_marked_annotations.py": "5310cb70e589473cc89f9712935249468f4a3582",
+    "tools/rename_comet_pinball.py": "71eec3b912755c102c3a85233c3921baca6c4098",
+    "tools/template_config_check.gd": "262e4145d20974c0aa4be1c49609bf7df5a16df7",
+    "tools/template_config_check.gd.uid": "b97cf08fb776dcce4f71792c3639fd769f065ac7",
+    "tools/upgrade_physics.py": "4654e11370023ce0454719a4345d6ded34ce6da7",
+    "tools/validate_template.gd": "b463c7e57ce922e584af9c9f2588568c4555b4fd",
+    "tools/validate_template.gd.uid": "c5ee538beec5f099e29c1d03e72b366d81aa42c6",
+    "tools/verify.sh": "06ee2f37c0294fb9e8ff6457c88ac0200124188b",
+    "tools/verify_clean_scaffold.sh": "3b029a6240080d83229cbded84bab38f280b465e",
+    "tools/verify_exported_pack.gd": "0d60d7569b92704360dd8c8050eec9430c37c295",
+    "tools/verify_exported_pack.gd.uid": "da1eb24aff4da704f73c864031593b0d247e6f96",
+    "web/ManusCC0-LICENSE.txt": "0e259d42c996742e9e3cba14c677129b2c1b6311",
+    "web/loader-cjk.json": "bcc06643ba0a3d7b6e21bc2303ff012536b1ed50",
+    "web/loading.html": "5e0d219894af6097b64572fb624f77cd13201eda"
+  },
+  "importInputs": {
+    ".gitignore": {
+      "sha256": "ea316150d01053194e03849a543a84565a185b242bb58d1385affa6986d59bf8",
+      "size": 639,
+      "destination": ".gitignore",
+      "importedSha256": "f4ab98d4b4b83220d7cc2a18b801583d0c90595b5fc1ae8fa98900d9f2225a2c"
+    },
+    "README.md": {
+      "sha256": "bd7a5f849df1f8001ef744b06c9e23f4c7be65cd4c45d411050646914e5265cc",
+      "size": 13300,
+      "destination": "docs/source-game.md",
+      "importedSha256": "0b172bd6e1d1ce726bd508b1088b5a4d770d59ebef774a07b5ee672f08d12614"
+    },
+    "asset-provenance.json": {
+      "sha256": "3791755f9a95cf3b73208a874611fca5c8d466160335c1942e8f1006aff02c7b",
+      "size": 60370,
+      "destination": "asset-provenance.json",
+      "importedSha256": "b8272247a932125c4bc7a39180ec6bed2099c6aeabde2db2fcc2f69c4c1edf6e"
+    },
+    "assets/audio/cosmic/celestial-drift.ogg": {
+      "sha256": "50a87cb7be035651901d4c34a10c2a3c5df4f58c3b98fddcdfa268419e8c8820",
+      "size": 1702047,
+      "destination": "assets/template/audio/cosmic/celestial-drift.ogg",
+      "importedSha256": "50a87cb7be035651901d4c34a10c2a3c5df4f58c3b98fddcdfa268419e8c8820"
+    },
+    "assets/audio/cosmic/celestial-drift.ogg.import": {
+      "sha256": "a53b993a2bacd8bce71a2fa68cd531872d1ebb4daad7108f205c4f0c2804d793",
+      "size": 421,
+      "destination": "assets/template/audio/cosmic/celestial-drift.ogg.import",
+      "importedSha256": "81ee6ac8aa94f147d141ddd39a5e481c9853fab80e0c89b38345602cba225f7b"
+    },
+    "assets/audio/cues/enemy-impact.wav": {
+      "sha256": "5d975f2e4f1baa1f8a59fbd05719b27e64463673511cee2132e500cd8290fd54",
+      "size": 11068,
+      "destination": "assets/template/audio/cues/enemy-impact.wav",
+      "importedSha256": "5d975f2e4f1baa1f8a59fbd05719b27e64463673511cee2132e500cd8290fd54"
+    },
+    "assets/audio/cues/enemy-impact.wav.import": {
+      "sha256": "dbb274569fbd46d54a3613aded0f36b44fe549ee82bddbd12bd7306185c148ed",
+      "size": 512,
+      "destination": "assets/template/audio/cues/enemy-impact.wav.import",
+      "importedSha256": "9ceb468f04f9461346ba10d9b59ed4e6710b32c22f5090e6e294c9d41fc5aa84"
+    },
+    "assets/audio/cues/game-defeat.wav": {
+      "sha256": "a06d29cdbb183875697a10334059ec83dcbf4998c177fc2a48878964a6c31b58",
+      "size": 28708,
+      "destination": "assets/template/audio/cues/game-defeat.wav",
+      "importedSha256": "a06d29cdbb183875697a10334059ec83dcbf4998c177fc2a48878964a6c31b58"
+    },
+    "assets/audio/cues/game-defeat.wav.import": {
+      "sha256": "c591690a541083c74e40828e80850f1626415be6f4d2df5a35cff8fad9cffa24",
+      "size": 509,
+      "destination": "assets/template/audio/cues/game-defeat.wav.import",
+      "importedSha256": "fe00eeca3985bdaeeef19dcdd0bb973f3e16a61f997b44115f9020813e8ad0db"
+    },
+    "assets/audio/cues/game-pause.wav": {
+      "sha256": "8c0a192e388992d009dc6cd6aad8c488805c2462c3707717ef6db1d3d1e14e78",
+      "size": 5336,
+      "destination": "assets/template/audio/cues/game-pause.wav",
+      "importedSha256": "8c0a192e388992d009dc6cd6aad8c488805c2462c3707717ef6db1d3d1e14e78"
+    },
+    "assets/audio/cues/game-pause.wav.import": {
+      "sha256": "620c0701ac77d7d6969adc83e1317a781c6908d5cdbb839004c5c2c4e6b2c5db",
+      "size": 506,
+      "destination": "assets/template/audio/cues/game-pause.wav.import",
+      "importedSha256": "b472eadaac291e57e6867423ad08fc195ed0c58329bd19a2657a5e5188606318"
+    },
+    "assets/audio/cues/game-victory.wav": {
+      "sha256": "bb54ad84c6bd7f35e8087b5a5c6065bdc0bb54f67b0aca37382831119d51b1af",
+      "size": 30912,
+      "destination": "assets/template/audio/cues/game-victory.wav",
+      "importedSha256": "bb54ad84c6bd7f35e8087b5a5c6065bdc0bb54f67b0aca37382831119d51b1af"
+    },
+    "assets/audio/cues/game-victory.wav.import": {
+      "sha256": "82d5e60e892865e8c218dae1ce934678a71b81b9b4bb1247f8551cc66865b801",
+      "size": 512,
+      "destination": "assets/template/audio/cues/game-victory.wav.import",
+      "importedSha256": "d9f97b3fa18f9e93f913dc7eebcdf2bf192a4b90f7b2fc6e55ce9dcaee71784c"
+    },
+    "assets/audio/cues/player-action.wav": {
+      "sha256": "77c8f9a8f6bacfe24fe5c52b48a533e197cefa112e58ec06925cf29d12496b4d",
+      "size": 19888,
+      "destination": "assets/template/audio/cues/player-action.wav",
+      "importedSha256": "77c8f9a8f6bacfe24fe5c52b48a533e197cefa112e58ec06925cf29d12496b4d"
+    },
+    "assets/audio/cues/player-action.wav.import": {
+      "sha256": "68fac391ce78b82e3d40b1f364d86e82804727df29398a0cf3729538571ed393",
+      "size": 515,
+      "destination": "assets/template/audio/cues/player-action.wav.import",
+      "importedSha256": "b60144fc3c0539435b030c791592fad83da503da37cdcd04257d088bbd0436f4"
+    },
+    "assets/audio/cues/score-reward.wav": {
+      "sha256": "1113c2d4be87969efa49d1c6c3570067d0427ee75ddd9f828556b2226279d60f",
+      "size": 17684,
+      "destination": "assets/template/audio/cues/score-reward.wav",
+      "importedSha256": "1113c2d4be87969efa49d1c6c3570067d0427ee75ddd9f828556b2226279d60f"
+    },
+    "assets/audio/cues/score-reward.wav.import": {
+      "sha256": "5e3a2446178d1fc693eb28694706a9343602f028e02f86cb0bfb73579d2d3916",
+      "size": 512,
+      "destination": "assets/template/audio/cues/score-reward.wav.import",
+      "importedSha256": "e73e7dbd33bfee414059decda12d796978e9dc8457a1f46cc2a523cbdf9f1360"
+    },
+    "assets/audio/cues/ui-cancel.wav": {
+      "sha256": "ffaecd4db66b6f81c91bb9d46ee2747a03685d3a3e4b5dfb8822047dda2bdef5",
+      "size": 3572,
+      "destination": "assets/template/audio/cues/ui-cancel.wav",
+      "importedSha256": "ffaecd4db66b6f81c91bb9d46ee2747a03685d3a3e4b5dfb8822047dda2bdef5"
+    },
+    "assets/audio/cues/ui-cancel.wav.import": {
+      "sha256": "2932a7766164b59c7c17e48cc18556bd950fca822dcc07d01ebc90ffff837d18",
+      "size": 503,
+      "destination": "assets/template/audio/cues/ui-cancel.wav.import",
+      "importedSha256": "ff021d9a2169510bb831be6c3c3a2383225d587ef79b0482b05273ac983c2c0d"
+    },
+    "assets/audio/cues/ui-confirm.wav": {
+      "sha256": "d905423c16774a2a2d81a47f361141a5c60cb084f07e9c4541eae66b45b79f37",
+      "size": 5336,
+      "destination": "assets/template/audio/cues/ui-confirm.wav",
+      "importedSha256": "d905423c16774a2a2d81a47f361141a5c60cb084f07e9c4541eae66b45b79f37"
+    },
+    "assets/audio/cues/ui-confirm.wav.import": {
+      "sha256": "fed8cd0a8335a3cb5bc6889f0017aea32ea58caaa892b1638b665f7fb1fa29fe",
+      "size": 506,
+      "destination": "assets/template/audio/cues/ui-confirm.wav.import",
+      "importedSha256": "dbc76cf6f0fba06b57f092d9802cfbb31474e6f5b815fcd478a903f922c72abe"
+    },
+    "assets/mechanisms/bronze-gears/Cog Wheels - Gears/SpriteSheets/Bronze Gear Wheels/Gear 1 - Bronze_spritesheet.png": {
+      "sha256": "e24da95dcd43484428623aa3888448467c0b6174f5fefd50d168542454ea4cf2",
+      "size": 2223,
+      "destination": "assets/template/mechanisms/bronze-gears/Cog Wheels - Gears/SpriteSheets/Bronze Gear Wheels/Gear 1 - Bronze_spritesheet.png",
+      "importedSha256": "e24da95dcd43484428623aa3888448467c0b6174f5fefd50d168542454ea4cf2"
+    },
+    "assets/mechanisms/bronze-gears/Cog Wheels - Gears/SpriteSheets/Bronze Gear Wheels/Gear 1 - Bronze_spritesheet.png.import": {
+      "sha256": "530f72d154296988de098b9f75ffa4e985021db6ade85efadb044f9e6eba2376",
+      "size": 1067,
+      "destination": "assets/template/mechanisms/bronze-gears/Cog Wheels - Gears/SpriteSheets/Bronze Gear Wheels/Gear 1 - Bronze_spritesheet.png.import",
+      "importedSha256": "bb10459ebd9cddd4ad44a687e9c998b419bf7920f7c5cd67466989835de15a46"
+    },
+    "assets/observatory/background-placeholder.webp": {
+      "sha256": "1d3d336b04f3c17339c67752b1b9f7c365e34bd7fdaf15094346be18b8d9ad4b",
+      "size": 5042,
+      "destination": "assets/template/observatory/background-placeholder.webp",
+      "importedSha256": "1d3d336b04f3c17339c67752b1b9f7c365e34bd7fdaf15094346be18b8d9ad4b"
+    },
+    "assets/observatory/background-placeholder.webp.import": {
+      "sha256": "1f7da6ede084de61911faa12cdde95259bf794bf3fdc19211213804564959ba6",
+      "size": 993,
+      "destination": "assets/template/observatory/background-placeholder.webp.import",
+      "importedSha256": "d59aae3f37549bd9f46f9ab2b4a5c2d143c28e5695ea77d66b6a61236d2093fc"
+    },
+    "assets/observatory/bumper.png": {
+      "sha256": "11d1ac40042b8a6a98cc020ba1ddc7ab75efcbcaaf1c4f8b59ee24fb8eba4a24",
+      "size": 76950,
+      "destination": "assets/template/observatory/bumper.png",
+      "importedSha256": "11d1ac40042b8a6a98cc020ba1ddc7ab75efcbcaaf1c4f8b59ee24fb8eba4a24"
+    },
+    "assets/observatory/bumper.png.import": {
+      "sha256": "fcd0e176ca5a43663f2cc02484ba61934a28a6b2f1ad5d75d61a06f326e3793b",
+      "size": 941,
+      "destination": "assets/template/observatory/bumper.png.import",
+      "importedSha256": "5f72622ae96ea220a4ff2be0612039fcfd35c86fc499effabcdb587a55c3fa95"
+    },
+    "assets/share/v3/favicon.png": {
+      "sha256": "ba5feaa4b9b08b56b485f54b4e441a4c32d6af68769b9b0465fd21751e6d84b1",
+      "size": 150058,
+      "destination": "assets/template/share/v3/favicon.png",
+      "importedSha256": "ba5feaa4b9b08b56b485f54b4e441a4c32d6af68769b9b0465fd21751e6d84b1"
+    },
+    "assets/share/v3/favicon.png.import": {
+      "sha256": "92569b8298433f0f1c735e27b99d56a473282fcaf6653160b5840e1ca798f472",
+      "size": 940,
+      "destination": "assets/template/share/v3/favicon.png.import",
+      "importedSha256": "bf43033ff2107e21771e1d4f8e17e06c3943cb61d79a03415ad69c94be130c22"
+    },
+    "assets/share/v5/og.png": {
+      "sha256": "4306c9d485d7e80687964b113fab5853e07581bc3d49775eb6ac9fe7b734dd98",
+      "size": 542812,
+      "destination": "assets/template/share/v5/og.png",
+      "importedSha256": "4306c9d485d7e80687964b113fab5853e07581bc3d49775eb6ac9fe7b734dd98"
+    },
+    "assets/share/v5/og.png.import": {
+      "sha256": "57578d25705bc24b5c776450c2fff03584d695f0330deadea07b24e78ec0e4a9",
+      "size": 926,
+      "destination": "assets/template/share/v5/og.png.import",
+      "importedSha256": "2268b2c5246afc5f29474c983e9c8f0c96560de85f116b9b78ec64e97b5963a7"
+    },
+    "assets/template/fonts/ManusCC0-Bold.ttf": {
+      "sha256": "099f6d50114f83533f689ddc37028fcff2bd2a2c4871a332488c1a433f440804",
+      "size": 26820,
+      "destination": "assets/template/fonts/ManusCC0-Bold.ttf",
+      "importedSha256": "099f6d50114f83533f689ddc37028fcff2bd2a2c4871a332488c1a433f440804"
+    },
+    "assets/template/fonts/ManusCC0-Bold.ttf.import": {
+      "sha256": "b1b80d7e4b30b5627e413e4fe48dc3a2837161f9f76b2e5e50278d2a5c239529",
+      "size": 787,
+      "destination": "assets/template/fonts/ManusCC0-Bold.ttf.import",
+      "importedSha256": "b1b80d7e4b30b5627e413e4fe48dc3a2837161f9f76b2e5e50278d2a5c239529"
+    },
+    "assets/template/fonts/ManusCC0-LICENSE.txt": {
+      "sha256": "a2010f343487d3f7618affe54f789f5487602331c0a8d03f49e9a7c547cf0499",
+      "size": 7048,
+      "destination": "assets/template/fonts/ManusCC0-LICENSE.txt",
+      "importedSha256": "a2010f343487d3f7618affe54f789f5487602331c0a8d03f49e9a7c547cf0499"
+    },
+    "assets/template/fonts/ManusCC0-Medium.ttf": {
+      "sha256": "f28a0f3aee8f427798bf972504d5640d5d28b8692a73102ac39556fa7ffb1ee2",
+      "size": 26912,
+      "destination": "assets/template/fonts/ManusCC0-Medium.ttf",
+      "importedSha256": "f28a0f3aee8f427798bf972504d5640d5d28b8692a73102ac39556fa7ffb1ee2"
+    },
+    "assets/template/fonts/ManusCC0-Medium.ttf.import": {
+      "sha256": "08eaf8c3855afff8e85fd8817e7c949e77eb35d39c087a22ba9e652652619a04",
+      "size": 793,
+      "destination": "assets/template/fonts/ManusCC0-Medium.ttf.import",
+      "importedSha256": "08eaf8c3855afff8e85fd8817e7c949e77eb35d39c087a22ba9e652652619a04"
+    },
+    "assets/template/fonts/ManusCC0-Regular.ttf": {
+      "sha256": "b5124032e8e51434e05a51c327a9a614ac96b85ecf9b6cdcfc58834a9ae1347d",
+      "size": 26872,
+      "destination": "assets/template/fonts/ManusCC0-Regular.ttf",
+      "importedSha256": "b5124032e8e51434e05a51c327a9a614ac96b85ecf9b6cdcfc58834a9ae1347d"
+    },
+    "assets/template/fonts/ManusCC0-Regular.ttf.import": {
+      "sha256": "387ce16361315f9312c4d2f932f641d0aed947c6128514f4418e43a5c2ecf318",
+      "size": 795,
+      "destination": "assets/template/fonts/ManusCC0-Regular.ttf.import",
+      "importedSha256": "387ce16361315f9312c4d2f932f641d0aed947c6128514f4418e43a5c2ecf318"
+    },
+    "assets/template/fonts/ManusCC0-SOURCE.md": {
+      "sha256": "c99996e96b494a1dfc6c98ddd6bd50351fbf415a10e04de2a4ab36134a1f2008",
+      "size": 1133,
+      "destination": "assets/template/fonts/ManusCC0-SOURCE.md",
+      "importedSha256": "c99996e96b494a1dfc6c98ddd6bd50351fbf415a10e04de2a4ab36134a1f2008"
+    },
+    "assets/template/fonts/ManusCC0SansCJKSC-Regular.woff2": {
+      "sha256": "0a4981b817d7fb556dd8cd80f278483f1849017a312ca965e027d8e0e066968c",
+      "size": 965224,
+      "destination": "assets/template/fonts/ManusCC0SansCJKSC-Regular.woff2",
+      "importedSha256": "0a4981b817d7fb556dd8cd80f278483f1849017a312ca965e027d8e0e066968c"
+    },
+    "assets/template/fonts/ManusCC0SansCJKSC-Regular.woff2.import": {
+      "sha256": "2bba96ddf92891e1038f7c2fafcd4679abd7baadd819e68f081fb435a986a476",
+      "size": 829,
+      "destination": "assets/template/fonts/ManusCC0SansCJKSC-Regular.woff2.import",
+      "importedSha256": "2bba96ddf92891e1038f7c2fafcd4679abd7baadd819e68f081fb435a986a476"
+    },
+    "assets/template/fonts/SOURCES.md": {
+      "sha256": "384facd8beeb6fd3529fd45398988ab8dce349bc71948f78abf744260b8ee07c",
+      "size": 788,
+      "destination": "assets/template/fonts/SOURCES.md",
+      "importedSha256": "384facd8beeb6fd3529fd45398988ab8dce349bc71948f78abf744260b8ee07c"
+    },
+    "assets/template/fonts/manuscc0_bold.tres": {
+      "sha256": "fbc3fa9654e3f53e50adcda8a9cfa55d2cbf351bdd50ec4341cab52fd43f096c",
+      "size": 426,
+      "destination": "assets/template/fonts/manuscc0_bold.tres",
+      "importedSha256": "fbc3fa9654e3f53e50adcda8a9cfa55d2cbf351bdd50ec4341cab52fd43f096c"
+    },
+    "assets/template/fonts/manuscc0_medium.tres": {
+      "sha256": "ab259bd3379fc16d19d6f367f26dc0efd6ddf75242ff72784f9fce80bc30160f",
+      "size": 430,
+      "destination": "assets/template/fonts/manuscc0_medium.tres",
+      "importedSha256": "ab259bd3379fc16d19d6f367f26dc0efd6ddf75242ff72784f9fce80bc30160f"
+    },
+    "assets/template/fonts/manuscc0_regular.tres": {
+      "sha256": "e9c6551beed493a1a4c3200c8726bb2edc3196966990ff87c25b7e5cc234e769",
+      "size": 432,
+      "destination": "assets/template/fonts/manuscc0_regular.tres",
+      "importedSha256": "e9c6551beed493a1a4c3200c8726bb2edc3196966990ff87c25b7e5cc234e769"
+    },
+    "assets/template/fonts/runtime-cjk.json": {
+      "sha256": "76bb2d511ef7e725d5aca7254f8c1624ddea57f0e9ca87ea92a441740a6ab5cb",
+      "size": 1234,
+      "destination": "assets/template/fonts/runtime-cjk.json",
+      "importedSha256": "76bb2d511ef7e725d5aca7254f8c1624ddea57f0e9ca87ea92a441740a6ab5cb"
+    },
+    "assets/template/provenance/AUDIO.md": {
+      "sha256": "366b315271b7c4d7075ec20f086a6b9ba30b1ee97f397ea9c84a2758426fd510",
+      "size": 2824,
+      "destination": "assets/template/provenance/AUDIO.md",
+      "importedSha256": "366b315271b7c4d7075ec20f086a6b9ba30b1ee97f397ea9c84a2758426fd510"
+    },
+    "assets/template/provenance/IMAGEGEN.md": {
+      "sha256": "8f2d280337ed1645d3fb4fcee63baebf50d22cc934672cea446c4e16e78e6ae3",
+      "size": 11221,
+      "destination": "assets/template/provenance/IMAGEGEN.md",
+      "importedSha256": "8f2d280337ed1645d3fb4fcee63baebf50d22cc934672cea446c4e16e78e6ae3"
+    },
+    "assets.lock.json": {
+      "sha256": "83af0874558f7cbaf2e00db5b9002638fa765275cc925648b0600f1b856830b1",
+      "size": 8108,
+      "destination": "assets.lock.json",
+      "importedSha256": "86766c9311b13661ab3d74f65e1c3549b4e64a07102335ebacea3c1fe957c7d5"
+    },
+    "autoload/audio_director.gd": {
+      "sha256": "369feb19bddcdde6fb831ae86238ce2369085332db98c0820527e2d8ca2c3f9c",
+      "size": 11203,
+      "destination": "autoload/audio_director.gd",
+      "importedSha256": "17e952d974ce40ef2ac86626ef25120ea853b84810345f4f4f00f8c918ad49a8"
+    },
+    "autoload/audio_director.gd.uid": {
+      "sha256": "44d11748a40d2efcd0d0a9ef99c475af618e99b6804b0b528685e800d34ade5b",
+      "size": 19,
+      "destination": "autoload/audio_director.gd.uid",
+      "importedSha256": "44d11748a40d2efcd0d0a9ef99c475af618e99b6804b0b528685e800d34ade5b"
+    },
+    "autoload/manus_font_theme.gd": {
+      "sha256": "5ae2dde5728c2d9ba14eaf0cf60a46b17932e75a51e08317501da57bd8f1ad09",
+      "size": 1084,
+      "destination": "autoload/manus_font_theme.gd",
+      "importedSha256": "5ae2dde5728c2d9ba14eaf0cf60a46b17932e75a51e08317501da57bd8f1ad09"
+    },
+    "autoload/manus_font_theme.gd.uid": {
+      "sha256": "a6cdbe409b07c2eb14d92919088ce09049eaf618d44f6e8860fa3c8a5a074fa8",
+      "size": 19,
+      "destination": "autoload/manus_font_theme.gd.uid",
+      "importedSha256": "a6cdbe409b07c2eb14d92919088ce09049eaf618d44f6e8860fa3c8a5a074fa8"
+    },
+    "autoload/sandbox_bridge.gd": {
+      "sha256": "b894bdfa263fcb035a8fbefbc518e46d1f91b4ce9782c08d8ed12b6f7d154330",
+      "size": 1890,
+      "destination": "autoload/sandbox_bridge.gd",
+      "importedSha256": "b894bdfa263fcb035a8fbefbc518e46d1f91b4ce9782c08d8ed12b6f7d154330"
+    },
+    "autoload/sandbox_bridge.gd.uid": {
+      "sha256": "700f402a17040671ff452b3f675c324d9272a2733f22300dcccca8b203a3cd1a",
+      "size": 20,
+      "destination": "autoload/sandbox_bridge.gd.uid",
+      "importedSha256": "700f402a17040671ff452b3f675c324d9272a2733f22300dcccca8b203a3cd1a"
+    },
+    "autoload/tuning_store.gd": {
+      "sha256": "aef768045270c870b12c41d091350fe2c1cbe4dcf4b5255dd4f93d47d8ffa5bd",
+      "size": 11164,
+      "destination": "autoload/tuning_store.gd",
+      "importedSha256": "aef768045270c870b12c41d091350fe2c1cbe4dcf4b5255dd4f93d47d8ffa5bd"
+    },
+    "autoload/tuning_store.gd.uid": {
+      "sha256": "b2f0fdb38316fe788df976aca23da6bd8d0444946ea49be6257f20f8160691f5",
+      "size": 19,
+      "destination": "autoload/tuning_store.gd.uid",
+      "importedSha256": "b2f0fdb38316fe788df976aca23da6bd8d0444946ea49be6257f20f8160691f5"
+    },
+    "build/.gdignore": {
+      "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+      "size": 1,
+      "destination": "build/.gdignore",
+      "importedSha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
+    },
+    "config/pinball-template.json": {
+      "sha256": "972c245dd89f528798430081f18e2c70efaf3c2affc0944fcef95fbce46949d4",
+      "size": 12803,
+      "destination": "config/pinball-template.json",
+      "importedSha256": "972c245dd89f528798430081f18e2c70efaf3c2affc0944fcef95fbce46949d4"
+    },
+    "config/pinball-template.schema.json": {
+      "sha256": "b9ed7633f695d3753912c26316b50bbcf7c9c506fba11654012d7f1b9c633b81",
+      "size": 32911,
+      "destination": "config/pinball-template.schema.json",
+      "importedSha256": "b9ed7633f695d3753912c26316b50bbcf7c9c506fba11654012d7f1b9c633b81"
+    },
+    "config/stages.json": {
+      "sha256": "f0b200e6779cbba34e9aa23fba502fce3e2302420935081aed8b57927ca0d95e",
+      "size": 223,
+      "destination": "config/stages.json",
+      "importedSha256": "f0b200e6779cbba34e9aa23fba502fce3e2302420935081aed8b57927ca0d95e"
+    },
+    "config/tuning.json": {
+      "sha256": "d40eda03aa9df67097a0381e41610d6842a297ae46e8e1b55955b69c94e3f9ce",
+      "size": 13447,
+      "destination": "config/tuning.json",
+      "importedSha256": "d40eda03aa9df67097a0381e41610d6842a297ae46e8e1b55955b69c94e3f9ce"
+    },
+    "docs/configuration.md": {
+      "sha256": "75d06d72b09ac741d6f83b901da3997fc2355fb5c06982b7387937104db38c57",
+      "size": 13503,
+      "destination": "docs/configuration.md",
+      "importedSha256": "75d06d72b09ac741d6f83b901da3997fc2355fb5c06982b7387937104db38c57"
+    },
+    "docs/development.md": {
+      "sha256": "1db00c43a11928d5e0c0228bb0e3e88ed7eeabb2b4412c0eb523e7d7d534401b",
+      "size": 10298,
+      "destination": "docs/development.md",
+      "importedSha256": "90df212581c4893468548fd9912439f8c8c6f44e9eb39776cd1eca622162155f"
+    },
+    "docs/examples/four-bumper-table.json": {
+      "sha256": "9b36eec1bf41eea77424c4f75ce8ac4b3dddb66086fab4ba094d9b7c061f461c",
+      "size": 12707,
+      "destination": "docs/examples/four-bumper-table.json",
+      "importedSha256": "9b36eec1bf41eea77424c4f75ce8ac4b3dddb66086fab4ba094d9b7c061f461c"
+    },
+    "docs/template-acceptance.md": {
+      "sha256": "b4ffbc6e268620cc946370c5de32cd5e2e5bf9d7f0ec98dd2a94baed06629dc2",
+      "size": 4541,
+      "destination": "docs/template-acceptance.md",
+      "importedSha256": "f37f823589a3027ae6f9e75356283030b217c029bb2c3180f9f7ac3687485a5b"
+    },
+    "docs/template-baseline.md": {
+      "sha256": "9a58b42439b8cf73b8aabfa16f01de8c8dbd23fb2e7ce9108dccce25902b4874",
+      "size": 2222,
+      "destination": "docs/template-baseline.md",
+      "importedSha256": "5306b353f3e5d646e5857ce5677fc7386ffe9580adb3ab3b8e5765bf75b2bc17"
+    },
+    "export_presets.cfg": {
+      "sha256": "fc372a4babb4f095b8483d814a5c08aa98b226566e953b3dfbf6ca0aac0f2a68",
+      "size": 1198,
+      "destination": "export_presets.cfg",
+      "importedSha256": "651c792a6c52f51cbbeae5e21ce3f5be5be8333d38318ae32a4ffa16325850ac"
+    },
+    "game-release-profile.json": {
+      "sha256": "61420cca9bb99794c37798aab86cf6f9ea48d2068877b2e73a56c5c2b16cdce1",
+      "size": 1087,
+      "destination": "game-release-profile.json",
+      "importedSha256": "61420cca9bb99794c37798aab86cf6f9ea48d2068877b2e73a56c5c2b16cdce1"
+    },
+    "game-sharing.json": {
+      "sha256": "9baefbd088c2ff550872a02386b3b079bdc76761156b988e7d5252814937941a",
+      "size": 579,
+      "destination": "game-sharing.json",
+      "importedSha256": "04409bafc65e79f561174bb9d6d384789fd7ef938421c48e32a582d5c00e7be5"
+    },
+    "game-verification.json": {
+      "sha256": "bbebfc314fb3b5f8e0eeadde8f9a0bc309e3442378e0243963438e7aa33cd910",
+      "size": 1277,
+      "destination": "game-verification.json",
+      "importedSha256": "bbebfc314fb3b5f8e0eeadde8f9a0bc309e3442378e0243963438e7aa33cd910"
+    },
+    "localization/en.json": {
+      "sha256": "132fff8355e63be660afc4bceb3f515ab085630999d61d1c8e2d1e8cd652b8eb",
+      "size": 14476,
+      "destination": "localization/en.json",
+      "importedSha256": "132fff8355e63be660afc4bceb3f515ab085630999d61d1c8e2d1e8cd652b8eb"
+    },
+    "localization/zh_CN.json": {
+      "sha256": "51872254590bf22ccdb23947d4e78fc806011ce73319a47b4babe10ccd0022e8",
+      "size": 14576,
+      "destination": "localization/zh_CN.json",
+      "importedSha256": "51872254590bf22ccdb23947d4e78fc806011ce73319a47b4babe10ccd0022e8"
+    },
+    "package.json": {
+      "sha256": "ba4763e45553bd837c7cfd686474c3ce63409ccc6222bf20247e3a18c63a58be",
+      "size": 1330,
+      "destination": "package.json",
+      "importedSha256": "2358b7428f71ff49636bee1e4156e61e56676e28d6177d153451ef95ddac28b3"
+    },
+    "project.godot": {
+      "sha256": "4408027b6fcd870d6c5f86de6d074c835b8a090bdda0271a19f673a473285f55",
+      "size": 1501,
+      "destination": "project.godot",
+      "importedSha256": "4408027b6fcd870d6c5f86de6d074c835b8a090bdda0271a19f673a473285f55"
+    },
+    "scenes/main.tscn": {
+      "sha256": "305a60de51a69389ad27e82b1986c7698e05ff0f6f1d7f11deffcd1439e8d9fe",
+      "size": 303,
+      "destination": "scenes/main.tscn",
+      "importedSha256": "305a60de51a69389ad27e82b1986c7698e05ff0f6f1d7f11deffcd1439e8d9fe"
+    },
+    "scripts/comet_effects.gd": {
+      "sha256": "a0c784f8d1c983c1caabdbfdc1e159bdb04719027bcd389ba233e6e2cd08daca",
+      "size": 5172,
+      "destination": "scripts/comet_effects.gd",
+      "importedSha256": "a0c784f8d1c983c1caabdbfdc1e159bdb04719027bcd389ba233e6e2cd08daca"
+    },
+    "scripts/comet_effects.gd.uid": {
+      "sha256": "4c4efcfb6da3364f4cfc70e4705c2a76e8e556c0e810323cc9d56e4f87092055",
+      "size": 19,
+      "destination": "scripts/comet_effects.gd.uid",
+      "importedSha256": "4c4efcfb6da3364f4cfc70e4705c2a76e8e556c0e810323cc9d56e4f87092055"
+    },
+    "scripts/comet_juice.gd": {
+      "sha256": "a9ec076e36d745b166c55665ab7cd5da93d16a3ff0acd21955c0d775a7426dc6",
+      "size": 14716,
+      "destination": "scripts/comet_juice.gd",
+      "importedSha256": "a9ec076e36d745b166c55665ab7cd5da93d16a3ff0acd21955c0d775a7426dc6"
+    },
+    "scripts/comet_juice.gd.uid": {
+      "sha256": "13492f0c73051ad130bfb25afbf531e18378ccfa335f3d61dff94f610fa1557f",
+      "size": 19,
+      "destination": "scripts/comet_juice.gd.uid",
+      "importedSha256": "13492f0c73051ad130bfb25afbf531e18378ccfa335f3d61dff94f610fa1557f"
+    },
+    "scripts/comet_loading.gd": {
+      "sha256": "5da3c03d81d301d18e6355a7f62d410abff1cfd0d05d3d724abec72922bc831b",
+      "size": 1967,
+      "destination": "scripts/comet_loading.gd",
+      "importedSha256": "d408430735753e68c57ee941f18ee8d16cba9a9d3da4491e441a04b428e580bd"
+    },
+    "scripts/comet_loading.gd.uid": {
+      "sha256": "068c77a939491696f765086a8e6b07f2396d6e4d95775abb82f8fa4b72ab2b8c",
+      "size": 20,
+      "destination": "scripts/comet_loading.gd.uid",
+      "importedSha256": "068c77a939491696f765086a8e6b07f2396d6e4d95775abb82f8fa4b72ab2b8c"
+    },
+    "scripts/comet_main.gd": {
+      "sha256": "19df5e522d2d7ec86fdb71e05f6b4e3b8f742282a9463d76f9e70d457a69028c",
+      "size": 29160,
+      "destination": "scripts/comet_main.gd",
+      "importedSha256": "26ad19d5d7101bcd2f261e314b80937f2e052d43953cd43a1208fa770709a666"
+    },
+    "scripts/comet_main.gd.uid": {
+      "sha256": "4ca0e7c7e296085bf92ca86d8814fa3d47acb4542335fed88383738367f789ff",
+      "size": 20,
+      "destination": "scripts/comet_main.gd.uid",
+      "importedSha256": "4ca0e7c7e296085bf92ca86d8814fa3d47acb4542335fed88383738367f789ff"
+    },
+    "scripts/comet_observatory.gd": {
+      "sha256": "0dc602324e7e61384102cbc6cfb4b398663f387e9b2c2917faffb525bac194c7",
+      "size": 24886,
+      "destination": "scripts/comet_observatory.gd",
+      "importedSha256": "ad5edd33a9262da794834ffe8321495b9d8f42f2efd68d075215ec17304718ed"
+    },
+    "scripts/comet_observatory.gd.uid": {
+      "sha256": "95c661dc0ddca34774f3facb05367508f0a211d79ffd08f83bdae017b72012be",
+      "size": 20,
+      "destination": "scripts/comet_observatory.gd.uid",
+      "importedSha256": "95c661dc0ddca34774f3facb05367508f0a211d79ffd08f83bdae017b72012be"
+    },
+    "scripts/comet_physics.gd": {
+      "sha256": "5e8268e9bb95f5a109da9800d8acc05a49ae5f17600ac52d4e58013d299fe3af",
+      "size": 9408,
+      "destination": "scripts/comet_physics.gd",
+      "importedSha256": "5e8268e9bb95f5a109da9800d8acc05a49ae5f17600ac52d4e58013d299fe3af"
+    },
+    "scripts/comet_physics.gd.uid": {
+      "sha256": "8398190db17df931a86c845bf688ddff2ec392c8356292936fd5f061d8b35754",
+      "size": 19,
+      "destination": "scripts/comet_physics.gd.uid",
+      "importedSha256": "8398190db17df931a86c845bf688ddff2ec392c8356292936fd5f061d8b35754"
+    },
+    "scripts/comet_rules.gd": {
+      "sha256": "01cb45a90d82c4cd1c1297efd18784251fc9bd69e05bec1c3a5d76091dc2a781",
+      "size": 3981,
+      "destination": "scripts/comet_rules.gd",
+      "importedSha256": "01cb45a90d82c4cd1c1297efd18784251fc9bd69e05bec1c3a5d76091dc2a781"
+    },
+    "scripts/comet_rules.gd.uid": {
+      "sha256": "34f3db65f56b23140ea0f38cf47fa489db48462f8d861762a129d4da3ecd156b",
+      "size": 20,
+      "destination": "scripts/comet_rules.gd.uid",
+      "importedSha256": "34f3db65f56b23140ea0f38cf47fa489db48462f8d861762a129d4da3ecd156b"
+    },
+    "scripts/manus/browser_bgm_backend.gd": {
+      "sha256": "8729604ee5303c35698fe8cfaad32d32995bc3c0dba707eb4ae51cf74d848363",
+      "size": 11651,
+      "destination": "scripts/manus/browser_bgm_backend.gd",
+      "importedSha256": "8729604ee5303c35698fe8cfaad32d32995bc3c0dba707eb4ae51cf74d848363"
+    },
+    "scripts/manus/browser_bgm_backend.gd.uid": {
+      "sha256": "7648126fdc4409b0a1dd5c52c75bf03fcefc079a1a1769a39721585e017938f4",
+      "size": 20,
+      "destination": "scripts/manus/browser_bgm_backend.gd.uid",
+      "importedSha256": "7648126fdc4409b0a1dd5c52c75bf03fcefc079a1a1769a39721585e017938f4"
+    },
+    "scripts/manus/browser_bgm_player.gd": {
+      "sha256": "3dfbe63c26ce47cd41a1c50c94ad1bc51eb99a3daf494cec3aa81d123865de5f",
+      "size": 12477,
+      "destination": "scripts/manus/browser_bgm_player.gd",
+      "importedSha256": "3dfbe63c26ce47cd41a1c50c94ad1bc51eb99a3daf494cec3aa81d123865de5f"
+    },
+    "scripts/manus/browser_bgm_player.gd.uid": {
+      "sha256": "f8661df44899a3d88460ae106219f611a2d835ce8b86d3ba163c77ab33faf888",
+      "size": 20,
+      "destination": "scripts/manus/browser_bgm_player.gd.uid",
+      "importedSha256": "f8661df44899a3d88460ae106219f611a2d835ce8b86d3ba163c77ab33faf888"
+    },
+    "scripts/manus/game_fonts.gd": {
+      "sha256": "1d28a4bb4c13d4d2ef58692c1fce58bffd76477bc4d3660f2e7207f457893174",
+      "size": 7145,
+      "destination": "scripts/manus/game_fonts.gd",
+      "importedSha256": "17f671d8c00686e0a953db2c014c1494f556d0ced247bfcaf928f7f0db7bfa54"
+    },
+    "scripts/manus/game_fonts.gd.uid": {
+      "sha256": "f30e410b65d1422e8750011343ad2a3ec59ffcba149a590fbe5215ed24214e27",
+      "size": 20,
+      "destination": "scripts/manus/game_fonts.gd.uid",
+      "importedSha256": "f30e410b65d1422e8750011343ad2a3ec59ffcba149a590fbe5215ed24214e27"
+    },
+    "scripts/manus/procedural_sfx.gd": {
+      "sha256": "91bd8364dbb2a65af4cd75d7d5a848b10d1fd52e96d11c528a43ab7e3d38b3ba",
+      "size": 1665,
+      "destination": "scripts/manus/procedural_sfx.gd",
+      "importedSha256": "91bd8364dbb2a65af4cd75d7d5a848b10d1fd52e96d11c528a43ab7e3d38b3ba"
+    },
+    "scripts/manus/procedural_sfx.gd.uid": {
+      "sha256": "37a03b9d86a442e1dcf5bd41188b285121aeb487e2a9d4f37c63a69d9de85706",
+      "size": 20,
+      "destination": "scripts/manus/procedural_sfx.gd.uid",
+      "importedSha256": "37a03b9d86a442e1dcf5bd41188b285121aeb487e2a9d4f37c63a69d9de85706"
+    },
+    "scripts/pinball_leaderboard.gd": {
+      "sha256": "558840d152efd00c40501b676b32643957b8cfc5345c82fa08deb96a8101e9a9",
+      "size": 2787,
+      "destination": "scripts/pinball_leaderboard.gd",
+      "importedSha256": "558840d152efd00c40501b676b32643957b8cfc5345c82fa08deb96a8101e9a9"
+    },
+    "scripts/pinball_leaderboard.gd.uid": {
+      "sha256": "728a7162a5b5236aeaf18fb1dc358ecbc2bb52e11e0f2e1686c6c9ce4134c953",
+      "size": 20,
+      "destination": "scripts/pinball_leaderboard.gd.uid",
+      "importedSha256": "728a7162a5b5236aeaf18fb1dc358ecbc2bb52e11e0f2e1686c6c9ce4134c953"
+    },
+    "scripts/pinball_locale.gd": {
+      "sha256": "b68a0e894148c6a7733e7b8bcdcb4b4ea84a86788c01feb61a50f31098b72ae8",
+      "size": 926,
+      "destination": "scripts/pinball_locale.gd",
+      "importedSha256": "b68a0e894148c6a7733e7b8bcdcb4b4ea84a86788c01feb61a50f31098b72ae8"
+    },
+    "scripts/pinball_locale.gd.uid": {
+      "sha256": "d6c8b49b37d0c7406ac859a493a9aebc298cf06e7e997e30a6c782dd0ef0b65f",
+      "size": 20,
+      "destination": "scripts/pinball_locale.gd.uid",
+      "importedSha256": "d6c8b49b37d0c7406ac859a493a9aebc298cf06e7e997e30a6c782dd0ef0b65f"
+    },
+    "scripts/pinball_run.gd": {
+      "sha256": "0424b2343dd3952445937965c1e2d8b0240e6d6831b5494081db40fc2b5e28fb",
+      "size": 1134,
+      "destination": "scripts/pinball_run.gd",
+      "importedSha256": "0424b2343dd3952445937965c1e2d8b0240e6d6831b5494081db40fc2b5e28fb"
+    },
+    "scripts/pinball_run.gd.uid": {
+      "sha256": "c440a5a9206bec36b35e7e87473fe15d040e9560477ec58463296cddb836f8ef",
+      "size": 20,
+      "destination": "scripts/pinball_run.gd.uid",
+      "importedSha256": "c440a5a9206bec36b35e7e87473fe15d040e9560477ec58463296cddb836f8ef"
+    },
+    "scripts/pinball_stages.gd": {
+      "sha256": "22a309e23ca7b95efe4d33fe2fe7345a10ba44c0ed9db76946d5b60212856e45",
+      "size": 1700,
+      "destination": "scripts/pinball_stages.gd",
+      "importedSha256": "22a309e23ca7b95efe4d33fe2fe7345a10ba44c0ed9db76946d5b60212856e45"
+    },
+    "scripts/pinball_stages.gd.uid": {
+      "sha256": "0697e89bc8f1f35a673dd4e16d8771f81134db152994cd77de1671f20836b8a5",
+      "size": 20,
+      "destination": "scripts/pinball_stages.gd.uid",
+      "importedSha256": "0697e89bc8f1f35a673dd4e16d8771f81134db152994cd77de1671f20836b8a5"
+    },
+    "scripts/pinball_template.gd": {
+      "sha256": "6715dc86cc63d4e550a9f6f15cbd04dc9e8848b7e144bfe49f727a0e6814cd99",
+      "size": 19399,
+      "destination": "scripts/pinball_template.gd",
+      "importedSha256": "6715dc86cc63d4e550a9f6f15cbd04dc9e8848b7e144bfe49f727a0e6814cd99"
+    },
+    "scripts/pinball_template.gd.uid": {
+      "sha256": "04609cf8cd60f02b0bd4bf879151998fbea6a5c92392ad80abd1b609f1fb2f49",
+      "size": 20,
+      "destination": "scripts/pinball_template.gd.uid",
+      "importedSha256": "04609cf8cd60f02b0bd4bf879151998fbea6a5c92392ad80abd1b609f1fb2f49"
+    },
+    "scripts/pinball_tutorial.gd": {
+      "sha256": "7f145f77fab2a939490325ebedf4cac19457318e51d35a053733bb16c64ecd47",
+      "size": 692,
+      "destination": "scripts/pinball_tutorial.gd",
+      "importedSha256": "7f145f77fab2a939490325ebedf4cac19457318e51d35a053733bb16c64ecd47"
+    },
+    "scripts/pinball_tutorial.gd.uid": {
+      "sha256": "92235c317f5f61ec29c0b799ed27906fb783ecdf6ee7eca229be5b6d18606ccd",
+      "size": 20,
+      "destination": "scripts/pinball_tutorial.gd.uid",
+      "importedSha256": "92235c317f5f61ec29c0b799ed27906fb783ecdf6ee7eca229be5b6d18606ccd"
+    },
+    "scripts/template_config.gd": {
+      "sha256": "6c52196337c1bade9d55cbbdd4e355a2d1dbabebeac4be9b51d8538ea69cfe0c",
+      "size": 6617,
+      "destination": "scripts/template_config.gd",
+      "importedSha256": "6c52196337c1bade9d55cbbdd4e355a2d1dbabebeac4be9b51d8538ea69cfe0c"
+    },
+    "scripts/template_config.gd.uid": {
+      "sha256": "f2cf8c9801e7b2d6501dc6ab8920ad03c66dc4fb667863c7d7ff1c75bd361dc1",
+      "size": 20,
+      "destination": "scripts/template_config.gd.uid",
+      "importedSha256": "f2cf8c9801e7b2d6501dc6ab8920ad03c66dc4fb667863c7d7ff1c75bd361dc1"
+    },
+    "scripts/ui/tweak_panel.gd": {
+      "sha256": "0bf46527936710bfed56055c5d7da6eb4baac2d1b849b8aa1f847b924f8de01c",
+      "size": 13031,
+      "destination": "scripts/ui/tweak_panel.gd",
+      "importedSha256": "0bf46527936710bfed56055c5d7da6eb4baac2d1b849b8aa1f847b924f8de01c"
+    },
+    "scripts/ui/tweak_panel.gd.uid": {
+      "sha256": "d3daf902883a2f5931aafd02fe5af5d00e50e53871893514de973cd1738fe21a",
+      "size": 20,
+      "destination": "scripts/ui/tweak_panel.gd.uid",
+      "importedSha256": "d3daf902883a2f5931aafd02fe5af5d00e50e53871893514de973cd1738fe21a"
+    },
+    "shaders/arcade_filter.gdshader": {
+      "sha256": "d7e8c81c94b15dba3a968821d0bcf9da1f91fae4ce0414ed949128c195e1d30f",
+      "size": 524,
+      "destination": "shaders/arcade_filter.gdshader",
+      "importedSha256": "d7e8c81c94b15dba3a968821d0bcf9da1f91fae4ce0414ed949128c195e1d30f"
+    },
+    "shaders/arcade_filter.gdshader.uid": {
+      "sha256": "67b9c1e0103203879884919f57813391a9f17426b90a90c798337eae39c73408",
+      "size": 20,
+      "destination": "shaders/arcade_filter.gdshader.uid",
+      "importedSha256": "67b9c1e0103203879884919f57813391a9f17426b90a90c798337eae39c73408"
+    },
+    "tools/bake_comet_cues.gd": {
+      "sha256": "cb5d4f88f558d95f7010f2e450572ab3bd26cc12b8f0b868585ae922a1e95124",
+      "size": 2071,
+      "destination": "tools/bake_comet_cues.gd",
+      "importedSha256": "699ace84782da23dd6ec029e7d2723a726d8f45368046a2f5aca5a717a994dfa"
+    },
+    "tools/bake_comet_cues.gd.uid": {
+      "sha256": "501da5da3683e56c146a553527ffd257d7e18a344189f68f6ff8919383f4a0b8",
+      "size": 18,
+      "destination": "tools/bake_comet_cues.gd.uid",
+      "importedSha256": "501da5da3683e56c146a553527ffd257d7e18a344189f68f6ff8919383f4a0b8"
+    },
+    "tools/build_cjk_font.py": {
+      "sha256": "0503d8eea41a9802a25f099529243583d9483612e3452246073ef316d6dc84bc",
+      "size": 3315,
+      "destination": "tools/build_cjk_font.py",
+      "importedSha256": "0503d8eea41a9802a25f099529243583d9483612e3452246073ef316d6dc84bc"
+    },
+    "tools/build_cjk_font_subset.py": {
+      "sha256": "ac3fd0738ee561d77183e5ce20a619c0a1d61aa58e5051ec491f9aa1eeabe98a",
+      "size": 287,
+      "destination": "tools/build_cjk_font_subset.py",
+      "importedSha256": "ac3fd0738ee561d77183e5ce20a619c0a1d61aa58e5051ec491f9aa1eeabe98a"
+    },
+    "tools/capture_native.gd": {
+      "sha256": "9fba086b1834862a8ade2227cd5aef56405a547fd7ec931e34025fe35a9641cb",
+      "size": 1717,
+      "destination": "tools/capture_native.gd",
+      "importedSha256": "9fba086b1834862a8ade2227cd5aef56405a547fd7ec931e34025fe35a9641cb"
+    },
+    "tools/capture_native.gd.uid": {
+      "sha256": "f4b417256b9452aee391669a59f02506017da12b81bd1438004198e94baed976",
+      "size": 20,
+      "destination": "tools/capture_native.gd.uid",
+      "importedSha256": "f4b417256b9452aee391669a59f02506017da12b81bd1438004198e94baed976"
+    },
+    "tools/check_stage_routing.py": {
+      "sha256": "5e028c01ea42652ee50d4cac2c121cdcaef30ef4c80f10103cf602e5ddf58623",
+      "size": 2501,
+      "destination": "tools/check_stage_routing.py",
+      "importedSha256": "5e028c01ea42652ee50d4cac2c121cdcaef30ef4c80f10103cf602e5ddf58623"
+    },
+    "tools/comet_acceptance.gd": {
+      "sha256": "279a6165458ff4e829c7a916e0d4cad6bb2e177909596b6f239d2f77f8130bee",
+      "size": 10155,
+      "destination": "tools/comet_acceptance.gd",
+      "importedSha256": "279a6165458ff4e829c7a916e0d4cad6bb2e177909596b6f239d2f77f8130bee"
+    },
+    "tools/comet_acceptance.gd.uid": {
+      "sha256": "2e8af4ab8d9869d52806e2fbcc33f6fadf779cdfbc967b3690c2380d49c266b9",
+      "size": 20,
+      "destination": "tools/comet_acceptance.gd.uid",
+      "importedSha256": "2e8af4ab8d9869d52806e2fbcc33f6fadf779cdfbc967b3690c2380d49c266b9"
+    },
+    "tools/comet_pack.gd": {
+      "sha256": "6958a319b0fc331e557fe95681540b6ada4977a8201e97921c9cd8a5619417a9",
+      "size": 6417,
+      "destination": "tools/comet_pack.gd",
+      "importedSha256": "0cee7ff63e0034b01a659c926a51ea198c87b2127e3b5d375090864606fe9be4"
+    },
+    "tools/comet_pack.gd.uid": {
+      "sha256": "40daa8cf9b28ba8e1eb5cd13e39a1a7c0a3f02451f0692c514957c5012373b83",
+      "size": 20,
+      "destination": "tools/comet_pack.gd.uid",
+      "importedSha256": "40daa8cf9b28ba8e1eb5cd13e39a1a7c0a3f02451f0692c514957c5012373b83"
+    },
+    "tools/game-runtime-font-codepoints.json": {
+      "sha256": "12f677fdbc8c1890f9362d55b5090fc4d1c813f4e0150363bbae19528a82b92b",
+      "size": 39269,
+      "destination": "tools/game-runtime-font-codepoints.json",
+      "importedSha256": "12f677fdbc8c1890f9362d55b5090fc4d1c813f4e0150363bbae19528a82b92b"
+    },
+    "tools/game-runtime-font.json": {
+      "sha256": "e942d99c80af8320ac1f4a54a6f8496492fa2a4e3b166b7dfb633bb678c70a75",
+      "size": 1564,
+      "destination": "tools/game-runtime-font.json",
+      "importedSha256": "e942d99c80af8320ac1f4a54a6f8496492fa2a4e3b166b7dfb633bb678c70a75"
+    },
+    "tools/game-runtime-font.requirements.txt": {
+      "sha256": "24bd82345413466822caf0d412a341cd349046682722a98da01467333b8e6ca0",
+      "size": 32,
+      "destination": "tools/game-runtime-font.requirements.txt",
+      "importedSha256": "24bd82345413466822caf0d412a341cd349046682722a98da01467333b8e6ca0"
+    },
+    "tools/install_cjk_font.py": {
+      "sha256": "e8d5f8a08a2fa7430e10aff77c819aef8c07bd65529bfabf1b3ee978c898da8f",
+      "size": 2124,
+      "destination": "tools/install_cjk_font.py",
+      "importedSha256": "e8d5f8a08a2fa7430e10aff77c819aef8c07bd65529bfabf1b3ee978c898da8f"
+    },
+    "tools/juice_check.gd": {
+      "sha256": "215e7859397c7561013aa36b87921163f0f69a3637dd911aa6c7da32e5382dd0",
+      "size": 2896,
+      "destination": "tools/juice_check.gd",
+      "importedSha256": "215e7859397c7561013aa36b87921163f0f69a3637dd911aa6c7da32e5382dd0"
+    },
+    "tools/juice_check.gd.uid": {
+      "sha256": "04690bfbd56d7e89dd2526d650ff552161a0df094dd33bb29b74d5bb87404146",
+      "size": 20,
+      "destination": "tools/juice_check.gd.uid",
+      "importedSha256": "04690bfbd56d7e89dd2526d650ff552161a0df094dd33bb29b74d5bb87404146"
+    },
+    "tools/measure_optional_startup.py": {
+      "sha256": "bed53a87d3fcc8896fb5e71bb418bbc80e97372ad530550056fbd7fea6bd6872",
+      "size": 375,
+      "destination": "tools/measure_optional_startup.py",
+      "importedSha256": "bed53a87d3fcc8896fb5e71bb418bbc80e97372ad530550056fbd7fea6bd6872"
+    },
+    "tools/observatory_acceptance.gd": {
+      "sha256": "d656273c2e2fa5aaf7da66d1bb161be477b5b251e2c81eb8d19988d3e426a900",
+      "size": 8427,
+      "destination": "tools/observatory_acceptance.gd",
+      "importedSha256": "d656273c2e2fa5aaf7da66d1bb161be477b5b251e2c81eb8d19988d3e426a900"
+    },
+    "tools/observatory_acceptance.gd.uid": {
+      "sha256": "3089c79fffb8345ef8df5e46096ab4167aafe8e5a59f69a7bfc9d49cc0bf4e21",
+      "size": 20,
+      "destination": "tools/observatory_acceptance.gd.uid",
+      "importedSha256": "3089c79fffb8345ef8df5e46096ab4167aafe8e5a59f69a7bfc9d49cc0bf4e21"
+    },
+    "tools/observatory_probe.gd": {
+      "sha256": "f3c0facfe0f628f27876e308bd73805f57ec187e6ffbfc95fe42f3b245cdd873",
+      "size": 1252,
+      "destination": "tools/observatory_probe.gd",
+      "importedSha256": "f3c0facfe0f628f27876e308bd73805f57ec187e6ffbfc95fe42f3b245cdd873"
+    },
+    "tools/observatory_probe.gd.uid": {
+      "sha256": "2cf0f0982a417226fed93f995f3fec663c75a9a195130baf19427bc906584bb9",
+      "size": 20,
+      "destination": "tools/observatory_probe.gd.uid",
+      "importedSha256": "2cf0f0982a417226fed93f995f3fec663c75a9a195130baf19427bc906584bb9"
+    },
+    "tools/physics_probe.gd": {
+      "sha256": "f6affab951cc5d3ad4fef51741e60583fb4c7d7ca75d1b8fd99816b725a53e04",
+      "size": 458,
+      "destination": "tools/physics_probe.gd",
+      "importedSha256": "f6affab951cc5d3ad4fef51741e60583fb4c7d7ca75d1b8fd99816b725a53e04"
+    },
+    "tools/physics_probe.gd.uid": {
+      "sha256": "b9eb52c9bb44ea8911deb7b75ee87c40f7c6424ffcc2fe3b03943409d12e7715",
+      "size": 20,
+      "destination": "tools/physics_probe.gd.uid",
+      "importedSha256": "b9eb52c9bb44ea8911deb7b75ee87c40f7c6424ffcc2fe3b03943409d12e7715"
+    },
+    "tools/pinball_gameplay_check.gd": {
+      "sha256": "4b3559b674fb2083e92858803e7f05e0eb672075abb289e35acabc72597ae2e8",
+      "size": 9432,
+      "destination": "tools/pinball_gameplay_check.gd",
+      "importedSha256": "4b3559b674fb2083e92858803e7f05e0eb672075abb289e35acabc72597ae2e8"
+    },
+    "tools/pinball_gameplay_check.gd.uid": {
+      "sha256": "41fbe4d48fbe1033f49849027c3fe82f9f28211c9b738139484c4976c13b9e3b",
+      "size": 19,
+      "destination": "tools/pinball_gameplay_check.gd.uid",
+      "importedSha256": "41fbe4d48fbe1033f49849027c3fe82f9f28211c9b738139484c4976c13b9e3b"
+    },
+    "tools/pinball_services_check.gd": {
+      "sha256": "3c8952f604fe652c2afc0bf9646691b63bca7fdb451f14083e33118671b9e982",
+      "size": 14135,
+      "destination": "tools/pinball_services_check.gd",
+      "importedSha256": "3c8952f604fe652c2afc0bf9646691b63bca7fdb451f14083e33118671b9e982"
+    },
+    "tools/pinball_services_check.gd.uid": {
+      "sha256": "8e9d32cc406d27e7c0a059898ae8aecd691b07a43375a61ef1f70188de01fe7a",
+      "size": 20,
+      "destination": "tools/pinball_services_check.gd.uid",
+      "importedSha256": "8e9d32cc406d27e7c0a059898ae8aecd691b07a43375a61ef1f70188de01fe7a"
+    },
+    "tools/pinball_stage_route_check.gd": {
+      "sha256": "d2fdc00646aa559c261173c746367633560943e6c8f02a1612c8ed6f03f97c77",
+      "size": 4271,
+      "destination": "tools/pinball_stage_route_check.gd",
+      "importedSha256": "d2fdc00646aa559c261173c746367633560943e6c8f02a1612c8ed6f03f97c77"
+    },
+    "tools/pinball_stage_route_check.gd.uid": {
+      "sha256": "2b853804b93401fcc5bcb042a4e9dddaf7b65c803ca435c77e2cd7e764f75d28",
+      "size": 20,
+      "destination": "tools/pinball_stage_route_check.gd.uid",
+      "importedSha256": "2b853804b93401fcc5bcb042a4e9dddaf7b65c803ca435c77e2cd7e764f75d28"
+    },
+    "tools/profile_startup.gd": {
+      "sha256": "e043d86f5fbc5251a687ea7f4d2b774d5e40638c58ee2f1352994315f7c3b54c",
+      "size": 1528,
+      "destination": "tools/profile_startup.gd",
+      "importedSha256": "e043d86f5fbc5251a687ea7f4d2b774d5e40638c58ee2f1352994315f7c3b54c"
+    },
+    "tools/profile_startup.gd.uid": {
+      "sha256": "82ef0cc6d66d660cc8d23b6b854db68a55538333a9b32e592db5791213b4378f",
+      "size": 20,
+      "destination": "tools/profile_startup.gd.uid",
+      "importedSha256": "82ef0cc6d66d660cc8d23b6b854db68a55538333a9b32e592db5791213b4378f"
+    },
+    "tools/template_config_check.gd": {
+      "sha256": "9a3cfebc098089308d09462a7f751544c9327eec031edc0bf58d800e38d1a5c6",
+      "size": 6327,
+      "destination": "tools/template_config_check.gd",
+      "importedSha256": "9a3cfebc098089308d09462a7f751544c9327eec031edc0bf58d800e38d1a5c6"
+    },
+    "tools/template_config_check.gd.uid": {
+      "sha256": "c4e23668a003c78f22a43ce6bd41cff8e77658d012907f1067b9f49908bb230b",
+      "size": 20,
+      "destination": "tools/template_config_check.gd.uid",
+      "importedSha256": "c4e23668a003c78f22a43ce6bd41cff8e77658d012907f1067b9f49908bb230b"
+    },
+    "tools/tuning_acceptance.gd": {
+      "sha256": "0b7e0565baa64a8a59efd29cb0e78fd4351c71046bf8b21e9159ed5178c25716",
+      "size": 7368,
+      "destination": "tools/tuning_acceptance.gd",
+      "importedSha256": "0b7e0565baa64a8a59efd29cb0e78fd4351c71046bf8b21e9159ed5178c25716"
+    },
+    "tools/tuning_acceptance.gd.uid": {
+      "sha256": "4575d7dba7d891cb147dee5118fbd0bf7bcc7b4b1b64ca4dfab7054c27dfc52f",
+      "size": 20,
+      "destination": "tools/tuning_acceptance.gd.uid",
+      "importedSha256": "4575d7dba7d891cb147dee5118fbd0bf7bcc7b4b1b64ca4dfab7054c27dfc52f"
+    },
+    "tools/tuning_capture.gd": {
+      "sha256": "410e0ca152ac822a1aa8021d90321308f70ba40675edf204dd38d3991b15cb55",
+      "size": 1474,
+      "destination": "tools/tuning_capture.gd",
+      "importedSha256": "410e0ca152ac822a1aa8021d90321308f70ba40675edf204dd38d3991b15cb55"
+    },
+    "tools/tuning_capture.gd.uid": {
+      "sha256": "b416361349c03d24e23f58e5bfa0243a9af0c7f8f6f4ef1e62e64d748a9f090d",
+      "size": 19,
+      "destination": "tools/tuning_capture.gd.uid",
+      "importedSha256": "b416361349c03d24e23f58e5bfa0243a9af0c7f8f6f4ef1e62e64d748a9f090d"
+    },
+    "tools/tuning_generate_catalog.py": {
+      "sha256": "3569e99c8cac274cc3d388683d311b6f3015a1c3a5da8b5158782ef32cec9d6b",
+      "size": 9546,
+      "destination": "tools/tuning_generate_catalog.py",
+      "importedSha256": "3569e99c8cac274cc3d388683d311b6f3015a1c3a5da8b5158782ef32cec9d6b"
+    },
+    "tools/tuning_localization.json": {
+      "sha256": "8caa731aadcee3f1b6f0db74da28b8ce0b69a360ef35c6cb6004d7be1892dfa6",
+      "size": 10882,
+      "destination": "tools/tuning_localization.json",
+      "importedSha256": "8caa731aadcee3f1b6f0db74da28b8ce0b69a360ef35c6cb6004d7be1892dfa6"
+    },
+    "tools/validate_template.gd": {
+      "sha256": "5c5f05ed0e6fe074d32bd7d0b949e863afed8dfb17dd8ec81f86efa380491a11",
+      "size": 493,
+      "destination": "tools/validate_template.gd",
+      "importedSha256": "5c5f05ed0e6fe074d32bd7d0b949e863afed8dfb17dd8ec81f86efa380491a11"
+    },
+    "tools/validate_template.gd.uid": {
+      "sha256": "a6f0697ca10cfcf1b4ae896a7cdc4910054e9dd83036d0b10021a5d62dbddcee",
+      "size": 19,
+      "destination": "tools/validate_template.gd.uid",
+      "importedSha256": "a6f0697ca10cfcf1b4ae896a7cdc4910054e9dd83036d0b10021a5d62dbddcee"
+    },
+    "tools/verify.sh": {
+      "sha256": "1924a5a179755f62e7b8b676d3becb8280ac3ba2b2148a6dea1ea9c5ab1485e1",
+      "size": 667,
+      "destination": "tools/verify.sh",
+      "importedSha256": "1924a5a179755f62e7b8b676d3becb8280ac3ba2b2148a6dea1ea9c5ab1485e1"
+    },
+    "tools/verify_clean_scaffold.sh": {
+      "sha256": "a28c724bc34d9c5e511bac9edbaa2d9cd56c583716e3cb935247736b3c606a3d",
+      "size": 519,
+      "destination": "tools/verify_clean_scaffold.sh",
+      "importedSha256": "a28c724bc34d9c5e511bac9edbaa2d9cd56c583716e3cb935247736b3c606a3d"
+    },
+    "web/ManusCC0-LICENSE.txt": {
+      "sha256": "a2010f343487d3f7618affe54f789f5487602331c0a8d03f49e9a7c547cf0499",
+      "size": 7048,
+      "destination": "web/ManusCC0-LICENSE.txt",
+      "importedSha256": "a2010f343487d3f7618affe54f789f5487602331c0a8d03f49e9a7c547cf0499"
+    },
+    "web/loader-cjk.json": {
+      "sha256": "771ed66071b6758727e89596759aeed38148cc12035293156f3cd4bd608e4507",
+      "size": 1348,
+      "destination": "web/loader-cjk.json",
+      "importedSha256": "771ed66071b6758727e89596759aeed38148cc12035293156f3cd4bd608e4507"
+    },
+    "web/loading.html": {
+      "sha256": "03adfc63e4fe523415366207cae94528d5e72c4bc8bf74e795313749059fbe49",
+      "size": 125098,
+      "destination": "web/loading.html",
+      "importedSha256": "03adfc63e4fe523415366207cae94528d5e72c4bc8bf74e795313749059fbe49"
+    }
+  },
+  "sourceSessionVisualCoverageArchive": {
+    "path": "assets/template/provenance/source-session-visual-coverage.json",
+    "sha256": "sha256:55f0dc762b2338e90480ccb8668a76d3410330f561fb46cf07bb4f6edab07faa",
+    "sourceFileSha256": "sha256:3791755f9a95cf3b73208a874611fca5c8d466160335c1942e8f1006aff02c7b"
+  },
+  "parentStarterId": "game-pinball-v8",
+  "maintenanceChanges": [
+    "Normalize the imported editable scripts/manus/game_fonts.gd to the canonical theme-helper prefix. Remove only the verifier-only BindingProbe observer appended by runtime installation; init installs that observer from the runtime when needed. Retain the original source input hash and record the adapted helper hash.",
+    "Align standalone restoration prerequisites to the active game-pinball-v2 package while retaining the initial game-pinball-v1 import as historical provenance.",
+    "2026-09-25 typography polish: ManusCC0 retired from this revision; template-specific OFL display/body faces plus the Noto Sans SC subset (6,547-codepoint runtime CJK repertoire) ship as subset WOFF2 with adjacent OFL texts, restored from assets.lock.json (asset version 2026.09.25-typography-v1); first launch follows the browser/system language (zh* -> Simplified Chinese) unless a saved choice exists; loaders embed a Noto Sans SC subset."
+  ],
+  "localMaintenance": [
+    {
+      "date": "2026-09-30",
+      "reason": "Approved template IP remediation: neutral branding, medical emblem replacement, reviewed full CC0 fonts and recovered provenance as applicable. See docs/audits/2026-09-30-game-template-ip-remediation in the maintenance repository for scope and remaining evidence gaps.",
+      "parentStarterId": "game-pinball-v6"
+    },
+    {
+      "date": "2026-09-30",
+      "parentStarterId": "game-pinball-v7",
+      "reason": "Render the complete Space Pinball title in Chinese, remove the unused legacy title locale key, use the project name for new-project save directories, and include current display-font license notices in Web exports. Archive the removed Cinzel Decorative font notice outside runtime assets.",
+      "historicalFontLicenses": [
+        {
+          "path": "docs/provenance/historical-font-licenses/CinzelDecorative-OFL.txt",
+          "sha256": "1e5d6660366ddcfca4f2fc10e2acfba9fa4d97d40aec80d7dbfd41d730a420ae",
+          "scope": "Historical notice for the removed Cinzel Decorative font; not a license for the active ManusCC0 replacement."
+        }
+      ]
+    },
+    {
+      "date": "2026-09-30",
+      "parentStarterId": "game-pinball-v8",
+      "reason": "Correct the current font inventory to full ManusCC0 Bold under CC0-1.0 plus five OFL subsets; align the Chinese title fallback resource label. Update the active developer-guide title to Space Pinball and identify the earlier Comet Pinball simplification document as historical. No font bytes, asset locks, gameplay, locale strings, or persistent identifiers change."
+    }
+  ]
+}

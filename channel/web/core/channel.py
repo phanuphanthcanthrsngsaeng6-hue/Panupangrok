@@ -1522,13 +1522,15 @@ class WebChannel(ChatChannel):
             return json.dumps({"status": "error", "message": str(e)})
 
     def startup(self):
-        configured_host = conf().get("web_host", "")
+        # Keep config.json as the source of truth by default, while accepting
+        # the documented shell overrides used for mobile/LAN testing.
+        configured_host = os.environ.get("WEB_HOST") or conf().get("web_host", "")
         # Safe default: authentication does not make an admin console safe to
         # expose accidentally. Remote access must be explicit in web_host.
         host = configured_host or "127.0.0.1"
         # 17008 is the canonical NovaAgent UI port; COW_WEB_PORT remains the
         # explicit override for desktop/test instances.
-        port = int(os.environ.get("COW_WEB_PORT") or conf().get("web_port", 17008))
+        port = int(os.environ.get("WEB_PORT") or os.environ.get("COW_WEB_PORT") or conf().get("web_port", 17008))
         is_public_bind = host in ("0.0.0.0", "::")
 
         self._cleanup_stale_voice_recordings()

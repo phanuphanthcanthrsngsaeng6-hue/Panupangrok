@@ -37,6 +37,11 @@ DEFAULT_TIMEOUT = 300
 
 # Output is handed to a model; keep it within a sane context budget.
 MAX_OUTPUT_CHARS = 8000
+LOGIN_STATUS_TIMEOUT = 10
+
+# CLI/status messages that are not model answers. Keep this deliberately small:
+# authentication and quota messages must remain visible to the caller.
+_NOISE_LINES = frozenset()
 
 PROFILE_MODELS = {
     "fast": "gpt-6-luna",
@@ -142,6 +147,22 @@ def _parse_events(stdout: str) -> Dict[str, Any]:
     }
 
 
+def _classify_cli_error(text: str) -> str:
+    """Return a stable, non-sensitive category for Codex CLI failures."""
+    value = str(text or '').lower()
+    if any(marker in value for marker in (
+        'quota', 'rate limit', 'rate_limit', 'usage limit', 'usage_limit',
+        'too many requests', 'insufficient credits',
+    )):
+        return 'quota_exceeded'
+    if any(marker in value for marker in (
+        'not logged in', 'login required', 'login expired', 'unauthorized',
+        'authentication', 'auth expired', 'invalid token',
+    )):
+        return 'login_expired'
+    return 'cli_unavailable'
+
+
 class CodexBot(Bot):
     """Bot backed by the local `codex` CLI."""
 
@@ -155,6 +176,43 @@ class CodexBot(Bot):
         self.timeout = max(30, min(int(timeout or DEFAULT_TIMEOUT), MAX_TIMEOUT))
 
     # ---------------------------------------------------------------- helpers
+    @staticmethod
+    def _runtime_env() -> Dict[str, str]:
+        """Run Codex with ChatGPT login only, never an OpenAI API key."""
+        env = os.environ.copy()
+        env.pop('OPENAI_API_KEY', None)
+        return env
+
+    def _login_status(self, binary: str) -> Optional[Dict[str, str]]:
+        """Preflight the existing Codex login without reading auth files."""
+        try:
+            status = subprocess.run(
+                [binary, 'login', 'status'],
+                capture_output=True,
+                text=True,
+                timeout=LOGIN_STATUS_TIMEOUT,
+                stdin=subprocess.DEVNULL,
+                env=self._runtime_env(),
+            )
+        except (OSError, subprocess.TimeoutExpired) as exc:
+            return {
+                'category': 'cli_unavailable',
+                'message': f'Codex CLI login status unavailable: {type(exc).__name__}.',
+            }
+
+        output = f'{status.stdout}\n{status.stderr}'.strip()
+        if status.returncode == 0 and 'logged in' in output.lower():
+            return None
+
+        category = _classify_cli_error(output)
+        if category == 'login_expired':
+            message = 'Codex ChatGPT login expired or is not authenticated.'
+        elif category == 'quota_exceeded':
+            message = 'Codex ChatGPT usage quota or limit has been exceeded.'
+        else:
+            message = 'Codex CLI login status could not be verified.'
+        return {'category': category, 'message': message}
+
     def _build_command(self, prompt: str, model: Optional[str] = None) -> List[str]:
         binary = _which_codex()
         if not binary:
@@ -181,8 +239,13 @@ class CodexBot(Bot):
         try:
             cmd = self._build_command(prompt, model=model)
         except FileNotFoundError as exc:
-            return {"content": f"Codex unavailable: {exc}", "total_tokens": 0,
+            return {"content": "Codex CLI unavailable: binary not found.", "total_tokens": 0,
                     "completion_tokens": 0}
+
+        login_error = self._login_status(cmd[0])
+        if login_error:
+            return {"content": f"[{login_error['category']}] {login_error['message']}",
+                    "total_tokens": 0, "completion_tokens": 0}
 
         started = time.time()
         try:
@@ -192,6 +255,7 @@ class CodexBot(Bot):
                 text=True,
                 timeout=self.timeout,
                 input=prompt,
+                env=self._runtime_env(),
             )
         except subprocess.TimeoutExpired:
             logger.error("[CODEX] timed out after %ss", self.timeout)
@@ -219,8 +283,15 @@ class CodexBot(Bot):
         if content.strip() in _NOISE_LINES:
             content = ""
 
-        if proc.returncode != 0 and not content:
-            content = f"Codex exited with code {proc.returncode}."
+        if proc.returncode != 0:
+            raw_error = (proc.stderr or proc.stdout or '').strip()
+            category = _classify_cli_error(raw_error)
+            if category == 'quota_exceeded':
+                content = '[quota_exceeded] Codex ChatGPT usage quota or limit has been exceeded.'
+            elif category == 'login_expired':
+                content = '[login_expired] Codex ChatGPT login expired or is not authenticated.'
+            else:
+                content = f'[cli_unavailable] Codex exited with code {proc.returncode}.'
         if parsed["errors"] and not content:
             content = "; ".join(parsed["errors"])
 

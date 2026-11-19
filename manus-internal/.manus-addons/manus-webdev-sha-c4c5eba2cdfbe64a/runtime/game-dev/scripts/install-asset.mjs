@@ -1,0 +1,11 @@
+import { linkSync } from 'node:fs'
+
+// Publish a verified adjacent temporary file without replacing a concurrent edit.
+export async function installAssetFile(source, target, signal) {
+  signal?.throwIfAborted()
+  linkSync(source, target)
+}
+
+export function installAssetFileSync(source, target) {
+  linkSync(source, target)
+}

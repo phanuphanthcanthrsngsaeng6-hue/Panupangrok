@@ -1,0 +1,23 @@
+{
+  "name": "pyright",
+  "command": "pyright-langserver",
+  "args": [
+    "--stdio"
+  ],
+  "files": {
+    ".py": "python"
+  },
+  "description": "Pyright reads native workspace python.analysis.typeCheckingMode: off/basic/standard/strict. python.analysis.diagnosticSeverityOverrides maps rule names to error/warning/information/none. pyrightconfig.json or [tool.pyright] may override workspace settings. python.pythonPath selects an interpreter, not a severity level.",
+  "testedVersion": "1.1.411",
+  "configuration": {
+    "initializationOptions": {},
+    "settings": {
+      "python": {
+        "analysis": {
+          "typeCheckingMode": "basic"
+        }
+      }
+    }
+  },
+  "projectConfigurationExample": {}
+}

@@ -204,6 +204,7 @@ function initApp() {
     _restoreSessionPanel();
     refreshWorkspaceSelector();
     refreshSessionSettings();
+    if (typeof refreshProviderStatus === 'function') refreshProviderStatus();
 
     fetch('/api/knowledge/list').then(r => r.json()).then(data => {
         if (data.status === 'success') {

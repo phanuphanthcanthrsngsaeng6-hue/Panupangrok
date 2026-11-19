@@ -1,0 +1,1331 @@
+{
+  "schema_version": "0.1",
+  "kind": "manus_addon_package",
+  "distribution": "managed",
+  "update_mode": "hot",
+  "availability": {
+    "session_kinds": [
+      "main"
+    ]
+  },
+  "host_permissions": [
+    "addon.runtime.broker",
+    "agent.run",
+    "cloud_pc.read",
+    "notification.send",
+    "resource.access.check",
+    "resource.project",
+    "session.access.check",
+    "session.task_mode.read",
+    "webdev.analytics.read",
+    "webdev.attachment.upload",
+    "webdev.code.read",
+    "webdev.connector_secret.import",
+    "webdev.database.connection.read",
+    "webdev.database.read",
+    "webdev.database.write",
+    "webdev.deploy",
+    "webdev.env.propagate",
+    "webdev.filesystem.read",
+    "webdev.game_assets.read",
+    "webdev.git.manage",
+    "webdev.git.transport",
+    "webdev.integration.context.read",
+    "webdev.project.prepare",
+    "webdev.project.read",
+    "webdev.project.write",
+    "webdev.runtime_env.read",
+    "webdev.storage.read",
+    "webdev.storage.write",
+    "webdev.workspace.init"
+  ],
+  "browser_workers": {
+    "checkpoint-preview": {
+      "entry": "runtime/checkpoint-preview.html",
+      "mode": "job"
+    }
+  },
+  "device_mcp_access": "remote_enabled",
+  "addon": {
+    "id": "manus-webdev",
+    "version": "0.0.88",
+    "owner": "manus",
+    "display_name": "Webdev",
+    "description": "Managed web and mobile project knowledge, canonical webdev.init_project, project resources, lifecycle guidance and dashboard preview.",
+    "backend_mode": "addon_server"
+  },
+  "addon_server": {
+    "path": "server/run.mjs",
+    "healthcheck_path": "/health",
+    "auth_mode": "manus_session_context",
+    "browser_credential": "subject_token",
+    "managed_by": "addon_ci"
+  },
+  "credential": {
+    "auth_method": "private_key_jwt"
+  },
+  "slots": {},
+  "oauth": {
+    "shopify": {
+      "provider": "shopify",
+      "reason": "Manage the products, inventory, discounts, and orders for the Shopify store selected by this Webdev project."
+    }
+  },
+  "mcp_servers": {
+    "webdev-mcp": {
+      "description": "Use for developing any website, web page or web app (including single-page tools and interactive dashboards), mobile apps, and games with Manus-managed infrastructure. Hosting is optional; publishing is a separate step the user controls. Do not use if the user explicitly asks for a standalone HTML file, chart image, or script.",
+      "model_routing": "webdev",
+      "recovery_wait": {
+        "queries": [
+          "search",
+          "list",
+          "get"
+        ],
+        "timeout_ms": 60000
+      },
+      "device_targets": [
+        "darwin-arm64",
+        "darwin-amd64",
+        "linux-amd64-gnu",
+        "windows-amd64",
+        "windows-arm64"
+      ],
+      "planning_tools": [
+        "webdev.search_game_assets",
+        "webdev.access_game_assets"
+      ],
+      "execution_mode": "runtime_mcp",
+      "execution_modes": [
+        "runtime_mcp",
+        "device_mcp"
+      ],
+      "transport": "stdio",
+      "command": "node",
+      "args": [
+        "runtime/mcp/server.mjs"
+      ],
+      "env": {
+        "ADDON_SERVER_ENDPOINT": {
+          "source": "addon_server.public_endpoint"
+        }
+      },
+      "model_visible_tools": [
+        "webdev.search_game_assets",
+        "webdev.access_game_assets",
+        "webdev.init_project",
+        "webdev.attach_project",
+        "webdev.take_screenshot",
+        "webdev.request_secrets",
+        "webdev.manus_git",
+        "webdev.config",
+        "webdev.shopify"
+      ],
+      "tool_call_timeout_ms": {
+        "webdev.init_project": 1560000,
+        "webdev.attach_project": 540000
+      },
+      "model_visible_tools_by_execution_mode": {
+        "device_mcp": [
+          "webdev.search_game_assets",
+          "webdev.access_game_assets",
+          "webdev.init_project",
+          "webdev.attach_project",
+          "webdev.request_secrets",
+          "webdev.manus_git",
+          "webdev.config",
+          "webdev.shopify"
+        ]
+      },
+      "result_effects": [
+        "agent_mode",
+        "agent_pause",
+        "notification_wake",
+        "model_preference"
+      ],
+      "tool_streaming": {
+        "webdev.init_project": {
+          "schema": "manus.addon.tool_streaming/v1",
+          "preventAutoCollapse": true,
+          "widget": {
+            "uri": "manus-widget://manus-webdev/init-project-card/tool/init_project",
+            "title": "Webdev project"
+          },
+          "state": {
+            "initial": {
+              "kind": "webdev_init_project"
+            }
+          },
+          "presentation": {
+            "brief": "Initializing project",
+            "message_action": "Initializing project",
+            "title_path": "title"
+          }
+        },
+        "webdev.attach_project": {
+          "schema": "manus.addon.tool_streaming/v1",
+          "widget": {
+            "uri": "manus-widget://manus-webdev/init-project-card/tool/attach_project",
+            "title": "Webdev project"
+          },
+          "state": {
+            "initial": {
+              "kind": "webdev_attach_project"
+            }
+          },
+          "presentation": {
+            "brief": "Attaching project",
+            "message_action": "Attaching project"
+          }
+        }
+      },
+      "host_callable_tools": [
+        "webdev._resume_publish",
+        "webdev._execute_operation",
+        "webdev._resolve_local_preview",
+        "webdev._resource_file_edit_completed",
+        "webdev._eval_confirm_publish",
+        "webdev._eval_confirm_blueprint",
+        "webdev._eval_submit_secrets",
+        "webdev._after_git_operation",
+        "webdev._reconcile_runtime",
+        "webdev._async_output",
+        "webdev._run_start",
+        "webdev._context_compaction",
+        "webdev._context_snip"
+      ],
+      "tool_auth": {
+        "webdev._resume_publish": {
+          "type": "subject_token",
+          "scopes": [
+            "manus.addon.placement.device"
+          ]
+        },
+        "webdev._execute_operation": {
+          "type": "subject_token",
+          "scopes": [
+            "manus.addon.placement.device"
+          ]
+        },
+        "webdev.search_game_assets": {
+          "type": "subject_token",
+          "scopes": [
+            "manus.addon.placement.device"
+          ]
+        },
+        "webdev.access_game_assets": {
+          "type": "subject_token",
+          "scopes": [
+            "manus.addon.placement.device"
+          ]
+        },
+        "webdev.init_project": {
+          "type": "subject_token",
+          "scopes": [
+            "manus.addon.placement.device"
+          ]
+        },
+        "webdev.attach_project": {
+          "type": "subject_token",
+          "scopes": [
+            "manus.addon.placement.device"
+          ]
+        },
+        "webdev.take_screenshot": {
+          "type": "subject_token",
+          "scopes": [
+            "manus.addon.placement.device"
+          ]
+        },
+        "webdev.request_secrets": {
+          "type": "subject_token",
+          "scopes": [
+            "manus.addon.placement.device"
+          ]
+        },
+        "webdev.manus_git": {
+          "type": "subject_token",
+          "scopes": [
+            "manus.addon.placement.device"
+          ]
+        },
+        "webdev.config": {
+          "type": "subject_token",
+          "scopes": [
+            "manus.addon.placement.device"
+          ]
+        },
+        "webdev.shopify": {
+          "type": "subject_token"
+        },
+        "webdev._after_git_operation": {
+          "type": "subject_token",
+          "scopes": [
+            "manus.addon.placement.device"
+          ]
+        },
+        "webdev._reconcile_runtime": {
+          "type": "subject_token",
+          "scopes": [
+            "manus.addon.placement.device"
+          ]
+        },
+        "webdev._async_output": {
+          "type": "subject_token",
+          "scopes": [
+            "manus.addon.placement.device"
+          ]
+        },
+        "webdev._run_start": {
+          "type": "subject_token",
+          "scopes": [
+            "manus.addon.placement.device"
+          ]
+        }
+      }
+    }
+  },
+  "device_artifacts": [
+    {
+      "target": {
+        "os": "darwin",
+        "arch": "arm64"
+      },
+      "path": "device/darwin-arm64.tar.gz"
+    },
+    {
+      "target": {
+        "os": "darwin",
+        "arch": "amd64"
+      },
+      "path": "device/darwin-amd64.tar.gz"
+    },
+    {
+      "target": {
+        "os": "linux",
+        "arch": "amd64",
+        "libc": "gnu"
+      },
+      "path": "device/linux-amd64-gnu.tar.gz"
+    },
+    {
+      "target": {
+        "os": "windows",
+        "arch": "amd64"
+      },
+      "path": "device/windows-amd64.tar.gz"
+    },
+    {
+      "target": {
+        "os": "windows",
+        "arch": "arm64"
+      },
+      "path": "device/windows-arm64.tar.gz"
+    }
+  ],
+  "tool_output_handlers": [
+    {
+      "mode": "async",
+      "target": {
+        "mcp_server": "manus-tools",
+        "tool": "generate_image"
+      },
+      "handler": {
+        "mcp_server": "webdev-mcp",
+        "tool": "webdev._async_output"
+      },
+      "requires_project_output_paths": true
+    }
+  ],
+  "replaces": {
+    "tools": {
+      "manus-tools": [
+        "webdev_init_project",
+        "webdev_take_screenshot",
+        "webdev_check_status",
+        "webdev_restart_server",
+        "webdev_add_feature",
+        "webdev_request_secrets",
+        "webdev_deploy_project",
+        "webdev_save_checkpoint",
+        "webdev_rollback_checkpoint",
+        "webdev_execute_sql",
+        "webdev_debug"
+      ]
+    },
+    "official_skills": [
+      "webdev-custom-dockerfile",
+      "webdev-data-api",
+      "webdev-file-storage",
+      "webdev-image-generation",
+      "webdev-llm-integration",
+      "webdev-manus-oauth",
+      "webdev-maps-integration",
+      "webdev-owner-notifications",
+      "webdev-periodic-updates",
+      "webdev-readme-fullstack",
+      "webdev-readme-mobile",
+      "webdev-readme-mobile-backend",
+      "webdev-readme-static",
+      "webdev-ssr-conversion",
+      "webdev-voice-transcription",
+      "trpc-react-ssr-conversion",
+      "webdev-readme-game-bullet-hell",
+      "webdev-readme-game-generic",
+      "webdev-readme-game-platformer",
+      "webdev-readme-game-rts",
+      "webdev-readme-game-scribble-sky-hop",
+      "webdev-readme-game-scroller",
+      "webdev-readme-game-td",
+      "webdev-readme-game-trading-card"
+    ]
+  },
+  "runtime_capabilities": {
+    "mcp_server": "webdev-mcp",
+    "project": {
+      "resolve_endpoint": "/api/v1/runtime/host-project"
+    },
+    "lsp": true,
+    "preview": {
+      "screenshot": true,
+      "scripts": [
+        {
+          "src": "https://files.manuscdn.com/manus-web-dev-runtime/prod/runtime.js",
+          "attributes": {
+            "id": "manus-web-edit-runtime",
+            "data-manus-channel-mode": "dual",
+            "data-manus-host-dev": "true",
+            "data-manus-not-found-container-selector": "#not-found-button-group"
+          }
+        }
+      ],
+      "managed_storage": {
+        "mcp_server": "webdev-mcp",
+        "tool": "webdev._async_output"
+      }
+    },
+    "environment": {
+      "config_endpoint": "/api/v1/runtime/host-environment",
+      "allowed_keys": []
+    },
+    "workspace_mirror": {
+      "driver": "s3",
+      "config_endpoint": "/api/v1/runtime/workspace/mirror/credentials",
+      "completed_endpoint": "/api/v1/runtime/workspace/mirror/completed"
+    }
+  },
+  "agent_hooks": {
+    "resource-file-edit-stream": {
+      "execution_targets": [
+        "device"
+      ],
+      "trigger": "host_file_edit_completed",
+      "result_kinds": [
+        "agent_reminder"
+      ],
+      "handler": {
+        "mcp_server": "webdev-mcp",
+        "tool": "webdev._resource_file_edit_completed"
+      },
+      "match": {
+        "paths": [
+          "*",
+          "**/*"
+        ]
+      }
+    },
+    "git-checkpoint-tick": {
+      "trigger": "host_terminal_post_exec",
+      "handler": {
+        "mcp_server": "webdev-mcp",
+        "tool": "webdev._after_git_operation"
+      },
+      "match": {
+        "command_pattern": ".*"
+      },
+      "blocking": true,
+      "timeout_ms": 60000
+    }
+  },
+  "runtime_lifecycle": {
+    "idle_timeout_ms": 4920000,
+    "operation": {
+      "mcp_server": "webdev-mcp",
+      "tool": "webdev._execute_operation"
+    },
+    "reconcile": {
+      "mcp_server": "webdev-mcp",
+      "tool": "webdev._reconcile_runtime"
+    },
+    "restores_project_dir": true,
+    "run_start": {
+      "mcp_server": "webdev-mcp",
+      "tool": "webdev._run_start"
+    },
+    "context_compaction": {
+      "mcp_server": "webdev-mcp",
+      "tool": "webdev._context_compaction"
+    },
+    "context_snip": {
+      "mcp_server": "webdev-mcp",
+      "tool": "webdev._context_snip"
+    }
+  },
+  "context_prerequisites": [
+    {
+      "tool": "webdev.config",
+      "when": {
+        "param": "method",
+        "not_equals": "GET"
+      },
+      "rules": [
+        {
+          "path_prefix": "game/blueprint",
+          "skill": "webdev",
+          "page": "references/game-setup.md",
+          "sha256": "fb2ac8cd7c0f9e77af259fa4f168e2fc07cf2183323261a5e2a1533ca804be12"
+        },
+        {
+          "path_prefix": "game/blueprint/concepts",
+          "skill": "webdev",
+          "page": "references/game-blueprint-godot.md",
+          "sha256": "b68b708e0dfe0651648f69049facdaad30ce6791f5115be5244ee08f5a2b125c"
+        },
+        {
+          "path_prefix": "game/blueprint/update",
+          "skill": "webdev",
+          "page": "references/game-blueprint-update.md",
+          "sha256": "ecb5947fbe2aa3352a1707b384c4a3a1af109d9e14b85c7612764f0eb42aae6a"
+        },
+        {
+          "path_prefix": "game/multiplayer",
+          "skill": "webdev",
+          "page": "references/game-multiplayer.md",
+          "sha256": "37d38fb0ae2d6bae0b3ae0b46798edf646ae001184d8c75bec9607f61ee6b95a"
+        },
+        {
+          "path_prefix": "game/sharing",
+          "skill": "webdev",
+          "page": "references/game-sharing.md",
+          "sha256": "58a051992a851fc6a34a0f8f25f52c2ada02a7f278c39dd31294a01a8d43301a"
+        },
+        {
+          "path_prefix": "config/resources",
+          "skill": "webdev",
+          "page": "references/hosting.md",
+          "sha256": "5d217de9b4cd635e397f53b860b22b369b00d03a202a0366d80fdfe6ee448b93"
+        },
+        {
+          "path_prefix": "config/hosting",
+          "skill": "webdev",
+          "page": "references/hosting.md",
+          "sha256": "5d217de9b4cd635e397f53b860b22b369b00d03a202a0366d80fdfe6ee448b93"
+        },
+        {
+          "path_prefix": "config/analytics",
+          "skill": "webdev",
+          "page": "references/site-settings.md",
+          "sha256": "ef7e41542fbdc50c9969446e1201a3e35900101bad08779a5e2a0633da3f33f1"
+        },
+        {
+          "path_prefix": "config/branding",
+          "skill": "webdev",
+          "page": "references/site-settings.md",
+          "sha256": "ef7e41542fbdc50c9969446e1201a3e35900101bad08779a5e2a0633da3f33f1"
+        },
+        {
+          "path_prefix": "config/pwa",
+          "skill": "webdev",
+          "page": "references/pwa.md",
+          "sha256": "32d57b74eb5f4294cf29b7cdb0646f49720bee10687624cda8f2803c3f9e4fff"
+        },
+        {
+          "path_prefix": "config/git",
+          "skill": "webdev",
+          "page": "references/git-canonical.md",
+          "sha256": "04ab7006352cd21dd0df117169f82de63f6273e8881ca3bb3cb4557827d302be"
+        },
+        {
+          "path_prefix": "config/preview",
+          "skill": "webdev",
+          "page": "references/runtime.md",
+          "sha256": "474c641d18f6cc61479307e2c860c80a0d68765051de0c2ffb523a182e9e05e1"
+        },
+        {
+          "path_prefix": "publish",
+          "skill": "webdev",
+          "page": "references/git-checkpoints.md",
+          "sha256": "e7ca5ed16f047bb7b38363ed7c378d0605cdd965396b266ff7d5cebb9196c2a6"
+        },
+        {
+          "path_prefix": "config/visibility",
+          "skill": "webdev",
+          "page": "references/git-checkpoints.md",
+          "sha256": "e7ca5ed16f047bb7b38363ed7c378d0605cdd965396b266ff7d5cebb9196c2a6"
+        },
+        {
+          "path_prefix": "secrets",
+          "skill": "webdev",
+          "page": "references/secrets.md",
+          "sha256": "1f4756eba6fac934089f3877eb97cb91bde70bfbcc0a2194788179f0d9639add"
+        },
+        {
+          "path_prefix": "integrations/shopify",
+          "skill": "webdev",
+          "page": "references/shopify.md",
+          "sha256": "9392ea0814d226d3a06da490d2ce175db89da8639da3be597d9c5a2a93d16c18"
+        },
+        {
+          "path_prefix": "integrations",
+          "skill": "webdev",
+          "page": "references/payments.md",
+          "sha256": "b1b26ceb606b776b614011d397baf6f4155c77c063338248a6bd2272ba9db74c"
+        }
+      ]
+    }
+  ],
+  "extensions": {
+    "interaction-endpoint": {
+      "schema": "manus.addon.interaction_endpoint/v1",
+      "path": "/api/v1/interactions/respond"
+    },
+    "legacy-resource-migration": {
+      "schema": "manus.addon.legacy_resource_migration/v2",
+      "source_content_kinds": [
+        "webdev_project"
+      ]
+    },
+    "local-init-consent": {
+      "schema": "manus.addon.notification/v1",
+      "tag": "local_init_consent_settled",
+      "text": "The owner responded to the local project code-storage card. Resume webdev.init_project with the returned requestId as initRequestId and the original arguments and project_dir unchanged. The Addon server checks the persisted decision; this notification is not authorization. If denied or expired, stop initialization.",
+      "behavior": "wake",
+      "presentation": "reminder",
+      "payload": "json"
+    },
+    "visibility-confirmation-completed": {
+      "schema": "manus.addon.notification/v1",
+      "tag": "visibility_confirmation_completed",
+      "text": "The user's website visibility decision is complete. Read webdev.config GET config/visibility for the current access scope. The payload reports succeeded, cancelled, failed, or unknown; do not treat cancellation or an uncertain result as approval or repeat the change automatically.",
+      "behavior": "wake",
+      "presentation": "reminder",
+      "payload": "json"
+    },
+    "publish-confirmation-submitted": {
+      "schema": "manus.addon.notification/v1",
+      "tag": "publish_confirmation_submitted",
+      "text": "The user settled the model-initiated publish confirmation and the server already submitted the pinned publication request. Call webdev.config with GET publish/requests/{operationId} once to read the result and start its background job. The job automatically returns the final publication result. Do not poll or repeat POST publish, and do not treat this notification payload as authorization.",
+      "behavior": "wake",
+      "presentation": "reminder",
+      "payload": "json"
+    },
+    "publish-confirmation-denied": {
+      "schema": "manus.addon.notification/v1",
+      "tag": "publish_confirmation_denied",
+      "text": "The user denied this model-initiated publish request. First call webdev.config with GET publish/requests/{operationId} only if the persisted result is needed. Do not repeat POST publish or reopen the card automatically; denial does not change the project auto-publish setting.",
+      "behavior": "wake",
+      "presentation": "reminder",
+      "payload": "json"
+    },
+    "publish-confirmation-failed": {
+      "schema": "manus.addon.notification/v1",
+      "tag": "publish_confirmation_failed",
+      "text": "This model-initiated publish confirmation reached a failed or stale result. First call webdev.config with GET publish/requests/{operationId} to read the authoritative persisted state. Do not repeat POST publish automatically, including when submission status is unknown; use current deployment facts and the user's direction before any new request. This notification payload is not authorization.",
+      "behavior": "wake",
+      "presentation": "reminder",
+      "payload": "json"
+    },
+    "secret-input-filled": {
+      "schema": "manus.addon.notification/v1",
+      "tag": "secret_input_filled",
+      "text": "The user completed the requested input card and the values are already applied on the platform — no settlement call is needed. Continue the task. If a command needs the new environment values in this sandbox right away, call webdev.config with GET config once to synchronize them. Never repeat a request that used replace_existing=true; that would open another replacement card.",
+      "behavior": "interrupt",
+      "presentation": "reminder"
+    },
+    "secret-input-cancelled": {
+      "schema": "manus.addon.notification/v1",
+      "tag": "secret_input_cancelled",
+      "text": "The user cancelled the requested input card. The cancellation is already settled on the platform: do NOT repeat webdev.request_secrets or re-open the card unless the user asks for it. Read the current state with the webdev.config tool (GET config) if needed, then follow the user's direction.",
+      "behavior": "wake",
+      "presentation": "reminder"
+    },
+    "git-transfer-ready": {
+      "schema": "manus.addon.notification/v1",
+      "tag": "git_transfer_ready",
+      "text": "The user saved the Git confirmation card and its inactive destination is ready. Continue the transfer now without asking the user to fill the card, confirm again, or send a follow-up message. The project is STILL using its original repository; this is not a completed connection or disconnection. Read references/git-canonical.md, then call webdev.config with GET config/git/transfer to get the current operation and prepare the workspace remote. Transfer code using the authorized temporary remote, then call POST config/git/complete for server verification. For GitHub to Manus, restore only the latest accepted checkpoint snapshot onto the expected Manus parent, not the GitHub history. If blocked, explain the blocker. If the user asks to cancel, call POST config/git/abort; never delete the destination repository or report completion before verification succeeds.",
+      "behavior": "wake",
+      "presentation": "reminder"
+    },
+    "git-transfer-cancelled": {
+      "schema": "manus.addon.notification/v1",
+      "tag": "git_transfer_cancelled",
+      "text": "The user declined the Git repository transition confirmation. Do not reopen it or transfer code unless the user asks. The original repository remains in use. If needed, read the authoritative status with webdev.config GET config/git/transfer before reporting the outcome; do not delete the destination repository.",
+      "behavior": "wake",
+      "presentation": "reminder"
+    },
+    "game-blueprint-updated": {
+      "schema": "manus.addon.notification/v1",
+      "tag": "game_blueprint_updated",
+      "text": "Game Blueprint decisions were saved. For an attached project, use webdev.config GET game/blueprint to read canonical saved decisions, then follow its nextAction and phase in the stored conversation language. Use POST game/blueprint/refresh with expectedRevision when coverage needs refresh, and POST game/blueprint/concepts for authorized concepts. Attached choices and selected concept metadata describe the saved response, but may be stale. This notification is a wake hint, not approval authority. For an attached project, if requiresProjectRecovery is true or choices are absent, use the same GET game/blueprint read; do not infer omitted constraints or initialize another project. Follow the installed continuation instructions if they differ from this hint. Preserve approved answers and narrower asset constraints. Generate concepts only with recorded mockup consent; never treat mockup consent as permission for generative production assets. When projectInitialized is true and approval is settled, continue the existing project without calling init_project again. An unbound legacy draft follows its installed compatible workflow; do not use project-bound recovery before initialization. A legacy pre-init draft still requires its approved reference before initialization. Do not repeat setup questions or generate a regular WebDev Blueprint for this game.",
+      "behavior": "wake",
+      "presentation": "reminder",
+      "payload": "json"
+    },
+    "game-blueprint-cancelled": {
+      "schema": "manus.addon.notification/v1",
+      "tag": "game_blueprint_cancelled",
+      "text": "The user cancelled the Game Blueprint. Read the canonical state through webdev.config GET game/blueprint. Preserve the existing scaffold; do not implement or source assets under the cancelled plan. Wait for new explicit direction.",
+      "behavior": "wake",
+      "presentation": "reminder",
+      "payload": "json"
+    },
+    "firepower-blueprint-ready": {
+      "schema": "manus.addon.notification/v1",
+      "tag": "firepower_blueprint_ready",
+      "text": "The Blueprint choices are saved and the model recommendation card is available. Preserve the saved Blueprint choices. A new user message can continue work in the current model; do not ask another model-selection question.",
+      "behavior": "remind",
+      "presentation": "reminder",
+      "payload": "json"
+    },
+    "firepower-selected": {
+      "schema": "manus.addon.notification/v1",
+      "tag": "firepower_selected",
+      "text": "The model-choice card is complete. Continue the initialized project using the saved Blueprint and planning guidance. For a Game project, read webdev.config GET game/blueprint and follow its current nextAction and saved choices. Do not ask for another model selection or initialize again.",
+      "behavior": "remind",
+      "presentation": "reminder"
+    },
+    "firepower-continue": {
+      "schema": "manus.addon.notification/v1",
+      "tag": "firepower_continue",
+      "text": "The model-choice card is complete. Continue the initialized project using the saved Blueprint and planning guidance. For a Game project, read webdev.config GET game/blueprint and follow its current nextAction and saved choices. Do not ask for another model selection or initialize again.",
+      "behavior": "wake",
+      "presentation": "reminder"
+    },
+    "blueprint-confirmed": {
+      "schema": "manus.addon.notification/v1",
+      "tag": "blueprint_confirmed",
+      "text": "The user confirmed the project blueprint. This Blueprint serves as the approved plan; skip writing another plan and requesting plan approval, then proceed to ToDo. Use the attached feature and power-up choices and any selected style. Keep the confirmed design direction; continue implementation without a separate design document.",
+      "behavior": "wake",
+      "presentation": "reminder",
+      "payload": "json"
+    },
+    "blueprint-cancelled": {
+      "schema": "manus.addon.notification/v1",
+      "tag": "blueprint_cancelled",
+      "text": "The project Blueprint card closed without a submitted answer when this run started, usually because the user sent a new message instead. The attached payload, when present, is that Blueprint exactly as presented: brief, features, design styles (listed in the order the user saw them) and power-ups. No choice from the card was submitted: selected flags are only the presented defaults, and any changes the user made in the card were not saved and are not reflected here. It is neither an approved nor a rejected plan. Read the user's latest message with this Blueprint as context and follow that message; when it refers to choices made in the card, trust its description over these defaults. Where the message leaves scope open, plan normally from the original request. Do not reopen the Blueprint card or ask the user to confirm it.",
+      "behavior": "remind",
+      "presentation": "reminder",
+      "payload": "json"
+    },
+    "shopify-configured": {
+      "schema": "manus.addon.notification/v1",
+      "tag": "shopify_configured",
+      "text": "The user selected and configured the Shopify store. Read references/shopify.md before continuing. For an unclaimed development store, use webdev.shopify. For an existing Connector store or a claimed store, use the Shopify Connector MCP tools. Before calling those tools, use manus-config config load to inspect the Shopify accounts and manus-config config save to set activeAccountUid to the selected account. For mode=connect, match the payload connectorUid and accountUid against the loaded configuration; the notification itself does not switch accounts or grant authorization. If the selected account cannot be authorized and activated through the normal Connector flow, stop and ask the owner; do not use the previous or default account.",
+      "behavior": "wake",
+      "presentation": "reminder",
+      "payload": "json"
+    },
+    "shopify-setup-cancelled": {
+      "schema": "manus.addon.notification/v1",
+      "tag": "shopify_setup_cancelled",
+      "text": "The user chose not to reconnect Shopify. Do not reopen Shopify setup unless the user asks. Continue without Shopify, or explain why the task cannot proceed if Shopify is essential.",
+      "behavior": "wake",
+      "presentation": "reminder"
+    },
+    "shopify-reauthorization-requested": {
+      "schema": "manus.addon.notification/v1",
+      "tag": "shopify_reauthorization_requested",
+      "text": "The user asked to reconnect the Shopify store named in the payload (connectorUid, accountUid, and accountName when known). Their app cannot reconnect inside the setup card, so that card is closed and nothing was configured. Read references/shopify.md before continuing. Use manus-config config load, then manus-config config save to set the Shopify activeAccountUid to the payload accountUid. Then call the mcp tool with primitive auth, action login and server shopify so the user gets the Shopify reconnect card in chat; ask the user to finish it, then stop and wait. After the store is reconnected, call webdev.config POST integrations/shopify/enable with mode connect again so the user can choose the store in a new setup card. If no reconnect card was shown, or the new setup card asks to reconnect the same store again, do not repeat this loop; ask the user to reconnect the store in Manus Connectors and reply when done. This notification does not grant authorization. Do not use another account, create a development store, or configure Shopify yourself unless the user asks.",
+      "behavior": "wake",
+      "presentation": "reminder",
+      "payload": "json"
+    },
+    "integration-disconnected": {
+      "schema": "manus.addon.notification/v1",
+      "tag": "integration_disconnected",
+      "text": "The owner confirmed the disconnect and it is already applied: the payload provider and its managed secret declarations are removed, so new Preview runtimes no longer receive those values. Do not call disconnect again. Read the Disconnect section of references/payments.md (Stripe) or references/shopify.md (Shopify). Then remove that provider's code, routes, webhook handlers and environment usage from the project in this task, restart Preview, validate and save a checkpoint. The published site keeps its current version until the next publish.",
+      "behavior": "wake",
+      "presentation": "reminder",
+      "payload": "json"
+    },
+    "integration-disconnect-cancelled": {
+      "schema": "manus.addon.notification/v1",
+      "tag": "integration_disconnect_cancelled",
+      "text": "The owner cancelled the disconnect. Nothing changed; do not reopen the confirmation unless the user asks. Continue with the user's direction.",
+      "behavior": "wake",
+      "presentation": "reminder"
+    },
+    "hosting-mode-confirmed": {
+      "schema": "manus.addon.notification/v1",
+      "tag": "hosting_mode_confirmed",
+      "text": "The user confirmed Reserved hosting and the requested configuration operation is already applied. Do not repeat the original PUT or imply that deployment has completed. Read the current state with webdev.config GET config, then GET infra/overview to report the declared mode and observed deployment reality. The bounded payload can say whether the result was unchanged, a rollout started, or it will apply on the next publish.",
+      "behavior": "wake",
+      "presentation": "reminder",
+      "payload": "json"
+    },
+    "hosting-mode-cancelled": {
+      "schema": "manus.addon.notification/v1",
+      "tag": "hosting_mode_cancelled",
+      "text": "The user cancelled the Reserved hosting confirmation. The cancellation is already settled; do not reopen the confirmation or repeat the original request unless the user asks. Read the current configuration only if needed, then continue with the user's direction.",
+      "behavior": "wake",
+      "presentation": "reminder"
+    },
+    "hosting-mode-failed": {
+      "schema": "manus.addon.notification/v1",
+      "tag": "hosting_mode_failed",
+      "text": "The Reserved hosting confirmation reached a failed terminal result. Read the current state with webdev.config GET config and GET infra/overview before reporting the outcome. Do not blindly replay the original request or reopen the confirmation; use the bounded payload and current state to identify the actual recovery action.",
+      "behavior": "wake",
+      "presentation": "reminder",
+      "payload": "json"
+    }
+  },
+  "resources": {
+    "init-request": {
+      "schema": "manus.addon.resource/v1",
+      "uri_scheme": "manus-resource",
+      "uri_template": "manus-resource://manus-webdev/init-request/{request_id}",
+      "content_kind": "webdev_init_request",
+      "resolve_endpoint": "https://manus-addon-webdev.manus.im/api/v1/resources/init-request/resolve",
+      "capabilities": []
+    },
+    "game-blueprint": {
+      "schema": "manus.addon.resource/v1",
+      "uri_scheme": "manus-resource",
+      "uri_template": "manus-resource://manus-webdev/game-blueprint/{blueprint_id}",
+      "content_kind": "game_blueprint",
+      "resolve_endpoint": "https://manus-addon-webdev.manus.im/api/v1/resources/game-blueprint/resolve",
+      "read_endpoint": "https://manus-addon-webdev.manus.im/api/v1/resources/game-blueprint/{blueprint_id}/read",
+      "viewer": {
+        "type": "addon_widget",
+        "widget_id": "game-blueprint",
+        "widget_uri_template": "manus-widget://manus-webdev/game-blueprint/{blueprint_id}"
+      },
+      "capabilities": [
+        "refresh"
+      ]
+    },
+    "project": {
+      "schema": "manus.addon.resource/v1",
+      "uri_scheme": "manus-resource",
+      "uri_template": "manus-resource://manus-webdev/project/{resource_id}",
+      "content_kind": "webdev_project",
+      "library_endpoint": "https://manus-addon-webdev.manus.im/internal/library-projects",
+      "website_catalog_endpoint": "https://manus-addon-webdev.manus.im/internal/webdev/projects",
+      "materialize_endpoint": "https://manus-addon-webdev.manus.im/api/v1/resources/project/materialize",
+      "resolve_endpoint": "https://manus-addon-webdev.manus.im/api/v1/resources/project/resolve",
+      "read_endpoint": "https://manus-addon-webdev.manus.im/api/v1/resources/project/{resource_id}/read",
+      "action_endpoint": "https://manus-addon-webdev.manus.im/api/v1/resources/project/{resource_id}/actions",
+      "events_endpoint": "https://manus-addon-webdev.manus.im/api/v1/resources/project/{resource_id}/events",
+      "viewer": {
+        "type": "addon_widget",
+        "widget_id": "dashboard",
+        "widget_uri_template": "manus-widget://manus-webdev/dashboard/project/{resource_id}"
+      },
+      "capabilities": [
+        "preview",
+        "refresh"
+      ]
+    }
+  },
+  "widgets": {
+    "game-blueprint": {
+      "type": "card",
+      "uri_scheme": "manus-widget",
+      "uri_template": "manus-widget://manus-webdev/game-blueprint/{blueprint_id}",
+      "resolve_endpoint": "https://manus-addon-webdev.manus.im/api/v1/widgets/game-blueprint/resolve",
+      "frontend": {
+        "type": "web_component",
+        "tag": "manus-webdev--operation-card",
+        "path": "static/ui/operation-card/index.js"
+      },
+      "cache": {
+        "descriptor": "no-store",
+        "frontend": "build-hash"
+      },
+      "skeleton": {
+        "type": "action",
+        "width": 568,
+        "height": 359,
+        "mobile": {
+          "width": 343,
+          "height": 377
+        }
+      },
+      "description": "Initialization-generated Game Blueprint with separate planning and explicit concept approval; legacy pre-init drafts remain supported."
+    },
+    "dashboard": {
+      "type": "page",
+      "chrome": "widget",
+      "navigation_query_keys": [
+        "previewType"
+      ],
+      "uri_scheme": "manus-widget",
+      "uri_template": "manus-widget://manus-webdev/dashboard/project/{resource_id}",
+      "resolve_endpoint": "https://manus-addon-webdev.manus.im/api/v1/widgets/dashboard/resolve",
+      "frontend": {
+        "runtime": "web_component",
+        "tag": "manus-webdev--dashboard-shell",
+        "module_url": "https://manus-addon-webdev.manus.im/static/ui/dashboard/shell.js",
+        "path": "static/ui/dashboard/shell.js"
+      },
+      "cache": {
+        "descriptor": "stale-while-revalidate",
+        "frontend": "build-hash"
+      }
+    },
+    "chat-project-card": {
+      "type": "card",
+      "frontend": {
+        "type": "web_component",
+        "tag": "manus-webdev--chat-project-card",
+        "path": "static/ui/chat-project-card/card.js"
+      },
+      "skeleton": {
+        "type": "cover",
+        "width": 568,
+        "height": 384,
+        "mobile": {
+          "width": 343,
+          "height": 258
+        }
+      },
+      "description": "Version-anchored Checkpoint delivery card with host-gated Preview, Dashboard, Publish, Visit, and Rollback actions."
+    },
+    "game-checkpoint-card": {
+      "type": "card",
+      "frontend": {
+        "type": "web_component",
+        "tag": "manus-webdev--chat-project-card",
+        "path": "static/ui/chat-project-card/card.js"
+      },
+      "skeleton": {
+        "type": "action",
+        "width": 400,
+        "height": 150,
+        "mobile": {
+          "width": 343,
+          "height": 319
+        }
+      },
+      "description": "Game Checkpoint delivery card with cover, Play and Publish actions."
+    },
+    "mobile-checkpoint-card": {
+      "type": "card",
+      "frontend": {
+        "type": "web_component",
+        "tag": "manus-webdev--chat-project-card",
+        "path": "static/ui/chat-project-card/card.js"
+      },
+      "skeleton": {
+        "type": "row",
+        "width": 400,
+        "height": 62,
+        "mobile": {
+          "width": 343,
+          "height": 62
+        }
+      },
+      "description": "Mobile app Checkpoint delivery row with Publish action."
+    },
+    "operation-card": {
+      "type": "card",
+      "frontend": {
+        "type": "web_component",
+        "tag": "manus-webdev--operation-card",
+        "path": "static/ui/operation-card/index.js"
+      },
+      "skeleton": {
+        "type": "action",
+        "width": 568,
+        "height": 275,
+        "mobile": {
+          "width": 343,
+          "height": 267
+        }
+      }
+    },
+    "project-blueprint-card": {
+      "type": "card",
+      "frontend": {
+        "type": "web_component",
+        "tag": "manus-webdev--operation-card",
+        "path": "static/ui/operation-card/index.js"
+      },
+      "skeleton": {
+        "type": "action",
+        "width": 568,
+        "height": 275,
+        "mobile": {
+          "width": 343,
+          "height": 267
+        }
+      },
+      "description": "Project Blueprint choices shown after web initialization."
+    },
+    "game-blueprint-plan-card": {
+      "type": "card",
+      "frontend": {
+        "type": "web_component",
+        "tag": "manus-webdev--operation-card",
+        "path": "static/ui/operation-card/index.js"
+      },
+      "skeleton": {
+        "type": "action",
+        "width": 568,
+        "height": 359,
+        "mobile": {
+          "width": 343,
+          "height": 377
+        }
+      },
+      "description": "Planning part of a split Game Blueprint presentation."
+    },
+    "game-blueprint-concepts-card": {
+      "type": "card",
+      "frontend": {
+        "type": "web_component",
+        "tag": "manus-webdev--operation-card",
+        "path": "static/ui/operation-card/index.js"
+      },
+      "skeleton": {
+        "type": "action",
+        "width": 568,
+        "height": 523,
+        "mobile": {
+          "width": 343,
+          "height": 543
+        }
+      },
+      "description": "Concept review part of a split Game Blueprint presentation."
+    },
+    "firepower-card": {
+      "type": "card",
+      "frontend": {
+        "type": "web_component",
+        "tag": "manus-webdev--operation-card",
+        "path": "static/ui/operation-card/index.js"
+      },
+      "skeleton": {
+        "type": "action",
+        "width": 568,
+        "height": 184,
+        "mobile": {
+          "width": 343,
+          "height": 194
+        }
+      },
+      "description": "Model upgrade suggestion shown when a task needs more capability."
+    },
+    "secret-card": {
+      "type": "card",
+      "frontend": {
+        "type": "web_component",
+        "tag": "manus-webdev--operation-card",
+        "path": "static/ui/operation-card/index.js"
+      },
+      "skeleton": {
+        "type": "action",
+        "width": 568,
+        "height": 187,
+        "mobile": {
+          "width": 343,
+          "height": 219
+        }
+      },
+      "description": "Secure form for requesting or editing project secret values."
+    },
+    "github-create-card": {
+      "type": "card",
+      "frontend": {
+        "type": "web_component",
+        "tag": "manus-webdev--operation-card",
+        "path": "static/ui/operation-card/index.js"
+      },
+      "skeleton": {
+        "type": "action",
+        "width": 568,
+        "height": 178,
+        "mobile": {
+          "width": 343,
+          "height": 197
+        }
+      },
+      "description": "Confirmation for creating or connecting a GitHub repository."
+    },
+    "git-disconnect-card": {
+      "type": "card",
+      "frontend": {
+        "type": "web_component",
+        "tag": "manus-webdev--operation-card",
+        "path": "static/ui/operation-card/index.js"
+      },
+      "skeleton": {
+        "type": "action",
+        "width": 568,
+        "height": 249,
+        "mobile": {
+          "width": 343,
+          "height": 306
+        }
+      },
+      "description": "Confirmation for disconnecting GitHub and returning to the Manus repository."
+    },
+    "stripe-connect-card": {
+      "type": "card",
+      "frontend": {
+        "type": "web_component",
+        "tag": "manus-webdev--operation-card",
+        "path": "static/ui/operation-card/index.js"
+      },
+      "skeleton": {
+        "type": "row",
+        "width": 400,
+        "height": 62,
+        "mobile": {
+          "width": 343,
+          "height": 78
+        }
+      },
+      "description": "Stripe test environment status with a later claim action."
+    },
+    "shopify-setup-card": {
+      "type": "card",
+      "frontend": {
+        "type": "web_component",
+        "tag": "manus-webdev--operation-card",
+        "path": "static/ui/operation-card/index.js"
+      },
+      "skeleton": {
+        "type": "action",
+        "width": 568,
+        "height": 270,
+        "mobile": {
+          "width": 343,
+          "height": 324
+        }
+      },
+      "description": "Shopify store setup: create a development store or connect an existing one."
+    },
+    "shopify-claim-card": {
+      "type": "card",
+      "frontend": {
+        "type": "web_component",
+        "tag": "manus-webdev--operation-card",
+        "path": "static/ui/operation-card/index.js"
+      },
+      "skeleton": {
+        "type": "row",
+        "width": 400,
+        "height": 62,
+        "mobile": {
+          "width": 343,
+          "height": 62
+        }
+      },
+      "description": "Claim action for a Shopify development store."
+    },
+    "hosting-confirmation-card": {
+      "type": "card",
+      "frontend": {
+        "type": "web_component",
+        "tag": "manus-webdev--operation-card",
+        "path": "static/ui/operation-card/index.js"
+      },
+      "skeleton": {
+        "type": "action",
+        "width": 568,
+        "height": 192,
+        "mobile": {
+          "width": 343,
+          "height": 222
+        }
+      },
+      "description": "Owner confirmation for a billable hosting change."
+    },
+    "integration-disconnect-card": {
+      "type": "card",
+      "frontend": {
+        "type": "web_component",
+        "tag": "manus-webdev--operation-card",
+        "path": "static/ui/operation-card/index.js"
+      },
+      "skeleton": {
+        "type": "action",
+        "width": 568,
+        "height": 220,
+        "mobile": {
+          "width": 343,
+          "height": 287
+        }
+      },
+      "description": "Owner confirmation for disconnecting Stripe or Shopify from the website."
+    },
+    "publish-confirmation-card": {
+      "type": "card",
+      "frontend": {
+        "type": "web_component",
+        "tag": "manus-webdev--operation-card",
+        "path": "static/ui/operation-card/index.js"
+      },
+      "skeleton": {
+        "type": "action",
+        "width": 568,
+        "height": 198,
+        "mobile": {
+          "width": 343,
+          "height": 171
+        }
+      },
+      "description": "Progress and result of a website publication."
+    },
+    "publish-approval-card": {
+      "type": "card",
+      "frontend": {
+        "type": "web_component",
+        "tag": "manus-webdev--operation-card",
+        "path": "static/ui/operation-card/index.js"
+      },
+      "skeleton": {
+        "type": "action",
+        "width": 568,
+        "height": 116,
+        "mobile": {
+          "width": 343,
+          "height": 220
+        }
+      },
+      "description": "User confirmation before publishing a checkpoint, then the publication progress and result."
+    },
+    "visibility-confirmation-card": {
+      "type": "card",
+      "frontend": {
+        "type": "web_component",
+        "tag": "manus-webdev--operation-card",
+        "path": "static/ui/operation-card/index.js"
+      },
+      "skeleton": {
+        "type": "action",
+        "width": 568,
+        "height": 135,
+        "mobile": {
+          "width": 343,
+          "height": 227
+        }
+      },
+      "description": "User confirmation before widening who can open a published website."
+    },
+    "add-to-project-card": {
+      "type": "card",
+      "frontend": {
+        "type": "web_component",
+        "tag": "manus-webdev--operation-card",
+        "path": "static/ui/operation-card/index.js"
+      },
+      "skeleton": {
+        "type": "action",
+        "width": 568,
+        "height": 160,
+        "mobile": {
+          "width": 343,
+          "height": 282
+        }
+      },
+      "description": "Suggestion to move this task into a Manus project."
+    },
+    "parallel-edit-card": {
+      "type": "card",
+      "frontend": {
+        "type": "web_component",
+        "tag": "manus-webdev--operation-card",
+        "path": "static/ui/operation-card/index.js"
+      },
+      "skeleton": {
+        "type": "action",
+        "width": 568,
+        "height": 156,
+        "mobile": {
+          "width": 343,
+          "height": 192
+        }
+      },
+      "description": "Suggestion to edit the website or app in parallel across new tasks."
+    },
+    "project-attachment-card": {
+      "type": "card",
+      "frontend": {
+        "type": "web_component",
+        "tag": "manus-webdev--project-attachment-card",
+        "path": "static/ui/project-attachment-card/card.js"
+      },
+      "skeleton": {
+        "type": "attachment",
+        "width": 280,
+        "height": 56,
+        "mobile": {
+          "width": 280,
+          "height": 56
+        }
+      }
+    },
+    "init-project-card": {
+      "type": "card",
+      "uri_scheme": "manus-widget",
+      "uri_template": "manus-widget://manus-webdev/init-project-card/tool/{tool_call_id}",
+      "resolve_endpoint": "https://manus-addon-webdev.manus.im/api/v1/widgets/init-project-card/resolve",
+      "frontend": {
+        "type": "web_component",
+        "tag": "manus-webdev--init-project-card",
+        "path": "static/ui/init-project-card/card.js"
+      },
+      "skeleton": {
+        "type": "action",
+        "width": 568,
+        "height": 374,
+        "mobile": {
+          "width": 343,
+          "height": 432
+        }
+      },
+      "streaming": {
+        "protocol": "manus.addon.widget_card_streaming/v1",
+        "transport": "session_event",
+        "state_source": "tool_arguments",
+        "completion": "resource"
+      },
+      "cache": {
+        "descriptor": "stale-while-revalidate",
+        "frontend": "build-hash"
+      },
+      "description": "Shared webdev.init_project and webdev.attach_project lifecycle card; the Host updates the same card to complete or error."
+    }
+  },
+  "skills": {
+    "webdev": {
+      "name": "webdev",
+      "version": "1.0.5",
+      "mcp_server": "webdev-mcp",
+      "path": "runtime/skill"
+    },
+    "webdev-worklocally": {
+      "name": "webdev-worklocally",
+      "version": "1.0.0",
+      "mcp_server": "webdev-mcp",
+      "path": "runtime/skill/worklocally"
+    },
+    "webdev-seo": {
+      "name": "webdev-seo",
+      "version": "1.0.0",
+      "mcp_server": "webdev-mcp",
+      "path": "runtime/skill/seo"
+    },
+    "game-asset-catalog": {
+      "name": "game-asset-catalog",
+      "version": "1.0.0",
+      "mcp_server": "webdev-mcp",
+      "supersedes_official_skills": [
+        "game-asset-catalog"
+      ],
+      "activation": "on_enrollment",
+      "path": "runtime/skill-game-asset-catalog"
+    }
+  }
+}

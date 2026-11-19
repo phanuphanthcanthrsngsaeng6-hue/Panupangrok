@@ -1,0 +1,53 @@
+{
+  "version": 1,
+  "checks": [
+    {
+      "kind": "script",
+      "path": "res://tools/pinball_services_check.gd",
+      "expect": "[pinball-services] PASS:",
+      "profile": "source"
+    },
+    {
+      "kind": "script",
+      "path": "res://tools/template_config_check.gd",
+      "expect": "[template-config] PASS:",
+      "profile": "source"
+    },
+    {
+      "kind": "script",
+      "path": "res://tools/comet_acceptance.gd",
+      "expect": "[comet-tests] PASS:",
+      "profile": "source"
+    },
+    {
+      "kind": "script",
+      "path": "res://tools/observatory_acceptance.gd",
+      "expect": "[observatory-tests] PASS:",
+      "profile": "source"
+    },
+    {
+      "kind": "script",
+      "path": "res://tools/juice_check.gd",
+      "expect": "juice_check: PASS",
+      "profile": "source"
+    },
+    {
+      "kind": "script",
+      "path": "res://tools/pinball_gameplay_check.gd",
+      "expect": "[pinball-gameplay] PASS:",
+      "profile": "source"
+    },
+    {
+      "kind": "script",
+      "path": "res://tools/tuning_acceptance.gd",
+      "expect": "TUNING_ACCEPTANCE: PASS",
+      "profile": "source"
+    },
+    {
+      "kind": "script",
+      "path": "res://tools/comet_pack.gd",
+      "expect": "[comet-pack] PASS:",
+      "profile": "pack"
+    }
+  ]
+}

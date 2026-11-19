@@ -1,0 +1,8 @@
+{
+  "addon_id": "manus-storage",
+  "materialized_at": "2026-11-18T21:32:42Z",
+  "registration_sha256": "e1ccdf60f6902e1eeba27de07ea85086c6fcbe071991121ca4e394596b85bd10",
+  "s3_uri": "",
+  "sha256": "942ca4f0825450eef5c05b05cac2b23fc342a6db6ab8b1c05c3db04d38cb08da",
+  "version": "0.1.5"
+}

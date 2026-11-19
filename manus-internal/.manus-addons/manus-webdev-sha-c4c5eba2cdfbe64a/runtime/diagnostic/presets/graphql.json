@@ -1,0 +1,21 @@
+{
+  "name": "graphql",
+  "command": "graphql-lsp",
+  "args": [
+    "server",
+    "-m",
+    "stream"
+  ],
+  "files": {
+    ".graphql": "graphql"
+  },
+  "description": "graphql-lsp uses GraphQL Config files (.graphqlrc.yml/.graphqlrc.json/graphql.config.js) to locate schema and documents. schema and documents are project configuration, not a generic workspace diagnostics.enable flag. Point the GraphQL Config schema/documents fields at your actual project files. The CLI transport arguments are server -m stream.",
+  "testedVersion": "3.5.0",
+  "configuration": {
+    "initializationOptions": {},
+    "settings": {}
+  },
+  "projectConfigurationExample": {
+    ".graphqlrc.yml": "schema: ./schema.graphql\ndocuments: ./*.graphql\n"
+  }
+}

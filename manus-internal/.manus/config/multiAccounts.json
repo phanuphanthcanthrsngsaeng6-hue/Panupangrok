@@ -1,0 +1,46 @@
+[
+  {
+    "connectorUid": "9444d960-ab7e-450f-9cb9-b9467fb0adda",
+    "allowedAccounts": [
+      {
+        "accountUid": "f995170c-0dd7-4d77-9bc2-4d4363dd1d0d",
+        "accountName": "appleid7899067@gmail.com"
+      },
+      {
+        "accountUid": "d70f7649-4417-49b0-9b24-3bd8ced86711",
+        "accountName": "phanuphanthcanthrsngsaeng17@gmail.com"
+      }
+    ],
+    "activeAccountUid": ""
+  },
+  {
+    "connectorUid": "bbb0df76-66bd-4a24-ae4f-2aac4750d90b",
+    "allowedAccounts": [
+      {
+        "accountUid": "edf4e76c-c5d2-456f-9f35-7c82a72440fd",
+        "accountName": ""
+      }
+    ],
+    "activeAccountUid": "edf4e76c-c5d2-456f-9f35-7c82a72440fd"
+  },
+  {
+    "connectorUid": "abb9ed36-e693-44ab-be3d-1f5c3bb02294",
+    "allowedAccounts": [
+      {
+        "accountUid": "ab04bf76-6f25-4c8a-b39e-43fb30b6883f",
+        "accountName": ""
+      }
+    ],
+    "activeAccountUid": "ab04bf76-6f25-4c8a-b39e-43fb30b6883f"
+  },
+  {
+    "connectorUid": "c55a74cf-a236-4eda-8885-365d336cae4b",
+    "allowedAccounts": [
+      {
+        "accountUid": "6d7774a6-fcc2-46ef-aa80-990b69d82584",
+        "accountName": ""
+      }
+    ],
+    "activeAccountUid": "6d7774a6-fcc2-46ef-aa80-990b69d82584"
+  }
+]

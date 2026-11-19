@@ -16,6 +16,7 @@ import {
   listTasks,
   listMessages,
   availableCredits,
+  usageList,
   waitForTask,
   extractText,
   collectAttachments,
@@ -328,6 +329,9 @@ async function handleChatCompletions(req, res, body) {
         task_id: taskId,
         task_url: createdTask.task_url || null,
         status: detail.status,
+        // This is reported by task.detail. Manus credits must never be
+        // inferred from token counts or text length.
+        credit_usage: Number.isInteger(detail.credit_usage) ? detail.credit_usage : null,
         attachments: collectAttachments(detail),
         context_file: attached ? attached.filename : null,
       },
@@ -379,6 +383,30 @@ async function route(req, res) {
     }
     if (p === `${PREFIX}/credits` && req.method === 'GET') {
       return sendJson(res, 200, await availableCredits({}));
+    }
+    if (p === `${PREFIX}/usage` && req.method === 'GET') {
+      const rawLimit = url.searchParams.get('limit');
+      const rawCursor = url.searchParams.get('cursor');
+      const limit = rawLimit === null ? 20 : Number(rawLimit);
+      if (!Number.isInteger(limit) || limit < 1 || limit > 100) {
+        return sendJson(res, 400, {
+          error: {
+            message: 'limit must be an integer between 1 and 100',
+            type: 'invalid_request_error',
+          },
+        });
+      }
+      // Keep balance and history separate. Both values are passed through
+      // from Manus; NovaAgent does not calculate either one.
+      const [available, history] = await Promise.all([
+        availableCredits({}),
+        usageList({ limit, cursor: rawCursor || undefined }),
+      ]);
+      return sendJson(res, 200, {
+        object: 'manus.usage',
+        available_credits: available,
+        usage: history,
+      });
     }
     if (p === `${PREFIX}/tasks` && req.method === 'GET') {
       return sendJson(res, 200, await listTasks({ limit: Number(url.searchParams.get('limit') || 10) }));

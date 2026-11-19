@@ -1,0 +1,8 @@
+{
+  "addon_id": "manus-triggers",
+  "materialized_at": "2026-11-18T21:32:42Z",
+  "registration_sha256": "de42c59800bd7a42d5ce8775640c6fb3e3488e906e512fae0c89d670a811bd8b",
+  "s3_uri": "",
+  "sha256": "f29d716ab6e24ae118b1313418e078524e07b6441ce22de237f14ab9eb2a1177",
+  "version": "0.0.64"
+}

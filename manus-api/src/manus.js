@@ -282,6 +282,25 @@ export async function availableCredits({ apiKey } = {}) {
 }
 
 /**
+ * List the account's credit change history.
+ *
+ * This endpoint is intentionally API-key-only. apiCall always authenticates
+ * with x-manus-api-key and does not accept an OAuth Authorization token, which
+ * prevents this path from using a standard OAuth client that Manus does not
+ * authorize for usage.list.
+ */
+export function usageList({ limit = 20, cursor, apiKey } = {}) {
+  const pageSize = Number(limit);
+  if (!Number.isInteger(pageSize) || pageSize < 1 || pageSize > 100) {
+    throw new RangeError('usage.list limit must be an integer between 1 and 100');
+  }
+  return apiCall('GET', 'usage.list', {
+    apiKey,
+    params: { limit: pageSize, cursor },
+  });
+}
+
+/**
  * Poll until the task reaches a terminal status, then attach its message timeline.
  * The assistant answer lives in the messages (not in task.detail), so we fetch both.
  */

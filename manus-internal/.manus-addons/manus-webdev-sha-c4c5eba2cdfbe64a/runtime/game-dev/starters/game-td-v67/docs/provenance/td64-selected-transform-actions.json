@@ -1,0 +1,27 @@
+{
+  "actions": [
+    {
+      "eventId": "172966313",
+      "timestamp": "2026-09-19T05:53:30.554Z",
+      "type": "textEditorRunAction",
+      "parameters": {
+        "append": false,
+        "brief": "Prepare a clean sharing cover from the final native gameplay image, excluding editor controls.",
+        "content": "from pathlib import Path\nfrom PIL import Image\nroot=Path('/home/ubuntu/webdev-78141c527fd2bee12351e8420e97f2de')\nsource=Path('/home/ubuntu/fablewood_source/captures/all_tiers_en.png')\nim=Image.open(source).convert('RGB');assert im.size==(1440,900)\nout=root/'assets/share/source/illuminated_gameplay.png';out.parent.mkdir(parents=True,exist_ok=True)\n# Actual scene pixels only: remove top HUD, inspector, action bar and debug controls.\nim.crop((30,182,1138,660)).save(out)\nprint(out)\n",
+        "file": "/home/ubuntu/fablewood-production/tools/prepare_share_cover.py"
+      }
+    },
+    {
+      "eventId": "172966353",
+      "timestamp": "2026-09-19T05:53:39.719Z",
+      "type": "terminalExecute",
+      "parameters": {
+        "brief": "Create the updated Open Graph cover and favicon using actual generated game art and the unchanged font pack.",
+        "command": "python3 /home/ubuntu/fablewood-production/tools/prepare_share_cover.py && python3 /home/ubuntu/.manus-addons/manus-webdev-sha-9e5655d617db8715/runtime/game-dev/scripts/render-share-images.py --cover assets/share/source/illuminated_gameplay.png --icon assets/Interface/illuminated_seed_icon.webp --title 'Fablewood: Keepers of the Last Seed' --output assets/share/illuminated-v1",
+        "exec_dir": "/home/ubuntu/webdev-78141c527fd2bee12351e8420e97f2de",
+        "id": "game",
+        "timeout": 30
+      }
+    }
+  ]
+}

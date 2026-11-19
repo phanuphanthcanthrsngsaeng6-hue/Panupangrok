@@ -1,0 +1,8 @@
+{
+  "addon_id": "manus-trip",
+  "materialized_at": "2026-11-18T21:32:42Z",
+  "registration_sha256": "8afe5050df3cc9313257a6081054c07154d7de0ac686c341a6ae737d33b4ad62",
+  "s3_uri": "",
+  "sha256": "c7e25a2ab63b916fc4f8578038f3f17eb05c441fc98e93b86f1bb39658ae278b",
+  "version": "0.0.1-prod.44026880457.394766c6"
+}

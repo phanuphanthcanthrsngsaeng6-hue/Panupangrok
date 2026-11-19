@@ -1,0 +1,172 @@
+{
+  "version": 2,
+  "groups": {
+    "template": {
+      "name": "Template",
+      "order": 0
+    }
+  },
+  "bundles": {},
+  "assets": {
+    "assets/template/audio/cosmic/celestial-drift.ogg": {
+      "path": "https://d1oupeiobkpcny.cloudfront.net/assets/dashboard/materials/2026/09/23/50a87cb7be035651901d4c34a10c2a3c5df4f58c3b98fddcdfa268419e8c8820.ogg",
+      "sha256": "sha256:50a87cb7be035651901d4c34a10c2a3c5df4f58c3b98fddcdfa268419e8c8820",
+      "size": 1702047,
+      "assetType": "audio",
+      "groupId": "template",
+      "used": true
+    },
+    "assets/template/audio/cues/enemy-impact.wav": {
+      "path": "https://d1oupeiobkpcny.cloudfront.net/assets/dashboard/materials/2026/09/23/5d975f2e4f1baa1f8a59fbd05719b27e64463673511cee2132e500cd8290fd54.wav",
+      "sha256": "sha256:5d975f2e4f1baa1f8a59fbd05719b27e64463673511cee2132e500cd8290fd54",
+      "size": 11068,
+      "assetType": "audio",
+      "groupId": "template",
+      "used": true
+    },
+    "assets/template/audio/cues/game-defeat.wav": {
+      "path": "https://d1oupeiobkpcny.cloudfront.net/assets/dashboard/materials/2026/09/23/a06d29cdbb183875697a10334059ec83dcbf4998c177fc2a48878964a6c31b58.wav",
+      "sha256": "sha256:a06d29cdbb183875697a10334059ec83dcbf4998c177fc2a48878964a6c31b58",
+      "size": 28708,
+      "assetType": "audio",
+      "groupId": "template",
+      "used": true
+    },
+    "assets/template/audio/cues/game-pause.wav": {
+      "path": "https://d1oupeiobkpcny.cloudfront.net/assets/dashboard/materials/2026/09/23/8c0a192e388992d009dc6cd6aad8c488805c2462c3707717ef6db1d3d1e14e78.wav",
+      "sha256": "sha256:8c0a192e388992d009dc6cd6aad8c488805c2462c3707717ef6db1d3d1e14e78",
+      "size": 5336,
+      "assetType": "audio",
+      "groupId": "template",
+      "used": true
+    },
+    "assets/template/audio/cues/game-victory.wav": {
+      "path": "https://d1oupeiobkpcny.cloudfront.net/assets/dashboard/materials/2026/09/23/bb54ad84c6bd7f35e8087b5a5c6065bdc0bb54f67b0aca37382831119d51b1af.wav",
+      "sha256": "sha256:bb54ad84c6bd7f35e8087b5a5c6065bdc0bb54f67b0aca37382831119d51b1af",
+      "size": 30912,
+      "assetType": "audio",
+      "groupId": "template",
+      "used": true
+    },
+    "assets/template/audio/cues/player-action.wav": {
+      "path": "https://d1oupeiobkpcny.cloudfront.net/assets/dashboard/materials/2026/09/23/77c8f9a8f6bacfe24fe5c52b48a533e197cefa112e58ec06925cf29d12496b4d.wav",
+      "sha256": "sha256:77c8f9a8f6bacfe24fe5c52b48a533e197cefa112e58ec06925cf29d12496b4d",
+      "size": 19888,
+      "assetType": "audio",
+      "groupId": "template",
+      "used": true
+    },
+    "assets/template/audio/cues/score-reward.wav": {
+      "path": "https://d1oupeiobkpcny.cloudfront.net/assets/dashboard/materials/2026/09/23/1113c2d4be87969efa49d1c6c3570067d0427ee75ddd9f828556b2226279d60f.wav",
+      "sha256": "sha256:1113c2d4be87969efa49d1c6c3570067d0427ee75ddd9f828556b2226279d60f",
+      "size": 17684,
+      "assetType": "audio",
+      "groupId": "template",
+      "used": true
+    },
+    "assets/template/audio/cues/ui-cancel.wav": {
+      "path": "https://d1oupeiobkpcny.cloudfront.net/assets/dashboard/materials/2026/09/23/ffaecd4db66b6f81c91bb9d46ee2747a03685d3a3e4b5dfb8822047dda2bdef5.wav",
+      "sha256": "sha256:ffaecd4db66b6f81c91bb9d46ee2747a03685d3a3e4b5dfb8822047dda2bdef5",
+      "size": 3572,
+      "assetType": "audio",
+      "groupId": "template",
+      "used": true
+    },
+    "assets/template/audio/cues/ui-confirm.wav": {
+      "path": "https://d1oupeiobkpcny.cloudfront.net/assets/dashboard/materials/2026/09/23/d905423c16774a2a2d81a47f361141a5c60cb084f07e9c4541eae66b45b79f37.wav",
+      "sha256": "sha256:d905423c16774a2a2d81a47f361141a5c60cb084f07e9c4541eae66b45b79f37",
+      "size": 5336,
+      "assetType": "audio",
+      "groupId": "template",
+      "used": true
+    },
+    "assets/template/fonts/Figtree-VF.subset.woff2": {
+      "path": "https://d1oupeiobkpcny.cloudfront.net/assets/dashboard/materials/2026/09/25/game-template/game-pinball/2026.09.25-typography-v1/b3976c5969c8b1afd81dc3e314b61d8ffe3f3f58cf40906443105d330e6e0bdf/assets/template/fonts/Figtree-VF.subset.woff2",
+      "sha256": "sha256:b3976c5969c8b1afd81dc3e314b61d8ffe3f3f58cf40906443105d330e6e0bdf",
+      "size": 23660,
+      "assetType": "font",
+      "groupId": "template",
+      "used": true
+    },
+    "assets/template/fonts/NotoSansSC-VF.subset.woff2": {
+      "path": "https://d1oupeiobkpcny.cloudfront.net/assets/dashboard/materials/2026/09/25/game-template/game-generic/2026.09.25-typography-v1/38f4c5f927f746b3dfa4c3a5d7edf0b7a3e828e27438418fa54f9e1565289412/assets/template/fonts/NotoSansSC-VF.subset.woff2",
+      "sha256": "sha256:38f4c5f927f746b3dfa4c3a5d7edf0b7a3e828e27438418fa54f9e1565289412",
+      "size": 1869368,
+      "assetType": "font",
+      "groupId": "template",
+      "used": true
+    },
+    "assets/template/fonts/display/Cinzel-VF.subset.woff2": {
+      "path": "https://d1oupeiobkpcny.cloudfront.net/assets/dashboard/materials/2026/09/25/game-template/game-pinball/2026.09.25-typography-v1/c989ab1bff3729946b0e62abb30b9726406e3b9058ba2896782de6617bbdb892/assets/template/fonts/display/Cinzel-VF.subset.woff2",
+      "sha256": "sha256:c989ab1bff3729946b0e62abb30b9726406e3b9058ba2896782de6617bbdb892",
+      "size": 42292,
+      "assetType": "font",
+      "groupId": "template",
+      "used": true
+    },
+    "assets/template/fonts/display/NotoSerifSC-VF.subset.woff2": {
+      "path": "https://d1oupeiobkpcny.cloudfront.net/assets/dashboard/materials/2026/09/25/game-template/game-pinball/2026.09.25-typography-v1/c45ad04935d679c504926ca19420c2625cbd5f33f586559923979092fedc46ff/assets/template/fonts/display/NotoSerifSC-VF.subset.woff2",
+      "sha256": "sha256:c45ad04935d679c504926ca19420c2625cbd5f33f586559923979092fedc46ff",
+      "size": 2504168,
+      "assetType": "font",
+      "groupId": "template",
+      "used": true
+    },
+    "assets/template/fonts/display/Oswald-VF.subset.woff2": {
+      "path": "https://d1oupeiobkpcny.cloudfront.net/assets/dashboard/materials/2026/09/25/game-template/game-pinball/2026.09.25-typography-v1/57503251bab2e0f0ab90c36da895ee0e94c0ea4e343e9d7f211ab57df65636ad/assets/template/fonts/display/Oswald-VF.subset.woff2",
+      "sha256": "sha256:57503251bab2e0f0ab90c36da895ee0e94c0ea4e343e9d7f211ab57df65636ad",
+      "size": 34160,
+      "assetType": "font",
+      "groupId": "template",
+      "used": true
+    },
+    "assets/template/mechanisms/bronze-gears/Cog Wheels - Gears/SpriteSheets/Bronze Gear Wheels/Gear 1 - Bronze_spritesheet.png": {
+      "path": "https://d1oupeiobkpcny.cloudfront.net/assets/dashboard/materials/2026/09/23/e24da95dcd43484428623aa3888448467c0b6174f5fefd50d168542454ea4cf2.png",
+      "sha256": "sha256:e24da95dcd43484428623aa3888448467c0b6174f5fefd50d168542454ea4cf2",
+      "size": 2223,
+      "assetType": "image",
+      "groupId": "template",
+      "used": true
+    },
+    "assets/template/observatory/background-placeholder.webp": {
+      "path": "https://d1oupeiobkpcny.cloudfront.net/assets/dashboard/materials/2026/09/23/1d3d336b04f3c17339c67752b1b9f7c365e34bd7fdaf15094346be18b8d9ad4b.webp",
+      "sha256": "sha256:1d3d336b04f3c17339c67752b1b9f7c365e34bd7fdaf15094346be18b8d9ad4b",
+      "size": 5042,
+      "assetType": "image",
+      "groupId": "template",
+      "used": true
+    },
+    "assets/template/observatory/bumper.png": {
+      "path": "https://d1oupeiobkpcny.cloudfront.net/assets/dashboard/materials/2026/09/23/11d1ac40042b8a6a98cc020ba1ddc7ab75efcbcaaf1c4f8b59ee24fb8eba4a24.png",
+      "sha256": "sha256:11d1ac40042b8a6a98cc020ba1ddc7ab75efcbcaaf1c4f8b59ee24fb8eba4a24",
+      "size": 76950,
+      "assetType": "image",
+      "groupId": "template",
+      "used": true
+    },
+    "assets/template/share/v3/favicon.png": {
+      "path": "https://d1oupeiobkpcny.cloudfront.net/assets/dashboard/materials/2026/09/23/ba5feaa4b9b08b56b485f54b4e441a4c32d6af68769b9b0465fd21751e6d84b1.png",
+      "sha256": "sha256:ba5feaa4b9b08b56b485f54b4e441a4c32d6af68769b9b0465fd21751e6d84b1",
+      "size": 150058,
+      "assetType": "image",
+      "groupId": "template",
+      "used": true
+    },
+    "assets/template/share/v5/og.png": {
+      "path": "https://d1oupeiobkpcny.cloudfront.net/assets/dashboard/materials/2026/09/30/f0800d14f217cc1f124801b0f0a5c49d1c294f23dc15aa902929350f3534a195.bin",
+      "sha256": "sha256:f0800d14f217cc1f124801b0f0a5c49d1c294f23dc15aa902929350f3534a195",
+      "size": 379728,
+      "assetType": "image",
+      "groupId": "template",
+      "used": true
+    },
+    "assets/template/fonts/ManusCC0-Bold.woff2": {
+      "assetType": "font",
+      "groupId": "template",
+      "used": true,
+      "path": "https://d1oupeiobkpcny.cloudfront.net/assets/dashboard/materials/2026/09/30/48c1f3452238f29eb1fe4b8bddfe8fd4045045a5c26657307b8862993488148e.bin",
+      "sha256": "sha256:48c1f3452238f29eb1fe4b8bddfe8fd4045045a5c26657307b8862993488148e",
+      "size": 10308
+    }
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "name": "markdown",
+  "command": "marksman",
+  "args": [
+    "server"
+  ],
+  "files": {
+    ".mdx": "markdown",
+    ".md": "markdown"
+  },
+  "description": "Marksman uses native .marksman.toml at the workspace root. [core] markdown.file_extensions is an array without dots; text_sync is full or incremental. The config file also identifies a workspace when .git is absent. It diagnoses link integrity; it does not have an ordinary Markdown syntax-error switch in settings. Reporting limitation: this Marksman version publishes only when a diagnostic set changes. It does not support textDocument/diagnostic pull requests, and opening a clean file can produce no diagnostic notification. The built-in client therefore stays silent when a new edit yields no fresh report; this is not proof that the file is clean or broken. Changing settings, waiting longer, or reopening a clean file cannot guarantee a new report. Use Marksman for link-change findings with this limitation, or attach a different/custom checker that explicitly reports each completed check when every-edit confirmation is required.",
+  "testedVersion": "2026-02-08",
+  "configuration": {
+    "initializationOptions": {},
+    "settings": {}
+  },
+  "projectConfigurationExample": {
+    ".marksman.toml": "[core]\nmarkdown.file_extensions = [\"md\", \"markdown\", \"mdx\"]\ntext_sync = \"full\"\n"
+  }
+}

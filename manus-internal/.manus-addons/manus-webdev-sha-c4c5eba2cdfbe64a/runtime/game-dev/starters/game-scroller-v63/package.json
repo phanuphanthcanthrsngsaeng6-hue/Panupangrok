@@ -1,0 +1,16 @@
+{
+  "name": "game-scroller",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "check": "node scripts/check.mjs",
+    "test": "node scripts/check.mjs",
+    "test:progress": "node tools/run-native-test.mjs progress",
+    "test:bot": "node tools/run-native-test.mjs bot",
+    "test:checks": "node --test test/godot-check.test.mjs",
+    "capture": "node tools/capture.mjs",
+    "art:rebuild": "bash tools/art/rebuild.sh",
+    "segments:build": "python3 tools/build_segments.py",
+    "loader:check": "node web/build-shell.mjs --check"
+  }
+}

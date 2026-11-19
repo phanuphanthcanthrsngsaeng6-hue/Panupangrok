@@ -99,6 +99,24 @@
                                 <span id="puter-gate-msg" class="puter-gate-msg">เชื่อมต่อ Puter เพื่อใช้โมเดล AI (ไม่ต้องมี API key)</span>
                                 <button id="puter-gate-btn" class="puter-gate-btn" type="button">ล็อกอิน Puter</button>
                             </div>
+                            <section id="provider-status-strip" class="provider-status-strip" aria-live="polite">
+                                <div class="provider-status-head">
+                                    <span><i class="fas fa-signal"></i> Provider</span>
+                                    <button id="provider-status-refresh" type="button" class="provider-status-refresh" onclick="refreshProviderStatus()" aria-label="รีเฟรชสถานะ Provider">
+                                        <i class="fas fa-rotate-right"></i>
+                                    </button>
+                                </div>
+                                <div class="provider-status-grid">
+                                    <div id="provider-status-codex" class="provider-status-card is-loading">
+                                        <span class="provider-status-dot"></span>
+                                        <span class="provider-status-copy"><strong>GPT / Codex</strong><small>กำลังตรวจสอบ…</small></span>
+                                    </div>
+                                    <div id="provider-status-manus" class="provider-status-card is-loading">
+                                        <span class="provider-status-dot"></span>
+                                        <span class="provider-status-copy"><strong>Manus</strong><small>กำลังตรวจสอบเครดิต…</small></span>
+                                    </div>
+                                </div>
+                            </section>
                             <!-- Composer card: text on top, session controls along the bottom -->
                             <div id="composer-card" class="composer-card">
                                 <!-- Attachment preview: scrolls horizontally above the text -->

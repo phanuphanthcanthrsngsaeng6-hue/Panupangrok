@@ -1,0 +1,1492 @@
+{
+  "version": 2,
+  "groups": {
+    "template": {
+      "name": "Template",
+      "order": 0
+    }
+  },
+  "bundles": {},
+  "assets": {
+    "assets/template/catalog/sfxmint-impact-punch/impact-punch-01.wav": {
+      "path": "https://d1oupeiobkpcny.cloudfront.net/assets/dashboard/materials/2026/09/29/11df6d1205376d6606e052b2fc655c9dd9f03d764d9f4436222dc4c57ac9016b.bin",
+      "sha256": "sha256:11df6d1205376d6606e052b2fc655c9dd9f03d764d9f4436222dc4c57ac9016b",
+      "size": 352878,
+      "assetType": "audio",
+      "groupId": "template",
+      "used": true
+    },
+    "assets/template/catalog/sfxmint-impact-punch/impact-punch-02.wav": {
+      "path": "https://d1oupeiobkpcny.cloudfront.net/assets/dashboard/materials/2026/09/29/b44263c15afb1b082c405f624d6d46c0daffdf4cfc0b2327a5b5d21784c108cb.bin",
+      "sha256": "sha256:b44263c15afb1b082c405f624d6d46c0daffdf4cfc0b2327a5b5d21784c108cb",
+      "size": 352878,
+      "assetType": "audio",
+      "groupId": "template",
+      "used": true
+    },
+    "assets/template/catalog/sfxmint-impact-punch/impact-punch-03.wav": {
+      "path": "https://d1oupeiobkpcny.cloudfront.net/assets/dashboard/materials/2026/09/29/ce1eb7340e271a8c54e1d4ff4a61cc619d3b7160ac58c0d114e002d66597e201.bin",
+      "sha256": "sha256:ce1eb7340e271a8c54e1d4ff4a61cc619d3b7160ac58c0d114e002d66597e201",
+      "size": 352878,
+      "assetType": "audio",
+      "groupId": "template",
+      "used": true
+    },
+    "assets/template/catalog/sfxmint-impact-punch/impact-punch-04.wav": {
+      "path": "https://d1oupeiobkpcny.cloudfront.net/assets/dashboard/materials/2026/09/29/c5452e7b23f6e716a24a8c35c684e83be9abcb63734fb80bd21f568de92259af.bin",
+      "sha256": "sha256:c5452e7b23f6e716a24a8c35c684e83be9abcb63734fb80bd21f568de92259af",
+      "size": 352878,
+      "assetType": "audio",
+      "groupId": "template",
+      "used": true
+    },
+    "assets/template/catalog/sfxmint-ui-click/ui-click-01.wav": {
+      "path": "https://d1oupeiobkpcny.cloudfront.net/assets/dashboard/materials/2026/09/29/01cc3e187b8516c66e309ce799b7694e0ee38234904eeb705e84a9e04638e178.bin",
+      "sha256": "sha256:01cc3e187b8516c66e309ce799b7694e0ee38234904eeb705e84a9e04638e178",
+      "size": 352878,
+      "assetType": "audio",
+      "groupId": "template",
+      "used": true
+    },
+    "assets/template/catalog/sfxmint-ui-click/ui-click-02.wav": {
+      "path": "https://d1oupeiobkpcny.cloudfront.net/assets/dashboard/materials/2026/09/29/ae23800962b2f4fdf8eaf58b6e0cb6feb969ab64d8bc82fa6283c74ca3aa4beb.bin",
+      "sha256": "sha256:ae23800962b2f4fdf8eaf58b6e0cb6feb969ab64d8bc82fa6283c74ca3aa4beb",
+      "size": 352878,
+      "assetType": "audio",
+      "groupId": "template",
+      "used": true
+    },
+    "assets/template/catalog/sfxmint-ui-click/ui-click-03.wav": {
+      "path": "https://d1oupeiobkpcny.cloudfront.net/assets/dashboard/materials/2026/09/29/179a03565641b66dbc094c8ee72a8fbc43fead82dd54072baee0892c0b270667.bin",
+      "sha256": "sha256:179a03565641b66dbc094c8ee72a8fbc43fead82dd54072baee0892c0b270667",
+      "size": 176478,
+      "assetType": "audio",
+      "groupId": "template",
+      "used": true
+    },
+    "assets/template/catalog/sfxmint-ui-hover/ui-hover-01.wav": {
+      "path": "https://d1oupeiobkpcny.cloudfront.net/assets/dashboard/materials/2026/09/29/9eecb179ef80a695be7e00274b28ced240e72b58d0f089630ccefad6f2b44374.bin",
+      "sha256": "sha256:9eecb179ef80a695be7e00274b28ced240e72b58d0f089630ccefad6f2b44374",
+      "size": 176478,
+      "assetType": "audio",
+      "groupId": "template",
+      "used": true
+    },
+    "assets/template/catalog/sfxmint-ui-hover/ui-hover-02.wav": {
+      "path": "https://d1oupeiobkpcny.cloudfront.net/assets/dashboard/materials/2026/09/29/ba7b97a3b4a7e2d93a93a5f4bf12476e6ade0c2fe3f51c5ad8036da31ba4106b.bin",
+      "sha256": "sha256:ba7b97a3b4a7e2d93a93a5f4bf12476e6ade0c2fe3f51c5ad8036da31ba4106b",
+      "size": 176478,
+      "assetType": "audio",
+      "groupId": "template",
+      "used": true
+    },
+    "assets/template/game/anim/enemy_blaster.webp": {
+      "path": "https://d1oupeiobkpcny.cloudfront.net/assets/dashboard/materials/2026/09/29/904c20faceeeb406cd8fd4ddd064e499ca4530e58ba7cf0265ff59d61989ec96.bin",
+      "sha256": "sha256:904c20faceeeb406cd8fd4ddd064e499ca4530e58ba7cf0265ff59d61989ec96",
+      "size": 1190124,
+      "assetType": "image",
+      "groupId": "template",
+      "used": true
+    },
+    "assets/template/game/anim/enemy_brute.webp": {
+      "path": "https://d1oupeiobkpcny.cloudfront.net/assets/dashboard/materials/2026/09/29/daf11b1a4523dfbf7de58464e3aba3bd433e03a06436feb1f02b78450f70e28c.bin",
+      "sha256": "sha256:daf11b1a4523dfbf7de58464e3aba3bd433e03a06436feb1f02b78450f70e28c",
+      "size": 3001732,
+      "assetType": "image",
+      "groupId": "template",
+      "used": true
+    },
+    "assets/template/game/anim/enemy_goon.webp": {
+      "path": "https://d1oupeiobkpcny.cloudfront.net/assets/dashboard/materials/2026/09/29/ed2708900c25854868b99a7e227b918e3b8ac9f15941793cc51e2d331208f1c1.bin",
+      "sha256": "sha256:ed2708900c25854868b99a7e227b918e3b8ac9f15941793cc51e2d331208f1c1",
+      "size": 1554790,
+      "assetType": "image",
+      "groupId": "template",
+      "used": true
+    },
+    "assets/template/game/anim/enemy_mech.webp": {
+      "path": "https://d1oupeiobkpcny.cloudfront.net/assets/dashboard/materials/2026/09/29/93524b9e500a07ab3644a2bc3bc422ac998e7f606d9b78019b7b139339355e75.bin",
+      "sha256": "sha256:93524b9e500a07ab3644a2bc3bc422ac998e7f606d9b78019b7b139339355e75",
+      "size": 4411256,
+      "assetType": "image",
+      "groupId": "template",
+      "used": true
+    },
+    "assets/template/game/anim/hero_blaze.webp": {
+      "path": "https://d1oupeiobkpcny.cloudfront.net/assets/dashboard/materials/2026/09/29/050713ed7d346033b4d6c37573e21813599cb5aca46d120760612f75ea93e7a7.bin",
+      "sha256": "sha256:050713ed7d346033b4d6c37573e21813599cb5aca46d120760612f75ea93e7a7",
+      "size": 1391838,
+      "assetType": "image",
+      "groupId": "template",
+      "used": true
+    },
+    "assets/template/game/anim/hero_frost.webp": {
+      "path": "https://d1oupeiobkpcny.cloudfront.net/assets/dashboard/materials/2026/09/29/93ff8927d3e41da538d8d2a1cc3510f4eb8156526bc598694c9c88ee7c4719b9.bin",
+      "sha256": "sha256:93ff8927d3e41da538d8d2a1cc3510f4eb8156526bc598694c9c88ee7c4719b9",
+      "size": 1512034,
+      "assetType": "image",
+      "groupId": "template",
+      "used": true
+    },
+    "assets/template/game/anim/hero_monitor.webp": {
+      "path": "https://d1oupeiobkpcny.cloudfront.net/assets/dashboard/materials/2026/09/29/58af4218357a4e1f22da7a35c419c4204ffc8abbfa0d092b95a89aec8dc02392.bin",
+      "sha256": "sha256:58af4218357a4e1f22da7a35c419c4204ffc8abbfa0d092b95a89aec8dc02392",
+      "size": 1256436,
+      "assetType": "image",
+      "groupId": "template",
+      "used": true
+    },
+    "assets/template/game/anim/hero_psi.webp": {
+      "path": "https://d1oupeiobkpcny.cloudfront.net/assets/dashboard/materials/2026/09/29/22cd04073bb901dbe82e222e8e690820fb123a51be8ab9f1d2dbe56c2bcabb94.bin",
+      "sha256": "sha256:22cd04073bb901dbe82e222e8e690820fb123a51be8ab9f1d2dbe56c2bcabb94",
+      "size": 1742930,
+      "assetType": "image",
+      "groupId": "template",
+      "used": true
+    },
+    "assets/template/game/anim/hero_stretch.webp": {
+      "path": "https://d1oupeiobkpcny.cloudfront.net/assets/dashboard/materials/2026/09/29/88326562e5d4d75eac0a688c730bccfd581d570081326500606d2eaae1c8b760.bin",
+      "sha256": "sha256:88326562e5d4d75eac0a688c730bccfd581d570081326500606d2eaae1c8b760",
+      "size": 1220450,
+      "assetType": "image",
+      "groupId": "template",
+      "used": true
+    },
+    "assets/template/game/audio/music/bgm_battle.ogg": {
+      "path": "https://d1oupeiobkpcny.cloudfront.net/assets/dashboard/materials/2026/09/29/36ed73302e636a75f970e28504c6a86e84b66dbfc61f2ed5bf52d33e477add4d.bin",
+      "sha256": "sha256:36ed73302e636a75f970e28504c6a86e84b66dbfc61f2ed5bf52d33e477add4d",
+      "size": 2032359,
+      "assetType": "audio",
+      "groupId": "template",
+      "used": true
+    },
+    "assets/template/game/audio/music/bgm_boss.ogg": {
+      "path": "https://d1oupeiobkpcny.cloudfront.net/assets/dashboard/materials/2026/09/29/cc73515ffcdf22a9d514c3f2f9b218dbe4af8814574c4729d058996f462a01fc.bin",
+      "sha256": "sha256:cc73515ffcdf22a9d514c3f2f9b218dbe4af8814574c4729d058996f462a01fc",
+      "size": 1393891,
+      "assetType": "audio",
+      "groupId": "template",
+      "used": true
+    },
+    "assets/template/game/audio/music/bgm_title.ogg": {
+      "path": "https://d1oupeiobkpcny.cloudfront.net/assets/dashboard/materials/2026/09/29/2f5ca65369b5f00d7d80064cd709b417b021936c79ce5d262054fc36d69f53bd.bin",
+      "sha256": "sha256:2f5ca65369b5f00d7d80064cd709b417b021936c79ce5d262054fc36d69f53bd",
+      "size": 1939756,
+      "assetType": "audio",
+      "groupId": "template",
+      "used": true
+    },
+    "assets/template/game/audio/sfx/ai_alarm.ogg": {
+      "path": "https://d1oupeiobkpcny.cloudfront.net/assets/dashboard/materials/2026/09/29/7a8873a70cc4a1aed24926118c2212f299dabc8445e8275006bd29c6c45b1657.bin",
+      "sha256": "sha256:7a8873a70cc4a1aed24926118c2212f299dabc8445e8275006bd29c6c45b1657",
+      "size": 19621,
+      "assetType": "audio",
+      "groupId": "template",
+      "used": true
+    },
+    "assets/template/game/audio/sfx/ai_charge.ogg": {
+      "path": "https://d1oupeiobkpcny.cloudfront.net/assets/dashboard/materials/2026/09/29/d799295606fc30dfe221c22797f0be512d83b1c436be0edf7c6262d4c97b21a4.bin",
+      "sha256": "sha256:d799295606fc30dfe221c22797f0be512d83b1c436be0edf7c6262d4c97b21a4",
+      "size": 20260,
+      "assetType": "audio",
+      "groupId": "template",
+      "used": true
+    },
+    "assets/template/game/audio/sfx/ai_retreat.ogg": {
+      "path": "https://d1oupeiobkpcny.cloudfront.net/assets/dashboard/materials/2026/09/29/d7b1bfc57f5cb3f1f893ebb42e101f56330bcf7dcf463e5df4a698fee930daf7.bin",
+      "sha256": "sha256:d7b1bfc57f5cb3f1f893ebb42e101f56330bcf7dcf463e5df4a698fee930daf7",
+      "size": 17508,
+      "assetType": "audio",
+      "groupId": "template",
+      "used": true
+    },
+    "assets/template/game/audio/sfx/boss_roar.ogg": {
+      "path": "https://d1oupeiobkpcny.cloudfront.net/assets/dashboard/materials/2026/09/29/2914ffd0a91a2d0a0761ae674b417dcda7bf30dc62cf5ff80a1ed61601f2108c.bin",
+      "sha256": "sha256:2914ffd0a91a2d0a0761ae674b417dcda7bf30dc62cf5ff80a1ed61601f2108c",
+      "size": 19218,
+      "assetType": "audio",
+      "groupId": "template",
+      "used": true
+    },
+    "assets/template/game/audio/sfx/boss_stomp.ogg": {
+      "path": "https://d1oupeiobkpcny.cloudfront.net/assets/dashboard/materials/2026/09/29/88374f80a1e78773cb7069a725892833e61539ea396bc3da5bf9a61dac36a368.bin",
+      "sha256": "sha256:88374f80a1e78773cb7069a725892833e61539ea396bc3da5bf9a61dac36a368",
+      "size": 14030,
+      "assetType": "audio",
+      "groupId": "template",
+      "used": true
+    },
+    "assets/template/game/audio/sfx/capture.ogg": {
+      "path": "https://d1oupeiobkpcny.cloudfront.net/assets/dashboard/materials/2026/09/29/123f464b8776b1d0aa5eccac8cdee5a5f1f56f08ed31988638ccc969002d9bd8.bin",
+      "sha256": "sha256:123f464b8776b1d0aa5eccac8cdee5a5f1f56f08ed31988638ccc969002d9bd8",
+      "size": 23759,
+      "assetType": "audio",
+      "groupId": "template",
+      "used": true
+    },
+    "assets/template/game/audio/sfx/coin.ogg": {
+      "path": "https://d1oupeiobkpcny.cloudfront.net/assets/dashboard/materials/2026/09/29/c292240dfb584d9b5cf0b96dc44b5a57946fa043480f207f04c5d6c4e0b0376a.bin",
+      "sha256": "sha256:c292240dfb584d9b5cf0b96dc44b5a57946fa043480f207f04c5d6c4e0b0376a",
+      "size": 9728,
+      "assetType": "audio",
+      "groupId": "template",
+      "used": true
+    },
+    "assets/template/game/audio/sfx/comic_page.ogg": {
+      "path": "https://d1oupeiobkpcny.cloudfront.net/assets/dashboard/materials/2026/09/29/77c8dfc8512a43d9440170b7372960098e6bd8091dd7b7a77c0e34ddc0c7395d.bin",
+      "sha256": "sha256:77c8dfc8512a43d9440170b7372960098e6bd8091dd7b7a77c0e34ddc0c7395d",
+      "size": 6902,
+      "assetType": "audio",
+      "groupId": "template",
+      "used": true
+    },
+    "assets/template/game/audio/sfx/comic_slam.ogg": {
+      "path": "https://d1oupeiobkpcny.cloudfront.net/assets/dashboard/materials/2026/09/29/79684000d1dbb77bf7ff01d96e38369c434e702a75159429802b35dfff0595ae.bin",
+      "sha256": "sha256:79684000d1dbb77bf7ff01d96e38369c434e702a75159429802b35dfff0595ae",
+      "size": 10612,
+      "assetType": "audio",
+      "groupId": "template",
+      "used": true
+    },
+    "assets/template/game/audio/sfx/comic_sting.ogg": {
+      "path": "https://d1oupeiobkpcny.cloudfront.net/assets/dashboard/materials/2026/09/29/fb47e9d4a3790836049ab7becfbc67744f062276ed616ffcd894e8654e7ff628.bin",
+      "sha256": "sha256:fb47e9d4a3790836049ab7becfbc67744f062276ed616ffcd894e8654e7ff628",
+      "size": 19409,
+      "assetType": "audio",
+      "groupId": "template",
+      "used": true
+    },
+    "assets/template/game/audio/sfx/dash.ogg": {
+      "path": "https://d1oupeiobkpcny.cloudfront.net/assets/dashboard/materials/2026/09/29/ce54efbbecab32852646b8c8048ee970fccaabded7b4d5dde8078234bb72b759.bin",
+      "sha256": "sha256:ce54efbbecab32852646b8c8048ee970fccaabded7b4d5dde8078234bb72b759",
+      "size": 7945,
+      "assetType": "audio",
+      "groupId": "template",
+      "used": true
+    },
+    "assets/template/game/audio/sfx/defeat.ogg": {
+      "path": "https://d1oupeiobkpcny.cloudfront.net/assets/dashboard/materials/2026/09/29/f1a53c02fc798a49100e7033d57b513c4680d16d38f397991629e0d2770aff16.bin",
+      "sha256": "sha256:f1a53c02fc798a49100e7033d57b513c4680d16d38f397991629e0d2770aff16",
+      "size": 28471,
+      "assetType": "audio",
+      "groupId": "template",
+      "used": true
+    },
+    "assets/template/game/audio/sfx/fireball.ogg": {
+      "path": "https://d1oupeiobkpcny.cloudfront.net/assets/dashboard/materials/2026/09/29/d1ea997449f3f7fcff7081eefa729c05da94c138cf989b76382340667ef3e5d9.bin",
+      "sha256": "sha256:d1ea997449f3f7fcff7081eefa729c05da94c138cf989b76382340667ef3e5d9",
+      "size": 16409,
+      "assetType": "audio",
+      "groupId": "template",
+      "used": true
+    },
+    "assets/template/game/audio/sfx/goon_grunt.ogg": {
+      "path": "https://d1oupeiobkpcny.cloudfront.net/assets/dashboard/materials/2026/09/29/6fc73282d336ee02af83ab8026c61a87cadf75eb4fee3a9ab630352342ab9946.bin",
+      "sha256": "sha256:6fc73282d336ee02af83ab8026c61a87cadf75eb4fee3a9ab630352342ab9946",
+      "size": 9989,
+      "assetType": "audio",
+      "groupId": "template",
+      "used": true
+    },
+    "assets/template/game/audio/sfx/hall_hit.ogg": {
+      "path": "https://d1oupeiobkpcny.cloudfront.net/assets/dashboard/materials/2026/09/29/c4e6764b3e965ee3b0afa1ee8033c26ddbc0f68553eae33660359e763672d075.bin",
+      "sha256": "sha256:c4e6764b3e965ee3b0afa1ee8033c26ddbc0f68553eae33660359e763672d075",
+      "size": 13866,
+      "assetType": "audio",
+      "groupId": "template",
+      "used": true
+    },
+    "assets/template/game/audio/sfx/ice.ogg": {
+      "path": "https://d1oupeiobkpcny.cloudfront.net/assets/dashboard/materials/2026/09/29/cceb7a15a409b37ee3cd3d3a48b70b5d4cc2234cad2330b4745109fc9f07e4bd.bin",
+      "sha256": "sha256:cceb7a15a409b37ee3cd3d3a48b70b5d4cc2234cad2330b4745109fc9f07e4bd",
+      "size": 17252,
+      "assetType": "audio",
+      "groupId": "template",
+      "used": true
+    },
+    "assets/template/game/audio/sfx/ko.ogg": {
+      "path": "https://d1oupeiobkpcny.cloudfront.net/assets/dashboard/materials/2026/09/29/687fdecb65ba5d373bc764e6ac4bc53febb0c106492de1a2fda94f376ead5d8b.bin",
+      "sha256": "sha256:687fdecb65ba5d373bc764e6ac4bc53febb0c106492de1a2fda94f376ead5d8b",
+      "size": 8271,
+      "assetType": "audio",
+      "groupId": "template",
+      "used": true
+    },
+    "assets/template/game/audio/sfx/levelup.ogg": {
+      "path": "https://d1oupeiobkpcny.cloudfront.net/assets/dashboard/materials/2026/09/29/acedccadc8b6f51d645e27f9ad0f1234e5b9cd2b990349d8a6ef5811a94c2661.bin",
+      "sha256": "sha256:acedccadc8b6f51d645e27f9ad0f1234e5b9cd2b990349d8a6ef5811a94c2661",
+      "size": 14195,
+      "assetType": "audio",
+      "groupId": "template",
+      "used": true
+    },
+    "assets/template/game/audio/sfx/portal.ogg": {
+      "path": "https://d1oupeiobkpcny.cloudfront.net/assets/dashboard/materials/2026/09/29/53b4592a4d23332324eb761974faba84c287ff2a8411d01fb32450c4f3447f92.bin",
+      "sha256": "sha256:53b4592a4d23332324eb761974faba84c287ff2a8411d01fb32450c4f3447f92",
+      "size": 15742,
+      "assetType": "audio",
+      "groupId": "template",
+      "used": true
+    },
+    "assets/template/game/audio/sfx/psi.ogg": {
+      "path": "https://d1oupeiobkpcny.cloudfront.net/assets/dashboard/materials/2026/09/29/921c692b9b520bf94bf4d01ecbc8a5fcf97f56bbf852b57243da5672c7ed7755.bin",
+      "sha256": "sha256:921c692b9b520bf94bf4d01ecbc8a5fcf97f56bbf852b57243da5672c7ed7755",
+      "size": 13905,
+      "assetType": "audio",
+      "groupId": "template",
+      "used": true
+    },
+    "assets/template/game/audio/sfx/rally.ogg": {
+      "path": "https://d1oupeiobkpcny.cloudfront.net/assets/dashboard/materials/2026/09/29/87976c8f4d556a035a2d6b4ae01bfba00ae27a24925c5a512b8bb2b824a9b1f8.bin",
+      "sha256": "sha256:87976c8f4d556a035a2d6b4ae01bfba00ae27a24925c5a512b8bb2b824a9b1f8",
+      "size": 26020,
+      "assetType": "audio",
+      "groupId": "template",
+      "used": true
+    },
+    "assets/template/game/audio/sfx/rockets.ogg": {
+      "path": "https://d1oupeiobkpcny.cloudfront.net/assets/dashboard/materials/2026/09/29/e018de3cf72f0cb1f50a887f52fdebc53d4478929732792c7ad08afb024cd16b.bin",
+      "sha256": "sha256:e018de3cf72f0cb1f50a887f52fdebc53d4478929732792c7ad08afb024cd16b",
+      "size": 20869,
+      "assetType": "audio",
+      "groupId": "template",
+      "used": true
+    },
+    "assets/template/game/audio/sfx/slam.ogg": {
+      "path": "https://d1oupeiobkpcny.cloudfront.net/assets/dashboard/materials/2026/09/29/51ab106eb779f0e24b457499d3af2f406024475d5fd26e8c89cd9b338a794df7.bin",
+      "sha256": "sha256:51ab106eb779f0e24b457499d3af2f406024475d5fd26e8c89cd9b338a794df7",
+      "size": 14944,
+      "assetType": "audio",
+      "groupId": "template",
+      "used": true
+    },
+    "assets/template/game/audio/sfx/stretch.ogg": {
+      "path": "https://d1oupeiobkpcny.cloudfront.net/assets/dashboard/materials/2026/09/29/e6e75030ce696ef7330859313da878475d6f7802479fa52a8bbbbbcb1ada736d.bin",
+      "sha256": "sha256:e6e75030ce696ef7330859313da878475d6f7802479fa52a8bbbbbcb1ada736d",
+      "size": 14587,
+      "assetType": "audio",
+      "groupId": "template",
+      "used": true
+    },
+    "assets/template/game/audio/sfx/surge.ogg": {
+      "path": "https://d1oupeiobkpcny.cloudfront.net/assets/dashboard/materials/2026/09/29/3e81c980a9627371b539e7f3d977c9298d651173d37d54c093cf1a0b57cc0072.bin",
+      "sha256": "sha256:3e81c980a9627371b539e7f3d977c9298d651173d37d54c093cf1a0b57cc0072",
+      "size": 25822,
+      "assetType": "audio",
+      "groupId": "template",
+      "used": true
+    },
+    "assets/template/game/audio/sfx/train.ogg": {
+      "path": "https://d1oupeiobkpcny.cloudfront.net/assets/dashboard/materials/2026/09/29/6a4916180777c6e596bdb622b32d7c85675606e1bd1e68d25367fba6d0411b44.bin",
+      "sha256": "sha256:6a4916180777c6e596bdb622b32d7c85675606e1bd1e68d25367fba6d0411b44",
+      "size": 15114,
+      "assetType": "audio",
+      "groupId": "template",
+      "used": true
+    },
+    "assets/template/game/audio/sfx/victory.ogg": {
+      "path": "https://d1oupeiobkpcny.cloudfront.net/assets/dashboard/materials/2026/09/29/3345aa41e839c7b77ba15f79d6d55a3a9a5f7320ef1dd5eecbc58c474f1bf76f.bin",
+      "sha256": "sha256:3345aa41e839c7b77ba15f79d6d55a3a9a5f7320ef1dd5eecbc58c474f1bf76f",
+      "size": 40256,
+      "assetType": "audio",
+      "groupId": "template",
+      "used": true
+    },
+    "assets/template/game/audio/sfx/wave_horn.ogg": {
+      "path": "https://d1oupeiobkpcny.cloudfront.net/assets/dashboard/materials/2026/09/29/2475d7e8cc6ebdc760d4f1308ed571799944e2d6ea534da876d9946dce6d17b2.bin",
+      "sha256": "sha256:2475d7e8cc6ebdc760d4f1308ed571799944e2d6ea534da876d9946dce6d17b2",
+      "size": 22477,
+      "assetType": "audio",
+      "groupId": "template",
+      "used": true
+    },
+    "assets/template/game/audio/sfx/zap.ogg": {
+      "path": "https://d1oupeiobkpcny.cloudfront.net/assets/dashboard/materials/2026/09/29/24e7078caf375a26f4bb36b6a34db059f10a74ae7691bedb023fd0fdc0dee511.bin",
+      "sha256": "sha256:24e7078caf375a26f4bb36b6a34db059f10a74ae7691bedb023fd0fdc0dee511",
+      "size": 7855,
+      "assetType": "audio",
+      "groupId": "template",
+      "used": true
+    },
+    "assets/template/game/audio/sfx_rescue.ogg": {
+      "path": "https://d1oupeiobkpcny.cloudfront.net/assets/dashboard/materials/2026/09/29/c342499c5ce09797ab8a4cab84dc331396b0c211c771004dfa396a86091b9afb.bin",
+      "sha256": "sha256:c342499c5ce09797ab8a4cab84dc331396b0c211c771004dfa396a86091b9afb",
+      "size": 21655,
+      "assetType": "audio",
+      "groupId": "template",
+      "used": true
+    },
+    "assets/template/game/audio/sfx_wave_bell.ogg": {
+      "path": "https://d1oupeiobkpcny.cloudfront.net/assets/dashboard/materials/2026/09/29/17ccf51bd68aca410d8ed8d1ab2fb2e3a95465336a23619942b57a3285fbf7a5.bin",
+      "sha256": "sha256:17ccf51bd68aca410d8ed8d1ab2fb2e3a95465336a23619942b57a3285fbf7a5",
+      "size": 44451,
+      "assetType": "audio",
+      "groupId": "template",
+      "used": true
+    },
+    "assets/template/game/audio/vo/blaze_level.ogg": {
+      "path": "https://d1oupeiobkpcny.cloudfront.net/assets/dashboard/materials/2026/09/29/390826c0adcbd2e0764e319131d671c7b884d2073969160783efb4afa3542bae.bin",
+      "sha256": "sha256:390826c0adcbd2e0764e319131d671c7b884d2073969160783efb4afa3542bae",
+      "size": 29511,
+      "assetType": "audio",
+      "groupId": "template",
+      "used": true
+    },
+    "assets/template/game/audio/vo/blaze_power.ogg": {
+      "path": "https://d1oupeiobkpcny.cloudfront.net/assets/dashboard/materials/2026/09/29/fa697c7eda3abb721dc39c1ff0258964be38b739d1cbbc1bf3c48b9b011e7323.bin",
+      "sha256": "sha256:fa697c7eda3abb721dc39c1ff0258964be38b739d1cbbc1bf3c48b9b011e7323",
+      "size": 22030,
+      "assetType": "audio",
+      "groupId": "template",
+      "used": true
+    },
+    "assets/template/game/audio/vo/blaze_select.ogg": {
+      "path": "https://d1oupeiobkpcny.cloudfront.net/assets/dashboard/materials/2026/09/29/d7378887c7c3ef28fba7b2e6c4c63b65009d5355086650c720dcebaa8520d77f.bin",
+      "sha256": "sha256:d7378887c7c3ef28fba7b2e6c4c63b65009d5355086650c720dcebaa8520d77f",
+      "size": 16096,
+      "assetType": "audio",
+      "groupId": "template",
+      "used": true
+    },
+    "assets/template/game/audio/vo/frost_level.ogg": {
+      "path": "https://d1oupeiobkpcny.cloudfront.net/assets/dashboard/materials/2026/09/29/ad62a823eec929d42a3e8353b033bc87ae66f1b492add2426d1e88b9cad59f77.bin",
+      "sha256": "sha256:ad62a823eec929d42a3e8353b033bc87ae66f1b492add2426d1e88b9cad59f77",
+      "size": 23359,
+      "assetType": "audio",
+      "groupId": "template",
+      "used": true
+    },
+    "assets/template/game/audio/vo/frost_power.ogg": {
+      "path": "https://d1oupeiobkpcny.cloudfront.net/assets/dashboard/materials/2026/09/29/fece40d9d07a2d949d9d6a36b13b7c19c375afbb23e0867f5d6abf8761c9d64c.bin",
+      "sha256": "sha256:fece40d9d07a2d949d9d6a36b13b7c19c375afbb23e0867f5d6abf8761c9d64c",
+      "size": 17110,
+      "assetType": "audio",
+      "groupId": "template",
+      "used": true
+    },
+    "assets/template/game/audio/vo/frost_select.ogg": {
+      "path": "https://d1oupeiobkpcny.cloudfront.net/assets/dashboard/materials/2026/09/29/b61a0fbc7b7855877c09cfd51447fe4d938c404f9543c54839e4b47b4b8ce19b.bin",
+      "sha256": "sha256:b61a0fbc7b7855877c09cfd51447fe4d938c404f9543c54839e4b47b4b8ce19b",
+      "size": 21439,
+      "assetType": "audio",
+      "groupId": "template",
+      "used": true
+    },
+    "assets/template/game/audio/vo/intro_coach.ogg": {
+      "path": "https://d1oupeiobkpcny.cloudfront.net/assets/dashboard/materials/2026/09/29/2b260b4ad7dc558052b30717311fec7e1f6424d9d0f788bdaca0f59ae2d94a57.bin",
+      "sha256": "sha256:2b260b4ad7dc558052b30717311fec7e1f6424d9d0f788bdaca0f59ae2d94a57",
+      "size": 81032,
+      "assetType": "audio",
+      "groupId": "template",
+      "used": true
+    },
+    "assets/template/game/audio/vo/intro_n1.ogg": {
+      "path": "https://d1oupeiobkpcny.cloudfront.net/assets/dashboard/materials/2026/09/29/e6f4f3ce7a7f31d21390b864998ba6a171f9efa6cf007ecd49b7c62bbeb54013.bin",
+      "sha256": "sha256:e6f4f3ce7a7f31d21390b864998ba6a171f9efa6cf007ecd49b7c62bbeb54013",
+      "size": 111163,
+      "assetType": "audio",
+      "groupId": "template",
+      "used": true
+    },
+    "assets/template/game/audio/vo/intro_n2.ogg": {
+      "path": "https://d1oupeiobkpcny.cloudfront.net/assets/dashboard/materials/2026/09/29/7bad20c8eada53a58ff8921a042a5419014818430759aa3b230c5f68a15e1e54.bin",
+      "sha256": "sha256:7bad20c8eada53a58ff8921a042a5419014818430759aa3b230c5f68a15e1e54",
+      "size": 72199,
+      "assetType": "audio",
+      "groupId": "template",
+      "used": true
+    },
+    "assets/template/game/audio/vo/intro_n3.ogg": {
+      "path": "https://d1oupeiobkpcny.cloudfront.net/assets/dashboard/materials/2026/09/29/6b480b9bcbf632167a9c18837ab7be593a3e6658d5b453443987d6f91db0edae.bin",
+      "sha256": "sha256:6b480b9bcbf632167a9c18837ab7be593a3e6658d5b453443987d6f91db0edae",
+      "size": 60844,
+      "assetType": "audio",
+      "groupId": "template",
+      "used": true
+    },
+    "assets/template/game/audio/vo/intro_n5.ogg": {
+      "path": "https://d1oupeiobkpcny.cloudfront.net/assets/dashboard/materials/2026/09/29/d24b3710f7f729a9175cbe9a6054cb19a4ff25bc26d0721dd70ef6b49891187a.bin",
+      "sha256": "sha256:d24b3710f7f729a9175cbe9a6054cb19a4ff25bc26d0721dd70ef6b49891187a",
+      "size": 28545,
+      "assetType": "audio",
+      "groupId": "template",
+      "used": true
+    },
+    "assets/template/game/audio/vo/intro_n6.ogg": {
+      "path": "https://d1oupeiobkpcny.cloudfront.net/assets/dashboard/materials/2026/09/29/de519cf5d5d6131f074545a8c73691b6ed8682c24862721b592604cf2e95c0f2.bin",
+      "sha256": "sha256:de519cf5d5d6131f074545a8c73691b6ed8682c24862721b592604cf2e95c0f2",
+      "size": 48442,
+      "assetType": "audio",
+      "groupId": "template",
+      "used": true
+    },
+    "assets/template/game/audio/vo/intro_principal.ogg": {
+      "path": "https://d1oupeiobkpcny.cloudfront.net/assets/dashboard/materials/2026/09/29/d79dccb1b1ba5208508efed7294adc5ba9165a3677c4bb1bd09f07d1442b6a23.bin",
+      "sha256": "sha256:d79dccb1b1ba5208508efed7294adc5ba9165a3677c4bb1bd09f07d1442b6a23",
+      "size": 104078,
+      "assetType": "audio",
+      "groupId": "template",
+      "used": true
+    },
+    "assets/template/game/audio/vo/monitor_level.ogg": {
+      "path": "https://d1oupeiobkpcny.cloudfront.net/assets/dashboard/materials/2026/09/29/7237134552e491f54364ccd1e3bfa73239111209895468c8d0348bdcd9be20d9.bin",
+      "sha256": "sha256:7237134552e491f54364ccd1e3bfa73239111209895468c8d0348bdcd9be20d9",
+      "size": 30802,
+      "assetType": "audio",
+      "groupId": "template",
+      "used": true
+    },
+    "assets/template/game/audio/vo/monitor_power.ogg": {
+      "path": "https://d1oupeiobkpcny.cloudfront.net/assets/dashboard/materials/2026/09/29/fad4556f3c05ca9836dce9c8fb96e02fb8ff27969bf70a22cdd5920e5aa23983.bin",
+      "sha256": "sha256:fad4556f3c05ca9836dce9c8fb96e02fb8ff27969bf70a22cdd5920e5aa23983",
+      "size": 27369,
+      "assetType": "audio",
+      "groupId": "template",
+      "used": true
+    },
+    "assets/template/game/audio/vo/monitor_select.ogg": {
+      "path": "https://d1oupeiobkpcny.cloudfront.net/assets/dashboard/materials/2026/09/29/5334889d077cce352a674512142f7cf3a9ac9977fc4d0964cecbe5e9810f6682.bin",
+      "sha256": "sha256:5334889d077cce352a674512142f7cf3a9ac9977fc4d0964cecbe5e9810f6682",
+      "size": 15783,
+      "assetType": "audio",
+      "groupId": "template",
+      "used": true
+    },
+    "assets/template/game/audio/vo/pa_defeat.ogg": {
+      "path": "https://d1oupeiobkpcny.cloudfront.net/assets/dashboard/materials/2026/09/29/562c4af3d2ebce72ab45b1891ac63733ca455d5d821efba40b96f21b542858c8.bin",
+      "sha256": "sha256:562c4af3d2ebce72ab45b1891ac63733ca455d5d821efba40b96f21b542858c8",
+      "size": 29382,
+      "assetType": "audio",
+      "groupId": "template",
+      "used": true
+    },
+    "assets/template/game/audio/vo/pa_final.ogg": {
+      "path": "https://d1oupeiobkpcny.cloudfront.net/assets/dashboard/materials/2026/09/29/5a7caef28d4015bb6d979106ab2c55598cda63fa51e090e4c928f926e6000bac.bin",
+      "sha256": "sha256:5a7caef28d4015bb6d979106ab2c55598cda63fa51e090e4c928f926e6000bac",
+      "size": 32962,
+      "assetType": "audio",
+      "groupId": "template",
+      "used": true
+    },
+    "assets/template/game/audio/vo/pa_room.ogg": {
+      "path": "https://d1oupeiobkpcny.cloudfront.net/assets/dashboard/materials/2026/09/29/367611db5c3b22af173b27dc8f7343a0cc434a161f59831645a71d21f9ad2fea.bin",
+      "sha256": "sha256:367611db5c3b22af173b27dc8f7343a0cc434a161f59831645a71d21f9ad2fea",
+      "size": 26930,
+      "assetType": "audio",
+      "groupId": "template",
+      "used": true
+    },
+    "assets/template/game/audio/vo/pa_surge.ogg": {
+      "path": "https://d1oupeiobkpcny.cloudfront.net/assets/dashboard/materials/2026/09/29/180df60e4751e33d6d3d4b7dbd6c8276a50f8e12eb6aab6bc491ec0f508df3c1.bin",
+      "sha256": "sha256:180df60e4751e33d6d3d4b7dbd6c8276a50f8e12eb6aab6bc491ec0f508df3c1",
+      "size": 28890,
+      "assetType": "audio",
+      "groupId": "template",
+      "used": true
+    },
+    "assets/template/game/audio/vo/pa_victory.ogg": {
+      "path": "https://d1oupeiobkpcny.cloudfront.net/assets/dashboard/materials/2026/09/29/da2b88264db04951f630ae39e2879e36568beebc5a24633e68f275163f745619.bin",
+      "sha256": "sha256:da2b88264db04951f630ae39e2879e36568beebc5a24633e68f275163f745619",
+      "size": 29297,
+      "assetType": "audio",
+      "groupId": "template",
+      "used": true
+    },
+    "assets/template/game/audio/vo/pa_wave.ogg": {
+      "path": "https://d1oupeiobkpcny.cloudfront.net/assets/dashboard/materials/2026/09/29/e1327b766c59a14b1d546d10946b16570994f28eab3d2a242a410676b47ee055.bin",
+      "sha256": "sha256:e1327b766c59a14b1d546d10946b16570994f28eab3d2a242a410676b47ee055",
+      "size": 30962,
+      "assetType": "audio",
+      "groupId": "template",
+      "used": true
+    },
+    "assets/template/game/audio/vo/pa_welcome.ogg": {
+      "path": "https://d1oupeiobkpcny.cloudfront.net/assets/dashboard/materials/2026/09/29/0e41e7590fcdce831d9aa6df14cac0260c40974c63bcfccbf9eaa8d642234cdc.bin",
+      "sha256": "sha256:0e41e7590fcdce831d9aa6df14cac0260c40974c63bcfccbf9eaa8d642234cdc",
+      "size": 40577,
+      "assetType": "audio",
+      "groupId": "template",
+      "used": true
+    },
+    "assets/template/game/audio/vo/psi_level.ogg": {
+      "path": "https://d1oupeiobkpcny.cloudfront.net/assets/dashboard/materials/2026/09/29/cf28a4b8f5a0acf3d33ba0bd6621bd11ef3006d15a7a8810f0a5f31e1d1f3439.bin",
+      "sha256": "sha256:cf28a4b8f5a0acf3d33ba0bd6621bd11ef3006d15a7a8810f0a5f31e1d1f3439",
+      "size": 31205,
+      "assetType": "audio",
+      "groupId": "template",
+      "used": true
+    },
+    "assets/template/game/audio/vo/psi_power.ogg": {
+      "path": "https://d1oupeiobkpcny.cloudfront.net/assets/dashboard/materials/2026/09/29/ffbb20ee6bb0783819fb54a23166af38c5ee9ec9ecc52d137af06a6fe8b16d28.bin",
+      "sha256": "sha256:ffbb20ee6bb0783819fb54a23166af38c5ee9ec9ecc52d137af06a6fe8b16d28",
+      "size": 21729,
+      "assetType": "audio",
+      "groupId": "template",
+      "used": true
+    },
+    "assets/template/game/audio/vo/psi_select.ogg": {
+      "path": "https://d1oupeiobkpcny.cloudfront.net/assets/dashboard/materials/2026/09/29/25e65a6fdbfd6608c36f1f14534a7ac606a310c2256269904a42f5749a4935da.bin",
+      "sha256": "sha256:25e65a6fdbfd6608c36f1f14534a7ac606a310c2256269904a42f5749a4935da",
+      "size": 15344,
+      "assetType": "audio",
+      "groupId": "template",
+      "used": true
+    },
+    "assets/template/game/audio/vo/stretch_level.ogg": {
+      "path": "https://d1oupeiobkpcny.cloudfront.net/assets/dashboard/materials/2026/09/29/9ce9697e61616509e13c3e99365459a3dfb562e60cc9eb9afece2f5b491fa620.bin",
+      "sha256": "sha256:9ce9697e61616509e13c3e99365459a3dfb562e60cc9eb9afece2f5b491fa620",
+      "size": 22124,
+      "assetType": "audio",
+      "groupId": "template",
+      "used": true
+    },
+    "assets/template/game/audio/vo/stretch_power.ogg": {
+      "path": "https://d1oupeiobkpcny.cloudfront.net/assets/dashboard/materials/2026/09/29/4019364a9f61cc6f522a1ca0b582447240c34dd050bda426cbee0a0b729fa420.bin",
+      "sha256": "sha256:4019364a9f61cc6f522a1ca0b582447240c34dd050bda426cbee0a0b729fa420",
+      "size": 25197,
+      "assetType": "audio",
+      "groupId": "template",
+      "used": true
+    },
+    "assets/template/game/audio/vo/stretch_select.ogg": {
+      "path": "https://d1oupeiobkpcny.cloudfront.net/assets/dashboard/materials/2026/09/29/08aaaef98bc0612407484f6b41d7f26d6c849d249942aa6990592f7a054f97cb.bin",
+      "sha256": "sha256:08aaaef98bc0612407484f6b41d7f26d6c849d249942aa6990592f7a054f97cb",
+      "size": 23469,
+      "assetType": "audio",
+      "groupId": "template",
+      "used": true
+    },
+    "assets/template/game/backgrounds/title_bg.webp": {
+      "path": "https://d1oupeiobkpcny.cloudfront.net/assets/dashboard/materials/2026/09/29/2225b5517e2c4dc9ebb9c8afb93e76482ec36099d2da7abf589504afd7bcaa2f.bin",
+      "sha256": "sha256:2225b5517e2c4dc9ebb9c8afb93e76482ec36099d2da7abf589504afd7bcaa2f",
+      "size": 625870,
+      "assetType": "image",
+      "groupId": "template",
+      "used": true
+    },
+    "assets/template/game/buildings/bld_cafeteria.png": {
+      "path": "https://d1oupeiobkpcny.cloudfront.net/assets/dashboard/materials/2026/09/29/fa8ae57ccf27dbb60ad71688572d90226f460ed457f6520c553a8ff2be9c7294.bin",
+      "sha256": "sha256:fa8ae57ccf27dbb60ad71688572d90226f460ed457f6520c553a8ff2be9c7294",
+      "size": 416645,
+      "assetType": "image",
+      "groupId": "template",
+      "used": true
+    },
+    "assets/template/game/buildings/bld_chem_lab.png": {
+      "path": "https://d1oupeiobkpcny.cloudfront.net/assets/dashboard/materials/2026/09/29/6fdf57308aaa4f837b3dd6e714bdb02f803d3f89d55853a9b68f0de164df8588.bin",
+      "sha256": "sha256:6fdf57308aaa4f837b3dd6e714bdb02f803d3f89d55853a9b68f0de164df8588",
+      "size": 415253,
+      "assetType": "image",
+      "groupId": "template",
+      "used": true
+    },
+    "assets/template/game/buildings/bld_gym.png": {
+      "path": "https://d1oupeiobkpcny.cloudfront.net/assets/dashboard/materials/2026/09/29/c90c3fb5cc0068f4d52a6bbae67b668b7e5a8893b0c70f76b6ffff45e42c1732.bin",
+      "sha256": "sha256:c90c3fb5cc0068f4d52a6bbae67b668b7e5a8893b0c70f76b6ffff45e42c1732",
+      "size": 387627,
+      "assetType": "image",
+      "groupId": "template",
+      "used": true
+    },
+    "assets/template/game/buildings/bld_library.png": {
+      "path": "https://d1oupeiobkpcny.cloudfront.net/assets/dashboard/materials/2026/09/29/971ef6955173ae158cac8dd1ad529a687467de0bfb6c3ca161fdcda93b5181c8.bin",
+      "sha256": "sha256:971ef6955173ae158cac8dd1ad529a687467de0bfb6c3ca161fdcda93b5181c8",
+      "size": 425614,
+      "assetType": "image",
+      "groupId": "template",
+      "used": true
+    },
+    "assets/template/game/buildings/bld_main_hall.png": {
+      "path": "https://d1oupeiobkpcny.cloudfront.net/assets/dashboard/materials/2026/09/29/d4324a0ef63b01bcd2072ea84cea2a10b5b3f86d9687c252be6f2e276994c4eb.bin",
+      "sha256": "sha256:d4324a0ef63b01bcd2072ea84cea2a10b5b3f86d9687c252be6f2e276994c4eb",
+      "size": 563949,
+      "assetType": "image",
+      "groupId": "template",
+      "used": true
+    },
+    "assets/template/game/comic/p1_quad.webp": {
+      "path": "https://d1oupeiobkpcny.cloudfront.net/assets/dashboard/materials/2026/09/29/aadb65f272f5e97b9b97938b6908c18b15e2ef7ab9830903fcae8458614d5735.bin",
+      "sha256": "sha256:aadb65f272f5e97b9b97938b6908c18b15e2ef7ab9830903fcae8458614d5735",
+      "size": 354020,
+      "assetType": "image",
+      "groupId": "template",
+      "used": true
+    },
+    "assets/template/game/comic/p2_villain.webp": {
+      "path": "https://d1oupeiobkpcny.cloudfront.net/assets/dashboard/materials/2026/09/29/3788e41502185608fbce554fbe4c4be4860cd1bc4c37ace7be46c91605ec0b07.bin",
+      "sha256": "sha256:3788e41502185608fbce554fbe4c4be4860cd1bc4c37ace7be46c91605ec0b07",
+      "size": 98338,
+      "assetType": "image",
+      "groupId": "template",
+      "used": true
+    },
+    "assets/template/game/comic/p3_invasion.webp": {
+      "path": "https://d1oupeiobkpcny.cloudfront.net/assets/dashboard/materials/2026/09/29/fce8638b521d580469390340fadd542b85f8681bcaad9a10c6c561b743cdc7e2.bin",
+      "sha256": "sha256:fce8638b521d580469390340fadd542b85f8681bcaad9a10c6c561b743cdc7e2",
+      "size": 203940,
+      "assetType": "image",
+      "groupId": "template",
+      "used": true
+    },
+    "assets/template/game/comic/p4_principal.webp": {
+      "path": "https://d1oupeiobkpcny.cloudfront.net/assets/dashboard/materials/2026/09/29/fe00deaef7205a97a46fa5167b252e28f871ce219fcd82d6a92e86c6c58a1815.bin",
+      "sha256": "sha256:fe00deaef7205a97a46fa5167b252e28f871ce219fcd82d6a92e86c6c58a1815",
+      "size": 132166,
+      "assetType": "image",
+      "groupId": "template",
+      "used": true
+    },
+    "assets/template/game/comic/p5_squad.webp": {
+      "path": "https://d1oupeiobkpcny.cloudfront.net/assets/dashboard/materials/2026/09/29/bbbbfa9cbc3aef48ecf98b03992833abac13c60bfd9b483a46a453e9b13111ce.bin",
+      "sha256": "sha256:bbbbfa9cbc3aef48ecf98b03992833abac13c60bfd9b483a46a453e9b13111ce",
+      "size": 211544,
+      "assetType": "image",
+      "groupId": "template",
+      "used": true
+    },
+    "assets/template/game/comic/p6_splash.webp": {
+      "path": "https://d1oupeiobkpcny.cloudfront.net/assets/dashboard/materials/2026/09/29/7f9e5ab7d252d7c9cafa3558b29dd4a007ba9ee70ad39af0f4b793cbcc1d7b19.bin",
+      "sha256": "sha256:7f9e5ab7d252d7c9cafa3558b29dd4a007ba9ee70ad39af0f4b793cbcc1d7b19",
+      "size": 333414,
+      "assetType": "image",
+      "groupId": "template",
+      "used": true
+    },
+    "assets/template/game/fonts/Bangers-Regular.ttf": {
+      "path": "https://d1oupeiobkpcny.cloudfront.net/assets/dashboard/materials/2026/09/29/4160a7311de9342674cce9160cde9fcbb30f48190397d86ff1b70b455af65824.bin",
+      "sha256": "sha256:4160a7311de9342674cce9160cde9fcbb30f48190397d86ff1b70b455af65824",
+      "size": 93148,
+      "assetType": "font",
+      "groupId": "template",
+      "used": true
+    },
+    "assets/template/game/fonts/Nunito-VF.ttf": {
+      "path": "https://d1oupeiobkpcny.cloudfront.net/assets/dashboard/materials/2026/09/29/bb55a5ca5c2042335b3991af27c4d0705d0ef41cac6164ac737fd8f2a1e85207.bin",
+      "sha256": "sha256:bb55a5ca5c2042335b3991af27c4d0705d0ef41cac6164ac737fd8f2a1e85207",
+      "size": 276932,
+      "assetType": "font",
+      "groupId": "template",
+      "used": true
+    },
+    "assets/template/game/fx/book.png": {
+      "path": "https://d1oupeiobkpcny.cloudfront.net/assets/dashboard/materials/2026/09/29/3caab015d5669ebd09c0019a56d6be356b79c05f985ba9b30cd82539bf53b27b.bin",
+      "sha256": "sha256:3caab015d5669ebd09c0019a56d6be356b79c05f985ba9b30cd82539bf53b27b",
+      "size": 15645,
+      "assetType": "image",
+      "groupId": "template",
+      "used": true
+    },
+    "assets/template/game/fx/coin.png": {
+      "path": "https://d1oupeiobkpcny.cloudfront.net/assets/dashboard/materials/2026/09/29/ba330aa7da21f98127d8af7ae22cdbe8cb1b85dca77dedf2fe9452acf2ccd25f.bin",
+      "sha256": "sha256:ba330aa7da21f98127d8af7ae22cdbe8cb1b85dca77dedf2fe9452acf2ccd25f",
+      "size": 17450,
+      "assetType": "image",
+      "groupId": "template",
+      "used": true
+    },
+    "assets/template/game/fx/confetti_gold.png": {
+      "path": "https://d1oupeiobkpcny.cloudfront.net/assets/dashboard/materials/2026/09/29/b8cbc93477d120b25f7de8e8af6c42843877f3cf58cf825f12881e2c9f9e790b.bin",
+      "sha256": "sha256:b8cbc93477d120b25f7de8e8af6c42843877f3cf58cf825f12881e2c9f9e790b",
+      "size": 8205,
+      "assetType": "image",
+      "groupId": "template",
+      "used": true
+    },
+    "assets/template/game/fx/confetti_maroon.png": {
+      "path": "https://d1oupeiobkpcny.cloudfront.net/assets/dashboard/materials/2026/09/29/0fcc89b1f4d9ae809f3248930a0b9e6708657cdc6dd6c0b63a063a52f9f3bebf.bin",
+      "sha256": "sha256:0fcc89b1f4d9ae809f3248930a0b9e6708657cdc6dd6c0b63a063a52f9f3bebf",
+      "size": 9649,
+      "assetType": "image",
+      "groupId": "template",
+      "used": true
+    },
+    "assets/template/game/fx/dust.png": {
+      "path": "https://d1oupeiobkpcny.cloudfront.net/assets/dashboard/materials/2026/09/29/dfffb59f85dd635d7bc0bd4cf7685130e8899458297e90e9e24a79cd61bc2430.bin",
+      "sha256": "sha256:dfffb59f85dd635d7bc0bd4cf7685130e8899458297e90e9e24a79cd61bc2430",
+      "size": 16305,
+      "assetType": "image",
+      "groupId": "template",
+      "used": true
+    },
+    "assets/template/game/fx/ember.png": {
+      "path": "https://d1oupeiobkpcny.cloudfront.net/assets/dashboard/materials/2026/09/29/080ad79ce658b7e4ff3f93bd62c5bdba9985a20c0ad58ec027cdcebec32bb457.bin",
+      "sha256": "sha256:080ad79ce658b7e4ff3f93bd62c5bdba9985a20c0ad58ec027cdcebec32bb457",
+      "size": 13506,
+      "assetType": "image",
+      "groupId": "template",
+      "used": true
+    },
+    "assets/template/game/fx/flame.png": {
+      "path": "https://d1oupeiobkpcny.cloudfront.net/assets/dashboard/materials/2026/09/29/e47ca0d9325daccdd8212075d3da28a34025f82a78a645e00e8bfe9b82685a9a.bin",
+      "sha256": "sha256:e47ca0d9325daccdd8212075d3da28a34025f82a78a645e00e8bfe9b82685a9a",
+      "size": 10314,
+      "assetType": "image",
+      "groupId": "template",
+      "used": true
+    },
+    "assets/template/game/fx/heart.png": {
+      "path": "https://d1oupeiobkpcny.cloudfront.net/assets/dashboard/materials/2026/09/29/47a0633649c0f2d6e33d611223bada754f6873f02510477b7e6166f2315c5c01.bin",
+      "sha256": "sha256:47a0633649c0f2d6e33d611223bada754f6873f02510477b7e6166f2315c5c01",
+      "size": 13827,
+      "assetType": "image",
+      "groupId": "template",
+      "used": true
+    },
+    "assets/template/game/fx/ice_shard.png": {
+      "path": "https://d1oupeiobkpcny.cloudfront.net/assets/dashboard/materials/2026/09/29/e7833f3e5c9519e35a527db1867c3162cb898dd1cb728ff256f2cef1e2e25a6b.bin",
+      "sha256": "sha256:e7833f3e5c9519e35a527db1867c3162cb898dd1cb728ff256f2cef1e2e25a6b",
+      "size": 8946,
+      "assetType": "image",
+      "groupId": "template",
+      "used": true
+    },
+    "assets/template/game/fx/leaf.png": {
+      "path": "https://d1oupeiobkpcny.cloudfront.net/assets/dashboard/materials/2026/09/29/2b0e0555b4755b9373f9a4467630a0ec3b756278eae236958bffeb932b3e8b3e.bin",
+      "sha256": "sha256:2b0e0555b4755b9373f9a4467630a0ec3b756278eae236958bffeb932b3e8b3e",
+      "size": 14265,
+      "assetType": "image",
+      "groupId": "template",
+      "used": true
+    },
+    "assets/template/game/fx/plus.png": {
+      "path": "https://d1oupeiobkpcny.cloudfront.net/assets/dashboard/materials/2026/09/29/b8f33c26992b4562fe8f7dffbf8296270e66228a00ba102c53c1d6eb6919e003.bin",
+      "sha256": "sha256:b8f33c26992b4562fe8f7dffbf8296270e66228a00ba102c53c1d6eb6919e003",
+      "size": 10923,
+      "assetType": "image",
+      "groupId": "template",
+      "used": true
+    },
+    "assets/template/game/fx/portal.png": {
+      "path": "https://d1oupeiobkpcny.cloudfront.net/assets/dashboard/materials/2026/09/29/4132c973a4e32f3baa5076e12f17f4b9abf10ef1fbe7b0442887c8d3aff6e2ce.bin",
+      "sha256": "sha256:4132c973a4e32f3baa5076e12f17f4b9abf10ef1fbe7b0442887c8d3aff6e2ce",
+      "size": 147216,
+      "assetType": "image",
+      "groupId": "template",
+      "used": true
+    },
+    "assets/template/game/fx/psi_swirl.png": {
+      "path": "https://d1oupeiobkpcny.cloudfront.net/assets/dashboard/materials/2026/09/29/5e14811cf8f9fca3dfafcc37c0597d5f68ca20de1cc69ad47eefeda0161e40de.bin",
+      "sha256": "sha256:5e14811cf8f9fca3dfafcc37c0597d5f68ca20de1cc69ad47eefeda0161e40de",
+      "size": 20049,
+      "assetType": "image",
+      "groupId": "template",
+      "used": true
+    },
+    "assets/template/game/fx/scorch.png": {
+      "path": "https://d1oupeiobkpcny.cloudfront.net/assets/dashboard/materials/2026/09/29/6226b930b50118fc9b5971b6760144747c8801d629da610c3b23354197db3601.bin",
+      "sha256": "sha256:6226b930b50118fc9b5971b6760144747c8801d629da610c3b23354197db3601",
+      "size": 103488,
+      "assetType": "image",
+      "groupId": "template",
+      "used": true
+    },
+    "assets/template/game/fx/smoke_a.png": {
+      "path": "https://d1oupeiobkpcny.cloudfront.net/assets/dashboard/materials/2026/09/29/daf3c94f5d585996a4677fdad350f81546e49e0592937146315bf149974032c9.bin",
+      "sha256": "sha256:daf3c94f5d585996a4677fdad350f81546e49e0592937146315bf149974032c9",
+      "size": 17905,
+      "assetType": "image",
+      "groupId": "template",
+      "used": true
+    },
+    "assets/template/game/fx/smoke_b.png": {
+      "path": "https://d1oupeiobkpcny.cloudfront.net/assets/dashboard/materials/2026/09/29/1275d2e0aaac4ed918e5955851948781e64d3a0ef4269acc0517d7c680fcaebd.bin",
+      "sha256": "sha256:1275d2e0aaac4ed918e5955851948781e64d3a0ef4269acc0517d7c680fcaebd",
+      "size": 15803,
+      "assetType": "image",
+      "groupId": "template",
+      "used": true
+    },
+    "assets/template/game/fx/snowflake.png": {
+      "path": "https://d1oupeiobkpcny.cloudfront.net/assets/dashboard/materials/2026/09/29/c5409bdf808c21ae1c1961e8f483e7d32db10c1f9db90100a978ea5cba0eb88d.bin",
+      "sha256": "sha256:c5409bdf808c21ae1c1961e8f483e7d32db10c1f9db90100a978ea5cba0eb88d",
+      "size": 17864,
+      "assetType": "image",
+      "groupId": "template",
+      "used": true
+    },
+    "assets/template/game/fx/star.png": {
+      "path": "https://d1oupeiobkpcny.cloudfront.net/assets/dashboard/materials/2026/09/29/c0b139ca668d33e3d5d3036ccc96e52a026879a78df8da796f1fecd6f8b022c8.bin",
+      "sha256": "sha256:c0b139ca668d33e3d5d3036ccc96e52a026879a78df8da796f1fecd6f8b022c8",
+      "size": 14172,
+      "assetType": "image",
+      "groupId": "template",
+      "used": true
+    },
+    "assets/template/game/fx/sticker_bubble.png": {
+      "path": "https://d1oupeiobkpcny.cloudfront.net/assets/dashboard/materials/2026/09/29/d17b0910c73c748492b1fd5776d72df4b54e24c29980e6fd33e4f52c6c2b5548.bin",
+      "sha256": "sha256:d17b0910c73c748492b1fd5776d72df4b54e24c29980e6fd33e4f52c6c2b5548",
+      "size": 42162,
+      "assetType": "image",
+      "groupId": "template",
+      "used": true
+    },
+    "assets/template/game/fx/sticker_burst.png": {
+      "path": "https://d1oupeiobkpcny.cloudfront.net/assets/dashboard/materials/2026/09/29/070689ac313375aa6b1c91f291a22ecb7d770da2c156029348c6fc5ea3cc870f.bin",
+      "sha256": "sha256:070689ac313375aa6b1c91f291a22ecb7d770da2c156029348c6fc5ea3cc870f",
+      "size": 57112,
+      "assetType": "image",
+      "groupId": "template",
+      "used": true
+    },
+    "assets/template/game/fx/sticker_combo.png": {
+      "path": "https://d1oupeiobkpcny.cloudfront.net/assets/dashboard/materials/2026/09/29/c104b723840028bc7984092fd8f4b1e14556fa155e0356cf8c81f38232ae77d4.bin",
+      "sha256": "sha256:c104b723840028bc7984092fd8f4b1e14556fa155e0356cf8c81f38232ae77d4",
+      "size": 49154,
+      "assetType": "image",
+      "groupId": "template",
+      "used": true
+    },
+    "assets/template/game/fx/sticker_help.png": {
+      "path": "https://d1oupeiobkpcny.cloudfront.net/assets/dashboard/materials/2026/09/29/7b5005a2701bbc9755f454cdd29b0813e814d50acd9a624bb1b43390456de3ce.bin",
+      "sha256": "sha256:7b5005a2701bbc9755f454cdd29b0813e814d50acd9a624bb1b43390456de3ce",
+      "size": 47053,
+      "assetType": "image",
+      "groupId": "template",
+      "used": true
+    },
+    "assets/template/game/fx/sticker_kaboom.png": {
+      "path": "https://d1oupeiobkpcny.cloudfront.net/assets/dashboard/materials/2026/09/29/332a9c3d53914e9845658e03dea04b247f8b9fb454d2e290e846ab1b8896fc0b.bin",
+      "sha256": "sha256:332a9c3d53914e9845658e03dea04b247f8b9fb454d2e290e846ab1b8896fc0b",
+      "size": 59446,
+      "assetType": "image",
+      "groupId": "template",
+      "used": true
+    },
+    "assets/template/game/fx/sticker_ko.png": {
+      "path": "https://d1oupeiobkpcny.cloudfront.net/assets/dashboard/materials/2026/09/29/fe60a53822ea2f17ab6572f122da3a7f1c7f582fa0d1c5cf0079947ebb647047.bin",
+      "sha256": "sha256:fe60a53822ea2f17ab6572f122da3a7f1c7f582fa0d1c5cf0079947ebb647047",
+      "size": 59709,
+      "assetType": "image",
+      "groupId": "template",
+      "used": true
+    },
+    "assets/template/game/fx/sticker_levelup.png": {
+      "path": "https://d1oupeiobkpcny.cloudfront.net/assets/dashboard/materials/2026/09/29/82ad646e5749ea8018abf7c776dfa6cf8bc255fe26fc61e5cc4acd35c0e66c66.bin",
+      "sha256": "sha256:82ad646e5749ea8018abf7c776dfa6cf8bc255fe26fc61e5cc4acd35c0e66c66",
+      "size": 37954,
+      "assetType": "image",
+      "groupId": "template",
+      "used": true
+    },
+    "assets/template/game/fx/sticker_sproing.png": {
+      "path": "https://d1oupeiobkpcny.cloudfront.net/assets/dashboard/materials/2026/09/29/7daf24370341ee695160c36ce01cbec1254aa5bf91aa61352b8e191d28f0bdfe.bin",
+      "sha256": "sha256:7daf24370341ee695160c36ce01cbec1254aa5bf91aa61352b8e191d28f0bdfe",
+      "size": 55520,
+      "assetType": "image",
+      "groupId": "template",
+      "used": true
+    },
+    "assets/template/game/fx/sticker_warning.png": {
+      "path": "https://d1oupeiobkpcny.cloudfront.net/assets/dashboard/materials/2026/09/29/df7c99a371d3edc222f27889be27da986fb3a69b83468f2a4e2b25e07d49faac.bin",
+      "sha256": "sha256:df7c99a371d3edc222f27889be27da986fb3a69b83468f2a4e2b25e07d49faac",
+      "size": 38341,
+      "assetType": "image",
+      "groupId": "template",
+      "used": true
+    },
+    "assets/template/game/fx/telegraph.png": {
+      "path": "https://d1oupeiobkpcny.cloudfront.net/assets/dashboard/materials/2026/09/29/058d62ca45db3346cd1dd758d7f8f0de292a3b499e5dfc62e193bead56a012a7.bin",
+      "sha256": "sha256:058d62ca45db3346cd1dd758d7f8f0de292a3b499e5dfc62e193bead56a012a7",
+      "size": 214349,
+      "assetType": "image",
+      "groupId": "template",
+      "used": true
+    },
+    "assets/template/game/portraits/portrait_blaster.png": {
+      "path": "https://d1oupeiobkpcny.cloudfront.net/assets/dashboard/materials/2026/09/29/5484885ab7c9556c2fb190831b1cd9bf3c16237ad1ee606203560124aced44ad.bin",
+      "sha256": "sha256:5484885ab7c9556c2fb190831b1cd9bf3c16237ad1ee606203560124aced44ad",
+      "size": 144857,
+      "assetType": "image",
+      "groupId": "template",
+      "used": true
+    },
+    "assets/template/game/portraits/portrait_blaze.png": {
+      "path": "https://d1oupeiobkpcny.cloudfront.net/assets/dashboard/materials/2026/09/29/fc006bb6d7f00ceababb0439f8601ba2ce29fa6046ccab1a87b641ebc820c471.bin",
+      "sha256": "sha256:fc006bb6d7f00ceababb0439f8601ba2ce29fa6046ccab1a87b641ebc820c471",
+      "size": 134971,
+      "assetType": "image",
+      "groupId": "template",
+      "used": true
+    },
+    "assets/template/game/portraits/portrait_brute.png": {
+      "path": "https://d1oupeiobkpcny.cloudfront.net/assets/dashboard/materials/2026/09/29/d3e35d7ffd2d423127cbaf57fd45b1cc5c0ed948e9f470be6c2eca33b85de5ea.bin",
+      "sha256": "sha256:d3e35d7ffd2d423127cbaf57fd45b1cc5c0ed948e9f470be6c2eca33b85de5ea",
+      "size": 148086,
+      "assetType": "image",
+      "groupId": "template",
+      "used": true
+    },
+    "assets/template/game/portraits/portrait_frost.png": {
+      "path": "https://d1oupeiobkpcny.cloudfront.net/assets/dashboard/materials/2026/09/29/a79bed2c1ce539de41479088c395b3c250a8dbd98937455ce19b5b76e1dc5842.bin",
+      "sha256": "sha256:a79bed2c1ce539de41479088c395b3c250a8dbd98937455ce19b5b76e1dc5842",
+      "size": 151051,
+      "assetType": "image",
+      "groupId": "template",
+      "used": true
+    },
+    "assets/template/game/portraits/portrait_goon.png": {
+      "path": "https://d1oupeiobkpcny.cloudfront.net/assets/dashboard/materials/2026/09/29/27fb949a2d8313061cd4275ecbd6d9a87d55dbd2749644fd29c0cf0d8677d4f7.bin",
+      "sha256": "sha256:27fb949a2d8313061cd4275ecbd6d9a87d55dbd2749644fd29c0cf0d8677d4f7",
+      "size": 131252,
+      "assetType": "image",
+      "groupId": "template",
+      "used": true
+    },
+    "assets/template/game/portraits/portrait_mech.png": {
+      "path": "https://d1oupeiobkpcny.cloudfront.net/assets/dashboard/materials/2026/09/29/80c055f8c6225911d457bef03dced15923aba65b8ee324f0b5bc608fc1ece380.bin",
+      "sha256": "sha256:80c055f8c6225911d457bef03dced15923aba65b8ee324f0b5bc608fc1ece380",
+      "size": 156343,
+      "assetType": "image",
+      "groupId": "template",
+      "used": true
+    },
+    "assets/template/game/portraits/portrait_monitor.png": {
+      "path": "https://d1oupeiobkpcny.cloudfront.net/assets/dashboard/materials/2026/09/29/fc109efb7a50accc9817cd1318337954468d1eb78c21123666e858fbd27e630f.bin",
+      "sha256": "sha256:fc109efb7a50accc9817cd1318337954468d1eb78c21123666e858fbd27e630f",
+      "size": 141723,
+      "assetType": "image",
+      "groupId": "template",
+      "used": true
+    },
+    "assets/template/game/portraits/portrait_principal.png": {
+      "path": "https://d1oupeiobkpcny.cloudfront.net/assets/dashboard/materials/2026/09/29/77f8ebfa6aa0ca296266026b8ad0cd7619da26b613b411256bd1f61d1220f0f6.bin",
+      "sha256": "sha256:77f8ebfa6aa0ca296266026b8ad0cd7619da26b613b411256bd1f61d1220f0f6",
+      "size": 132675,
+      "assetType": "image",
+      "groupId": "template",
+      "used": true
+    },
+    "assets/template/game/portraits/portrait_psi.png": {
+      "path": "https://d1oupeiobkpcny.cloudfront.net/assets/dashboard/materials/2026/09/29/6d3354e224672e200ac5882dd5f65df7ad17aea24ab68e402b1f51b01ffcf6ea.bin",
+      "sha256": "sha256:6d3354e224672e200ac5882dd5f65df7ad17aea24ab68e402b1f51b01ffcf6ea",
+      "size": 129093,
+      "assetType": "image",
+      "groupId": "template",
+      "used": true
+    },
+    "assets/template/game/portraits/portrait_stretch.png": {
+      "path": "https://d1oupeiobkpcny.cloudfront.net/assets/dashboard/materials/2026/09/29/7a48d035f3adf8aca977cfd549a35bf9a28c7d4d9dbb1aeadcaebbb5d32aaa46.bin",
+      "sha256": "sha256:7a48d035f3adf8aca977cfd549a35bf9a28c7d4d9dbb1aeadcaebbb5d32aaa46",
+      "size": 142874,
+      "assetType": "image",
+      "groupId": "template",
+      "used": true
+    },
+    "assets/template/game/props/decal_field.png": {
+      "path": "https://d1oupeiobkpcny.cloudfront.net/assets/dashboard/materials/2026/09/29/8c39ec2029c0fa29ea3261ffd01ade5c592ade7123bdeb035eb1cb769d3983fb.bin",
+      "sha256": "sha256:8c39ec2029c0fa29ea3261ffd01ade5c592ade7123bdeb035eb1cb769d3983fb",
+      "size": 1105644,
+      "assetType": "image",
+      "groupId": "template",
+      "used": true
+    },
+    "assets/template/game/props/prop_bench.png": {
+      "path": "https://d1oupeiobkpcny.cloudfront.net/assets/dashboard/materials/2026/09/29/f466dda50649c32dc3523eb588e882d6d817e67969288be8dea77921c6602fec.bin",
+      "sha256": "sha256:f466dda50649c32dc3523eb588e882d6d817e67969288be8dea77921c6602fec",
+      "size": 60232,
+      "assetType": "image",
+      "groupId": "template",
+      "used": true
+    },
+    "assets/template/game/props/prop_bleachers.png": {
+      "path": "https://d1oupeiobkpcny.cloudfront.net/assets/dashboard/materials/2026/09/29/115f712e2496d192df9fb6e184b93358b7fd52836b2e6d1ccc66603165aa7837.bin",
+      "sha256": "sha256:115f712e2496d192df9fb6e184b93358b7fd52836b2e6d1ccc66603165aa7837",
+      "size": 165219,
+      "assetType": "image",
+      "groupId": "template",
+      "used": true
+    },
+    "assets/template/game/props/prop_bus.png": {
+      "path": "https://d1oupeiobkpcny.cloudfront.net/assets/dashboard/materials/2026/09/29/34bffb8da5bf85289e9e249ac663417dd6a62e65c6011c74be8914d0cf6104ff.bin",
+      "sha256": "sha256:34bffb8da5bf85289e9e249ac663417dd6a62e65c6011c74be8914d0cf6104ff",
+      "size": 182460,
+      "assetType": "image",
+      "groupId": "template",
+      "used": true
+    },
+    "assets/template/game/props/prop_flagpole.png": {
+      "path": "https://d1oupeiobkpcny.cloudfront.net/assets/dashboard/materials/2026/09/29/8e3a243535c66600686709b14c029b87137b2f2a14eaf4ac4b96d741b5f438d4.bin",
+      "sha256": "sha256:8e3a243535c66600686709b14c029b87137b2f2a14eaf4ac4b96d741b5f438d4",
+      "size": 55157,
+      "assetType": "image",
+      "groupId": "template",
+      "used": true
+    },
+    "assets/template/game/props/prop_lockers.png": {
+      "path": "https://d1oupeiobkpcny.cloudfront.net/assets/dashboard/materials/2026/09/29/c4d512c655c3612bf14fc0679d55291c8d1227db38ed35c45444f7939bf498aa.bin",
+      "sha256": "sha256:c4d512c655c3612bf14fc0679d55291c8d1227db38ed35c45444f7939bf498aa",
+      "size": 77277,
+      "assetType": "image",
+      "groupId": "template",
+      "used": true
+    },
+    "assets/template/game/props/prop_maple.png": {
+      "path": "https://d1oupeiobkpcny.cloudfront.net/assets/dashboard/materials/2026/09/29/3382c223e93ad6c3809ec69e5ebdfb78825250ef2494ff4e5042a022ff7835cb.bin",
+      "sha256": "sha256:3382c223e93ad6c3809ec69e5ebdfb78825250ef2494ff4e5042a022ff7835cb",
+      "size": 157672,
+      "assetType": "image",
+      "groupId": "template",
+      "used": true
+    },
+    "assets/template/game/props/prop_oak.png": {
+      "path": "https://d1oupeiobkpcny.cloudfront.net/assets/dashboard/materials/2026/09/29/dec8cb436ea57b2866ebbc4608ea82a68e21b3f8ac7aecaef6b4120ba1b5379f.bin",
+      "sha256": "sha256:dec8cb436ea57b2866ebbc4608ea82a68e21b3f8ac7aecaef6b4120ba1b5379f",
+      "size": 196481,
+      "assetType": "image",
+      "groupId": "template",
+      "used": true
+    },
+    "assets/template/game/props/prop_statue.png": {
+      "path": "https://d1oupeiobkpcny.cloudfront.net/assets/dashboard/materials/2026/09/29/3615ba0ab571e84036154eae299693ddd2e3c827f9f4d0fcbca94ea4274413d7.bin",
+      "sha256": "sha256:3615ba0ab571e84036154eae299693ddd2e3c827f9f4d0fcbca94ea4274413d7",
+      "size": 124197,
+      "assetType": "image",
+      "groupId": "template",
+      "used": true
+    },
+    "assets/template/game/terrain/terrain_asphalt.webp": {
+      "path": "https://d1oupeiobkpcny.cloudfront.net/assets/dashboard/materials/2026/09/29/b68b9a24582aead53aea737806f8b526bee6a6a951d6e4de283fc7c7ae47383c.bin",
+      "sha256": "sha256:b68b9a24582aead53aea737806f8b526bee6a6a951d6e4de283fc7c7ae47383c",
+      "size": 89718,
+      "assetType": "image",
+      "groupId": "template",
+      "used": true
+    },
+    "assets/template/game/terrain/terrain_grass.webp": {
+      "path": "https://d1oupeiobkpcny.cloudfront.net/assets/dashboard/materials/2026/09/29/5320386d277a32ce4187cca7032aa5a5c60dc0ad4172a2e366cc18c71810e576.bin",
+      "sha256": "sha256:5320386d277a32ce4187cca7032aa5a5c60dc0ad4172a2e366cc18c71810e576",
+      "size": 69442,
+      "assetType": "image",
+      "groupId": "template",
+      "used": true
+    },
+    "assets/template/game/terrain/terrain_pavers.webp": {
+      "path": "https://d1oupeiobkpcny.cloudfront.net/assets/dashboard/materials/2026/09/29/5db07d53d82d68440dd754906dea54b87a0a96a57209e7605b65a33054f8a7b5.bin",
+      "sha256": "sha256:5db07d53d82d68440dd754906dea54b87a0a96a57209e7605b65a33054f8a7b5",
+      "size": 53918,
+      "assetType": "image",
+      "groupId": "template",
+      "used": true
+    },
+    "assets/template/game/ui/btn_cream_s.png": {
+      "path": "https://d1oupeiobkpcny.cloudfront.net/assets/dashboard/materials/2026/09/29/7059fc08ba6642e3eff31b6e2f2d00695dc2232ab1246d28c4067ef17b16f473.bin",
+      "sha256": "sha256:7059fc08ba6642e3eff31b6e2f2d00695dc2232ab1246d28c4067ef17b16f473",
+      "size": 14058,
+      "assetType": "image",
+      "groupId": "template",
+      "used": true
+    },
+    "assets/template/game/ui/btn_gold_s.png": {
+      "path": "https://d1oupeiobkpcny.cloudfront.net/assets/dashboard/materials/2026/09/29/0ec320629869f0ffdd50278667b0284a145a638384c40976824fde60a4ab84c1.bin",
+      "sha256": "sha256:0ec320629869f0ffdd50278667b0284a145a638384c40976824fde60a4ab84c1",
+      "size": 14503,
+      "assetType": "image",
+      "groupId": "template",
+      "used": true
+    },
+    "assets/template/game/ui/btn_maroon_s.png": {
+      "path": "https://d1oupeiobkpcny.cloudfront.net/assets/dashboard/materials/2026/09/29/b89e07c05f753a4bad8c628933473c17c00c5846c86d40c9d0084959f4ee1f35.bin",
+      "sha256": "sha256:b89e07c05f753a4bad8c628933473c17c00c5846c86d40c9d0084959f4ee1f35",
+      "size": 15255,
+      "assetType": "image",
+      "groupId": "template",
+      "used": true
+    },
+    "assets/template/game/ui/card_frame_s.png": {
+      "path": "https://d1oupeiobkpcny.cloudfront.net/assets/dashboard/materials/2026/09/29/707db47c1e4b11e8409a0820551dfb23aaabd00205da01b2607bbaf3027d819e.bin",
+      "sha256": "sha256:707db47c1e4b11e8409a0820551dfb23aaabd00205da01b2607bbaf3027d819e",
+      "size": 27573,
+      "assetType": "image",
+      "groupId": "template",
+      "used": true
+    },
+    "assets/template/game/ui/crest.png": {
+      "path": "https://d1oupeiobkpcny.cloudfront.net/assets/dashboard/materials/2026/09/29/3ac0d59b0021cdad10139cd8e44aa934a909c64edcf6e2ff2b9b80c60f2f186d.bin",
+      "sha256": "sha256:3ac0d59b0021cdad10139cd8e44aa934a909c64edcf6e2ff2b9b80c60f2f186d",
+      "size": 104791,
+      "assetType": "image",
+      "groupId": "template",
+      "used": true
+    },
+    "assets/template/game/ui/icon_bell.png": {
+      "path": "https://d1oupeiobkpcny.cloudfront.net/assets/dashboard/materials/2026/09/29/393b1ef496a086f5a1e640e8196112a8f9243ae6504b6cb4320cf0df8798d2bf.bin",
+      "sha256": "sha256:393b1ef496a086f5a1e640e8196112a8f9243ae6504b6cb4320cf0df8798d2bf",
+      "size": 22784,
+      "assetType": "image",
+      "groupId": "template",
+      "used": true
+    },
+    "assets/template/game/ui/icon_reputation.png": {
+      "path": "https://d1oupeiobkpcny.cloudfront.net/assets/dashboard/materials/2026/09/29/bd80859826a602c85422a816001240e4dabc1f4a711bf9882dcae434bea1f44e.bin",
+      "sha256": "sha256:bd80859826a602c85422a816001240e4dabc1f4a711bf9882dcae434bea1f44e",
+      "size": 18648,
+      "assetType": "image",
+      "groupId": "template",
+      "used": true
+    },
+    "assets/template/game/ui/icon_spirit.png": {
+      "path": "https://d1oupeiobkpcny.cloudfront.net/assets/dashboard/materials/2026/09/29/80642d8b1b0015958c553fef59ea38c9159d66ee9549d7e8b2416d5806fa718e.bin",
+      "sha256": "sha256:80642d8b1b0015958c553fef59ea38c9159d66ee9549d7e8b2416d5806fa718e",
+      "size": 20859,
+      "assetType": "image",
+      "groupId": "template",
+      "used": true
+    },
+    "assets/template/game/ui/icon_squad.png": {
+      "path": "https://d1oupeiobkpcny.cloudfront.net/assets/dashboard/materials/2026/09/29/14d8c73cfcafdec1b798beb7e453b57f5919040ae2c49ec046864850610feadf.bin",
+      "sha256": "sha256:14d8c73cfcafdec1b798beb7e453b57f5919040ae2c49ec046864850610feadf",
+      "size": 28341,
+      "assetType": "image",
+      "groupId": "template",
+      "used": true
+    },
+    "assets/template/game/ui/icon_wave.png": {
+      "path": "https://d1oupeiobkpcny.cloudfront.net/assets/dashboard/materials/2026/09/29/4e6314f9f293666b0a35b6e191e74a2307ebd070a980da6e027b43c09c92eac9.bin",
+      "sha256": "sha256:4e6314f9f293666b0a35b6e191e74a2307ebd070a980da6e027b43c09c92eac9",
+      "size": 32117,
+      "assetType": "image",
+      "groupId": "template",
+      "used": true
+    },
+    "assets/template/game/ui/logo.png": {
+      "path": "https://d1oupeiobkpcny.cloudfront.net/assets/dashboard/materials/2026/09/30/2d5527bd3aa0c4b1886e8232fee71ee88bf153b0c8155398d0b490051d27c39c.bin",
+      "sha256": "sha256:2d5527bd3aa0c4b1886e8232fee71ee88bf153b0c8155398d0b490051d27c39c",
+      "size": 1571330,
+      "assetType": "image",
+      "groupId": "template",
+      "used": true
+    },
+    "assets/template/game/ui/paper_panel_s.png": {
+      "path": "https://d1oupeiobkpcny.cloudfront.net/assets/dashboard/materials/2026/09/29/de209d7ce5a0e2bf333c61af95bae97bbac714173ad55fa65cbe282475e36469.bin",
+      "sha256": "sha256:de209d7ce5a0e2bf333c61af95bae97bbac714173ad55fa65cbe282475e36469",
+      "size": 88358,
+      "assetType": "image",
+      "groupId": "template",
+      "used": true
+    },
+    "assets/template/game/ui/sticky_note_s.png": {
+      "path": "https://d1oupeiobkpcny.cloudfront.net/assets/dashboard/materials/2026/09/29/0dcff2179483dc8ef32d01e5e8d56eb5ba0c88889ce4290bfaa695835f9e7d0e.bin",
+      "sha256": "sha256:0dcff2179483dc8ef32d01e5e8d56eb5ba0c88889ce4290bfaa695835f9e7d0e",
+      "size": 58390,
+      "assetType": "image",
+      "groupId": "template",
+      "used": true
+    },
+    "assets/template/game/units/civ_girl.png": {
+      "path": "https://d1oupeiobkpcny.cloudfront.net/assets/dashboard/materials/2026/09/29/ae79722168cb31a15ab25122199b5107bce857a8b14e201b2d0a96ad5599057b.bin",
+      "sha256": "sha256:ae79722168cb31a15ab25122199b5107bce857a8b14e201b2d0a96ad5599057b",
+      "size": 60933,
+      "assetType": "image",
+      "groupId": "template",
+      "used": true
+    },
+    "assets/template/game/units/civ_janitor.png": {
+      "path": "https://d1oupeiobkpcny.cloudfront.net/assets/dashboard/materials/2026/09/29/8b6711864b7631eb8d28b6cfc3b90be58f9d10d65218af4e4c70a6baed0a1b6d.bin",
+      "sha256": "sha256:8b6711864b7631eb8d28b6cfc3b90be58f9d10d65218af4e4c70a6baed0a1b6d",
+      "size": 83287,
+      "assetType": "image",
+      "groupId": "template",
+      "used": true
+    },
+    "assets/template/game/units/civ_student.png": {
+      "path": "https://d1oupeiobkpcny.cloudfront.net/assets/dashboard/materials/2026/09/29/1880cd8966c4b068b8c18f50563096b847928ed3208dcaa37b075adb0fe696e1.bin",
+      "sha256": "sha256:1880cd8966c4b068b8c18f50563096b847928ed3208dcaa37b075adb0fe696e1",
+      "size": 69565,
+      "assetType": "image",
+      "groupId": "template",
+      "used": true
+    },
+    "assets/template/game/units/enemy_blaster.png": {
+      "path": "https://d1oupeiobkpcny.cloudfront.net/assets/dashboard/materials/2026/09/29/9b63f3d02fc58c7fd92afa7d021ab966ddf64b5c862b2cbe79bf98798a27db65.bin",
+      "sha256": "sha256:9b63f3d02fc58c7fd92afa7d021ab966ddf64b5c862b2cbe79bf98798a27db65",
+      "size": 89677,
+      "assetType": "image",
+      "groupId": "template",
+      "used": true
+    },
+    "assets/template/game/units/enemy_brute.png": {
+      "path": "https://d1oupeiobkpcny.cloudfront.net/assets/dashboard/materials/2026/09/29/4f0d21deb7a1760810263b2eb280f8249a105e6877d15b94d0a79d48382a72e9.bin",
+      "sha256": "sha256:4f0d21deb7a1760810263b2eb280f8249a105e6877d15b94d0a79d48382a72e9",
+      "size": 197774,
+      "assetType": "image",
+      "groupId": "template",
+      "used": true
+    },
+    "assets/template/game/units/enemy_goon.png": {
+      "path": "https://d1oupeiobkpcny.cloudfront.net/assets/dashboard/materials/2026/09/29/ea3cc3cbf2c6cb68ec6e34d3918e75d780cc9ae5de566648024f62e3551c9c91.bin",
+      "sha256": "sha256:ea3cc3cbf2c6cb68ec6e34d3918e75d780cc9ae5de566648024f62e3551c9c91",
+      "size": 126372,
+      "assetType": "image",
+      "groupId": "template",
+      "used": true
+    },
+    "assets/template/game/units/enemy_mech.png": {
+      "path": "https://d1oupeiobkpcny.cloudfront.net/assets/dashboard/materials/2026/09/29/a5966c9cdec6c05cd9856baba79b5ea0f7537b9fdb626c527e51a459e67d990a.bin",
+      "sha256": "sha256:a5966c9cdec6c05cd9856baba79b5ea0f7537b9fdb626c527e51a459e67d990a",
+      "size": 386493,
+      "assetType": "image",
+      "groupId": "template",
+      "used": true
+    },
+    "assets/template/game/units/hero_blaze.png": {
+      "path": "https://d1oupeiobkpcny.cloudfront.net/assets/dashboard/materials/2026/09/29/068c4d54d6ef2f46cbede10572d2be87b611d0fd1bb5e8d91ee00c9846b52df2.bin",
+      "sha256": "sha256:068c4d54d6ef2f46cbede10572d2be87b611d0fd1bb5e8d91ee00c9846b52df2",
+      "size": 102154,
+      "assetType": "image",
+      "groupId": "template",
+      "used": true
+    },
+    "assets/template/game/units/hero_frost.png": {
+      "path": "https://d1oupeiobkpcny.cloudfront.net/assets/dashboard/materials/2026/09/29/5c23f1248d0cbe070e506d731759e3da201ca08e1d3d26163c3913b5c07f9ed6.bin",
+      "sha256": "sha256:5c23f1248d0cbe070e506d731759e3da201ca08e1d3d26163c3913b5c07f9ed6",
+      "size": 124060,
+      "assetType": "image",
+      "groupId": "template",
+      "used": true
+    },
+    "assets/template/game/units/hero_monitor.png": {
+      "path": "https://d1oupeiobkpcny.cloudfront.net/assets/dashboard/materials/2026/09/29/b29fbb50122620ead4195fe2bcdab2874cb893aade7df0091ad67b9eaa2536d4.bin",
+      "sha256": "sha256:b29fbb50122620ead4195fe2bcdab2874cb893aade7df0091ad67b9eaa2536d4",
+      "size": 92524,
+      "assetType": "image",
+      "groupId": "template",
+      "used": true
+    },
+    "assets/template/game/units/hero_psi.png": {
+      "path": "https://d1oupeiobkpcny.cloudfront.net/assets/dashboard/materials/2026/09/29/f1341afa571ebc70d36c3a0b1eacd0b44c7d489b21f121bdb70d3ba1dc872460.bin",
+      "sha256": "sha256:f1341afa571ebc70d36c3a0b1eacd0b44c7d489b21f121bdb70d3ba1dc872460",
+      "size": 137826,
+      "assetType": "image",
+      "groupId": "template",
+      "used": true
+    },
+    "assets/template/game/units/hero_stretch.png": {
+      "path": "https://d1oupeiobkpcny.cloudfront.net/assets/dashboard/materials/2026/09/29/6b5323f9522f36f2a1006da7fd0de051f04b8ebf66ade079f6e135d1090f23b4.bin",
+      "sha256": "sha256:6b5323f9522f36f2a1006da7fd0de051f04b8ebf66ade079f6e135d1090f23b4",
+      "size": 85760,
+      "assetType": "image",
+      "groupId": "template",
+      "used": true
+    },
+    "assets/template/share/favicon.png": {
+      "path": "https://d1oupeiobkpcny.cloudfront.net/assets/dashboard/materials/2026/09/29/a8981c2f6fcd4e3b9d6bbc678a86e007acaff77ccbf5628d727f9ce80b23da12.bin",
+      "sha256": "sha256:a8981c2f6fcd4e3b9d6bbc678a86e007acaff77ccbf5628d727f9ce80b23da12",
+      "size": 71240,
+      "assetType": "image",
+      "groupId": "template",
+      "used": true
+    },
+    "assets/template/share/og.png": {
+      "path": "https://d1oupeiobkpcny.cloudfront.net/assets/dashboard/materials/2026/09/30/54352af1df0a2ae96407d378f60f1566dde03fb99c1b5dfbc088f00fd1a827bf.bin",
+      "sha256": "sha256:54352af1df0a2ae96407d378f60f1566dde03fb99c1b5dfbc088f00fd1a827bf",
+      "size": 1612512,
+      "assetType": "image",
+      "groupId": "template",
+      "used": true
+    },
+    "assets/template/fonts/NotoSansSC-VF.subset.woff2": {
+      "path": "https://d1oupeiobkpcny.cloudfront.net/assets/dashboard/materials/2026/09/25/game-template/game-generic/2026.09.25-typography-v1/38f4c5f927f746b3dfa4c3a5d7edf0b7a3e828e27438418fa54f9e1565289412/assets/template/fonts/NotoSansSC-VF.subset.woff2",
+      "sha256": "sha256:38f4c5f927f746b3dfa4c3a5d7edf0b7a3e828e27438418fa54f9e1565289412",
+      "size": 1869368,
+      "assetType": "font",
+      "groupId": "template",
+      "used": true
+    },
+    "assets/template/runtime/audio/sfx/attack_magic.ogg": {
+      "path": "https://d1oupeiobkpcny.cloudfront.net/assets/dashboard/materials/2026/09/04/game-template/game-rts/2026.09.04-assets-v2/accb99e4e8452fede3a6cf81875f628e7260138647a6afb2367d1b0c81658cd0/assets/runtime/audio/sfx/attack_magic.ogg",
+      "sha256": "sha256:accb99e4e8452fede3a6cf81875f628e7260138647a6afb2367d1b0c81658cd0",
+      "size": 29949,
+      "assetType": "audio",
+      "groupId": "template",
+      "used": true
+    },
+    "assets/template/runtime/audio/sfx/attack_ranged.ogg": {
+      "path": "https://d1oupeiobkpcny.cloudfront.net/assets/dashboard/materials/2026/09/04/game-template/game-rts/2026.09.04-assets-v2/3c0cca4b80ba4742c3bb58f8c6f9f95c87bb89e3f48976f262c02ff94ed332e1/assets/runtime/audio/sfx/attack_ranged.ogg",
+      "sha256": "sha256:3c0cca4b80ba4742c3bb58f8c6f9f95c87bb89e3f48976f262c02ff94ed332e1",
+      "size": 36759,
+      "assetType": "audio",
+      "groupId": "template",
+      "used": true
+    },
+    "assets/template/runtime/audio/sfx/impact_damage.ogg": {
+      "path": "https://d1oupeiobkpcny.cloudfront.net/assets/dashboard/materials/2026/09/04/game-template/game-rts/2026.09.04-assets-v2/fcabd3dce93f2344700d42cb196b173dbb911f85847a9ac956534468ea269474/assets/runtime/audio/sfx/impact_damage.ogg",
+      "sha256": "sha256:fcabd3dce93f2344700d42cb196b173dbb911f85847a9ac956534468ea269474",
+      "size": 33038,
+      "assetType": "audio",
+      "groupId": "template",
+      "used": true
+    },
+    "assets/template/runtime/audio/sfx/objective_secured.ogg": {
+      "path": "https://d1oupeiobkpcny.cloudfront.net/assets/dashboard/materials/2026/09/04/game-template/game-rts/2026.09.04-assets-v2/f587f6746bd46f7abb508284730db47f4514b454e33beeab65834dfbf266641e/assets/runtime/audio/sfx/objective_secured.ogg",
+      "sha256": "sha256:f587f6746bd46f7abb508284730db47f4514b454e33beeab65834dfbf266641e",
+      "size": 56724,
+      "assetType": "audio",
+      "groupId": "template",
+      "used": true
+    },
+    "assets/template/runtime/audio/sfx/order_attack.ogg": {
+      "path": "https://d1oupeiobkpcny.cloudfront.net/assets/dashboard/materials/2026/09/04/game-template/game-rts/2026.09.04-assets-v2/a466f8a00e3009fe8ab64a964ef183aec591084cdb0a52561dcab99950e14b57/assets/runtime/audio/sfx/order_attack.ogg",
+      "sha256": "sha256:a466f8a00e3009fe8ab64a964ef183aec591084cdb0a52561dcab99950e14b57",
+      "size": 39221,
+      "assetType": "audio",
+      "groupId": "template",
+      "used": true
+    },
+    "assets/template/runtime/audio/sfx/order_move.ogg": {
+      "path": "https://d1oupeiobkpcny.cloudfront.net/assets/dashboard/materials/2026/09/04/game-template/game-rts/2026.09.04-assets-v2/32b315d812b9378eadc85ca49413b6f00d5b38d6865183cf1d1da45e81ad2dba/assets/runtime/audio/sfx/order_move.ogg",
+      "sha256": "sha256:32b315d812b9378eadc85ca49413b6f00d5b38d6865183cf1d1da45e81ad2dba",
+      "size": 26511,
+      "assetType": "audio",
+      "groupId": "template",
+      "used": true
+    },
+    "assets/template/runtime/audio/sfx/order_work.ogg": {
+      "path": "https://d1oupeiobkpcny.cloudfront.net/assets/dashboard/materials/2026/09/04/game-template/game-rts/2026.09.04-assets-v2/5685632c10546e5d3484b0b78754d000f1612e7f5c74ccbdd2076594bb0633ba/assets/runtime/audio/sfx/order_work.ogg",
+      "sha256": "sha256:5685632c10546e5d3484b0b78754d000f1612e7f5c74ccbdd2076594bb0633ba",
+      "size": 31808,
+      "assetType": "audio",
+      "groupId": "template",
+      "used": true
+    },
+    "assets/template/runtime/audio/sfx/structure_destroyed.ogg": {
+      "path": "https://d1oupeiobkpcny.cloudfront.net/assets/dashboard/materials/2026/09/04/game-template/game-rts/2026.09.04-assets-v2/bfd391cb63a187245aa8619bb0bb2ac35bd43507ec8a2702929ea0a9f8200157/assets/runtime/audio/sfx/structure_destroyed.ogg",
+      "sha256": "sha256:bfd391cb63a187245aa8619bb0bb2ac35bd43507ec8a2702929ea0a9f8200157",
+      "size": 60441,
+      "assetType": "audio",
+      "groupId": "template",
+      "used": true
+    },
+    "assets/template/runtime/audio/sfx/ui_cancel.ogg": {
+      "path": "https://d1oupeiobkpcny.cloudfront.net/assets/dashboard/materials/2026/09/04/game-template/game-rts/2026.09.04-assets-v2/79cb48e72a9c3419fe731974d67de6683ff593c3a85fc406d340f1ed9394a230/assets/runtime/audio/sfx/ui_cancel.ogg",
+      "sha256": "sha256:79cb48e72a9c3419fe731974d67de6683ff593c3a85fc406d340f1ed9394a230",
+      "size": 27626,
+      "assetType": "audio",
+      "groupId": "template",
+      "used": true
+    },
+    "assets/template/runtime/audio/sfx/ui_error.ogg": {
+      "path": "https://d1oupeiobkpcny.cloudfront.net/assets/dashboard/materials/2026/09/04/game-template/game-rts/2026.09.04-assets-v2/64386e4985ee6a397f25480a8e3f2b9e6e52a5f4d7c21a5cebd6c3045eeea511/assets/runtime/audio/sfx/ui_error.ogg",
+      "sha256": "sha256:64386e4985ee6a397f25480a8e3f2b9e6e52a5f4d7c21a5cebd6c3045eeea511",
+      "size": 20977,
+      "assetType": "audio",
+      "groupId": "template",
+      "used": true
+    },
+    "assets/template/runtime/audio/sfx/unit_death.ogg": {
+      "path": "https://d1oupeiobkpcny.cloudfront.net/assets/dashboard/materials/2026/09/04/game-template/game-rts/2026.09.04-assets-v2/6049b7f1ab789f7e88456a09eab53c4a5710295b78aa33dbe5f84282f227be83/assets/runtime/audio/sfx/unit_death.ogg",
+      "sha256": "sha256:6049b7f1ab789f7e88456a09eab53c4a5710295b78aa33dbe5f84282f227be83",
+      "size": 57684,
+      "assetType": "audio",
+      "groupId": "template",
+      "used": true
+    },
+    "assets/template/runtime/audio/sfx/unit_select.ogg": {
+      "path": "https://d1oupeiobkpcny.cloudfront.net/assets/dashboard/materials/2026/09/04/game-template/game-rts/2026.09.04-assets-v2/4de5e6871d4a31aab85a59710981ffe1c7d5d200a5982c50ea87ac9da28a68e2/assets/runtime/audio/sfx/unit_select.ogg",
+      "sha256": "sha256:4de5e6871d4a31aab85a59710981ffe1c7d5d200a5982c50ea87ac9da28a68e2",
+      "size": 10774,
+      "assetType": "audio",
+      "groupId": "template",
+      "used": true
+    }
+  }
+}

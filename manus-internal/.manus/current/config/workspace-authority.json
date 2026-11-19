@@ -1,0 +1,50 @@
+{
+  "schema": "manus.sandbox.workspace-authority/v1",
+  "environments": {
+    "PROD": {
+      "keys": [
+        {
+          "kty": "OKP",
+          "crv": "Ed25519",
+          "alg": "EdDSA",
+          "use": "sig",
+          "kid": "biz-subject-prod-20260722",
+          "x": "YjO2wLbgRlMgqDZXuJUoR6ZXLSNBbLAPhTjWe_Ekjf8"
+        },
+        {
+          "kty": "OKP",
+          "crv": "Ed25519",
+          "alg": "EdDSA",
+          "use": "sig",
+          "kid": "addon-subject-20261106-2b43a96ea418",
+          "x": "0K3u78pUsPKaKAl4FyDAXU2GOnA3ap3A6WTKCy-Ctgo"
+        }
+      ]
+    },
+    "TEST": {
+      "keys": [
+        {
+          "kty": "OKP",
+          "crv": "Ed25519",
+          "alg": "EdDSA",
+          "use": "sig",
+          "kid": "addon-subject-dev-20260715-5ab2fe7e",
+          "x": "ILdw1WwjofYINnTEfI4jGnTOSrOtBSPgO32aLqWmxjU"
+        }
+      ]
+    },
+    "DEV": {
+      "keys": [
+        {
+          "kty": "OKP",
+          "crv": "Ed25519",
+          "alg": "EdDSA",
+          "use": "sig",
+          "kid": "addon-subject-dev-20260715-5ab2fe7e",
+          "x": "ILdw1WwjofYINnTEfI4jGnTOSrOtBSPgO32aLqWmxjU"
+        }
+      ]
+    }
+  },
+  "revoked_kids": []
+}

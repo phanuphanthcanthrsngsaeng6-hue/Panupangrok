@@ -1,0 +1,24 @@
+{
+  "name": "terraform",
+  "command": "terraform-ls",
+  "args": [
+    "serve"
+  ],
+  "files": {
+    ".tf": "terraform"
+  },
+  "description": "terraform-ls static settings go in LSP initializationOptions. experimentalFeatures.validateOnSave invokes terraform validate after save and needs the Terraform CLI and initialized project. validation.enableEnhancedValidation is boolean, default true. terraform.path/timeout configure the CLI itself. rootModulePaths is deprecated/ignored. Basic HCL syntax checking does not require inventing workspace settings.",
+  "testedVersion": "0.39.0",
+  "configuration": {
+    "initializationOptions": {
+      "experimentalFeatures": {
+        "validateOnSave": false
+      },
+      "validation": {
+        "enableEnhancedValidation": true
+      }
+    },
+    "settings": {}
+  },
+  "projectConfigurationExample": {}
+}

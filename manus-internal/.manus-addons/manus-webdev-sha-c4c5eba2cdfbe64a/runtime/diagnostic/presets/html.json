@@ -1,0 +1,25 @@
+{
+  "name": "html",
+  "command": "vscode-html-language-server",
+  "args": [
+    "--stdio"
+  ],
+  "files": {
+    ".html": "html"
+  },
+  "description": "Native workspace settings are nested under html. html.validate.scripts and html.validate.styles are booleans controlling embedded JavaScript and CSS validation. html.format belongs to formatting. HTML is tolerant markup; embedded-script validation does not replace project-wide JavaScript type checking. The HTML server also requests the native css workspace section for embedded styles. Keep settings.css as an object ({} enables defaults); returning null for css crashes this installed server during embedded validation and may hide JavaScript errors in the same HTML file. Unknown sections should still return null; do not globally replace missing configuration with empty objects. An empty or informational-only report following a native error log is not treated as a completed check. Actionable native Error/Warning diagnostics are still returned even if unrelated background error logs occur. An explicit native error showMessage invalidates that check.",
+  "testedVersion": "vscode-langservers-extracted 4.10.0",
+  "configuration": {
+    "initializationOptions": {},
+    "settings": {
+      "html": {
+        "validate": {
+          "scripts": true,
+          "styles": true
+        }
+      },
+      "css": {}
+    }
+  },
+  "projectConfigurationExample": {}
+}

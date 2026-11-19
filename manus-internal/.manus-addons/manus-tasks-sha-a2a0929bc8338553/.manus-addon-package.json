@@ -1,0 +1,8 @@
+{
+  "addon_id": "manus-tasks",
+  "materialized_at": "2026-11-18T21:32:41Z",
+  "registration_sha256": "eca44a450bde68f3230f9069b0de8ba7ec8d5d06f409533e263dae795c4ab300",
+  "s3_uri": "",
+  "sha256": "a2a0929bc83385532210329ef4b4ff96a7a0fe634bd95fcd84ddb53220da41ae",
+  "version": "0.0.27"
+}

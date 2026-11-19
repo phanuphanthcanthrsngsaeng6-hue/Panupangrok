@@ -1,0 +1,8 @@
+{
+  "addon_id": "manus-webdev",
+  "materialized_at": "2026-11-18T21:32:44Z",
+  "registration_sha256": "d4284e682739cf151ee964b4e4f308b3855ee1f5084e927165ced7f36e3aebaa",
+  "s3_uri": "",
+  "sha256": "c4c5eba2cdfbe64ab5fcdf61aec24ac5a55d5040fe4e4b5afe2a9aef4e020a0e",
+  "version": "0.0.88"
+}

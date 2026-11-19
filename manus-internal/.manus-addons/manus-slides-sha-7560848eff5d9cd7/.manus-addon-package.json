@@ -1,0 +1,8 @@
+{
+  "addon_id": "manus-slides",
+  "materialized_at": "2026-11-18T21:32:42Z",
+  "registration_sha256": "9186636c56f02c61a17b57069c2aa9aae686896f00f003d0b4d6a8a4245bccb8",
+  "s3_uri": "",
+  "sha256": "7560848eff5d9cd754bee1a91d4dc00d75c80802414542269f75ca1eead06cd6",
+  "version": "0.0.1-prod.44330580282.a6f3e3fc"
+}

@@ -52,6 +52,7 @@ from channel.web.api.openai_compat import (  # noqa: F401
 from channel.web.api.pages import (  # noqa: F401
     AssetsHandler, ChatHandler, HealthHandler, RootHandler,
 )
+from channel.web.api.provider_status import ProviderStatusHandler  # noqa: F401
 from channel.web.api.scheduler import (  # noqa: F401
     SchedulerCreateHandler, SchedulerDeleteHandler, SchedulerHandler,
     SchedulerInstancesHandler, SchedulerRecipientsHandler,
@@ -135,6 +136,7 @@ URLS = (
     '/config', 'ConfigHandler',
     '/api/external_api', 'ExternalApiHandler',
     '/api/models', 'ModelsHandler',
+    '/api/provider-status', 'ProviderStatusHandler',
     '/api/channels', 'ChannelsHandler',
     '/line/webhook', 'LineWebhookHandler',
     '/api/weixin/qrlogin', 'WeixinQrHandler',

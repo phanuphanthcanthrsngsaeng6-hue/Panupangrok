@@ -1,0 +1,15 @@
+{
+  "schemaVersion": 2,
+  "title": "Side Scroller",
+  "description": "Run, gun and grapple through Operation: Dust Fang, a hand-drawn arcade side-scroller across three stages: a frontier town, a canyon rail trestle and a fortress at dusk. Yank enemies into your hands, use them as shields, chain barrel explosions, climb the STYLE ranks, unleash FURY and take down the Rhino Crawler.",
+  "defaultCaptions": {
+    "x": "Grab a soldier with a grappling claw, use him as a shield, then throw him at his friends. Side Scroller is an arcade run-and-gun you play in your browser.",
+    "facebook": "Side Scroller: a fast arcade run-and-gun in the old-school style. Grapple enemies, throw barrels, swing over canyons and beat the Rhino Crawler boss. Plays in your browser.",
+    "reddit": "I made Side Scroller, a browser run-and-gun built around a grappling claw. You can yank enemies in, carry them as shields, throw crates and barrels, and swing across a canyon on the way to a boss fight.",
+    "discord": "Side Scroller is out: run, gun, grapple and throw your way through Operation: Dust Fang. How fast can you S-rank it?"
+  },
+  "assets": {
+    "og": "assets/template/share/og.png",
+    "favicon": "assets/template/share/favicon.png"
+  }
+}

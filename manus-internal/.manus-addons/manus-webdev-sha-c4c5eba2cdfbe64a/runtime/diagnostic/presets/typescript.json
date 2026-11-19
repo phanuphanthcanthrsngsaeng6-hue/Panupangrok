@@ -1,0 +1,28 @@
+{
+  "name": "typescript",
+  "command": "typescript-language-server",
+  "args": [
+    "--stdio"
+  ],
+  "files": {
+    ".js": "javascript",
+    ".jsx": "javascriptreact",
+    ".mjs": "javascript",
+    ".cjs": "javascript",
+    ".ts": "typescript",
+    ".tsx": "typescriptreact",
+    ".mts": "typescript",
+    ".cts": "typescript"
+  },
+  "description": "typescript-language-server native workspace option implicitProjectConfiguration.checkJs is boolean, default false, and enables JS/JSX semantic checks for inferred projects. It belongs at the workspace root, not under a typescript wrapper. Project jsconfig/tsconfig override inferred options. initializationOptions is a separate startup channel.",
+  "testedVersion": "5.3.0 / TS 6.0.3",
+  "configuration": {
+    "initializationOptions": {},
+    "settings": {
+      "implicitProjectConfiguration": {
+        "checkJs": true
+      }
+    }
+  },
+  "projectConfigurationExample": {}
+}

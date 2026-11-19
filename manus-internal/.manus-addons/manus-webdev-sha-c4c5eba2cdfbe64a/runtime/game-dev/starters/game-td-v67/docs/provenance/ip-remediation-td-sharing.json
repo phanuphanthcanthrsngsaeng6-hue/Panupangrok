@@ -1,0 +1,25 @@
+{
+  "name": "td-sharing",
+  "file": "td-sharing.png",
+  "sha256": "87cc7ab65bb21c7e8fd91a9d7a897f813af8578962fc5bfa5142b0fb6c03bf60",
+  "bytes": 1433603,
+  "method": "built-in imagegen; actual model identifier not returned",
+  "prompt": "prompts.json#td-sharing",
+  "inputImageSha256": "70b11f737908ed7579f4d551d1f40b7e5f8d688a705f132e826fc56a2cac220d",
+  "postprocessing": "PNG export resized to1200x630 with FFmpeg default scale filter",
+  "path": "assets/template/share/grove-20260924/og.png",
+  "date": "2026-09-30",
+  "publication": {
+    "url": "https://d1oupeiobkpcny.cloudfront.net/assets/dashboard/materials/2026/09/30/87cc7ab65bb21c7e8fd91a9d7a897f813af8578962fc5bfa5142b0fb6c03bf60.bin",
+    "sha256": "sha256:87cc7ab65bb21c7e8fd91a9d7a897f813af8578962fc5bfa5142b0fb6c03bf60",
+    "size": 1433603
+  },
+  "scope": "Creation and byte evidence; no independent guarantee of third-party clearance.",
+  "promptText": "Use case: text-localization. Edit only the title lettering on the left of this wide forest game sharing illustration. Replace \"FABLEWOOD\" with exactly \"SEED DEFENSE\" in similarly elegant gold lettering, using two lines if needed. Replace the subtitle \"KEEPERS OF THE LAST SEED\" with exactly \"GUARD THE GROVE\". Preserve the owl, fox, deer, turtle, glowing seed, forest foliage, magical effects, palette, lighting and all remaining artwork. Keep the landscape 1200:630 aspect ratio. No additional text or logos.",
+  "generatedMaster": {
+    "file": "td-sharing-source.png",
+    "sha256": "sha256:f205db696247ea2b588514363936b05b74a7bf06371ba502341969690325cf6c",
+    "size": 2715045,
+    "scope": "Retained review master; no backend model identifier returned."
+  }
+}

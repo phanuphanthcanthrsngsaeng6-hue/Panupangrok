@@ -1,0 +1,11 @@
+{
+  "name": "game-generic",
+  "version": "2.0.0",
+  "private": true,
+  "scripts": {
+    "verify": "./tools/verify.sh",
+    "verify:release": "./tools/verify.sh --export",
+    "verify:clean": "./tools/verify_clean_scaffold.sh",
+    "export": "mkdir -p dist && godot --headless --path . --export-release Web dist/index.html"
+  }
+}

@@ -1,0 +1,50 @@
+{
+  "assets": [
+    {
+      "browser_download_url": "https://github.com/godotengine/godot-builds/releases/download/4.7.2-stable/Godot_v4.7.2-stable_linux.x86_64.zip",
+      "digest": "sha256:cadd3204e728a35d3f13adb7fd0d7902636b79f6b95c40c265eb73b6c35329e4",
+      "name": "Godot_v4.7.2-stable_linux.x86_64.zip",
+      "size": 77860424
+    },
+    {
+      "browser_download_url": "https://github.com/godotengine/godot-builds/releases/download/4.7.2-stable/Godot_v4.7.2-stable_export_templates.tpz",
+      "digest": "sha256:f298490b8d44d934be425a5a65a51bf15f422428b229a06a6e11d9ffea248011",
+      "name": "Godot_v4.7.2-stable_export_templates.tpz",
+      "size": 1281349702
+    },
+    {
+      "browser_download_url": "https://github.com/godotengine/godot-builds/releases/download/4.7.2-stable/Godot_v4.7.2-stable_macos.universal.zip",
+      "digest": "sha256:c58a24e31d720be9d62f60cb5627c4e695fb72f21b0cfe1bc9ccaa9a3b3ba63e",
+      "name": "Godot_v4.7.2-stable_macos.universal.zip",
+      "size": 170622178
+    },
+    {
+      "browser_download_url": "https://github.com/godotengine/godot-builds/releases/download/4.7.2-stable/Godot_v4.7.2-stable_win64.exe.zip",
+      "digest": "sha256:731980f9608d61333e5baf54a2ef17210acc7a538446c0cb9969f002aca1e953",
+      "members": [
+        { "digest": "sha256:ab1824f85bfd8e0e4128182c000c4003a3e042245b2967848d089b2a04b22424", "name": "Godot_v4.7.2-stable_win64.exe", "size": 180858888 },
+        { "digest": "sha256:c8f0a6bc45a19b33541501e57f6f7cd972ab18453743266339d495cbbe846643", "name": "Godot_v4.7.2-stable_win64_console.exe", "size": 198152 }
+      ],
+      "name": "Godot_v4.7.2-stable_win64.exe.zip",
+      "size": 86013866
+    },
+    {
+      "browser_download_url": "https://github.com/godotengine/godot-builds/releases/download/4.7.2-stable/Godot_v4.7.2-stable_windows_arm64.exe.zip",
+      "digest": "sha256:2d206e0b1d2366eb3508971c670c52333dcd7218b818102d77ca7ceaa86892ba",
+      "members": [
+        { "digest": "sha256:238f0a6311809f632063cc433037cb8e4e014aff081dffd760646c731886fd40", "name": "Godot_v4.7.2-stable_windows_arm64.exe", "size": 188305928 },
+        { "digest": "sha256:2025057ad0cbda5e8668ab61789ad171e306498a0cab641cd18ab9df1c836875", "name": "Godot_v4.7.2-stable_windows_arm64_console.exe", "size": 168968 }
+      ],
+      "name": "Godot_v4.7.2-stable_windows_arm64.exe.zip",
+      "size": 84263370
+    },
+    {
+      "browser_download_url": "https://github.com/godotengine/godot-builds/releases/download/4.7.2-stable/Godot_v4.7.2-stable_linux.arm64.zip",
+      "digest": "sha256:5dd0d86405cf7e8adf79fb6377b38ba682a2846cb378ffe5364f38c01ad29b9d",
+      "name": "Godot_v4.7.2-stable_linux.arm64.zip",
+      "size": 77008699
+    }
+  ],
+  "html_url": "https://github.com/godotengine/godot-builds/releases/tag/4.7.2-stable",
+  "tag_name": "4.7.2-stable"
+}

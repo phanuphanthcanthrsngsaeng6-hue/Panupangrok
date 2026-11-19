@@ -1,0 +1,92 @@
+extends SceneTree
+const Store = preload("res://autoload/tuning_store.gd")
+const Config = preload("res://scripts/template_config.gd")
+var failures: Array[String] = []
+
+func _initialize() -> void:
+	_run.call_deferred()
+
+func check(value: bool, message: String) -> void:
+	if not value:
+		failures.append(message)
+		push_error(message)
+
+func _run() -> void:
+	var store := Store.new()
+	root.add_child(store)
+	check(store.get_settings().size() == 24, "Pinball descriptor count")
+	check(store.get_categories().size() == 6, "All six categories")
+	for item: Dictionary in store.get_settings():
+		store.set_value(item.id, item.default, false)
+	store.begin_run()
+	check(store.pending_count() == 0 and store.is_ranked_eligible(), "Baseline starts clean")
+	var baseline := Config.current()
+	check(not baseline.is_empty(), "Baseline config loaded")
+	check(store.set_value("player.lives", 5, false), "Integer request accepted")
+	check(store.get_active_value("player.lives") == 3 and store.pending_count() == 1, "Next-run value stays pending")
+	check(store.is_ranked_eligible(), "Pending value does not taint run")
+	store.apply_boundary("NEXT_ACTION")
+	check(store.get_active_value("player.lives") == 3, "Unrelated boundary does not apply next-run value")
+	store.set_value("gameplay.ball_save.seconds", 8.0, false)
+	check(store.get_active_value("gameplay.ball_save.seconds") == 7.0, "Next-action value waits")
+	store.apply_boundary("NEXT_ACTION")
+	check(store.get_active_value("gameplay.ball_save.seconds") == 8.0 and not store.is_ranked_eligible(), "Next action applies and taints")
+	store.set_value("gameplay.ball_save.seconds", 7.0, false)
+	store.set_value("player.lives", 3, false)
+	store.begin_run()
+	store.set_value("player.lives", 5, false)
+	store.set_value("environment.filter.intensity", 0.4, false)
+	check(store.is_ranked_eligible(), "Cosmetic change preserves eligibility")
+	var marker := store.configuration_marker()
+	store.set_value("ui.hud.opacity", 0.7, false)
+	check(marker == store.configuration_marker(), "Cosmetic values excluded from gameplay marker")
+	store.set_value("gameplay.score.combo_bonus", 0.2, false)
+	check(store.is_ranked_eligible(), "Score request remains pending")
+	store.apply_boundary("NEXT_STAGE")
+	check(not store.is_ranked_eligible(), "Applied score-affecting value taints run")
+	store.set_value("gameplay.score.combo_bonus", 0.1, false)
+	store.apply_boundary("NEXT_STAGE")
+	check(not store.is_ranked_eligible(), "Reset cannot erase applied taint")
+	store.set_value("gameplay.respawn.delay", 2.0, false)
+	check(is_equal_approx(store.get_active_value("gameplay.respawn.delay"), 1.3), "Next-spawn waits")
+	store.apply_boundary("NEXT_SPAWN")
+	check(is_equal_approx(store.get_active_value("gameplay.respawn.delay"), 2.0), "Next-spawn applies")
+	store.end_run()
+	store.begin_run()
+	check(store.get_active_value("player.lives") == 5 and not store.is_ranked_eligible(), "Persisted gameplay values taint next run")
+	check(not store.set_value("player.lives", 2.5, false), "Fractional integer rejected")
+	check(not store.set_value("environment.gravity", NAN, false), "NaN rejected")
+	check(not store.set_value("environment.gravity", INF, false), "Infinity rejected")
+	check(not store.set_value("environment.gravity", 99999, false), "Out-of-range rejected")
+	check(not store.set_value("audio.master.muted", 1, false), "Boolean coercion rejected")
+	check(not store.set_value("unknown.control", 1, false), "Unknown id rejected")
+	var gravity_before: Variant = store.get_requested_value("environment.gravity")
+	check(not store.set_values({"environment.gravity":550,"player.lives":99}, false), "Invalid bundle rejected")
+	check(store.get_requested_value("environment.gravity") == gravity_before, "Bundle rejection is atomic")
+	store.set_values({"environment.gravity":550,"enemies.bumper.kick_multiplier":1.5,"enemies.score.multiplier":2.0,"player.flipper.response":20}, false)
+	store.apply_boundary("NEXT_STAGE")
+	var result := store.apply_to_config(baseline)
+	check(result.physics.gravity == 550 and result.table.flippers.left.response == 20 and result.table.flippers.right.response == 20, "Physics controls apply to both flippers and gravity")
+	check(result.table.bumpers[0].kick == baseline.table.bumpers[0].kick * 1.5, "Bumper kick applies")
+	check(result.table.banks[0].points == baseline.table.banks[0].points * 2, "Score yield applies")
+	check(baseline.physics.gravity == 480, "Baseline stays immutable")
+	check(store.apply_to_config(baseline) == result, "Scaling never compounds")
+	for item: Dictionary in store.get_settings():
+		store.set_value(item.id, item.default, false)
+	store.end_run()
+	store.begin_run()
+	check(store.is_ranked_eligible() and store.get_persisted_deltas().is_empty(), "New baseline run resets integrity")
+	var authored := baseline.duplicate(true)
+	authored.gameplay.balls = 2
+	authored.physics.gravity = 520
+	authored.table.flippers.left.response = 18
+	authored.table.flippers.right.response = 19
+	store.configure_baseline(authored)
+	check(store.get_requested_value("player.lives") == 2 and store.get_active_value("environment.gravity") == 520, "Configured authored baseline reaches descriptors")
+	check(store.apply_to_config(authored) == authored, "Unmodified authored table survives runtime tuning")
+	store.configure_baseline(baseline)
+
+	store.queue_free()
+	await process_frame
+	print("TUNING_ACCEPTANCE: ", "PASS" if failures.is_empty() else str(failures))
+	quit(0 if failures.is_empty() else 1)

@@ -1,0 +1,67 @@
+{
+  "version": 1,
+  "files": [
+    {
+      "name": "NotoSansSC-VF.subset.woff2",
+      "role": "font",
+      "sha256": "sha256:38f4c5f927f746b3dfa4c3a5d7edf0b7a3e828e27438418fa54f9e1565289412",
+      "size": 1869368,
+      "family": "Noto Sans SC",
+      "license": "OFL-1.1",
+      "licenseFile": "NotoSansSC-OFL.txt"
+    },
+    {
+      "name": "NotoSansSC-OFL.txt",
+      "role": "license",
+      "sha256": "sha256:1c05c68c34f9708415aada51f17e1b0092d2cea709bf4a94cd38114f9e73d7d9",
+      "size": 4388
+    },
+    {
+      "name": "ManusCC0-Regular.ttf",
+      "role": "font",
+      "sha256": "sha256:b5124032e8e51434e05a51c327a9a614ac96b85ecf9b6cdcfc58834a9ae1347d",
+      "size": 26872,
+      "family": "ManusCC0",
+      "license": "CC0-1.0",
+      "licenseFile": "ManusCC0-LICENSE.txt",
+      "legacy": true
+    },
+    {
+      "name": "ManusCC0-Medium.ttf",
+      "role": "font",
+      "sha256": "sha256:f28a0f3aee8f427798bf972504d5640d5d28b8692a73102ac39556fa7ffb1ee2",
+      "size": 26912,
+      "family": "ManusCC0",
+      "license": "CC0-1.0",
+      "licenseFile": "ManusCC0-LICENSE.txt",
+      "legacy": true
+    },
+    {
+      "name": "ManusCC0-Bold.ttf",
+      "role": "font",
+      "sha256": "sha256:099f6d50114f83533f689ddc37028fcff2bd2a2c4871a332488c1a433f440804",
+      "size": 26820,
+      "family": "ManusCC0",
+      "license": "CC0-1.0",
+      "licenseFile": "ManusCC0-LICENSE.txt",
+      "legacy": true
+    },
+    {
+      "name": "ManusCC0SansCJKSC-Regular.woff2",
+      "role": "font",
+      "sha256": "sha256:0a4981b817d7fb556dd8cd80f278483f1849017a312ca965e027d8e0e066968c",
+      "size": 965224,
+      "family": "ManusCC0 Sans CJK SC",
+      "license": "CC0-1.0",
+      "licenseFile": "ManusCC0-LICENSE.txt",
+      "legacy": true
+    },
+    {
+      "name": "ManusCC0-LICENSE.txt",
+      "role": "license",
+      "sha256": "sha256:a2010f343487d3f7618affe54f789f5487602331c0a8d03f49e9a7c547cf0499",
+      "size": 7048,
+      "legacy": true
+    }
+  ]
+}

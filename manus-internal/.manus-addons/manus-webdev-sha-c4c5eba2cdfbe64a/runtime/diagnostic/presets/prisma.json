@@ -1,0 +1,21 @@
+{
+  "name": "prisma",
+  "command": "prisma-language-server",
+  "args": [
+    "--stdio"
+  ],
+  "files": {
+    ".prisma": "prisma"
+  },
+  "description": "Installed Prisma language-server 31.11.0 requests workspace/configuration section \"prisma\" and reads settings.enableDiagnostics. Set settings to {\"prisma\":{\"enableDiagnostics\":true}}; the built-in client must answer that section with {\"enableDiagnostics\":true}. initialize options can be empty. Do not invent validate.enable; do not change .prisma source to configure validation. This installed version dereferences a null section and crashes, so explicitly provide the prisma object. Version compatibility: this installed @prisma/language-server uses Prisma 7 schema rules, including rejecting datasource.url in schema.prisma. Prisma 6 accepts that field. Check the project Prisma CLI/client major version before trusting schema diagnostics. Installing a project Prisma CLI does not switch this preset server to that version. For an existing Prisma 6 project, install a compatible @prisma/language-server release and start its executable with --command <project-local-prisma-language-server> --args '[\"--stdio\"]'. Keep the project schema compatible with its actual runtime; do not migrate a valid application schema merely to satisfy an incompatible diagnostic server. Compare a corrected schema with the project-local prisma validate command. See https://www.prisma.io/docs/orm/v7/reference/prisma-config-reference for Prisma 7 configuration.",
+  "testedVersion": "31.11.0",
+  "configuration": {
+    "initializationOptions": {},
+    "settings": {
+      "prisma": {
+        "enableDiagnostics": true
+      }
+    }
+  },
+  "projectConfigurationExample": {}
+}

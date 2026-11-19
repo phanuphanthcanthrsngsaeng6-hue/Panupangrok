@@ -1,0 +1,23 @@
+{
+  "name": "gopls",
+  "command": "gopls",
+  "args": [
+    "serve"
+  ],
+  "files": {
+    ".go": "go"
+  },
+  "description": "gopls can receive native options as initializationOptions, or via workspace/configuration section gopls. analyses is a map from analyzer name to boolean. shadow checks unintended variable shadowing and is disabled by default. staticcheck is separate. A Go toolchain and go.mod define the project.",
+  "testedVersion": "0.23.0",
+  "configuration": {
+    "initializationOptions": {},
+    "settings": {
+      "gopls": {
+        "analyses": {
+          "shadow": true
+        }
+      }
+    }
+  },
+  "projectConfigurationExample": {}
+}

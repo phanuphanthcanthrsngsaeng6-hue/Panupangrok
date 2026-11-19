@@ -1,0 +1,330 @@
+{
+  "schema_version": "0.1",
+  "kind": "manus_addon_package",
+  "distribution": "managed",
+  "update_mode": "hot",
+  "addon": {
+    "id": "manus-slides",
+    "version": "0.0.1-prod.44330580282.a6f3e3fc",
+    "owner": "manus",
+    "display_name": "Slides",
+    "description": "Slides addon for Manus MCP, Skill, and Widget infrastructure validation.",
+    "backend_mode": "addon_server"
+  },
+  "addon_server": {
+    "subject_deletion": true,
+    "path": "server/run.mjs",
+    "healthcheck_path": "/health",
+    "auth_mode": "manus_session_context",
+    "browser_credential": "subject_token",
+    "managed_by": "addon_ci"
+  },
+  "credential": {
+    "auth_method": "private_key_jwt"
+  },
+  "browser_workers": {
+    "slides-renderer": {
+      "entry": "browser/slides-renderer/index.html",
+      "mode": "job"
+    }
+  },
+  "slots": {
+    "new_session_scene/v1": {
+      "scene": "slides",
+      "entry": {
+        "label": "Create slides",
+        "icon": "presentation",
+        "order": 10
+      },
+      "scene_ui_endpoint": "${ADDON_PUBLIC_ENDPOINT}/api/v1/new-session-scenes/slides/ui"
+    },
+    "composer_mention/v1": {
+      "search_endpoint": "${ADDON_PUBLIC_ENDPOINT}/api/v1/composer-mention/search"
+    }
+  },
+  "mcp_servers": {
+    "slides": {
+      "execution_mode": "runtime_mcp",
+      "execution_modes": [
+        "runtime_mcp",
+        "device_mcp"
+      ],
+      "description": "Always use the slides tools for ANY task that creates or edits a presentation, slide deck, slides, or PPT/PPTX (read the slides skill first); never build decks by hand unless the user explicitly asks otherwise.",
+      "transport": "stdio",
+      "command": "node",
+      "args": [
+        "runtime/mcp/server.mjs"
+      ],
+      "env": {
+        "ADDON_SERVER_ENDPOINT": {
+          "source": "addon_server.public_endpoint"
+        }
+      },
+      "model_visible_tools": [
+        "get_template",
+        "init_slides",
+        "generate_image_slide",
+        "generate_fast_cheap_image",
+        "organize_slides",
+        "write_notes",
+        "present",
+        "export",
+        "attach_slides"
+      ],
+      "tool_streaming": {
+        "write_notes": {
+          "schema": "manus.addon.tool_streaming/v1",
+          "widget": {
+            "uri": "manus-widget://manus-slides/notes-card/tool/write_notes",
+            "title": "Speaker notes"
+          },
+          "state": {
+            "initial": {
+              "kind": "slides_notes"
+            },
+            "mappings": {
+              "notes": "notes"
+            }
+          },
+          "presentation": {
+            "brief": "Writing speaker notes",
+            "message_action": "Writing speaker notes"
+          }
+        }
+      },
+      "host_callable_tools": [
+        "_inspect_after_file_edit",
+        "_apply_file_edit_hook_result",
+        "_sync_user_edits"
+      ],
+      "tool_auth": {
+        "get_template": {
+          "type": "subject_token"
+        },
+        "init_slides": {
+          "type": "subject_token"
+        },
+        "generate_image_slide": {
+          "type": "subject_token"
+        },
+        "generate_fast_cheap_image": {
+          "type": "subject_token"
+        },
+        "organize_slides": {
+          "type": "subject_token"
+        },
+        "write_notes": {
+          "type": "subject_token"
+        },
+        "present": {
+          "type": "subject_token"
+        },
+        "export": {
+          "type": "subject_token"
+        },
+        "attach_slides": {
+          "type": "subject_token"
+        },
+        "_inspect_after_file_edit": {
+          "type": "subject_token"
+        },
+        "_apply_file_edit_hook_result": {
+          "type": "subject_token"
+        },
+        "_sync_user_edits": {
+          "type": "subject_token"
+        }
+      }
+    }
+  },
+  "agent_hooks": {
+    "user-chat-sync": {
+      "trigger": "host_user_chat",
+      "activation": "registered",
+      "session_kinds": [
+        "main"
+      ],
+      "blocking": true,
+      "wake_runtime": true,
+      "handler": {
+        "mcp_server": "slides",
+        "tool": "_sync_user_edits"
+      },
+      "result_kinds": [
+        "agent_reminder"
+      ]
+    }
+  },
+  "device_artifacts": [
+    {
+      "target": {
+        "os": "darwin",
+        "arch": "arm64"
+      },
+      "path": "device/darwin-arm64.tar.gz"
+    },
+    {
+      "target": {
+        "os": "darwin",
+        "arch": "amd64"
+      },
+      "path": "device/darwin-amd64.tar.gz"
+    },
+    {
+      "target": {
+        "os": "linux",
+        "arch": "amd64",
+        "libc": "gnu"
+      },
+      "path": "device/linux-amd64-gnu.tar.gz"
+    },
+    {
+      "target": {
+        "os": "windows",
+        "arch": "amd64"
+      },
+      "path": "device/windows-amd64.tar.gz"
+    },
+    {
+      "target": {
+        "os": "windows",
+        "arch": "arm64"
+      },
+      "path": "device/windows-arm64.tar.gz"
+    }
+  ],
+  "resources": {
+    "deck": {
+      "schema": "manus.addon.resource/v1",
+      "uri_scheme": "manus-resource",
+      "uri_template": "manus-resource://manus-slides/deck/{project_id}",
+      "content_kind": "slides",
+      "resolve_endpoint": "${ADDON_PUBLIC_ENDPOINT}/api/v1/resources/deck/resolve",
+      "read_endpoint": "${ADDON_PUBLIC_ENDPOINT}/api/v1/resources/deck/{project_id}/read",
+      "action_endpoint": "${ADDON_PUBLIC_ENDPOINT}/api/v1/resources/deck/{project_id}/actions",
+      "events_endpoint": "${ADDON_PUBLIC_ENDPOINT}/api/v1/resources/deck/{project_id}/events",
+      "viewer": {
+        "type": "addon_widget",
+        "widget_id": "studio",
+        "widget_uri_template": "manus-widget://manus-slides/studio/deck/{project_id}"
+      },
+      "capabilities": [
+        "preview",
+        "refresh",
+        "share",
+        "download:pptx",
+        "download:pdf",
+        "export:google_slides",
+        "save:google_drive",
+        "save:onedrive"
+      ]
+    }
+  },
+  "widgets": {
+    "studio": {
+      "type": "page",
+      "version": "1.0.0",
+      "chrome": "widget",
+      "uri_scheme": "manus-widget",
+      "uri_template": "manus-widget://manus-slides/studio/deck/{project_id}",
+      "resolve_endpoint": "${ADDON_PUBLIC_ENDPOINT}/api/v1/widgets/studio/resolve",
+      "frontend": {
+        "type": "web_component",
+        "tag": "manus-slides--studio-shell",
+        "path": "static/ui/widgets/studio-shell/index.js"
+      },
+      "cache": {
+        "descriptor": "stale-while-revalidate",
+        "frontend": "build-hash"
+      }
+    },
+    "chat-slide-card": {
+      "type": "card",
+      "version": "1.1.0",
+      "skeleton": {
+        "type": "cover",
+        "width": 568,
+        "height": 377,
+        "mobile": {
+          "width": 343,
+          "height": 250
+        }
+      },
+      "frontend": {
+        "type": "web_component",
+        "tag": "manus-slides--chat-slide-card",
+        "path": "static/ui/widgets/chat-slide-card/index.js"
+      },
+      "description": "Session chat delivery card: deck cover preview, host-opened (resource descriptor chatCard)."
+    },
+    "notes-card": {
+      "type": "card",
+      "version": "1.0.0",
+      "skeleton": {
+        "type": "action",
+        "width": 568,
+        "height": 110,
+        "mobile": {
+          "width": 343,
+          "height": 110
+        }
+      },
+      "uri_scheme": "manus-widget",
+      "uri_template": "manus-widget://manus-slides/notes-card/tool/{tool_call_id}",
+      "resolve_endpoint": "${ADDON_PUBLIC_ENDPOINT}/api/v1/widgets/notes-card/resolve",
+      "frontend": {
+        "type": "web_component",
+        "tag": "manus-slides--notes-card",
+        "path": "static/ui/widgets/notes-card/index.js"
+      },
+      "streaming": {
+        "protocol": "manus.addon.widget_card_streaming/v1",
+        "transport": "session_event",
+        "state_source": "tool_arguments",
+        "completion": "resource"
+      },
+      "cache": {
+        "descriptor": "stale-while-revalidate",
+        "frontend": "build-hash"
+      }
+    },
+    "slide-card": {
+      "type": "card",
+      "version": "1.0.0",
+      "skeleton": {
+        "type": "cover",
+        "width": 568,
+        "height": 368,
+        "mobile": {
+          "width": 343,
+          "height": 242
+        }
+      },
+      "uri_scheme": "manus-widget",
+      "uri_template": "manus-widget://manus-slides/slide-card/tool/{tool_call_id}",
+      "resolve_endpoint": "${ADDON_PUBLIC_ENDPOINT}/api/v1/widgets/slide-card/resolve",
+      "frontend": {
+        "type": "web_component",
+        "tag": "manus-slides--slide-card",
+        "path": "static/ui/widgets/slide-card/index.js"
+      },
+      "streaming": {
+        "protocol": "manus.addon.widget_card_streaming/v1",
+        "transport": "session_event",
+        "state_source": "tool_arguments",
+        "completion": "resource"
+      },
+      "cache": {
+        "descriptor": "stale-while-revalidate",
+        "frontend": "build-hash"
+      }
+    }
+  },
+  "skills": {
+    "slides": {
+      "name": "slides",
+      "mcp_server": "slides",
+      "path": "runtime/skill"
+    }
+  }
+}

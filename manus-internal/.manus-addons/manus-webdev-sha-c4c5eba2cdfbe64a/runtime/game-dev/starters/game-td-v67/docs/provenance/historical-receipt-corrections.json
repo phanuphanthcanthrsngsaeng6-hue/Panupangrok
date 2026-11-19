@@ -1,0 +1,23 @@
+{
+  "note": "The inherited ledger hash did not match the retained relocated receipt bytes. Every receipt output hash matches the inherited asset row; successor pointers now pin the actual retained receipt. No media changed.",
+  "corrections": [
+    {
+      "asset": "assets/template/share/illuminated-v1/favicon-32.png",
+      "previousReceiptSha256": "sha256:7fba224a714122230cdd4583ed0e641076cac317dd8f953b29798ee16069271c",
+      "actualRetainedReceiptSha256": "sha256:c286393630746d25abb79d5f5ddb73ad886aa98f0e9866cee6a58cf781d27657",
+      "outputHashMatchesLedger": true
+    },
+    {
+      "asset": "assets/template/share/illuminated-v1/favicon.png",
+      "previousReceiptSha256": "sha256:7fba224a714122230cdd4583ed0e641076cac317dd8f953b29798ee16069271c",
+      "actualRetainedReceiptSha256": "sha256:c286393630746d25abb79d5f5ddb73ad886aa98f0e9866cee6a58cf781d27657",
+      "outputHashMatchesLedger": true
+    },
+    {
+      "asset": "assets/template/share/illuminated-v1/og.png",
+      "previousReceiptSha256": "sha256:7fba224a714122230cdd4583ed0e641076cac317dd8f953b29798ee16069271c",
+      "actualRetainedReceiptSha256": "sha256:c286393630746d25abb79d5f5ddb73ad886aa98f0e9866cee6a58cf781d27657",
+      "outputHashMatchesLedger": true
+    }
+  ]
+}

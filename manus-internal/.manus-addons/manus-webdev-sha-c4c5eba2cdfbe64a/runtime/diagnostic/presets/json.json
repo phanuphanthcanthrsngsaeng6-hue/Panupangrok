@@ -1,0 +1,52 @@
+{
+  "name": "json",
+  "command": "vscode-json-language-server",
+  "args": [
+    "--stdio"
+  ],
+  "files": {
+    ".json": "json"
+  },
+  "description": "Native workspace json.validate.enable is boolean. json.schemas is an array of {fileMatch: string[], schema: inline JSON Schema} or url associations. This server assigns validateEnabled from settings.json.validate.enable on configuration updates; missing that field is not a harmless generic settings update. Inline schemas need no network. The dotted paths above describe nested JSON objects, NOT literal dotted property names. Exact settings shape: {\"json\":{\"validate\":{\"enable\":true},\"schemas\":[{\"fileMatch\":[\"*.json\"],\"schema\":{\"type\":\"object\",\"properties\":{\"port\":{\"type\":\"integer\"}},\"required\":[\"port\"]}}]}}. The built-in client passes this object unchanged; it does not expand dotted keys. The port schema in configurationExample illustrates a project-specific rule; it is not enabled by the preset. Choose schemas for your actual project.",
+  "testedVersion": "vscode-langservers-extracted 4.10.0",
+  "configuration": {
+    "initializationOptions": {},
+    "settings": {
+      "json": {
+        "validate": {
+          "enable": true
+        },
+        "schemas": []
+      }
+    }
+  },
+  "projectConfigurationExample": {},
+  "configurationExample": {
+    "initializationOptions": {},
+    "settings": {
+      "json": {
+        "validate": {
+          "enable": true
+        },
+        "schemas": [
+          {
+            "fileMatch": [
+              "*.json"
+            ],
+            "schema": {
+              "type": "object",
+              "properties": {
+                "port": {
+                  "type": "integer"
+                }
+              },
+              "required": [
+                "port"
+              ]
+            }
+          }
+        ]
+      }
+    }
+  }
+}

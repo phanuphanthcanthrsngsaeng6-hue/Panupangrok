@@ -1,0 +1,19 @@
+{
+  "name": "game-webdev-auth",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "start": "node index.mjs"
+  },
+  "dependencies": {
+    "axios": "^1.21.0",
+    "cookie": "^1.0.2",
+    "jose": "6.1.0",
+    "drizzle-orm": "^0.45.4",
+    "mysql2": "^3.24.6",
+    "express": "^4.22.3",
+    "@trpc/server": "^11.25.2",
+    "superjson": "^1.13.3",
+    "zod": "^4.6.7"
+  }
+}

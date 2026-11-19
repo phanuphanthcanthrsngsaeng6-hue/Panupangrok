@@ -1,0 +1,12 @@
+{
+  "version": 1,
+  "stages": [
+    {
+      "id": "observatory",
+      "title_key": "stage.observatory",
+      "configuration": "res://config/pinball-template.json",
+      "jackpots": 1,
+      "time_limit": 240
+    }
+  ]
+}

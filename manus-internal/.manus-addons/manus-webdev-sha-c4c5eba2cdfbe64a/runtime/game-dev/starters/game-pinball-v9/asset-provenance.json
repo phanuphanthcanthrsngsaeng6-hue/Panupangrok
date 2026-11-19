@@ -1,0 +1,1278 @@
+{
+  "assets": {
+    "assets/template/audio/cosmic/celestial-drift.ogg": {
+      "declaredUseEvidence": [
+        "scripts/comet_main.gd"
+      ],
+      "generator": {
+        "provider": "Manus built-in generation",
+        "requestId": "172413577"
+      },
+      "inputs": [
+        {
+          "license": {},
+          "sha256": "sha256:060ac90f3f7c60d864bce82a2d43f10516238170c0facbbeec0e2b09f6c30222",
+          "source": {}
+        }
+      ],
+      "license": {
+        "url": "https://help.manus.im/en/articles/13125514-do-i-own-the-assets-websites-images-videos-slides-generated-via-manus"
+      },
+      "origin": "derivative",
+      "receipt": {
+        "path": "docs/provenance/pinball6-recovered-provenance-evidence.json",
+        "sha256": "sha256:55afff89ca17eabf10bc3f3d933e6fd619e9b9285950106f447b6f07c9abb31b"
+      },
+      "referenceEvidence": [
+        "autoload/audio_director.gd",
+        "scripts/comet_loading.gd"
+      ],
+      "regions": [],
+      "sha256": "sha256:50a87cb7be035651901d4c34a10c2a3c5df4f58c3b98fddcdfa268419e8c8820",
+      "shipped": null,
+      "size": 1702047,
+      "source": {
+        "name": "Recovered original Pinball source and generation evidence; see receipt",
+        "url": "https://vida.butterfly-effect.dev/app/gvt0l2a030fRfkzE3MdIkk"
+      },
+      "status": "present",
+      "transformations": [
+        {
+          "description": "Successful original instrumental generation requested as 120-second cosmic electronic music with soft mechanical percussion. Exact provider/model were not returned.",
+          "operation": "music-generation",
+          "tool": "manus-tools/generate_music"
+        },
+        {
+          "description": "Trim negligible padding, overlap tail/head by 1.25 seconds, normalize loudness, encode stereo 44.1kHz Ogg Vorbis; 118.484-second stream.",
+          "operation": "loop-and-transcode",
+          "tool": "tools/prepare_cosmic_music.py / FFmpeg"
+        }
+      ],
+      "useEvidence": [
+        "autoload/audio_director.gd",
+        "scripts/comet_loading.gd",
+        "scripts/comet_main.gd"
+      ],
+      "used": true,
+      "usedBy": [
+        "scripts/comet_main.gd"
+      ]
+    },
+    "assets/template/audio/cues/enemy-impact.wav": {
+      "declaredUseEvidence": [
+        "scripts/comet_main.gd"
+      ],
+      "generator": {},
+      "inputs": [
+        {
+          "license": {},
+          "path": "scripts/comet_main.gd",
+          "sha256": "sha256:9d96756a071079552ba9adbf98b19ffc7060ed47a2c758747186c56e3aa25d4d",
+          "source": {}
+        }
+      ],
+      "license": {},
+      "origin": "procedural",
+      "referenceEvidence": [
+        "autoload/audio_director.gd"
+      ],
+      "regions": [],
+      "sha256": "sha256:5d975f2e4f1baa1f8a59fbd05719b27e64463673511cee2132e500cd8290fd54",
+      "shipped": null,
+      "size": 11068,
+      "source": {},
+      "status": "present",
+      "transformations": [
+        {
+          "description": "Supplied original mechanical cue math, per-cue String.hash RNG seed, 22050 Hz mono PCM16. Recovered with tools/bake_comet_cues.gd; byte-identical SHA-256 and size verified against the supplied asset lock. Offline authoring only.",
+          "operation": "bake-existing-procedural-audio",
+          "tool": "tools/bake_comet_cues.gd"
+        }
+      ],
+      "useEvidence": [
+        "autoload/audio_director.gd",
+        "scripts/comet_main.gd"
+      ],
+      "used": true,
+      "usedBy": [
+        "scripts/comet_main.gd"
+      ]
+    },
+    "assets/template/audio/cues/game-defeat.wav": {
+      "declaredUseEvidence": [
+        "scripts/comet_main.gd"
+      ],
+      "generator": {},
+      "inputs": [
+        {
+          "license": {},
+          "path": "scripts/comet_main.gd",
+          "sha256": "sha256:9d96756a071079552ba9adbf98b19ffc7060ed47a2c758747186c56e3aa25d4d",
+          "source": {}
+        }
+      ],
+      "license": {},
+      "origin": "procedural",
+      "referenceEvidence": [
+        "autoload/audio_director.gd"
+      ],
+      "regions": [],
+      "sha256": "sha256:a06d29cdbb183875697a10334059ec83dcbf4998c177fc2a48878964a6c31b58",
+      "shipped": null,
+      "size": 28708,
+      "source": {},
+      "status": "present",
+      "transformations": [
+        {
+          "description": "Supplied original mechanical cue math, per-cue String.hash RNG seed, 22050 Hz mono PCM16. Recovered with tools/bake_comet_cues.gd; byte-identical SHA-256 and size verified against the supplied asset lock. Offline authoring only.",
+          "operation": "bake-existing-procedural-audio",
+          "tool": "tools/bake_comet_cues.gd"
+        }
+      ],
+      "useEvidence": [
+        "autoload/audio_director.gd",
+        "scripts/comet_main.gd"
+      ],
+      "used": true,
+      "usedBy": [
+        "scripts/comet_main.gd"
+      ]
+    },
+    "assets/template/audio/cues/game-pause.wav": {
+      "declaredUseEvidence": [
+        "scripts/comet_main.gd"
+      ],
+      "generator": {},
+      "inputs": [
+        {
+          "license": {},
+          "path": "scripts/comet_main.gd",
+          "sha256": "sha256:9d96756a071079552ba9adbf98b19ffc7060ed47a2c758747186c56e3aa25d4d",
+          "source": {}
+        }
+      ],
+      "license": {},
+      "origin": "procedural",
+      "referenceEvidence": [
+        "autoload/audio_director.gd"
+      ],
+      "regions": [],
+      "sha256": "sha256:8c0a192e388992d009dc6cd6aad8c488805c2462c3707717ef6db1d3d1e14e78",
+      "shipped": null,
+      "size": 5336,
+      "source": {},
+      "status": "present",
+      "transformations": [
+        {
+          "description": "Supplied original mechanical cue math, per-cue String.hash RNG seed, 22050 Hz mono PCM16. Recovered with tools/bake_comet_cues.gd; byte-identical SHA-256 and size verified against the supplied asset lock. Offline authoring only.",
+          "operation": "bake-existing-procedural-audio",
+          "tool": "tools/bake_comet_cues.gd"
+        }
+      ],
+      "useEvidence": [
+        "autoload/audio_director.gd",
+        "scripts/comet_main.gd"
+      ],
+      "used": true,
+      "usedBy": [
+        "scripts/comet_main.gd"
+      ]
+    },
+    "assets/template/audio/cues/game-victory.wav": {
+      "declaredUseEvidence": [
+        "scripts/comet_main.gd"
+      ],
+      "generator": {},
+      "inputs": [
+        {
+          "license": {},
+          "path": "scripts/comet_main.gd",
+          "sha256": "sha256:9d96756a071079552ba9adbf98b19ffc7060ed47a2c758747186c56e3aa25d4d",
+          "source": {}
+        }
+      ],
+      "license": {},
+      "origin": "procedural",
+      "referenceEvidence": [
+        "autoload/audio_director.gd"
+      ],
+      "regions": [],
+      "sha256": "sha256:bb54ad84c6bd7f35e8087b5a5c6065bdc0bb54f67b0aca37382831119d51b1af",
+      "shipped": null,
+      "size": 30912,
+      "source": {},
+      "status": "present",
+      "transformations": [
+        {
+          "description": "Supplied original mechanical cue math, per-cue String.hash RNG seed, 22050 Hz mono PCM16. Recovered with tools/bake_comet_cues.gd; byte-identical SHA-256 and size verified against the supplied asset lock. Offline authoring only.",
+          "operation": "bake-existing-procedural-audio",
+          "tool": "tools/bake_comet_cues.gd"
+        }
+      ],
+      "useEvidence": [
+        "autoload/audio_director.gd",
+        "scripts/comet_main.gd"
+      ],
+      "used": true,
+      "usedBy": [
+        "scripts/comet_main.gd"
+      ]
+    },
+    "assets/template/audio/cues/player-action.wav": {
+      "declaredUseEvidence": [
+        "scripts/comet_main.gd"
+      ],
+      "generator": {},
+      "inputs": [
+        {
+          "license": {},
+          "path": "scripts/comet_main.gd",
+          "sha256": "sha256:9d96756a071079552ba9adbf98b19ffc7060ed47a2c758747186c56e3aa25d4d",
+          "source": {}
+        }
+      ],
+      "license": {},
+      "origin": "procedural",
+      "referenceEvidence": [
+        "autoload/audio_director.gd"
+      ],
+      "regions": [],
+      "sha256": "sha256:77c8f9a8f6bacfe24fe5c52b48a533e197cefa112e58ec06925cf29d12496b4d",
+      "shipped": null,
+      "size": 19888,
+      "source": {},
+      "status": "present",
+      "transformations": [
+        {
+          "description": "Supplied original mechanical cue math, per-cue String.hash RNG seed, 22050 Hz mono PCM16. Recovered with tools/bake_comet_cues.gd; byte-identical SHA-256 and size verified against the supplied asset lock. Offline authoring only.",
+          "operation": "bake-existing-procedural-audio",
+          "tool": "tools/bake_comet_cues.gd"
+        }
+      ],
+      "useEvidence": [
+        "autoload/audio_director.gd",
+        "scripts/comet_main.gd"
+      ],
+      "used": true,
+      "usedBy": [
+        "scripts/comet_main.gd"
+      ]
+    },
+    "assets/template/audio/cues/score-reward.wav": {
+      "declaredUseEvidence": [
+        "scripts/comet_main.gd"
+      ],
+      "generator": {},
+      "inputs": [
+        {
+          "license": {},
+          "path": "scripts/comet_main.gd",
+          "sha256": "sha256:9d96756a071079552ba9adbf98b19ffc7060ed47a2c758747186c56e3aa25d4d",
+          "source": {}
+        }
+      ],
+      "license": {},
+      "origin": "procedural",
+      "referenceEvidence": [
+        "autoload/audio_director.gd"
+      ],
+      "regions": [],
+      "sha256": "sha256:1113c2d4be87969efa49d1c6c3570067d0427ee75ddd9f828556b2226279d60f",
+      "shipped": null,
+      "size": 17684,
+      "source": {},
+      "status": "present",
+      "transformations": [
+        {
+          "description": "Supplied original mechanical cue math, per-cue String.hash RNG seed, 22050 Hz mono PCM16. Recovered with tools/bake_comet_cues.gd; byte-identical SHA-256 and size verified against the supplied asset lock. Offline authoring only.",
+          "operation": "bake-existing-procedural-audio",
+          "tool": "tools/bake_comet_cues.gd"
+        }
+      ],
+      "useEvidence": [
+        "autoload/audio_director.gd",
+        "scripts/comet_main.gd"
+      ],
+      "used": true,
+      "usedBy": [
+        "scripts/comet_main.gd"
+      ]
+    },
+    "assets/template/audio/cues/ui-cancel.wav": {
+      "declaredUseEvidence": [
+        "scripts/comet_main.gd"
+      ],
+      "generator": {},
+      "inputs": [
+        {
+          "license": {},
+          "path": "scripts/comet_main.gd",
+          "sha256": "sha256:9d96756a071079552ba9adbf98b19ffc7060ed47a2c758747186c56e3aa25d4d",
+          "source": {}
+        }
+      ],
+      "license": {},
+      "origin": "procedural",
+      "referenceEvidence": [
+        "autoload/audio_director.gd"
+      ],
+      "regions": [],
+      "sha256": "sha256:ffaecd4db66b6f81c91bb9d46ee2747a03685d3a3e4b5dfb8822047dda2bdef5",
+      "shipped": null,
+      "size": 3572,
+      "source": {},
+      "status": "present",
+      "transformations": [
+        {
+          "description": "Supplied original mechanical cue math, per-cue String.hash RNG seed, 22050 Hz mono PCM16. Recovered with tools/bake_comet_cues.gd; byte-identical SHA-256 and size verified against the supplied asset lock. Offline authoring only.",
+          "operation": "bake-existing-procedural-audio",
+          "tool": "tools/bake_comet_cues.gd"
+        }
+      ],
+      "useEvidence": [
+        "autoload/audio_director.gd",
+        "scripts/comet_main.gd"
+      ],
+      "used": true,
+      "usedBy": [
+        "scripts/comet_main.gd"
+      ]
+    },
+    "assets/template/audio/cues/ui-confirm.wav": {
+      "declaredUseEvidence": [
+        "scripts/comet_main.gd"
+      ],
+      "generator": {},
+      "inputs": [
+        {
+          "license": {},
+          "path": "scripts/comet_main.gd",
+          "sha256": "sha256:9d96756a071079552ba9adbf98b19ffc7060ed47a2c758747186c56e3aa25d4d",
+          "source": {}
+        }
+      ],
+      "license": {},
+      "origin": "procedural",
+      "referenceEvidence": [
+        "autoload/audio_director.gd"
+      ],
+      "regions": [],
+      "sha256": "sha256:d905423c16774a2a2d81a47f361141a5c60cb084f07e9c4541eae66b45b79f37",
+      "shipped": null,
+      "size": 5336,
+      "source": {},
+      "status": "present",
+      "transformations": [
+        {
+          "description": "Supplied original mechanical cue math, per-cue String.hash RNG seed, 22050 Hz mono PCM16. Recovered with tools/bake_comet_cues.gd; byte-identical SHA-256 and size verified against the supplied asset lock. Offline authoring only.",
+          "operation": "bake-existing-procedural-audio",
+          "tool": "tools/bake_comet_cues.gd"
+        }
+      ],
+      "useEvidence": [
+        "autoload/audio_director.gd",
+        "scripts/comet_main.gd"
+      ],
+      "used": true,
+      "usedBy": [
+        "scripts/comet_main.gd"
+      ]
+    },
+    "assets/template/fonts/Figtree-VF.subset.woff2": {
+      "declaredUseEvidence": [],
+      "generator": {},
+      "inputs": [],
+      "license": {
+        "copyrightNoticeRequired": true,
+        "id": "OFL-1.1",
+        "licenseNoticeRequired": true,
+        "notice": "assets/template/fonts/Figtree-OFL.txt",
+        "url": "https://openfontlicense.org/open-font-license-official-text/"
+      },
+      "origin": "external",
+      "receipt": {
+        "path": "docs/provenance/pinball6-recovered-provenance-evidence.json",
+        "sha256": "sha256:55afff89ca17eabf10bc3f3d933e6fd619e9b9285950106f447b6f07c9abb31b"
+      },
+      "referenceEvidence": [
+        "assets/template/fonts/ui_bold.tres",
+        "assets/template/fonts/ui_medium.tres",
+        "assets/template/fonts/ui_regular.tres"
+      ],
+      "regions": [],
+      "sha256": "sha256:b3976c5969c8b1afd81dc3e314b61d8ffe3f3f58cf40906443105d330e6e0bdf",
+      "shipped": null,
+      "size": 23660,
+      "source": {
+        "name": "Figtree-VF.subset.woff2",
+        "url": "https://github.com/google/fonts/tree/main/ofl/figtree"
+      },
+      "status": "present",
+      "transformations": [
+        {
+          "description": "Inherited OFL font bytes. Coverage repair only; reserved-font-name remediation is handled separately before finalizing this successor.",
+          "operation": "subset-and-encode-woff2",
+          "tool": "Existing template typography pipeline"
+        }
+      ],
+      "useEvidence": [
+        "assets/template/fonts/ui_bold.tres",
+        "assets/template/fonts/ui_medium.tres",
+        "assets/template/fonts/ui_regular.tres"
+      ],
+      "used": true,
+      "usedBy": []
+    },
+    "assets/template/fonts/ManusCC0-Bold.woff2": {
+      "declaredUseEvidence": [],
+      "generator": {},
+      "inputs": [],
+      "license": {
+        "attributionRequired": false,
+        "commercialUseAllowed": true,
+        "copyrightNoticeRequired": false,
+        "editableProjectDistributionAllowed": true,
+        "id": "CC0-1.0",
+        "licenseNoticeRequired": false,
+        "modificationAllowed": true,
+        "modificationNoticeRequired": false,
+        "notice": "assets/template/fonts/ManusCC0-CC0.txt",
+        "redistributionAllowed": true,
+        "reusableTemplateDistributionAllowed": true,
+        "url": "https://creativecommons.org/publicdomain/zero/1.0/"
+      },
+      "origin": "external",
+      "receipt": {
+        "path": "docs/provenance/fonts/replacement-fonts.json",
+        "sha256": "sha256:46e858bce817ab98405b1301910c5bdd85ffd04f0c96f12293b5d6963845b58c"
+      },
+      "referenceEvidence": [
+        "assets/template/fonts/display/comet_title.tres",
+        "assets/template/fonts/display/comet_title_small.tres"
+      ],
+      "regions": [],
+      "sha256": "sha256:48c1f3452238f29eb1fe4b8bddfe8fd4045045a5c26657307b8862993488148e",
+      "shipped": null,
+      "size": 10308,
+      "source": {
+        "memberPath": "fonts/ManusCC0-Bold.woff2",
+        "name": "ManusCC0-Bold"
+      },
+      "status": "present",
+      "transformations": [],
+      "useEvidence": [
+        "assets/template/fonts/display/comet_title.tres",
+        "assets/template/fonts/display/comet_title_small.tres"
+      ],
+      "used": true,
+      "usedBy": []
+    },
+    "assets/template/fonts/NotoSansSC-VF.subset.woff2": {
+      "declaredUseEvidence": [],
+      "generator": {},
+      "inputs": [],
+      "license": {
+        "copyrightNoticeRequired": true,
+        "id": "OFL-1.1",
+        "licenseNoticeRequired": true,
+        "notice": "assets/template/fonts/NotoSansSC-OFL.txt",
+        "url": "https://openfontlicense.org/open-font-license-official-text/"
+      },
+      "origin": "external",
+      "receipt": {
+        "path": "docs/provenance/pinball6-recovered-provenance-evidence.json",
+        "sha256": "sha256:55afff89ca17eabf10bc3f3d933e6fd619e9b9285950106f447b6f07c9abb31b"
+      },
+      "referenceEvidence": [
+        "assets/template/fonts/display/noto_sans_sc_bold.tres",
+        "assets/template/fonts/display/noto_sans_sc_medium.tres",
+        "assets/template/fonts/display/noto_sans_sc_regular.tres"
+      ],
+      "regions": [],
+      "sha256": "sha256:38f4c5f927f746b3dfa4c3a5d7edf0b7a3e828e27438418fa54f9e1565289412",
+      "shipped": null,
+      "size": 1869368,
+      "source": {
+        "name": "NotoSansSC-VF.subset.woff2",
+        "url": "https://github.com/google/fonts/tree/main/ofl/notosanssc"
+      },
+      "status": "present",
+      "transformations": [
+        {
+          "description": "Inherited OFL font bytes. Coverage repair only; reserved-font-name remediation is handled separately before finalizing this successor.",
+          "operation": "subset-and-encode-woff2",
+          "tool": "Existing template typography pipeline"
+        }
+      ],
+      "useEvidence": [
+        "assets/template/fonts/display/noto_sans_sc_bold.tres",
+        "assets/template/fonts/display/noto_sans_sc_medium.tres",
+        "assets/template/fonts/display/noto_sans_sc_regular.tres"
+      ],
+      "used": true,
+      "usedBy": []
+    },
+    "assets/template/fonts/display/Cinzel-VF.subset.woff2": {
+      "declaredUseEvidence": [],
+      "generator": {},
+      "inputs": [],
+      "license": {
+        "copyrightNoticeRequired": true,
+        "id": "OFL-1.1",
+        "licenseNoticeRequired": true,
+        "notice": "assets/template/fonts/display/Cinzel-OFL.txt",
+        "url": "https://openfontlicense.org/open-font-license-official-text/"
+      },
+      "origin": "external",
+      "receipt": {
+        "path": "docs/provenance/pinball6-recovered-provenance-evidence.json",
+        "sha256": "sha256:55afff89ca17eabf10bc3f3d933e6fd619e9b9285950106f447b6f07c9abb31b"
+      },
+      "referenceEvidence": [
+        "assets/template/fonts/display/comet_heading.tres",
+        "assets/template/fonts/display/comet_label.tres"
+      ],
+      "regions": [],
+      "sha256": "sha256:c989ab1bff3729946b0e62abb30b9726406e3b9058ba2896782de6617bbdb892",
+      "shipped": null,
+      "size": 42292,
+      "source": {
+        "name": "Cinzel-VF.subset.woff2",
+        "url": "https://github.com/google/fonts/tree/main/ofl/cinzel"
+      },
+      "status": "present",
+      "transformations": [
+        {
+          "description": "Inherited OFL font bytes. Coverage repair only; reserved-font-name remediation is handled separately before finalizing this successor.",
+          "operation": "subset-and-encode-woff2",
+          "tool": "Existing template typography pipeline"
+        }
+      ],
+      "useEvidence": [
+        "assets/template/fonts/display/comet_heading.tres",
+        "assets/template/fonts/display/comet_label.tres"
+      ],
+      "used": true,
+      "usedBy": []
+    },
+    "assets/template/fonts/display/NotoSerifSC-VF.subset.woff2": {
+      "declaredUseEvidence": [],
+      "generator": {},
+      "inputs": [],
+      "license": {
+        "copyrightNoticeRequired": true,
+        "id": "OFL-1.1",
+        "licenseNoticeRequired": true,
+        "notice": "assets/template/fonts/display/NotoSerifSC-OFL.txt",
+        "url": "https://openfontlicense.org/open-font-license-official-text/"
+      },
+      "origin": "external",
+      "receipt": {
+        "path": "docs/provenance/pinball6-recovered-provenance-evidence.json",
+        "sha256": "sha256:55afff89ca17eabf10bc3f3d933e6fd619e9b9285950106f447b6f07c9abb31b"
+      },
+      "referenceEvidence": [
+        "assets/template/fonts/display/noto_serif_sc_bold.tres",
+        "assets/template/fonts/display/noto_serif_sc_heavy.tres"
+      ],
+      "regions": [],
+      "sha256": "sha256:c45ad04935d679c504926ca19420c2625cbd5f33f586559923979092fedc46ff",
+      "shipped": null,
+      "size": 2504168,
+      "source": {
+        "name": "NotoSerifSC-VF.subset.woff2",
+        "url": "https://github.com/google/fonts/tree/main/ofl/notoserifsc"
+      },
+      "status": "present",
+      "transformations": [
+        {
+          "description": "Inherited OFL font bytes. Coverage repair only; reserved-font-name remediation is handled separately before finalizing this successor.",
+          "operation": "subset-and-encode-woff2",
+          "tool": "Existing template typography pipeline"
+        }
+      ],
+      "useEvidence": [
+        "assets/template/fonts/display/noto_serif_sc_bold.tres",
+        "assets/template/fonts/display/noto_serif_sc_heavy.tres"
+      ],
+      "used": true,
+      "usedBy": []
+    },
+    "assets/template/fonts/display/Oswald-VF.subset.woff2": {
+      "declaredUseEvidence": [],
+      "generator": {},
+      "inputs": [],
+      "license": {
+        "copyrightNoticeRequired": true,
+        "id": "OFL-1.1",
+        "licenseNoticeRequired": true,
+        "notice": "assets/template/fonts/display/Oswald-OFL.txt",
+        "url": "https://openfontlicense.org/open-font-license-official-text/"
+      },
+      "origin": "external",
+      "receipt": {
+        "path": "docs/provenance/pinball6-recovered-provenance-evidence.json",
+        "sha256": "sha256:55afff89ca17eabf10bc3f3d933e6fd619e9b9285950106f447b6f07c9abb31b"
+      },
+      "referenceEvidence": [
+        "assets/template/fonts/display/comet_number.tres"
+      ],
+      "regions": [],
+      "sha256": "sha256:57503251bab2e0f0ab90c36da895ee0e94c0ea4e343e9d7f211ab57df65636ad",
+      "shipped": null,
+      "size": 34160,
+      "source": {
+        "name": "Oswald-VF.subset.woff2",
+        "url": "https://github.com/google/fonts/tree/main/ofl/oswald"
+      },
+      "status": "present",
+      "transformations": [
+        {
+          "description": "Inherited OFL font bytes. Coverage repair only; reserved-font-name remediation is handled separately before finalizing this successor.",
+          "operation": "subset-and-encode-woff2",
+          "tool": "Existing template typography pipeline"
+        }
+      ],
+      "useEvidence": [
+        "assets/template/fonts/display/comet_number.tres"
+      ],
+      "used": true,
+      "usedBy": []
+    },
+    "assets/template/mechanisms/bronze-gears/Cog Wheels - Gears/SpriteSheets/Bronze Gear Wheels/Gear 1 - Bronze_spritesheet.png": {
+      "declaredUseEvidence": [],
+      "generator": {},
+      "inputs": [
+        {
+          "license": {
+            "attributionRequired": false,
+            "commercialUseAllowed": true,
+            "copyrightNoticeRequired": false,
+            "editableProjectDistributionAllowed": true,
+            "id": "CC0-1.0",
+            "licenseNoticeRequired": false,
+            "modificationNoticeRequired": false,
+            "reusableTemplateDistributionAllowed": true,
+            "url": "https://creativecommons.org/publicdomain/zero/1.0/"
+          },
+          "sha256": "sha256:346c4c03585918d751692b90590cfff92387e1653b0630e2a2ebe44d1f2791c8",
+          "source": {
+            "catalogPath": "2d-sprites/props/itch-io-4152648/assets.zip",
+            "metadataPath": "2d-sprites/props/itch-io-4152648/metadata.json",
+            "metadataSha256": "sha256:95b4f5a9bb088a6ca8d8b0c6fcc59121560d8875f048dc9ca2ba5f7151f6ab2e",
+            "name": "FREE Pixel Art - Gear Wheels Pack - Animated",
+            "packId": "itch-io:4152648",
+            "snapshotId": "catalog-20260916-full-music-v1",
+            "url": "https://karsiori.itch.io/free-pixel-art-gear-wheels-pack-animated"
+          }
+        }
+      ],
+      "license": {
+        "attributionRequired": false,
+        "commercialUseAllowed": true,
+        "copyrightNoticeRequired": false,
+        "editableProjectDistributionAllowed": true,
+        "id": "CC0-1.0",
+        "licenseNoticeRequired": false,
+        "modificationNoticeRequired": false,
+        "reusableTemplateDistributionAllowed": true,
+        "url": "https://creativecommons.org/publicdomain/zero/1.0/"
+      },
+      "origin": "catalog",
+      "referenceEvidence": [
+        "scripts/comet_main.gd"
+      ],
+      "regions": [],
+      "sha256": "sha256:e24da95dcd43484428623aa3888448467c0b6174f5fefd50d168542454ea4cf2",
+      "shipped": null,
+      "size": 2223,
+      "source": {
+        "catalogPath": "2d-sprites/props/itch-io-4152648/assets.zip",
+        "memberPath": "Cog Wheels - Gears/SpriteSheets/Bronze Gear Wheels/Gear 1 - Bronze_spritesheet.png",
+        "metadataPath": "2d-sprites/props/itch-io-4152648/metadata.json",
+        "metadataSha256": "sha256:95b4f5a9bb088a6ca8d8b0c6fcc59121560d8875f048dc9ca2ba5f7151f6ab2e",
+        "name": "FREE Pixel Art - Gear Wheels Pack - Animated",
+        "packId": "itch-io:4152648",
+        "snapshotId": "catalog-20260916-full-music-v1",
+        "url": "https://karsiori.itch.io/free-pixel-art-gear-wheels-pack-animated"
+      },
+      "status": "present",
+      "transformations": [],
+      "useEvidence": [
+        "scripts/comet_main.gd"
+      ],
+      "used": true,
+      "usedBy": []
+    },
+    "assets/template/observatory/background-placeholder.webp": {
+      "declaredUseEvidence": [
+        "scripts/comet_main.gd",
+        "scripts/comet_observatory.gd"
+      ],
+      "generator": {
+        "provider": "Manus built-in generation",
+        "requestId": "172066469"
+      },
+      "inputs": [
+        {
+          "generator": {
+            "model": "gpt-image-2.5",
+            "provider": "OpenAI"
+          },
+          "license": {},
+          "origin": "ai",
+          "path": "assets/template/observatory/cosmos.webp",
+          "sha256": "sha256:c5daf2784ac096aab2a9159530e5277a183ff89321ae8878b63da024742a8600",
+          "source": {}
+        },
+        {
+          "license": {},
+          "sha256": "sha256:e47a71862ca45cf8cc60cbabe7af68e012263f5d045449d1ca0beb3124e0e3a0",
+          "source": {}
+        }
+      ],
+      "license": {
+        "url": "https://help.manus.im/en/articles/13125514-do-i-own-the-assets-websites-images-videos-slides-generated-via-manus"
+      },
+      "origin": "derivative",
+      "receipt": {
+        "path": "docs/provenance/pinball6-recovered-provenance-evidence.json",
+        "sha256": "sha256:55afff89ca17eabf10bc3f3d933e6fd619e9b9285950106f447b6f07c9abb31b"
+      },
+      "referenceEvidence": [
+        "scripts/comet_main.gd"
+      ],
+      "regions": [],
+      "sha256": "sha256:1d3d336b04f3c17339c67752b1b9f7c365e34bd7fdaf15094346be18b8d9ad4b",
+      "shipped": null,
+      "size": 5042,
+      "source": {
+        "name": "Recovered original Pinball source and generation evidence; see receipt",
+        "url": "https://vida.butterfly-effect.dev/app/gvt0l2a030fRfkzE3MdIkk"
+      },
+      "status": "present",
+      "transformations": [
+        {
+          "description": "Preserve all original image content and aspect ratio; thumbnail within 384x384, RGB WebP quality 74. One shared static fallback for UI and board.",
+          "operation": "downscale",
+          "tool": "Pillow via tools/shared_background_fallback.py"
+        }
+      ],
+      "useEvidence": [
+        "scripts/comet_main.gd",
+        "scripts/comet_observatory.gd"
+      ],
+      "used": true,
+      "usedBy": [
+        "scripts/comet_main.gd",
+        "scripts/comet_observatory.gd"
+      ]
+    },
+    "assets/template/observatory/bumper.png": {
+      "declaredUseEvidence": [
+        "scripts/comet_observatory.gd"
+      ],
+      "generator": {
+        "provider": "Manus built-in generation",
+        "requestId": "172066469"
+      },
+      "inputs": [
+        {
+          "license": {},
+          "sha256": "sha256:38682b1408edd29825fae18ad1f89c11373b4644ddf8962b37abceeba01bfc0e",
+          "source": {}
+        }
+      ],
+      "license": {
+        "url": "https://help.manus.im/en/articles/13125514-do-i-own-the-assets-websites-images-videos-slides-generated-via-manus"
+      },
+      "origin": "ai",
+      "receipt": {
+        "path": "docs/provenance/pinball6-recovered-provenance-evidence.json",
+        "sha256": "sha256:55afff89ca17eabf10bc3f3d933e6fd619e9b9285950106f447b6f07c9abb31b"
+      },
+      "referenceEvidence": [
+        "scripts/comet_observatory.gd"
+      ],
+      "regions": [],
+      "sha256": "sha256:11d1ac40042b8a6a98cc020ba1ddc7ab75efcbcaaf1c4f8b59ee24fb8eba4a24",
+      "shipped": null,
+      "size": 76950,
+      "source": {
+        "name": "Recovered original Pinball source and generation evidence; see receipt",
+        "url": "https://vida.butterfly-effect.dev/app/gvt0l2a030fRfkzE3MdIkk"
+      },
+      "status": "present",
+      "transformations": [
+        {
+          "description": "Full canvas preserved, Lanczos downsample; artwork generated separately from concept; alpha preserved for bumper. Normalize only alpha below 4/255 to zero; preserve all visible edge translucency.",
+          "operation": "resize-and-encode",
+          "tool": "Pillow"
+        }
+      ],
+      "useEvidence": [
+        "scripts/comet_observatory.gd"
+      ],
+      "used": true,
+      "usedBy": [
+        "scripts/comet_observatory.gd"
+      ]
+    },
+    "assets/template/share/v3/favicon.png": {
+      "declaredUseEvidence": [],
+      "generator": {
+        "provider": "Manus built-in generation",
+        "requestId": "172066469"
+      },
+      "inputs": [
+        {
+          "generator": {
+            "model": "gpt-image-2.5",
+            "provider": "OpenAI"
+          },
+          "license": {},
+          "origin": "ai",
+          "path": "assets/template/observatory/bumper.png",
+          "sha256": "sha256:11d1ac40042b8a6a98cc020ba1ddc7ab75efcbcaaf1c4f8b59ee24fb8eba4a24",
+          "source": {}
+        },
+        {
+          "license": {},
+          "sha256": "sha256:38682b1408edd29825fae18ad1f89c11373b4644ddf8962b37abceeba01bfc0e",
+          "source": {}
+        }
+      ],
+      "license": {
+        "url": "https://help.manus.im/en/articles/13125514-do-i-own-the-assets-websites-images-videos-slides-generated-via-manus"
+      },
+      "origin": "derivative",
+      "receipt": {
+        "path": "docs/provenance/pinball6-recovered-provenance-evidence.json",
+        "sha256": "sha256:55afff89ca17eabf10bc3f3d933e6fd619e9b9285950106f447b6f07c9abb31b"
+      },
+      "referenceEvidence": [
+        "game-sharing.json"
+      ],
+      "regions": [],
+      "sha256": "sha256:ba5feaa4b9b08b56b485f54b4e441a4c32d6af68769b9b0465fd21751e6d84b1",
+      "shipped": null,
+      "size": 150058,
+      "source": {
+        "name": "Recovered original Pinball source and generation evidence; see receipt",
+        "url": "https://vida.butterfly-effect.dev/app/gvt0l2a030fRfkzE3MdIkk"
+      },
+      "status": "present",
+      "transformations": [
+        {
+          "description": "{\"renderer\":\"catalog-procedural\",\"pillowVersion\":\"12.3.0\",\"output\":\"favicon.png\",\"resolution\":[512,512],\"filter\":\"lanczos\",\"background\":\"#0c161d\",\"iconArea\":[416,416],\"compositionSize\":[512,512]}",
+          "operation": "share-icon-compose",
+          "tool": "render-share-images.py"
+        }
+      ],
+      "useEvidence": [
+        "game-sharing.json"
+      ],
+      "used": true,
+      "usedBy": []
+    },
+    "assets/template/share/v5/og.png": {
+      "declaredUseEvidence": [],
+      "generator": {},
+      "inputs": [],
+      "license": {},
+      "origin": "derivative",
+      "receipt": {
+        "path": "docs/provenance/ip-remediation-pinball-sharing.json",
+        "sha256": "sha256:095184f27acf6c39505d77329580d379a631339d609f90b92dc146c18dccff43"
+      },
+      "referenceEvidence": [
+        "game-sharing.json"
+      ],
+      "regions": [],
+      "sha256": "sha256:f0800d14f217cc1f124801b0f0a5c49d1c294f23dc15aa902929350f3534a195",
+      "shipped": null,
+      "size": 379728,
+      "source": {},
+      "status": "present",
+      "transformations": [
+        {
+          "description": "native Godot gameplay capture",
+          "operation": "gameplay-capture",
+          "tool": "Godot"
+        }
+      ],
+      "useEvidence": [
+        "game-sharing.json"
+      ],
+      "used": true,
+      "usedBy": [],
+      "versions": {
+        "sha256:4306c9d485d7e80687964b113fab5853e07581bc3d49775eb6ac9fe7b734dd98": {
+          "generator": {},
+          "inputs": [
+            {
+              "license": {},
+              "sha256": "sha256:557e3fd0a0e16daab24dbbf3621c233a402a66ec5eda33a554dd344d035e1aa8",
+              "source": {
+                "name": "Cover image: 13-supernova.png"
+              }
+            },
+            {
+              "license": {
+                "id": "CC0-1.0",
+                "url": "https://creativecommons.org/publicdomain/zero/1.0/"
+              },
+              "sha256": "sha256:099f6d50114f83533f689ddc37028fcff2bd2a2c4871a332488c1a433f440804",
+              "source": {
+                "name": "ManusCC0 Bold"
+              }
+            },
+            {
+              "license": {
+                "id": "CC0-1.0",
+                "url": "https://creativecommons.org/publicdomain/zero/1.0/"
+              },
+              "sha256": "sha256:0a4981b817d7fb556dd8cd80f278483f1849017a312ca965e027d8e0e066968c",
+              "source": {
+                "name": "ManusCC0 Sans CJK SC"
+              }
+            }
+          ],
+          "license": {
+            "url": "https://help.manus.im/en/articles/13125514-do-i-own-the-assets-websites-images-videos-slides-generated-via-manus"
+          },
+          "origin": "derivative",
+          "receipt": {
+            "path": "docs/provenance/pinball6-recovered-provenance-evidence.json",
+            "sha256": "sha256:55afff89ca17eabf10bc3f3d933e6fd619e9b9285950106f447b6f07c9abb31b"
+          },
+          "regions": [],
+          "sha256": "sha256:4306c9d485d7e80687964b113fab5853e07581bc3d49775eb6ac9fe7b734dd98",
+          "size": 542812,
+          "source": {
+            "name": "Recovered original Pinball source and generation evidence; see receipt",
+            "url": "https://vida.butterfly-effect.dev/app/gvt0l2a030fRfkzE3MdIkk"
+          },
+          "transformations": [
+            {
+              "description": "{\"renderer\":\"catalog-procedural\",\"pillowVersion\":\"12.3.0\",\"output\":\"og.png\",\"resolution\":[1200,630],\"filter\":\"lanczos\",\"background\":\"#0c161d\",\"title\":\"Comet Pinball\",\"accent\":\"#8cba74\",\"coverArea\":[1072,502],\"titleBounds\":[1072,240]}",
+              "operation": "share-cover-compose",
+              "tool": "render-share-images.py"
+            }
+          ],
+          "usedBy": []
+        }
+      }
+    }
+  },
+  "discoveries": {
+    "sha256:19f5353fdb12275cedc83aaa4eb9d74c248a5a4e29b33f1c01f92c3c98760464": {
+      "id": "ambientcg:Sign016",
+      "name": "Sign 016",
+      "path": "2d-sprites/tiles/ambientcg-sign016",
+      "query": "gear",
+      "snapshotId": "catalog-20260916-full-music-v1"
+    },
+    "sha256:22599082a804d55ed927336269fe53c291570ce889b5f9fd128c135e04065dbd": {
+      "id": "itch-io:57261",
+      "name": "Free Pixel Gear!",
+      "path": "2d-sprites/props/itch-io-57261",
+      "query": "gear",
+      "snapshotId": "catalog-20260916-full-music-v1"
+    },
+    "sha256:d8566196d8d845612732a42913395309f1add044f8e36af9673eaf92a8d05b9b": {
+      "id": "itch-io:4152648",
+      "name": "FREE Pixel Art - Gear Wheels Pack - Animated",
+      "path": "2d-sprites/props/itch-io-4152648",
+      "query": "gear",
+      "snapshotId": "catalog-20260916-full-music-v1"
+    }
+  },
+  "downloads": {
+    "sha256:04733590ffafd564b28a33426562aee41387d89b5680cf78a3d6ef6b68f6f738": {
+      "catalogPath": "2d-sprites/props/itch-io-4152648/assets.zip",
+      "sha256": "sha256:346c4c03585918d751692b90590cfff92387e1653b0630e2a2ebe44d1f2791c8",
+      "size": 159114,
+      "snapshotId": "catalog-20260916-full-music-v1"
+    },
+    "sha256:0d78f8019ce98a82a26eb478307015097fa3977300e2ad3d409d7bd8756f9124": {
+      "catalogPath": "music/combat/assets.zip",
+      "sha256": "sha256:8f1682c4bee5dba31dee48d26afd028612a88087fab265453e22916a754ca0aa",
+      "size": 2174998,
+      "snapshotId": "catalog-20260916-full-music-v1"
+    },
+    "sha256:2156f6e4e80d1045d8f193f73e3d5d6fcc6eb7e9c8c83e9acbb4b0a32fc7e3b2": {
+      "catalogPath": "2d-sprites/environment/itch-io-1377621/metadata.json",
+      "sha256": "sha256:0a85ad61b1d7971cdb3b45d6ebc3a266303ee732d6923fa0168f6c9ebe0ec7ad",
+      "size": 9123,
+      "snapshotId": "catalog-20260916-full-music-v1"
+    },
+    "sha256:534d54fe09377431db50a795b2af7c4f2879a3f7f9be9b55548348a1f1a4d40a": {
+      "catalogPath": "2d-sprites/props/itch-io-4152648/metadata.json",
+      "sha256": "sha256:95b4f5a9bb088a6ca8d8b0c6fcc59121560d8875f048dc9ca2ba5f7151f6ab2e",
+      "size": 44609,
+      "snapshotId": "catalog-20260916-full-music-v1"
+    },
+    "sha256:c8dfa672f9d755be50d4551680bbaadc8dc216eb1d1803dad7242f8ed0139457": {
+      "catalogPath": "music/combat/metadata.json",
+      "sha256": "sha256:918db7f8ac0bad76ff2edebd5dd4a140dd0da92884d03b75aa14123f8e8c3415",
+      "size": 7814,
+      "snapshotId": "catalog-20260916-full-music-v1"
+    },
+    "sha256:d427851578a621e04bbe2731d5aad96ca01547d2e16da3681c4c6a4fa6c7a166": {
+      "catalogPath": "2d-sprites/environment/itch-io-1377621/assets.zip",
+      "sha256": "sha256:e26ee78a8eb2b7ca3b0c2eadbe7846d23dbf8cfff9b2c73e3496db4a759144c6",
+      "size": 33065,
+      "snapshotId": "catalog-20260916-full-music-v1"
+    }
+  },
+  "procedures": {
+    "arcade-interface": {
+      "description": "Live bilingual reactor objective, mode/chain timers, local scores, three-ball state, results, tutorial, pause, audio/effect controls and responsive touch pads using only approved CC0 fonts.",
+      "generator": {},
+      "inputs": [],
+      "license": {},
+      "origin": "procedural",
+      "regions": [],
+      "source": {},
+      "transformations": [],
+      "useEvidence": [
+        "scripts/comet_main.gd",
+        "scripts/comet_observatory.gd",
+        "web/loading.html"
+      ],
+      "used": true,
+      "usedBy": [
+        "scripts/comet_main.gd",
+        "scripts/comet_observatory.gd",
+        "web/loading.html"
+      ]
+    },
+    "clockwork-table": {
+      "description": "Collision-aligned brass cabinet, rails, flippers, real side-bank inserts, animated catalog gearing and three-segment live reactor. The Observatory art and runtime states replace the earlier flat cap presentation.",
+      "generator": {},
+      "inputs": [],
+      "license": {},
+      "origin": "procedural",
+      "regions": [],
+      "source": {},
+      "transformations": [],
+      "useEvidence": [
+        "scripts/comet_main.gd",
+        "scripts/comet_observatory.gd",
+        "scripts/comet_physics.gd"
+      ],
+      "used": true,
+      "usedBy": [
+        "scripts/comet_main.gd",
+        "scripts/comet_observatory.gd",
+        "scripts/comet_physics.gd"
+      ]
+    },
+    "comet-feedback": {
+      "description": "Bounded original procedural gold/cyan/violet sparks, shockwaves, contact links, actual-position ball trails, HUD motes and ripples. Reduced effects removes shake and trails; real collision and UI events drive feedback.",
+      "generator": {},
+      "inputs": [],
+      "license": {},
+      "origin": "procedural",
+      "regions": [],
+      "source": {},
+      "transformations": [
+        {
+          "description": "Seed 418796513; 360 world particles, 36 world rings, 120 HUD particles, 16 HUD rings and 16 links max. Lifetimes <=0.8 seconds.",
+          "operation": "procedural-animation",
+          "tool": "Godot"
+        }
+      ],
+      "useEvidence": [
+        "scripts/comet_juice.gd",
+        "scripts/comet_observatory.gd"
+      ],
+      "used": true,
+      "usedBy": [
+        "scripts/comet_juice.gd",
+        "scripts/comet_observatory.gd"
+      ]
+    },
+    "living-cosmos-background": {
+      "description": "Subtle animated galaxy and nebula shader inside the playfield, independent twinkling stars, smoothed mission and chain palettes, jackpot ripple and reduced-motion pause control.",
+      "generator": {},
+      "inputs": [],
+      "license": {},
+      "origin": "procedural",
+      "regions": [],
+      "source": {},
+      "transformations": [
+        {
+          "description": "One 384x600 viewport; reuse local cosmic and engraved surface textures. Simulation-independent uniforms, no video.",
+          "operation": "runtime-shader-animation",
+          "tool": "Godot canvas shader"
+        }
+      ],
+      "useEvidence": [
+        "scripts/comet_observatory.gd"
+      ],
+      "used": true,
+      "usedBy": [
+        "scripts/comet_cosmos.gd",
+        "scripts/comet_observatory.gd",
+        "shaders/living_cosmos.gdshader"
+      ]
+    },
+    "mechanical-sfx": {
+      "description": "Original event-specific one-shot spring sweeps, metallic impact resonances, flipper clacks, rollover rewards and drain decays. Not procedural background music.",
+      "generator": {},
+      "inputs": [],
+      "license": {},
+      "origin": "procedural",
+      "regions": [],
+      "source": {},
+      "transformations": [
+        {
+          "description": "22050Hz mono 16-bit multi-partial decaying resonances and seeded transient noise generated by _make_sound; duration 0.08–0.7 seconds; bounded eight effect and two UI voices.",
+          "operation": "procedural-audio",
+          "tool": "Godot AudioStreamWAV"
+        }
+      ],
+      "useEvidence": [
+        "scripts/comet_main.gd"
+      ],
+      "used": true,
+      "usedBy": [
+        "scripts/comet_main.gd"
+      ]
+    },
+    "speed-comet-stardust": {
+      "description": "Gameplay-only collision stardust, speed-responsive ember particles and convex flame silhouettes; bounded pools, teleport-safe trails and reduced effects. The animated background subsystem has been removed.",
+      "generator": {},
+      "inputs": [],
+      "license": {},
+      "origin": "procedural",
+      "regions": [],
+      "source": {},
+      "transformations": [
+        {
+          "description": "Preserved seed 8091783, 240 ember cap and 180 contact-dust cap. Extracted the existing tested particle implementation into a background-independent module.",
+          "operation": "runtime-particles",
+          "tool": "Godot CanvasItem"
+        }
+      ],
+      "useEvidence": [
+        "scripts/comet_effects.gd",
+        "scripts/comet_observatory.gd",
+        "scripts/comet_physics.gd"
+      ],
+      "used": true,
+      "usedBy": [
+        "scripts/comet_effects.gd",
+        "scripts/comet_observatory.gd",
+        "scripts/comet_physics.gd"
+      ]
+    },
+    "staged-optional-startup": {
+      "description": "Interactive title and first-ball core precede a three-item optional music/cosmos/shader queue; at most one resource task per eligible real frame, no work during a live unpaused ball, explicit nonfatal errors and shared resource reuse.",
+      "generator": {},
+      "inputs": [],
+      "license": {},
+      "origin": "procedural",
+      "regions": [],
+      "source": {},
+      "transformations": [],
+      "useEvidence": [
+        "scripts/comet_loading.gd",
+        "scripts/comet_main.gd",
+        "scripts/comet_observatory.gd"
+      ],
+      "used": true,
+      "usedBy": [
+        "scripts/comet_loading.gd",
+        "scripts/comet_main.gd",
+        "scripts/comet_observatory.gd"
+      ]
+    }
+  },
+  "summary": {
+    "ancestry": {
+      "ai": {
+        "retained": 3,
+        "shipped": null,
+        "used": 3
+      },
+      "catalog": {
+        "retained": 1,
+        "shipped": null,
+        "used": 1
+      },
+      "procedural": {
+        "retained": 8,
+        "shipped": null,
+        "used": 8
+      }
+    },
+    "derivatives": {
+      "retained": 4,
+      "shipped": null,
+      "used": 4
+    },
+    "exportedHostMedia": null,
+    "files": {
+      "downloaded": 1,
+      "retained": 20,
+      "shipped": null,
+      "used": 20
+    },
+    "origins": {
+      "ai": {
+        "retained": 1,
+        "shipped": null,
+        "used": 1
+      },
+      "catalog": {
+        "retained": 1,
+        "shipped": null,
+        "used": 1
+      },
+      "derivative": {
+        "retained": 4,
+        "shipped": null,
+        "used": 4
+      },
+      "external": {
+        "retained": 6,
+        "shipped": null,
+        "used": 6
+      },
+      "procedural": {
+        "retained": 8,
+        "shipped": null,
+        "used": 8
+      },
+      "template": {
+        "retained": 0,
+        "shipped": null,
+        "used": 0
+      },
+      "unknown": {
+        "retained": 0,
+        "shipped": null,
+        "used": 0
+      }
+    },
+    "packs": {
+      "discovered": 3,
+      "downloaded": 3,
+      "shipped": null,
+      "used": 1
+    },
+    "proceduralSystems": {
+      "retained": 7,
+      "used": 7
+    },
+    "spriteRegions": {
+      "retained": 0,
+      "shipped": null,
+      "used": 0
+    }
+  },
+  "version": 1
+}

@@ -1,0 +1,19 @@
+{
+  "name": "sql",
+  "command": "postgrestools",
+  "args": [
+    "lsp-proxy"
+  ],
+  "files": {
+    ".sql": "sql"
+  },
+  "description": "postgrestools 0.25.7 reads postgres-language-server.jsonc at the workspace root. Syntax parsing is available offline; database-backed type checks require database configuration. Do not invent a workspace sql.validate.enable setting or a database connection for an offline-only task. Default empty native project configuration is sufficient for syntax parsing.",
+  "testedVersion": "0.25.7",
+  "configuration": {
+    "initializationOptions": {},
+    "settings": {}
+  },
+  "projectConfigurationExample": {
+    "postgres-language-server.jsonc": "{}\n"
+  }
+}

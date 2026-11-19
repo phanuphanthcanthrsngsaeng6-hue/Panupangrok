@@ -1,0 +1,24 @@
+{
+  "name": "css",
+  "command": "vscode-css-language-server",
+  "args": [
+    "--stdio"
+  ],
+  "files": {
+    ".css": "css"
+  },
+  "description": "Native workspace sections css/scss/less each contain language settings. css.validate is boolean; css.lint.unknownProperties is ignore/warning/error. Use nested objects, not css.validate.enable.",
+  "testedVersion": "vscode-langservers-extracted 4.10.0",
+  "configuration": {
+    "initializationOptions": {},
+    "settings": {
+      "css": {
+        "validate": true,
+        "lint": {
+          "unknownProperties": "error"
+        }
+      }
+    }
+  },
+  "projectConfigurationExample": {}
+}

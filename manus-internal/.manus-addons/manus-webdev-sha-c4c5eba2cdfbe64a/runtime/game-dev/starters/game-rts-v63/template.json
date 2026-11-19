@@ -1,0 +1,11 @@
+{
+  "id": "game-rts",
+  "kind": "game",
+  "game_genre": "rts",
+  "status": "ready",
+  "name": "Campus Hero Defense",
+  "description": "An isometric Godot campus-defense RTS with five student superhero classes, eight invasion waves, three difficulty levels, animated squads, tactical enemy AI, a voiced comic introduction, local high scores and desktop/mobile-landscape controls.",
+  "capabilities": [
+    "static"
+  ]
+}

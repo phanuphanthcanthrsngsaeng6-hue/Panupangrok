@@ -1,0 +1,526 @@
+{
+  "assets": {
+    "assets/template/ai_drone.webp": {
+      "declaredUseEvidence": [],
+      "generator": {},
+      "inputs": [],
+      "license": {},
+      "origin": "unknown",
+      "referenceEvidence": [
+        "scripts/game.gd"
+      ],
+      "regions": [],
+      "sha256": "sha256:9670e95c1344c4eea1d82f943ea2ac30805d07158efe06d655bf0d17ec56e3fb",
+      "shipped": null,
+      "size": 16626,
+      "source": {},
+      "status": "present",
+      "transformations": [],
+      "useEvidence": [
+        "scripts/game.gd"
+      ],
+      "used": true,
+      "usedBy": []
+    },
+    "assets/template/ai_mothership.webp": {
+      "declaredUseEvidence": [],
+      "generator": {},
+      "inputs": [],
+      "license": {},
+      "origin": "unknown",
+      "referenceEvidence": [
+        "scripts/game.gd"
+      ],
+      "regions": [],
+      "sha256": "sha256:670f31e7f3b931a833e15a94a62868b4ceb5b64389e204add69352f56546321f",
+      "shipped": null,
+      "size": 80710,
+      "source": {},
+      "status": "present",
+      "transformations": [],
+      "useEvidence": [
+        "scripts/game.gd"
+      ],
+      "used": true,
+      "usedBy": []
+    },
+    "assets/template/audio/explosion.ogg": {
+      "declaredUseEvidence": [],
+      "generator": {},
+      "inputs": [],
+      "license": {},
+      "origin": "unknown",
+      "referenceEvidence": [
+        "scripts/game.gd"
+      ],
+      "regions": [],
+      "sha256": "sha256:ab256dfd22b760c1ccc9f58ecdb06749a2a5b19a42d8f1733539e5850a200975",
+      "shipped": null,
+      "size": 9612,
+      "source": {},
+      "status": "present",
+      "transformations": [],
+      "useEvidence": [
+        "scripts/game.gd"
+      ],
+      "used": true,
+      "usedBy": []
+    },
+    "assets/template/audio/hit.ogg": {
+      "declaredUseEvidence": [],
+      "generator": {},
+      "inputs": [],
+      "license": {},
+      "origin": "unknown",
+      "referenceEvidence": [
+        "scripts/game.gd"
+      ],
+      "regions": [],
+      "sha256": "sha256:50650c1555ddf26705b9133eda2829a316d4298bcdc39aa3fd282d4aa3468712",
+      "shipped": null,
+      "size": 5643,
+      "source": {},
+      "status": "present",
+      "transformations": [],
+      "useEvidence": [
+        "scripts/game.gd"
+      ],
+      "used": true,
+      "usedBy": []
+    },
+    "assets/template/audio/shoot.ogg": {
+      "declaredUseEvidence": [],
+      "generator": {},
+      "inputs": [],
+      "license": {},
+      "origin": "unknown",
+      "referenceEvidence": [
+        "scripts/game.gd"
+      ],
+      "regions": [],
+      "sha256": "sha256:e3885aefde5f03636e557a0b724d75eb5ae0d63351cac7a1f95426a33ef7940c",
+      "shipped": null,
+      "size": 4366,
+      "source": {},
+      "status": "present",
+      "transformations": [],
+      "useEvidence": [
+        "scripts/game.gd"
+      ],
+      "used": true,
+      "usedBy": []
+    },
+    "assets/template/audio/stargrave_battle.ogg": {
+      "declaredUseEvidence": [],
+      "generator": {},
+      "inputs": [],
+      "license": {},
+      "origin": "unknown",
+      "referenceEvidence": [
+        "scripts/game.gd"
+      ],
+      "regions": [],
+      "sha256": "sha256:5b47f61f2606e87ff310168df75ad466ab2f12fc27521b54a2ab980c4e6dfd07",
+      "shipped": null,
+      "size": 955207,
+      "source": {},
+      "status": "present",
+      "transformations": [],
+      "useEvidence": [
+        "scripts/game.gd"
+      ],
+      "used": true,
+      "usedBy": []
+    },
+    "assets/template/dog_ship.webp": {
+      "declaredUseEvidence": [],
+      "generator": {},
+      "inputs": [],
+      "license": {},
+      "origin": "unknown",
+      "referenceEvidence": [
+        "scripts/game.gd",
+        "scripts/title_screen.gd"
+      ],
+      "regions": [],
+      "sha256": "sha256:566fb270ab3f8681b18de157ec9a0ca7e7d066c3451d12bb2678de96b0577b27",
+      "shipped": null,
+      "size": 30286,
+      "source": {},
+      "status": "present",
+      "transformations": [],
+      "useEvidence": [
+        "scripts/game.gd",
+        "scripts/title_screen.gd"
+      ],
+      "used": true,
+      "usedBy": []
+    },
+    "assets/template/elite_boss_barrage.webp": {
+      "declaredUseEvidence": [],
+      "generator": {},
+      "inputs": [],
+      "license": {},
+      "origin": "unknown",
+      "referenceEvidence": [
+        "scripts/game.gd"
+      ],
+      "regions": [],
+      "sha256": "sha256:7e1e4a6e27f8b4a18932857e806c12ffb7127869b844bb72fcdc4114ad177e86",
+      "shipped": null,
+      "size": 67744,
+      "source": {},
+      "status": "present",
+      "transformations": [],
+      "useEvidence": [
+        "scripts/game.gd"
+      ],
+      "used": true,
+      "usedBy": []
+    },
+    "assets/template/elite_boss_geometry.webp": {
+      "declaredUseEvidence": [],
+      "generator": {},
+      "inputs": [],
+      "license": {},
+      "origin": "unknown",
+      "referenceEvidence": [
+        "scripts/game.gd"
+      ],
+      "regions": [],
+      "sha256": "sha256:d306d7625d86b99805218c307d2d5df409ddd8bb1293075799b1832f290724f6",
+      "shipped": null,
+      "size": 74986,
+      "source": {},
+      "status": "present",
+      "transformations": [],
+      "useEvidence": [
+        "scripts/game.gd"
+      ],
+      "used": true,
+      "usedBy": []
+    },
+    "assets/template/elite_boss_laser.webp": {
+      "declaredUseEvidence": [],
+      "generator": {},
+      "inputs": [],
+      "license": {},
+      "origin": "unknown",
+      "referenceEvidence": [
+        "scripts/game.gd"
+      ],
+      "regions": [],
+      "sha256": "sha256:dcb226f78cacbe20eb9d8f5159d65ef3eedfc1597a7a84fdd2f273602e335174",
+      "shipped": null,
+      "size": 51650,
+      "source": {},
+      "status": "present",
+      "transformations": [],
+      "useEvidence": [
+        "scripts/game.gd"
+      ],
+      "used": true,
+      "usedBy": []
+    },
+    "assets/template/fonts/Exo2-VF.subset.woff2": {
+      "declaredUseEvidence": [],
+      "generator": {},
+      "inputs": [],
+      "license": {},
+      "origin": "unknown",
+      "referenceEvidence": [
+        "assets/template/fonts/ui_bold.tres",
+        "assets/template/fonts/ui_medium.tres",
+        "assets/template/fonts/ui_regular.tres"
+      ],
+      "regions": [],
+      "sha256": "sha256:7dd9d9a08bca3097f107c089b8b1f12ed1e99330a04243220f8d187da9f491ed",
+      "shipped": null,
+      "size": 55012,
+      "source": {},
+      "status": "present",
+      "transformations": [],
+      "useEvidence": [
+        "assets/template/fonts/ui_bold.tres",
+        "assets/template/fonts/ui_medium.tres",
+        "assets/template/fonts/ui_regular.tres"
+      ],
+      "used": true,
+      "usedBy": []
+    },
+    "assets/template/fonts/ManusCC0-Bold.woff2": {
+      "declaredUseEvidence": [],
+      "generator": {},
+      "inputs": [],
+      "license": {
+        "attributionRequired": false,
+        "commercialUseAllowed": true,
+        "copyrightNoticeRequired": false,
+        "editableProjectDistributionAllowed": true,
+        "id": "CC0-1.0",
+        "licenseNoticeRequired": false,
+        "modificationAllowed": true,
+        "modificationNoticeRequired": false,
+        "notice": "assets/template/fonts/ManusCC0-CC0.txt",
+        "redistributionAllowed": true,
+        "reusableTemplateDistributionAllowed": true,
+        "url": "https://creativecommons.org/publicdomain/zero/1.0/"
+      },
+      "origin": "external",
+      "receipt": {
+        "path": "docs/provenance/fonts/replacement-fonts.json",
+        "sha256": "sha256:4f470e52b7d0f0fb12d084e079cbfdd3ea24d0a1d58ad62397171705b4ee1077"
+      },
+      "referenceEvidence": [
+        "assets/template/fonts/display/display_bold.tres",
+        "assets/template/fonts/display/display_title.tres"
+      ],
+      "regions": [],
+      "sha256": "sha256:48c1f3452238f29eb1fe4b8bddfe8fd4045045a5c26657307b8862993488148e",
+      "shipped": null,
+      "size": 10308,
+      "source": {
+        "memberPath": "fonts/ManusCC0-Bold.woff2",
+        "name": "ManusCC0-Bold"
+      },
+      "status": "present",
+      "transformations": [],
+      "useEvidence": [
+        "assets/template/fonts/display/display_bold.tres",
+        "assets/template/fonts/display/display_title.tres"
+      ],
+      "used": true,
+      "usedBy": []
+    },
+    "assets/template/fonts/ManusCC0SansCJKSC-Bold.woff2": {
+      "declaredUseEvidence": [],
+      "generator": {},
+      "inputs": [],
+      "license": {
+        "attributionRequired": false,
+        "commercialUseAllowed": true,
+        "copyrightNoticeRequired": false,
+        "editableProjectDistributionAllowed": true,
+        "id": "CC0-1.0",
+        "licenseNoticeRequired": false,
+        "modificationAllowed": true,
+        "modificationNoticeRequired": false,
+        "notice": "assets/template/fonts/ManusCC0SansCJKSC-CC0.txt",
+        "redistributionAllowed": true,
+        "reusableTemplateDistributionAllowed": true,
+        "url": "https://creativecommons.org/publicdomain/zero/1.0/"
+      },
+      "origin": "external",
+      "receipt": {
+        "path": "docs/provenance/fonts/replacement-fonts.json",
+        "sha256": "sha256:4f470e52b7d0f0fb12d084e079cbfdd3ea24d0a1d58ad62397171705b4ee1077"
+      },
+      "referenceEvidence": [
+        "assets/template/fonts/display/display_bold.tres",
+        "assets/template/fonts/display/display_title.tres"
+      ],
+      "regions": [],
+      "sha256": "sha256:1f36038ab04123370c72fda640a309e374b58cc3121c493f129e38a53a4225f0",
+      "shipped": null,
+      "size": 951448,
+      "source": {
+        "memberPath": "fonts/ManusCC0SansCJKSC-Bold.woff2",
+        "name": "ManusCC0SansCJKSC-Bold"
+      },
+      "status": "present",
+      "transformations": [],
+      "useEvidence": [
+        "assets/template/fonts/display/display_bold.tres",
+        "assets/template/fonts/display/display_title.tres"
+      ],
+      "used": true,
+      "usedBy": []
+    },
+    "assets/template/fonts/NotoSansSC-VF.subset.woff2": {
+      "declaredUseEvidence": [],
+      "generator": {},
+      "inputs": [],
+      "license": {
+        "id": "OFL-1.1",
+        "url": "https://openfontlicense.org/open-font-license-official-text/"
+      },
+      "origin": "template",
+      "referenceEvidence": [
+        "assets/template/fonts/noto_sans_sc_bold.tres",
+        "assets/template/fonts/noto_sans_sc_medium.tres",
+        "assets/template/fonts/noto_sans_sc_regular.tres"
+      ],
+      "regions": [],
+      "sha256": "sha256:38f4c5f927f746b3dfa4c3a5d7edf0b7a3e828e27438418fa54f9e1565289412",
+      "shipped": null,
+      "size": 1869368,
+      "source": {
+        "name": "NotoSansSC-VF.subset.woff2"
+      },
+      "status": "present",
+      "transformations": [],
+      "useEvidence": [
+        "assets/template/fonts/noto_sans_sc_bold.tres",
+        "assets/template/fonts/noto_sans_sc_medium.tres",
+        "assets/template/fonts/noto_sans_sc_regular.tres"
+      ],
+      "used": true,
+      "usedBy": []
+    },
+    "assets/template/star_graveyard.webp": {
+      "declaredUseEvidence": [],
+      "generator": {},
+      "inputs": [],
+      "license": {},
+      "origin": "unknown",
+      "referenceEvidence": [
+        "scripts/game.gd",
+        "scripts/title_screen.gd"
+      ],
+      "regions": [],
+      "sha256": "sha256:f448356c85ab9fb59fb2edb8a939a28563e0a2c1e255372d8c474c85dccf03fa",
+      "shipped": null,
+      "size": 52268,
+      "source": {},
+      "status": "present",
+      "transformations": [],
+      "useEvidence": [
+        "scripts/game.gd",
+        "scripts/title_screen.gd"
+      ],
+      "used": true,
+      "usedBy": []
+    },
+    "assets/template/star_graveyard_mid.webp": {
+      "declaredUseEvidence": [],
+      "generator": {},
+      "inputs": [],
+      "license": {},
+      "origin": "unknown",
+      "referenceEvidence": [
+        "scripts/game.gd"
+      ],
+      "regions": [],
+      "sha256": "sha256:7ba46b9df1c9a1042f3fb3bea3691d24c0098dbb167fb1e690904fb8bb0b0c70",
+      "shipped": null,
+      "size": 211018,
+      "source": {},
+      "status": "present",
+      "transformations": [],
+      "useEvidence": [
+        "scripts/game.gd"
+      ],
+      "used": true,
+      "usedBy": []
+    },
+    "assets/template/star_graveyard_near.webp": {
+      "declaredUseEvidence": [],
+      "generator": {},
+      "inputs": [],
+      "license": {},
+      "origin": "unknown",
+      "referenceEvidence": [
+        "scripts/game.gd"
+      ],
+      "regions": [],
+      "sha256": "sha256:681d2776cd436ad57a1876d3d864b28d816e8ef0bb34caadd18610734ea5dabc",
+      "shipped": null,
+      "size": 156040,
+      "source": {},
+      "status": "present",
+      "transformations": [],
+      "useEvidence": [
+        "scripts/game.gd"
+      ],
+      "used": true,
+      "usedBy": []
+    }
+  },
+  "discoveries": {},
+  "downloads": {},
+  "procedures": {},
+  "summary": {
+    "ancestry": {
+      "ai": {
+        "retained": 0,
+        "shipped": null,
+        "used": 0
+      },
+      "catalog": {
+        "retained": 0,
+        "shipped": null,
+        "used": 0
+      },
+      "procedural": {
+        "retained": 0,
+        "shipped": null,
+        "used": 0
+      }
+    },
+    "derivatives": {
+      "retained": 0,
+      "shipped": null,
+      "used": 0
+    },
+    "exportedHostMedia": null,
+    "files": {
+      "downloaded": 0,
+      "retained": 17,
+      "shipped": null,
+      "used": 17
+    },
+    "origins": {
+      "ai": {
+        "retained": 0,
+        "shipped": null,
+        "used": 0
+      },
+      "catalog": {
+        "retained": 0,
+        "shipped": null,
+        "used": 0
+      },
+      "derivative": {
+        "retained": 0,
+        "shipped": null,
+        "used": 0
+      },
+      "external": {
+        "retained": 2,
+        "shipped": null,
+        "used": 2
+      },
+      "procedural": {
+        "retained": 0,
+        "shipped": null,
+        "used": 0
+      },
+      "template": {
+        "retained": 1,
+        "shipped": null,
+        "used": 1
+      },
+      "unknown": {
+        "retained": 14,
+        "shipped": null,
+        "used": 14
+      }
+    },
+    "packs": {
+      "discovered": 0,
+      "downloaded": 0,
+      "shipped": null,
+      "used": 0
+    },
+    "proceduralSystems": {
+      "retained": 0,
+      "used": 0
+    },
+    "spriteRegions": {
+      "retained": 0,
+      "shipped": null,
+      "used": 0
+    }
+  },
+  "version": 1
+}

@@ -1,0 +1,22 @@
+{
+  "name": "rust",
+  "command": "rust-analyzer",
+  "args": [],
+  "files": {
+    ".rs": "rust"
+  },
+  "description": "rust-analyzer native workspace/configuration section is rust-analyzer. checkOnSave is boolean. check.command is check or clippy; cargo/check options are separate. Ensure the Rust toolchain, rust-src, Cargo.toml and the actual project dependencies are available. When the project mount disallows execution, configure Cargo to place build artifacts in an executable cache directory outside that mount.",
+  "testedVersion": "2026-07-27 / 0.3.2989",
+  "configuration": {
+    "initializationOptions": {},
+    "settings": {
+      "rust-analyzer": {
+        "checkOnSave": true,
+        "check": {
+          "command": "check"
+        }
+      }
+    }
+  },
+  "projectConfigurationExample": {}
+}

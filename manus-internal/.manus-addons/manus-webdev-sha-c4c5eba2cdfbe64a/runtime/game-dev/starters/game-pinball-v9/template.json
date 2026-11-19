@@ -1,0 +1,11 @@
+{
+  "id": "game-pinball",
+  "kind": "game",
+  "game_genre": "pinball",
+  "status": "ready",
+  "name": "Space Pinball",
+  "description": "A configurable Godot pinball game with contact-driven missions, multiball and jackpots, timed stages, bilingual onboarding, local standings, runtime tuning, audio and effects.",
+  "capabilities": [
+    "static"
+  ]
+}
